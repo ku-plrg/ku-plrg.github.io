@@ -95,5 +95,5 @@ layout: article
   [<i class="fa-brands fa-youtube"></i>](https://www.youtube.com/watch?v=ZI_emiRMoxQ)
 - 2014.04.22 -
   JavaScript API Misuse Detection by Using TypeScript
-  @ [Modularity 2014 SRC](http://modularity.info/conference/2014/src.html) -
+  @ [Modularity 2014 SRC](https://dl.acm.org/doi/proceedings/10.1145/2577080) -
   [<i class="fa-solid fa-file-pdf"></i>](/assets/data/slide/2014/mod-src14-slide.pdf)
