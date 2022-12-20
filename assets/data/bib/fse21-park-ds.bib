@@ -1,0 +1,17 @@
+@inproceedings{10.1145/3468264.3468556,
+  author = {Park, Joonyoung and Park, Jihyeok and Youn, Dongjun and Ryu, Sukyoung},
+  title = {{Accelerating JavaScript Static Analysis via Dynamic Shortcuts}},
+  year = {2021},
+  isbn = {9781450385626},
+  publisher = {Association for Computing Machinery},
+  address = {New York, NY, USA},
+  url = {https://doi.org/10.1145/3468264.3468556},
+  doi = {10.1145/3468264.3468556},
+  abstract = {JavaScript has become one of the most widely used programming languages for web development, server-side programming, and even micro-controllers for IoT. However, its extremely functional and dynamic features degrade the performance and precision of static analysis. Moreover, the variety of built-in functions and host environments requires excessive manual modeling of their behaviors. To alleviate these problems, researchers have proposed various ways to leverage dynamic analysis during JavaScript static analysis. However, they do not fully utilize the high performance of dynamic analysis and often sacrifice the soundness of static analysis. In this paper, we present dynamic shortcuts, a new technique to flexibly switch between abstract and concrete execution during JavaScript static analysis in a sound way. It can significantly improve the analysis performance and precision by using highly-optimized commercial JavaScript engines and lessen the modeling efforts for opaque code. We actualize the technique via SAFEDS, an extended combination of SAFE and Jalangi, a static analyzer and a dynamic analyzer, respectively. We evaluated SAFEDS using 269 official tests of Lodash 4 library. Our experiment shows that SAFEDS is 7.81x faster than the baseline static analyzer, and it improves the precision to reduce failed assertions by 12.31% on average for 22 opaque functions.},
+  booktitle = {Proceedings of the 29th ACM Joint Meeting on European Software Engineering Conference and Symposium on the Foundations of Software Engineering},
+  pages = {1129–1140},
+  numpages = {12},
+  keywords = {dynamic shortcut, JavaScript, sealed execution, static analysis, dynamic analysis},
+  location = {Athens, Greece},
+  series = {ESEC/FSE 2021}
+}

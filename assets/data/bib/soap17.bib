@@ -1,0 +1,17 @@
+@inproceedings{10.1145/3088515.3088516,
+  author = {Park, Jihyeok and Rival, Xavier and Ryu, Sukyoung},
+  title = {{Revisiting Recency Abstraction for JavaScript: Towards an Intuitive, Compositional, and Efficient Heap Abstraction}},
+  year = {2017},
+  isbn = {9781450350723},
+  publisher = {Association for Computing Machinery},
+  address = {New York, NY, USA},
+  url = {https://doi.org/10.1145/3088515.3088516},
+  doi = {10.1145/3088515.3088516},
+  abstract = {JavaScript is one of the most widely used programming languages. To understand the behaviors of JavaScript programs and to detect possible errors in them, researchers have developed several static analyzers based on the abstract interpretation framework. However, JavaScript provides various language features that are difficult to analyze statically and precisely such as dynamic addition and removal of object properties, first-class property names, and higher-order functions. To alleviate the problem, JavaScript static analyzers often use recency abstraction, which refines address abstraction by distinguishing recent objects from summaries of old objects. We observed that while recency abstraction enables more precise analysis results by allowing strong updates on recent objects, it is not monotone in the sense that it does not preserve the precision relationship between the underlying address abstraction techniques: for an address abstraction A and a more precise abstraction B, recency abstraction on B may not be more precise than recency abstraction on A. Such an unintuitive semantics of recency abstraction makes its composition with various analysis sensitivity techniques also unintuitive. In this paper, we propose a new singleton abstraction technique, which distinguishes singleton objects to allow strong updates on them without changing a given address abstraction. We formally define recency and singleton abstractions, and explain the unintuitive behaviors of recency abstraction. Our preliminary experiments show promising results for singleton abstraction.},
+  booktitle = {Proceedings of the 6th ACM SIGPLAN International Workshop on State Of the Art in Program Analysis},
+  pages = {1–6},
+  numpages = {6},
+  keywords = {Address abstraction, recency abstraction, address partition},
+  location = {Barcelona, Spain},
+  series = {SOAP 2017}
+}

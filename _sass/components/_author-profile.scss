@@ -1,0 +1,41 @@
+.author-profiles {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.author-profile {
+  max-width: 24rem;
+  min-width: 24rem;
+  padding: map-get($spacers, 2) map-get($spacers, 3);
+  margin: map-get($spacers, 3);
+  font-size: map-get($base, font-size-sm);
+  background-color: $text-background-color;
+  @include media-breakpoint-down(md) {
+  max-width: 18rem;
+  min-width: 18rem;
+    align: center;
+    text-align: center;
+  }
+}
+.author-profile__avatar {
+  width: 5rem;
+  height: 5rem;
+  margin-top: map-get($spacers, 2);
+  border-radius: 50%;
+}
+.author-profile__name {
+  color: black;
+  font-size: map-get($base, font-size-lg);
+  font-weight: map-get($base, font-weight-bold);
+  margin: 0.5rem 0!important;
+}
+.author-profile__desc {
+  color: black;
+  margin: 0.5rem 0!important;
+  font-weight: 400;
+}
+.author-profile__links {
+  float: left;
+  @include overflow(auto);
+}

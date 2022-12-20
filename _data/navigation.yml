@@ -1,0 +1,15 @@
+header:
+  - title: "Members"
+    url: /members/
+  - title: "Research"
+    url: /research/
+  - title: "Publications"
+    url: /publications/
+  - title: "Courses"
+    url: /courses/
+  - title: "Talks"
+    url: /talks/
+  - title: "Posts"
+    url: /posts/
+  - title: "Tags"
+    url: /tags/

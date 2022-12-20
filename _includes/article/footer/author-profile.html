@@ -1,0 +1,33 @@
+{%- if _author.url -%}
+<div itemscope itemtype="{{ _author_itemtype }}" class="author-profile card card--clickable item" onclick="location.href = '{{ _author.url }}';">
+{%- else -%}
+<div itemscope itemtype="{{ _author_itemtype }}" class="author-profile card card--flat item">
+{%- endif -%}
+  {%- assign _author_avatar = _author.avatar | default: '/assets/images/avatars/default.png' -%}
+  <div class="item__image">
+    {%- include snippets/get-nav-url.html path=_author_avatar -%}
+    {%- assign _author_avatar = __return -%}
+    <img class="author-profile__avatar" itemprop="image" src="{{ _author_avatar }}" />
+  </div>
+
+
+  <div class="item__content">
+
+    {%- assign _name = _author.name | default: 'Anonymous' -%}
+    {%- if _author.ko-name -%}
+    {%- assign _name = _name | append: ' (' | append: _author.ko-name |
+    append: ')' -%}
+    {%- endif -%}
+    <meta itemprop="name" content="{{ _author.name }}">
+    <p class="author-profile__name">
+    {{ _name }}
+    </p>
+
+    {%- assign _position = _author.position | default: 'Student' -%}
+    <p itemprop="description" class="author-profile__desc">{{ _position }}</p>
+    <div class="author-profile__links" onclick="event.stopPropagation()">
+      {%- include author-links.html author=_author -%}
+    </div>
+
+  </div>
+</div>
