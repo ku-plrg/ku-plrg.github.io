@@ -2,6 +2,9 @@
   & > ul {
     margin: 0;
     & > li > {
+      .pdf-button {
+        @include clickable($text-color-1, $pdf-color);
+      }
       .mail-button {
         @include clickable($text-color-1, $mail-color);
       }
