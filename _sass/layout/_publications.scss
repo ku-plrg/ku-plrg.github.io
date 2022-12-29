@@ -47,7 +47,7 @@
 #popup-close {
   right: 30px;
 }
-#popup .button {
+#popup .popup-button {
   position: absolute;
   border-bottom: none !important;
   top: 20px;
@@ -55,7 +55,7 @@
   width: 30px;
   height: 30px;
 }
-#popup .button[data-tooltip]:not([data-tooltip=""])::before {
+#popup .popup-button[data-tooltip]:not([data-tooltip=""])::before {
   content: attr(data-tooltip);
   position: absolute;
   background-color: rgba(0,0,0,0.5);
@@ -68,7 +68,7 @@
   transition: all 0.2s linear;
   line-height: 0.8;
 }
-#popup .button[data-tooltip]:not([data-tooltip=""])::after {
+#popup .popup-button[data-tooltip]:not([data-tooltip=""])::after {
   content: '';
   border-width: 6px;
   border-style: solid;
@@ -84,20 +84,21 @@
   opacity: 0;
   transition: all 0.2s linear;
 }
-#popup .button:hover[data-tooltip]:not([data-tooltip=""])::before
-, #popup .button:hover[data-tooltip]:not([data-tooltip=""])::after {
+#popup .popup-button:hover[data-tooltip]:not([data-tooltip=""])::before
+, #popup .popup-button:hover[data-tooltip]:not([data-tooltip=""])::after {
   opacity: 1;
 }
-#popup .button:hover {
+#popup .popup-button:hover {
   cursor: pointer;
 }
-#popup .button:hover path {
-  fill: #d2603a;
+#popup .popup-button:hover path {
+  fill: gray;
 }
 #title {
   margin-top: 0 !important;
 }
 #content {
+  font-size: map-get($base, font-size-sm);
   overflow-y: scroll;
   background: lightgray;
   padding: 20px;
@@ -105,10 +106,6 @@
   border-radius: 5px;
   white-space: pre-wrap;
 }
-.swal2-title {
-  font-size: 1.2em !important;
-}
-
 
 @media screen and (max-width: 700px) {
   .popup {
