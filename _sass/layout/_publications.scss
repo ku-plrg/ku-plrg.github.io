@@ -1,0 +1,123 @@
+#popup {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transition: all 500ms ease-in-out;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 99;
+}
+#overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 1;
+}
+.popup {
+  margin: 70px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  width: 70%;
+  height: 70%;
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-flow: column;
+}
+.popup h2 {
+  margin-top: 0;
+  font-family: Tahoma, Arial, sans-serif;
+}
+.popup h2 {
+  margin-top: 0;
+  font-family: Tahoma, Arial, sans-serif;
+}
+#popup-copy {
+  right: 130px;
+}
+#popup-download {
+  right: 80px;
+}
+#popup-close {
+  right: 30px;
+}
+#popup .button {
+  position: absolute;
+  border-bottom: none !important;
+  top: 20px;
+  transition: all 200ms;
+  width: 30px;
+  height: 30px;
+}
+#popup .button[data-tooltip]:not([data-tooltip=""])::before {
+  content: attr(data-tooltip);
+  position: absolute;
+  background-color: rgba(0,0,0,0.5);
+  color: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  left: 0;
+  bottom: 39px;
+  opacity: 0;
+  transition: all 0.2s linear;
+  line-height: 0.8;
+}
+#popup .button[data-tooltip]:not([data-tooltip=""])::after {
+  content: '';
+  border-width: 6px;
+  border-style: solid;
+  border-color: transparent;
+  border-top-color: rgba(0,0,0,0.5);
+  width: 0;
+  height: 0;
+  display: inline-block;
+  position: absolute;
+  left: 50%;
+  bottom: 90%;
+  transform: translate(-50%, 0);
+  opacity: 0;
+  transition: all 0.2s linear;
+}
+#popup .button:hover[data-tooltip]:not([data-tooltip=""])::before
+, #popup .button:hover[data-tooltip]:not([data-tooltip=""])::after {
+  opacity: 1;
+}
+#popup .button:hover {
+  cursor: pointer;
+}
+#popup .button:hover path {
+  fill: #d2603a;
+}
+#title {
+  margin-top: 0 !important;
+}
+#content {
+  overflow-y: scroll;
+  background: lightgray;
+  padding: 20px;
+  margin: 0;
+  border-radius: 5px;
+  white-space: pre-wrap;
+}
+.swal2-title {
+  font-size: 1.2em !important;
+}
+
+
+@media screen and (max-width: 700px) {
+  .popup {
+    width: auto;
+  }
+  #popup-copy {
+    visibility: hidden;
+  }
+  #popup-download {
+    visibility: hidden;
+  }
+}

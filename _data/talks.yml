@@ -1,110 +1,110 @@
-- title     : "Automatically Deriving JavaScript Static Analyzers from \
+- title     : "Automatically Deriving JavaScript Static Analyzers from
                Specifications using Meta-level Static Analysis"
   date      : 2022.12.23
   place     : KSC 2022 Invite Talk
   place-url : https://www.kiise.or.kr/conference/KSC/2022/
-  pdf       : /assets/data/slide/2022/ksc22-jsaver.pdf
+  pdf       : /assets/data/slides/2022/ksc22-jsaver.pdf
 
 - title     : "JavaScript Static Analysis for Evolving Language Specifications"
   date      : 2022.02.13
   place     : SIGPL Winter School 2022
   place-url : https://sigpl.or.kr/school/2022w/
-  pdf       : /assets/data/slide/2022/sigpl22-winter-park.pdf
+  pdf       : /assets/data/slides/2022/sigpl22-winter-park.pdf
 
 - title     : "JavaScript Static Analysis for Evolving Language Specifications"
   date      : 2022.02.09
   place     : STAAR Workshop
   place-url : https://staar.knu.ac.kr/
-  pdf       : /assets/data/slide/2022/erc22-workshop.pdf
+  pdf       : /assets/data/slides/2022/erc22-workshop.pdf
 
 - title     : "JavaScript Static Analysis for Evolving Language Specifications"
   date      : 2022.01.26
   place     : TC39 Meeting
   place-url : https://github.com/tc39/agendas/blob/main/2022/01.md
-  pdf       : /assets/data/slide/2022/tc39-park-meeting.pdf
+  pdf       : /assets/data/slides/2022/tc39-park-meeting.pdf
 
 - title     : "JSTAR: JavaScript Specification Type Analyzer using Refinement"
   date      : 2022.01.20
   place     : KCSE 2022 Invite Talk
   place-url : http://sigsoft.or.kr/KCSE2022/
-  pdf       : /assets/data/slide/2022/kcse22-park-jstar.pdf
+  pdf       : /assets/data/slides/2022/kcse22-park-jstar.pdf
 
-- title     : "JEST: N+1-version Differential Testing of Both JavaScript \
+- title     : "JEST: N+1-version Differential Testing of Both JavaScript
                Engines and Specification"
   date      : 2022.01.20
   place     : KCSE 2022 Invite Talk
   place-url : http://sigsoft.or.kr/KCSE2022/
-  pdf       : /assets/data/slide/2022/kcse22-park-jest.pdf
+  pdf       : /assets/data/slides/2022/kcse22-park-jest.pdf
 
 - title     : "JavaScript Static Analysis for Evolving Language Specifications"
   date      : 2022.01.05
   place     : Agoric
   place-url : https://agoric.com/
-  pdf       : /assets/data/slide/2022/agoric22-slide.pdf
+  pdf       : /assets/data/slides/2022/agoric22-slides.pdf
 
-- title     : "JEST: N+1-version Differential Testing of Both JavaScript \
+- title     : "JEST: N+1-version Differential Testing of Both JavaScript
                Engines and Specification"
   date      : 2021.12.21
   place     : KSC 2021 Invite Talk
   place-url : https://www.kiise.or.kr/conference/KSC/2021/
-  pdf       : /assets/data/slide/2021/ksc21-talk-slide.pdf
+  pdf       : /assets/data/slides/2021/ksc21-talk-slides.pdf
 
 - title     : "JavaScript Static Analysis for Evolving Language Specifications"
   date      : 2021.12.15
   place     : DI ENS Seminar
   place-url : https://www.di.ens.fr/
-  pdf       : /assets/data/slide/2021/diens21-talk-slide.pdf
+  pdf       : /assets/data/slides/2021/diens21-talk-slides.pdf
 
 - title     : "JSTAR: JavaScript Specification Type Analyzer using Refinement"
   date      : 2021.11.17
   place     : ASE 2021
   place-url : https://conf.researchr.org/track/ase-2021/ase-2021-papers
-  pdf       : /assets/data/slide/2021/ase21-jstar-slide.pdf
+  pdf       : /assets/data/slides/2021/ase21-jstar-slides.pdf
 
-- title     : "JEST: N+1-version Differential Testing of Both JavaScript \
+- title     : "JEST: N+1-version Differential Testing of Both JavaScript
                Engines and Specification"
   date      : 2021.10.12
   place     : EIRIC Seminar
   place-url : https://www.eiric.or.kr/community/webinar_detail.php?Seq=55
-  pdf       : /assets/data/slide/2021/eiric21-talk-slide.pdf
+  pdf       : /assets/data/slides/2021/eiric21-talk-slides.pdf
   youtube   : tibudCY2388
 
 - title     : "JavaScript Static Analysis for Evolving Language Specifications"
   date      : 2021.09.17
   place     : KAISTPL
   place-url : https://plrg.kaist.ac.kr/kaistpl
-  pdf       : /assets/data/slide/2021/kaistpl21-talk-slide.pdf
+  pdf       : /assets/data/slides/2021/kaistpl21-talk-slides.pdf
   youtube   : kk46PZO6jWI
 
-- title     : "JavaScript Static Analysis with Evolving Engines and \
+- title     : "JavaScript Static Analysis with Evolving Engines and
                Specification"
   date      : 2021.07.13
   place     : ECOOP/ISSTA 2021 DS
   place-url : "https://2021.ecoop.org/details/ecoop-issta-2021-doctoral-\
                symposium/4/JavaScript-Static-Analysis-with-Evolving-Engines\
                -and-Specification-Senior-Presentati"
-  pdf       : /assets/data/slide/2021/issta21-ds-slide.pdf
+  pdf       : /assets/data/slides/2021/issta21-ds-slides.pdf
 
 - title     : "Towards Co-evolution of JavaScript Specification and Tools"
   date      : 2021.06.28
   place     : KAIST Prosys Lab
   place-url : https://prosys.kaist.ac.kr/
-  pdf       : /assets/data/slide/2021/ps-lab21-talk-slide.pdf
+  pdf       : /assets/data/slides/2021/ps-lab21-talk-slides.pdf
 
 - title     : "JISET: JavaScript IR-based Semantics Extraction Toolchain"
   date      : 2021.06.23
   place     : KCC 2021 Invite Talk
   place-url : https://www.kiise.or.kr/conference/kcc/2021/
-  pdf       : /assets/data/slide/2021/kcc21-talk-slide.pdf
+  pdf       : /assets/data/slides/2021/kcc21-talk-slides.pdf
 
-- title     : "JEST: N+1-version Differential Testing of Both JavaScript \
+- title     : "JEST: N+1-version Differential Testing of Both JavaScript
                Engines and Specification"
   date      : 2021.05.28
   place     : ICSE 2021
   place-url : "https://conf.researchr.org/details/icse-2021/icse-2021-papers/\
                43/JEST-N-1-version-Differential-Testing-of-Both-\
                JavaScript-Engines-and-Specification"
-  pdf       : /assets/data/slide/2021/icse21-slide.pdf
+  pdf       : /assets/data/slides/2021/icse21-slides.pdf
   youtube   : lX4iscqdx8Y
 
 - title     : "JISET: JavaScript IR-based Semantics Extraction Toolchain"
@@ -112,49 +112,49 @@
   place     : ASE 2020
   place-url : "https://conf.researchr.org/details/ase-2020/ase-2020-papers/77/\
                JISET-JavaScript-IR-based-Semantics-Extraction-Toolchain"
-  pdf       : /assets/data/slide/2020/ase20-slide.pdf
+  pdf       : /assets/data/slides/2020/ase20-slides.pdf
 
-- title     : "Update-Tolerant JavaScript Static Analysis for Frequently \
+- title     : "Update-Tolerant JavaScript Static Analysis for Frequently
                Released ECMAScript"
   date      : 2019.11.26
   place     : NUS Seminar
   place-url : https://events.comp.nus.edu.sg/view/16664
-  pdf       : /assets/data/slide/2019/nus19-talk-slide.pdf
+  pdf       : /assets/data/slides/2019/nus19-talk-slides.pdf
 
-- title     : "Towards Analysis and Bug Finding of JavaScript Web Applications \
+- title     : "Towards Analysis and Bug Finding of JavaScript Web Applications
                in the Wild"
   date      : 2018.11.28
   place     : ICSME 2019 J1C2
   place-url : https://icsme2018.github.io/program/Accepted.html
-  pdf       : /assets/data/slide/2019/ieeesw19-slide.pdf
+  pdf       : /assets/data/slides/2019/ieeesw19-slides.pdf
 
-- title     : "A Framework for Dynamic Inter-Device Task Dispatch with \
+- title     : "A Framework for Dynamic Inter-Device Task Dispatch with
                Eventual Consistency"
   date      : 2018.04.10
   place     : ProWeb 2018
   place-url : "https://2018.programming-conference.org/details/\
                proweb-2018-papers/1/A-Framework-for-Dynamic-Inter-\
                Device-Task-Dispatch-with-Eventual-Consistency"
-  pdf       : /assets/data/slide/2018/proweb18-slide.pdf
+  pdf       : /assets/data/slides/2018/proweb18-slides.pdf
 
-- title     : "Revisiting Recency Abstraction for JavaScript: Towards \
+- title     : "Revisiting Recency Abstraction for JavaScript: Towards
                an Intuitive, Compositional, and Efficient Heap Abstraction"
   date      : 2017.06.18
   place     : SOAP 2017
   place-url : "https://pldi17.sigplan.org/details/SOAP-2017-papers/1/\
                Revisiting-Recency-Abstraction-for-JavaScript-Towards-
                an-Intuitive-Compositional-a"
-  pdf       : /assets/data/slide/2017/soap17-slide.pdf
+  pdf       : /assets/data/slides/2017/soap17-slides.pdf
 
 - title     : "Analysis of JavaScript Web Applications Using SAFE 2.0"
   date      : 2017.05.24
   place     : ICSE 2017 Demo
   place-url : https://icse2017.gatech.edu/?q=demo-track#demo-2.3
-  pdf       : /assets/data/slide/2017/icse-demo17-slide.pdf
+  pdf       : /assets/data/slides/2017/icse-demo17-slides.pdf
   youtube   : ZI_emiRMoxQ
 
 - title     : "JavaScript API Misuse Detection by Using TypeScript"
   date      : 2014.04.22
   place     : Modularity 2014 SRC
   place-url : https://dl.acm.org/doi/proceedings/10.1145/2577080
-  pdf       : /assets/data/slide/2014/mod-src14-slide.pdf
+  pdf       : /assets/data/slides/2014/mod-src14-slides.pdf
