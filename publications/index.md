@@ -24,7 +24,7 @@ title: Publications
 <div class="post-content">
 {%- for _pair in site.data.publications -%}
 {%- assign _year = _pair[0] -%}
-<h2>{{ _year }}</h2>
+<h3>{{ _year }}</h3>
 <ul>
 {%- assign _publications = _pair[1] -%}
 {%- for _publication in _publications -%}
