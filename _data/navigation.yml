@@ -11,5 +11,5 @@ header:
     url: /talks/
   - title: "Posts"
     url: /posts/
-  - title: "Tags"
-    url: /tags/
+#  - title: "Tags"
+#    url: /tags/

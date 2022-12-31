@@ -5,14 +5,21 @@
 {%- else -%}
   <header class="header" {%- if include.background -%} style="background: {{ include.background }};" {%- endif -%}>
 {%- endif -%}
+    <script>
+      function open() {
+        var x = document.getElementById("navigation-bar");
+        if (x.className === "open") {
+          x.className = "";
+        } else {
+          x.className = "open";
+        }
+      }
+    </script>
     <div class="main">
       <div class="header__title">
         <div class="header__brand">
           <a href="/">{%- include svg/logo-detail.svg -%}</a>
         </div>
-        {%- if site.search.provider -%}
-          <button class="button button--secondary button--circle search-button js-search-toggle"><i class="fas fa-search"></i></button>
-        {%- endif -%}
       </div>
       {%- if site.data.navigation.header -%}
       <nav class="navigation">
@@ -33,6 +40,25 @@
             <li><button class="button button--secondary button--circle search-button js-search-toggle"><i class="fas fa-search"></i></button></li>
           {%- endif -%}
         </ul>
+      </nav>
+      <nav id="navigation-bar">
+        <ul>
+          {%- for _item in site.data.navigation.header -%}
+            {%- include snippets/get-nav-url.html path=_item.url -%}
+            {%- assign _nav_url = __return -%}
+            {%- include snippets/get-nav-url.html path=page.url -%}
+            {%- assign _page_url = __return -%}
+            {%- include snippets/get-string-from-locale-config.html locale=_item.titles -%}
+            {%- if _nav_url == _page_url or page.nav_key and _item.key and page.nav_key == _item.key -%}
+              <li class="navigation__item navigation__item--active"><a href="{{ _nav_url }}">{%- if _item.title -%}{{ _item.title }}{%- else -%}{{ __return }}{%- endif -%}</a></li>
+            {%- else -%}
+              <li class="navigation__item"><a href="{{ _nav_url }}">{%- if _item.title -%}{{ _item.title }}{%- else -%}{{ __return }}{%- endif -%}</a></li>
+            {%- endif -%}
+          {%- endfor -%}
+        </ul>
+        <a class="icon" href="javascript:open();">
+          <i class="fa fa-bars"></i>
+        </a>
       </nav>
       {%- endif -%}
     </div>
