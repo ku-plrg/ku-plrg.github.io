@@ -12,8 +12,8 @@
   font-size: map-get($base, font-size-sm);
   background-color: $text-background-color;
   @include media-breakpoint-down(md) {
-  max-width: 18rem;
-  min-width: 18rem;
+    max-width: 16rem;
+    min-width: 16rem;
     align: center;
     text-align: center;
   }
@@ -29,6 +29,9 @@
   font-size: map-get($base, font-size-lg);
   font-weight: map-get($base, font-weight-bold);
   margin: 0.5rem 0!important;
+  @include media-breakpoint-down(md) {
+    font-size: map-get($base, font-size-sm);
+  }
 }
 .author-profile__desc {
   color: black;
@@ -36,6 +39,8 @@
   font-weight: 400;
 }
 .author-profile__links {
-  float: left;
+  @include media-breakpoint-up(md) {
+    float: left;
+  }
   @include overflow(auto);
 }
