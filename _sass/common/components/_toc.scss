@@ -23,6 +23,7 @@ ul.toc {
     &.active {
       a {
         @include link-colors($main-color-1);
+        text-decoration: underline!important;
       }
     }
   }
