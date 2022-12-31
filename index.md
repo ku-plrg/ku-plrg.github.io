@@ -7,8 +7,7 @@ Welcome to **Programming Language Research Group (PLRG)** at **Korea University*
 {:.success}
 
 Our research goal is to help developers design and implement high-quality
-software using diverse _programming languages_ and _software engineering_
-tehnologies.
+software using diverse _programming language_ technologies.
 
 Especially our research interests are as follows:
 - **program analysis** for automatically understanding program behaviors and

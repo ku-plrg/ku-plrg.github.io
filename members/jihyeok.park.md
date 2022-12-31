@@ -91,7 +91,7 @@ Please see [Publications](/publications).
 ## Honors & Awards
 - **Ph.D. Dissertation Award**, College of Engineering, KAIST, 2022.
 - **An Outstanding Ph.D. Thesis**, School of Computing, KAIST, 2022.
-- [ACM SIGSOFT Distinguished Paper Award](https://conf.researchr.org/track/icse-2021/icse-2021-awards#Award-Recipients-at-ICSE-2021), ICSE 2021.
+- **ACM SIGSOFT Distinguished Paper Award**, ICSE 2021.
 - **Ph.D. Fellowship Award**, NAVER Corp., 2020.
 - **Outstanding Teaching Assistant Award**, KAIST CS320 Programming Languages <br>
   (5 times - 2016 Fall / 2017 Spring / 2018 Spring / 2018 Fall / 2019 Spring).

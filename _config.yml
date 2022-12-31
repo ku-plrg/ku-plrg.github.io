@@ -1,7 +1,7 @@
 ## => Site Settings
 ##############################
 url     : https://park.jihyeok.site # TODO
-title   : PLRG @ Korea Univ.
+title   : PLRG @ Korea University
 description: > # this means to ignore newlines until "Language & timezone"
   Programming Language Research Group (PLRG) @ Korea University
 
@@ -15,10 +15,10 @@ timezone: Asia/Seoul
 ##############################
 author:
   type      : organization
-  name      : PLRG @ Korea Univ.
+  name      : PLRG @ Korea University
   avatar    : /assets/images/logo.png
   email     : jhpjhp0223@gmail.com # TODO
-  youtube   : UCcdAd5h55vPrCLjEChEtnzw
+  youtube   : ku-plrg
   github    : ku-plrg
 
 
