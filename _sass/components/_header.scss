@@ -63,22 +63,20 @@
 .header__brand {
   @include flexbox();
   @include align-items(center);
-  & > svg {
-    width: map-get($base, font-size-h4) * 1.6;
-    height: map-get($base, font-size-h4) * 1.6;
+  & > a > svg {
+    width: 8rem;
+    height: 3rem;
     margin-right: map-get($spacers, 3);
     vertical-align: middle;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
     @include media-breakpoint-down(md) {
       width: map-get($base, font-size-h4) * 1.2;
       height: map-get($base, font-size-h4) * 1.2;
     }
   }
-  & > a {
-    display: inline-block;
-    font-size: map-get($base, font-size-h4);
-    @include media-breakpoint-down(md) {
-      font-size: map-get($base, font-size-h4-small);
-    }
+  & > a > svg:hover {
+    filter: brightness(1.3);
   }
 }
 
