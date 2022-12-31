@@ -98,7 +98,9 @@
       width: 100%;
       & > li {
         margin: 0;
-        padding: map-get($spacers, 1) map-get($spacers, 3);
+        & > a {
+          padding: map-get($spacers, 1) map-get($spacers, 3);
+        }
       }
     }
     & > .icon {
