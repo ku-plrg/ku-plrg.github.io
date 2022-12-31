@@ -43,7 +43,7 @@ html,
 .page__content {
   @include flex(1);
   width: 100%;
-  margin: 0 auto;
+  margin: 3rem auto 0 auto;
   @media print {
     padding-bottom: 0;
   }
