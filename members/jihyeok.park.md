@@ -97,6 +97,7 @@ Please see [Publications](/publications).
   (5 times - 2016 Fall / 2017 Spring / 2018 Spring / 2018 Fall / 2019 Spring).
 - **Outstanding Teaching Assistant Award**, KAIST CS109 Programming Practice, 2016 Spring.
 - **Best Paper Award**, SOAP 2017.
+- **ACM Student Research Competition 3rd**, Modularity 2014.
 - **KAIST Presidential Fellowship**, School of Computing, KAIST, 2013.
 
 

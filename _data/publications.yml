@@ -266,12 +266,11 @@
   - title: JavaScript API Misuse Detection by Using TypeScript
     authors:
       - Jihyeok Park
-    co-first: 
+    award: ACM Student Research Competition 3rd
     target:
       abbr: Modularity 2014
       name: International Conference on Modularity
       url: https://modularity.info/conference/2014/index.html
-      detail: "<strong>SRC</strong>: ACM Student Research Competition"
     materials:
       link: https://doi.org/10.1145/2584469.2584472
       pdf: /assets/data/publication/mod-src14.pdf
