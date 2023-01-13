@@ -48,6 +48,8 @@ test synthesizers, specification type checkers, and program static analyzers.
     [2](/assets/data/slides/2022/pldi22-tutorial-2.pdf) /
     [3](/assets/data/slides/2022/pldi22-tutorial-3.pdf)
     )
+- **SIGPLAN Blogs**:
+    [[**link**](https://blog.sigplan.org/2023/01/12/from-research-prototypes-to-continuous-integration-guiding-the-design-and-implementation-of-javascript/)]
 - **Tools**:
     [**[ESMeta](https://github.com/es-meta/esmeta)**]
 
