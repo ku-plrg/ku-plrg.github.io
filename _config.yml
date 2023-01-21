@@ -1,6 +1,6 @@
 ## => Site Settings
 ##############################
-url     : https://park.jihyeok.site # TODO
+url     : https://plrg.korea.ac.kr
 title   : PLRG @ Korea University
 description: > # this means to ignore newlines until "Language & timezone"
   Programming Language Research Group (PLRG) @ Korea University
@@ -17,15 +17,15 @@ author:
   type      : organization
   name      : PLRG @ Korea University
   avatar    : /assets/images/logo.png
-  email     : jhpjhp0223@gmail.com # TODO
+  email     : jihyeok_park@korea.ac.kr
   youtube   : ku-plrg
   github    : ku-plrg
 
 
 ## => GitHub Repository (if the site is hosted by GitHub)
 ##############################
-repository: jhnaldo/website # TODO
-repository_tree: main # TODO
+repository: ku-plrg/ku-plrg.github.io
+repository_tree: main
 
 
 ## => Paths
