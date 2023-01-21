@@ -1,5 +1,6 @@
 ---
 layout: article
+title: PLRG @ Korea University
 ---
 Welcome to **Programming Language Research Group (PLRG)** at **Korea University**!
 {:.success}
