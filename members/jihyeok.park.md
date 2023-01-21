@@ -40,7 +40,7 @@ automatically generates language-based tools.
 
 
 ## Employed Positions
-- 2023.03 ~ Present - Associated Professor, [Dept. of Computer Science and Engineering](https://cs.korea.ac.kr), [Korea University](https://www.korea.ac.kr)
+- 2023.03 ~ Present - Assistant Professor, [Dept. of Computer Science and Engineering](https://cs.korea.ac.kr), [Korea University](https://www.korea.ac.kr)
 - 2022.02 ~ 2023.02 - Post Doctoral Fellow, [Oracle Labs](https://labs.oracle.com), Australia
 
 
