@@ -9,7 +9,8 @@ postdocs who interested in programming languages and software engineering.
 For more detailed information, please see [Research](/research) and
 [Publications](/publications).
 {:.success}
-<img align="right" style="margin-left: 1em" src="/assets/images/members/jihyeok.park.jpg" width="200px">
+<img src="/assets/images/members/jihyeok.park.jpg"
+align="right" style="margin-left: 1em" width="150em">
 
 I'm an Assistant Professor at [Programming Language Research Group
 (PLRG)](/), [Dept. of Computer Science and Engineering](https://cs.korea.ac.kr),
