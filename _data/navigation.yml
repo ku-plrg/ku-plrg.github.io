@@ -9,7 +9,7 @@ header:
     url: /courses/
   - title: "Talks"
     url: /talks/
-  - title: "Posts"
-    url: /posts/
+#  - title: "Posts"
+#    url: /posts/
 #  - title: "Tags"
 #    url: /tags/
