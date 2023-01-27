@@ -25,5 +25,12 @@ postdocs. For more detailed information, please see [Research](/research) and
 
 ## Contact Information
 
-TBD
-{:.error}
+Room 609A, [Science Library Bldg](https://goo.gl/maps/fffV7i2PkwqF7yG47) <br>
+[College of Informatics](https://info.korea.ac.kr/) <br>
+[Korea University](https://www.korea.ac.kr/) <br>
+Anam-dong 5-ga, Seongbuk-gu <br>
+Seoul 136-713, Korea <br>
+
+<!-- include author links -->
+{% assign author=site.data.authors["Jihyeok Park"] %}
+<div>{% include author-links.html author=author %}</div>

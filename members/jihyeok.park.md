@@ -26,9 +26,6 @@ framework that extracts a mechanized specification from a given version of
 [ECMAScript specification (ECMA-262)](https://tc39.es/ecma262/) and
 automatically generates language-based tools.
 
-<!-- include author links -->
-{% assign author=site.data.authors["Jihyeok Park"] %}
-<div>{% include author-links.html author=author %}</div>
 [[Curriculum Vitae (CV)](/assets/data/cv.pdf)]
 
 
@@ -112,5 +109,12 @@ Please see [Talks](/talks).
 
 ## Contact Information
 
-TBD
-{:.error}
+Room 609A, [Science Library Bldg](https://goo.gl/maps/fffV7i2PkwqF7yG47) <br>
+[College of Informatics](https://info.korea.ac.kr/) <br>
+[Korea University](https://www.korea.ac.kr/) <br>
+Anam-dong 5-ga, Seongbuk-gu <br>
+Seoul 136-713, Korea <br>
+
+<!-- include author links -->
+{% assign author=site.data.authors["Jihyeok Park"] %}
+<div>{% include author-links.html author=author %}</div>
