@@ -78,12 +78,11 @@ search:
 ## => Analytics
 ##############################
 analytics:
-  provider: # TODO google
+  provider: google
 
   ## Google Analytics
   google:
-    tracking_id : # TODO Google Analytics id for the site
-    anonymize_ip: true
+    tracking_id : G-RPGXB995RD
 
 
 ## => Build
