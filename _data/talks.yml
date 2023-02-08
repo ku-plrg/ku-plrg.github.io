@@ -1,5 +1,12 @@
 - title     : "Automatically Deriving JavaScript Static Analyzers from
                Specifications using Meta-level Static Analysis"
+  date      : 2023.01.09
+  place     : KCSE 2023 Invite Talk
+  place-url : http://sigsoft.or.kr/kcse2023/
+  pdf       : /assets/data/slides/2023/kcse23-jsaver.pdf
+
+- title     : "Automatically Deriving JavaScript Static Analyzers from
+               Specifications using Meta-level Static Analysis"
   date      : 2022.12.23
   place     : KSC 2022 Invite Talk
   place-url : https://www.kiise.or.kr/conference/KSC/2022/
