@@ -266,6 +266,7 @@ PLATFORMS
 DEPENDENCIES
   bundler
   github-pages
+  jekyll-redirect-from
   jekyll-text-theme!
   rake
   webrick (~> 1.8)

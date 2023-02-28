@@ -1,0 +1,73 @@
+{%- assign _data = include.data -%}
+<table>
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>Date</th>
+      <th>Title</th>
+      <th>PDF<br>(handout)</th>
+      <th>Homework</th>
+    </tr>
+  </thead>
+  {%- for _part in _data -%}
+  {%- assign _name = _part.name -%}
+  {%- if _name -%}
+  <thead>
+    <tr>
+      <th colspan="5">{{ _name }}</th>
+    </tr>
+  </thead>
+  {%- endif -%}
+  {%- assign _lectures = _part.lectures -%}
+  <tbody>
+    {%- for _lecture in _lectures -%}
+    <tr>
+      {%- if _lecture.exam -%}
+      <td style="text-align: center;" colspan="2">
+        <strong>{{ _lecture.date }}</strong>
+      </td>
+      <td style="text-align: center;">
+        <strong>{{ _lecture.exam }}</strong>
+      </td>
+      <td style="text-align: center;" colspan="2">
+        <strong>{{ _lecture.coverage }}</strong>
+      </td>
+      {%- else -%}
+      <td>{{ _lecture.index }}</td>
+      <td>{{ _lecture.date }}</td>
+      <td>
+        {%- if _lecture.handout -%}
+        <a href="{{ _lecture.pdf }}">{{ _lecture.title }}</a>
+        {%- else -%}
+        {{ _lecture.title }}
+        {%- endif -%}
+      </td>
+      <td style="text-align: center;">
+        {%- if _lecture.handout -%}
+        <div class="talk-links">
+          <ul class="menu menu--nowrap menu--inline">
+            <li>
+              <a class="button button--circle pdf-button"
+                 itemprop="pdf"
+                 href="{{ _lecture.handout }}"
+                 target="_blank">
+                <i class="fas fa-file-pdf"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+        {%- endif -%}
+      </td>
+      <td style="text-align: center;">
+        {%- assign _homework = _lecture.homework -%}
+        {%- if _homework -%}
+        <a href="{{ _homework.pdf }}">{{ _homework.name }}</a>
+        (due: {{ _homework.date }})
+        {%- endif -%}
+      </td>
+      {%- endif -%}
+    </tr>
+    {%- endfor -%}
+  </tbody>
+  {%- endfor -%}
+</table>
