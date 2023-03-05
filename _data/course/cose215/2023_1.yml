@@ -8,8 +8,8 @@
   - index: 1
     date: 03/08
     title: Mathematical Preliminaries
-    # pdf: ./slides/lec1.pdf
-    # handout: ./slides/lec1-handout.pdf
+    pdf: ./slides/lec1.pdf
+    handout: ./slides/lec1-handout.pdf
   - index: 2
     date: 03/13
     title: Introduction of Scala
