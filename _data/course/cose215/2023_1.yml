@@ -12,7 +12,7 @@
     handout: ./slides/lec1-handout.pdf
   - index: 2
     date: 03/13
-    title: Introduction of Scala
+    title: Basic Introduction of Scala
     pdf: ./slides/lec2.pdf
     handout: ./slides/lec2-handout.pdf
     homework:
