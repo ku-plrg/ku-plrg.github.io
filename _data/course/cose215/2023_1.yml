@@ -13,12 +13,12 @@
   - index: 2
     date: 03/13
     title: Introduction of Scala
-    # pdf: ./slides/lec2.pdf
-    # handout: ./slides/lec2-handout.pdf
-    # homework:
-    #   name: hw0
-    #   pdf: ./homework/hw0.pdf
-    #   date: 03/10
+    pdf: ./slides/lec2.pdf
+    handout: ./slides/lec2-handout.pdf
+    homework:
+      name: hw01
+      link: https://github.com/ku-plrg-classroom/docs/tree/main/scala-tutorial
+      date: 03/21
 
 - name: "Part 1: Finite Automata"
   lectures:

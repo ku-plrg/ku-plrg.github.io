@@ -61,7 +61,7 @@
       <td style="text-align: center;">
         {%- assign _homework = _lecture.homework -%}
         {%- if _homework -%}
-        <a href="{{ _homework.pdf }}">{{ _homework.name }}</a>
+        <a href="{{ _homework.link }}">{{ _homework.name }}</a>
         (due: {{ _homework.date }})
         {%- endif -%}
       </td>
