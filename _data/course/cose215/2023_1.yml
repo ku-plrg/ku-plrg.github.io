@@ -25,8 +25,9 @@
   - index: 3
     date: 03/15
     title: Deterministic Finite Automata (DFA)
-    # pdf: ./slides/lec3.pdf
-    # handout: ./slides/lec3-handout.pdf
+    pdf: ./slides/lec3.pdf
+    handout: ./slides/lec3-handout.pdf
+    code: ./code/DFA.scala
   - index: 4
     date: 03/20
     title: Nondeterministic Finite Automata (NFA)

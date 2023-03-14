@@ -6,6 +6,7 @@
       <th>Date</th>
       <th>Title</th>
       <th>PDF<br>(handout)</th>
+      <th>Code</th>
       <th>Homework</th>
     </tr>
   </thead>
@@ -14,7 +15,7 @@
   {%- if _name -%}
   <thead>
     <tr>
-      <th colspan="5">{{ _name }}</th>
+      <th colspan="6">{{ _name }}</th>
     </tr>
   </thead>
   {%- endif -%}
@@ -29,7 +30,7 @@
       <td style="text-align: center;">
         <strong>{{ _lecture.exam }}</strong>
       </td>
-      <td style="text-align: center;" colspan="2">
+      <td style="text-align: center;" colspan="3">
         <strong>{{ _lecture.coverage }}</strong>
       </td>
       {%- else -%}
@@ -59,9 +60,15 @@
         {%- endif -%}
       </td>
       <td style="text-align: center;">
+        {%- assign _code = _lecture.code -%}
+        {%- if _code -%}
+        <a href="{{ _code }}">code</a><br>
+        {%- endif -%}
+      </td>
+      <td style="text-align: center;">
         {%- assign _homework = _lecture.homework -%}
         {%- if _homework -%}
-        <a href="{{ _homework.link }}">{{ _homework.name }}</a>
+        <a href="{{ _homework.link }}">{{ _homework.name }}</a><br>
         (due: {{ _homework.date }})
         {%- endif -%}
       </td>
