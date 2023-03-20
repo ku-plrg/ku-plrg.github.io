@@ -57,7 +57,8 @@ Please see [Publications](/publications).
 - 2024 -
   [ICSE](https://conf.researchr.org/home/icse-2024)
 - 2023 -
-  [OOPSLA (ERC)](https://2023.splashcon.org/track/splash-2023-oopsla)
+  [OOPSLA (ERC)](https://2023.splashcon.org/track/splash-2023-oopsla) /
+  [APLAS](https://conf.researchr.org/home/aplas-2023)
 - 2022 -
   [OOPSLA (ERC)](https://2023.splashcon.org/track/splash-2022-oopsla) /
   [APLAS](https://conf.researchr.org/home/aplas-2022)
