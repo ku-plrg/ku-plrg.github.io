@@ -37,8 +37,9 @@
   - index: 5
     date: 03/22
     title: ε-Nondeterministic Finite Automata (ε-NFA)
-    # pdf: ./slides/lec5.pdf
-    # handout: ./slides/lec5-handout.pdf
+    pdf: ./slides/lec5.pdf
+    handout: ./slides/lec5-handout.pdf
+    code: ./code/ENFA.scala
   - index: 6
     date: 03/27
     title: Regular Expressions and Languages

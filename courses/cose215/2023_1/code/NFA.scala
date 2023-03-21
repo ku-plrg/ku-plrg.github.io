@@ -7,7 +7,6 @@
  *
  *   scala> :load NFA.scala
  *
- *
  * 3. Do whatever you want in the REPL.
  */
 
