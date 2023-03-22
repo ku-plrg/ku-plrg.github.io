@@ -26,7 +26,7 @@ case class ENFA(
 // An example of epsilon-NFA
 val enfa: ENFA = ENFA(
   states = Set(0, 1, 2),
-  symbols = Set('0', '1'),
+  symbols = Set('a', 'b'),
   trans = Map(
     (0, Some('a')) -> Set(1),(1, Some('a')) -> Set(), (2, Some('a')) -> Set(),
     (0, Some('b')) -> Set(), (1, Some('b')) -> Set(2),(2, Some('b')) -> Set(),
@@ -53,12 +53,19 @@ val enfa2: ENFA = ENFA(
   finalStates = Set(3),
 )
 
+// The WRONG definitions of epsilon-closures because of infinite loop
+def wrongEClose(enfa: ENFA)(q: State): Set[State] =
+  val basis = Set(q) // Basis Case
+  val induc = enfa.trans(q, None) // Induction Case
+    .flatMap(q => eclose(enfa)(q))
+  basis ++ induc
+
 // The definitions of epsilon-closures
 def eclose(enfa: ENFA)(q: State): Set[State] =
-  def aux(nexts: List[State], visited: Set[State]): Set[State] = nexts match
+  def aux(targets: List[State], visited: Set[State]): Set[State] = targets match
     case Nil => visited
-    case p :: nexts => aux(
-      nexts   = (enfa.trans((p, None)) -- visited).toList ++ nexts,
+    case p :: targets => aux(
+      targets = (enfa.trans((p, None)) -- visited).toList ++ targets,
       visited = visited + p,
     )
   aux(List(q), Set())
