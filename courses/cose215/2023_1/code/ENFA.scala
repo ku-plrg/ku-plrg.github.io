@@ -57,7 +57,7 @@ val enfa2: ENFA = ENFA(
 def wrongEClose(enfa: ENFA)(q: State): Set[State] =
   val basis = Set(q) // Basis Case
   val induc = enfa.trans(q, None) // Induction Case
-    .flatMap(q => eclose(enfa)(q))
+    .flatMap(q => wrongEClose(enfa)(q))
   basis ++ induc
 
 // The definitions of epsilon-closures
