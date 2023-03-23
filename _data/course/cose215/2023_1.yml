@@ -18,7 +18,7 @@
     homework:
       name: hw01
       link: https://github.com/ku-plrg-classroom/docs/tree/main/scala-tutorial
-      date: 03/21
+      date: 03/23
 
 - name: "Part 1: Finite Automata"
   lectures:
