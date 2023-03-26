@@ -68,8 +68,10 @@
       <td style="text-align: center;">
         {%- assign _homework = _lecture.homework -%}
         {%- if _homework -%}
-        <a href="{{ _homework.link }}">{{ _homework.name }}</a><br>
-        (due: {{ _homework.date }})
+        <a href="{{ _homework.link }}">{{ _homework.name }}</a>
+        {%- if _homework.date -%}
+        <br>(due: {{ _homework.date }})
+        {%- endif -%}
         {%- endif -%}
       </td>
       {%- endif -%}

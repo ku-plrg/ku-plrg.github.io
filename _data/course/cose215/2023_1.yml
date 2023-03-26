@@ -40,6 +40,9 @@
     pdf: ./slides/lec5.pdf
     handout: ./slides/lec5-handout.pdf
     code: ./code/ENFA.scala
+    homework:
+      name: ex01
+      link: https://github.com/ku-plrg-classroom/docs/tree/main/fa-examples
   - index: 6
     date: 03/27
     title: Regular Expressions and Languages
