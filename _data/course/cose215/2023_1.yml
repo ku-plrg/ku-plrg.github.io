@@ -48,6 +48,7 @@
     title: Regular Expressions and Languages
     pdf: ./slides/lec6.pdf
     handout: ./slides/lec6-handout.pdf
+    code: ./code/RE.scala
   - index: 7
     date: 03/29
     title: Equivalence of Regular Expressions and Finite Automata
