@@ -54,6 +54,7 @@
     title: Equivalence of Regular Expressions and Finite Automata
     pdf: ./slides/lec7.pdf
     handout: ./slides/lec7-handout.pdf
+    code: ./code/EquivREAndFA.scala
   - index: 8
     date: 04/03
     title: Properties of Regular Languages
