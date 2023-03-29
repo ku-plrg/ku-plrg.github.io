@@ -50,7 +50,7 @@ type Transition = (State, Option[Symbol], State)
 // A simplified epsilon-NFA
 case class SimpleENFA(from: State, trans: Set[Transition], to: State)
 
-// Convert a regular expression to a simple epsilon-NFA with an initial state
+// Convert a regular expression to a simplified epsilon-NFA with initial state
 def RE2SimpleENFA(re: RE, i: State): SimpleENFA = re match
   case REEmpty() => SimpleENFA(
     from  = i,
@@ -84,7 +84,7 @@ def RE2SimpleENFA(re: RE, i: State): SimpleENFA = re match
   case REStar(re) => ???
   case REParen(re) => ???
 
-// Convert a simple epsilon-NFA to an epsilon-NFA
+// Convert a simplified epsilon-NFA to an epsilon-NFA
 def SimpleENFA2ENFA(senfa: SimpleENFA): ENFA =
   val SimpleENFA(from, trans, to) = senfa
   val states = (from to to).toSet
