@@ -1,3 +1,18 @@
+2023:
+
+  - title: Feature-Sensitive Coverage for Conformance Testing of Programming
+      Language Implementations
+    authors:
+      - Jihyeok Park
+      - Dongjun Youn
+      - Kanguk Lee
+      - Sukyoung Ryu
+    target:
+      name: ACM SIGLAN Conference on Programming Language Design and
+        Implementation
+      abbr: PLDI 2023
+      url: https://pldi23.sigplan.org/
+
 2022:
 
   - title: Automatically Deriving JavaScript Static Analyzers from
