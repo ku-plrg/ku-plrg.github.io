@@ -57,7 +57,7 @@
     code: ./code/EquivREAndFA.scala
   - index: 8
     date: 04/03
-    title: Properties of Regular Languages
+    title: Closure Properties of Regular Languages
     # pdf: ./slides/lec8.pdf
     # handout: ./slides/lec8-handout.pdf
   - index: 9
