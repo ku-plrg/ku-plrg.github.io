@@ -26,7 +26,7 @@ framework that extracts a mechanized specification from a given version of
 [ECMAScript specification (ECMA-262)](https://tc39.es/ecma262/) and
 automatically generates language-based tools.
 
-[[Curriculum Vitae (CV)](/assets/data/cv.pdf)]
+[[Curriculum Vitae (CV)](/assets/data/cv/cv.pdf)]
 
 
 ## Educational Background
