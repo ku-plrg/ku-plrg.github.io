@@ -22,8 +22,8 @@ Jungyeom Kim:
   name        : Jungyeom Kim
   url         : /members/jungyeom.kim
   ko-name     : 김준겸
-  avatar      : #
-  image       : #
+  avatar      : /assets/images/avatars/jungyeom.kim.jpg
+  image       : /assets/images/members/jungyeom.kim.jpg
   position    : Undergraduate Student
   email       : kimjg1119@korea.ac.kr
   scholar     : #
@@ -31,7 +31,7 @@ Jungyeom Kim:
   googleplus  : #
   telegram    : #
   meidum      : #
-  github      : #
+  github      : kimjg1119
   npm         : #
   youtube     : #
   twitter     : #
