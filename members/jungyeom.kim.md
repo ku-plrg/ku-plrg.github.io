@@ -10,7 +10,7 @@ align="right" style="margin-left: 1em" width="150em">
 
 I'm Jungyeom Kim from Korea University undergraduate. Currently, I am majoring in computer science and mathematics. In addition to the programming language, there is a lot of interest in algorithms, data structures, problem solving, and competetive programming. There is also much interest in applying algebra to programming languages or cryptography.
 
-[[Curriculum Vitae (CV)](/assets/data/cv/CV_jungyeomkim.pdf)]
+[[Curriculum Vitae (CV)](/assets/data/cv/cv_jungyeom_kim.pdf)]
 
 ## Educational Background
 - 2020.03 ~ Present - B.S. of Computer Science and Mathematics, Korea University
