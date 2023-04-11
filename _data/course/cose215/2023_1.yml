@@ -80,8 +80,9 @@
   - index: 11
     date: 04/12
     title: Context-Free Grammars (CFGs) and Languages (CFLs)
-    # pdf: ./slides/lec11.pdf
-    # handout: ./slides/lec11-handout.pdf
+    pdf: ./slides/lec11.pdf
+    handout: ./slides/lec11-handout.pdf
+    code: ./code/CFG.scala
   - index: 12
     date: 04/17
     title: Examples of Context-Free Grammars
