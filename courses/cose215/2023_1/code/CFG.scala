@@ -32,6 +32,6 @@ val cfg1: CFG = CFG(
     "S" -> List("A"),
     "S" -> List("B"),
     "A" -> List('(', "S", ')'),
-    "B" -> List("S", 'b'),
+    "B" -> List("S", "S"),
   ),
 )
