@@ -28,7 +28,11 @@
         <strong>{{ _lecture.date }}</strong>
       </td>
       <td style="text-align: center;">
+        {%- if _lecture.pdf -%}
+        <a href="{{ _lecture.pdf }}"><strong>{{ _lecture.exam }}</strong></a>
+        {%- else -%}
         <strong>{{ _lecture.exam }}</strong>
+        {%- endif -%}
       </td>
       <td style="text-align: center;" colspan="3">
         <strong>{{ _lecture.coverage }}</strong>
