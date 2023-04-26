@@ -16,9 +16,6 @@ type Symbol = Char
 type Word = String
 type Alphabet = Char
 
-// A helper function to extract first symbol and rest of word
-object `<|` { def unapply(w: Word) = w.headOption.map((_, w.drop(1))) }
-
 // The definition of PDA
 case class PDA(
   states: Set[State],
@@ -33,12 +30,12 @@ case class PDA(
 // An example of PDA
 val pda1: PDA = PDA(
   states      = Set(0, 1, 2),         symbols       = Set('a', 'b'),
-  alphabets   = Set('Z', 'A'),        trans         = Map(
-    (0, Some('a'), 'Z') -> Set((0, List('A', 'Z'))),
-    (0, Some('a'), 'A') -> Set((0, List('A', 'A'))),
+  alphabets   = Set('Z', 'X'),        trans         = Map(
+    (0, Some('a'), 'Z') -> Set((0, List('X', 'Z'))),
+    (0, Some('a'), 'X') -> Set((0, List('X', 'X'))),
     (0, None,      'Z') -> Set((1, List('Z'))),
-    (0, None,      'A') -> Set((1, List('A'))),
-    (1, Some('b'), 'A') -> Set((1, List())),
+    (0, None,      'X') -> Set((1, List('X'))),
+    (1, Some('b'), 'X') -> Set((1, List())),
     (1, None,      'Z') -> Set((2, List('Z'))),
   ).withDefaultValue(Set()),
   initState   = 0,                    initAlphabet  = 'Z',
@@ -48,9 +45,11 @@ val pda1: PDA = PDA(
 // The type definition of configurations
 type Config = (State, Word, List[Alphabet])
 
+// A helper function to extract first symbol and rest of word
+object `<|` { def unapply(w: Word) = w.headOption.map((_, w.drop(1))) }
+
 // Configurations reachable from the initial configuration by one-step moves
-def reachableConfig(pda: PDA)(word: Word): Set[Config] =
-  val init: Config = (pda.initState, word, List(pda.initAlphabet))
+def reachableConfig(pda: PDA)(init: Config): Set[Config] =
   def aux(
     targets: List[Config],
     visited: Set[Config]
@@ -96,7 +95,8 @@ def eclose(pda: PDA)(
 
 // Acceptance by final states
 def acceptByFinalState(pda: PDA)(word: Word): Boolean =
-  reachableConfig(pda)(word).exists(config => {
+  val init: Config = (pda.initState, word, List(pda.initAlphabet))
+  reachableConfig(pda)(init).exists(config => {
     val (q, w, xs) = config
     w.isEmpty && pda.finalStates.contains(q)
   })
@@ -108,7 +108,8 @@ acceptByEmptyStack(pda1)("abab") // false
 
 // Acceptance by empty stacks
 def acceptByEmptyStack(pda: PDA)(word: Word): Boolean =
-  reachableConfig(pda)(word).exists(config => {
+  val init: Config = (pda.initState, word, List(pda.initAlphabet))
+  reachableConfig(pda)(init).exists(config => {
     val (q, w, xs) = config
     w.isEmpty && xs.isEmpty
   })
@@ -116,20 +117,19 @@ def acceptByEmptyStack(pda: PDA)(word: Word): Boolean =
 // Another example of PDA
 val pda2: PDA = PDA(
   states      = Set(0, 1, 2),         symbols       = Set('a', 'b'),
-  alphabets   = Set('Z', 'A'),        trans         = Map(
-    (0, Some('a'), 'Z') -> Set((0, List('A', 'Z'))),
-    (0, Some('a'), 'A') -> Set((0, List('A', 'A'))),
+  alphabets   = Set('Z', 'X'),        trans         = Map(
+    (0, Some('a'), 'Z') -> Set((0, List('X', 'Z'))),
+    (0, Some('a'), 'X') -> Set((0, List('X', 'X'))),
     (0, None,      'Z') -> Set((1, List('Z'))),
-    (0, None,      'A') -> Set((1, List('A'))),
-    (1, Some('b'), 'A') -> Set((1, List())),
+    (0, None,      'X') -> Set((1, List('X'))),
+    (1, Some('b'), 'X') -> Set((1, List())),
     (1, None,      'Z') -> Set((2, List())),
   ).withDefaultValue(Set()),
   initState   = 0,                    initAlphabet  = 'Z',
   finalStates = Set(),
 )
 
-val _ =
-  acceptByEmptyStack(pda2)("ab")   // true
-  acceptByEmptyStack(pda2)("aba")  // false
-  acceptByEmptyStack(pda2)("aabb") // true
-  acceptByEmptyStack(pda2)("abab") // false
+acceptByEmptyStack(pda2)("ab")   // true
+acceptByEmptyStack(pda2)("aba")  // false
+acceptByEmptyStack(pda2)("aabb") // true
+acceptByEmptyStack(pda2)("abab") // false
