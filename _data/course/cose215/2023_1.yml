@@ -106,8 +106,8 @@
   - index: 15
     date: 05/01
     title: Examples of Pushdown Automata
-    # pdf: ./slides/lec15.pdf
-    # handout: ./slides/lec15-handout.pdf
+    pdf: ./slides/lec15.pdf
+    handout: ./slides/lec15-handout.pdf
   - index: 16
     date: 05/03
     title: Equivalence of Pushdown Automata and Context-Free Grammars
