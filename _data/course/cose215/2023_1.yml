@@ -116,8 +116,8 @@
   - index: 17
     date: 05/08
     title: Deterministic Pushdown Automata (DPDA)
-    # pdf: ./slides/lec17.pdf
-    # handout: ./slides/lec17-handout.pdf
+    pdf: ./slides/lec17.pdf
+    handout: ./slides/lec17-handout.pdf
   - index: 18
     date: 05/10
     title: Normal Forms of Context-Free Grammars
