@@ -121,8 +121,8 @@
   - index: 18
     date: 05/10
     title: Normal Forms of Context-Free Grammars
-    # pdf: ./slides/lec18.pdf
-    # handout: ./slides/lec18-handout.pdf
+    pdf: ./slides/lec18.pdf
+    handout: ./slides/lec18-handout.pdf
   - index: 19
     date: 05/15
     title: Properties of Context-Free Languages
