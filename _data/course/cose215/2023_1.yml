@@ -126,8 +126,8 @@
   - index: 19
     date: 05/15
     title: Properties of Context-Free Languages
-    # pdf: ./slides/lec19.pdf
-    # handout: ./slides/lec19-handout.pdf
+    pdf: ./slides/lec19.pdf
+    handout: ./slides/lec19-handout.pdf
   - index: 20
     date: 05/17
     title: The Pumping Lemma for Context-Free Languages
