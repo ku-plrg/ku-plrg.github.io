@@ -125,7 +125,7 @@
     handout: ./slides/lec18-handout.pdf
   - index: 19
     date: 05/15
-    title: Properties of Context-Free Languages
+    title: Closure Properties of Context-Free Languages
     pdf: ./slides/lec19.pdf
     handout: ./slides/lec19-handout.pdf
   - index: 20
