@@ -133,6 +133,10 @@
     title: The Pumping Lemma for Context-Free Languages
     pdf: ./slides/lec20.pdf
     handout: ./slides/lec20-handout.pdf
+    homework:
+      name: hw03
+      link: https://github.com/ku-plrg-classroom/docs/tree/main/equiv-pda-cfg
+      date: 05/30
 
 - name: "Part 3: Turing Machines / Computability"
   lectures:
