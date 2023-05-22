@@ -46,25 +46,25 @@ val tm1: TM = TM(
 // The type definitions of words, tapes, and configurations
 type Word = String
 type Tape = String
-case class Config(state: State, prev: Tape, cur: TapeSymbol, next: Tape)
+case class Config(prev: Tape, state: State, cur: TapeSymbol, next: Tape)
 
 // A helper function to extract first symbol and rest of word
 object `<|` { def unapply(w: Word) = w.headOption.map((_, w.drop(1))) }
 
 // A one-step move in a Turing machine
 def move(tm: TM)(config: Config): Option[Config] =
-  val Config(curSt, prev, x, next) = config
+  val Config(prev, curSt, x, next) = config
   val B = tm.blankSymbol
   tm.trans.get(curSt, x).map {
     case (nextSt, y, L) => Config(
-      state = nextSt,
       prev = prev.dropRight(1),
+      state = nextSt,
       cur = prev.lastOption.getOrElse(B),
       next = if (next == "" && y == B) "" else y + next,
     )
     case (nextSt, y, R) => Config(
-      state = nextSt,
       prev = if (prev == "" && y == B) "" else prev + y,
+      state = nextSt,
       cur = next.headOption.getOrElse(B),
       next = next.drop(1),
     )
@@ -72,8 +72,8 @@ def move(tm: TM)(config: Config): Option[Config] =
 
 // The initial configuration of a Turing machine
 def initConfig(tm: TM)(word: Word): Config = word match
-  case a <| x => Config(tm.initState, "", a, x)
-  case _      => Config(tm.initState, "", tm.blankSymbol, "")
+  case a <| x => Config("", tm.initState, a, x)
+  case _      => Config("", tm.initState, tm.blankSymbol, "")
 
 // The acceptance of a word by a Turing machine
 def accept(tm: TM)(word: Word): Boolean =
@@ -94,9 +94,10 @@ def moves(tm: TM)(config: Config): Config = move(tm)(config) match
 
 // A computation by a Turing machine
 def compute(tm: TM)(w: Word): Option[Word] =
-  val Config(state, prev, x, next) = moves(tm)(initConfig(tm)(w))
-  if (!tm.finalStates.contains(state) || prev != "") None
-  else Some(x + next)
+  val Config(prev, state, cur, next) = moves(tm)(initConfig(tm)(w))
+  if (prev != "" || !tm.finalStates.contains(state)) None
+  else if (!next.forall(tm.symbols.contains)) None
+  else Some(if (cur == tm.blankSymbol) next else cur + next)
 
 // Examples of computations by Turing machines
 compute(tm1)("0110")    // Some("1001")
