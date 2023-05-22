@@ -10,7 +10,7 @@
  * 3. Do whatever you want in the REPL.
  */
 
-// The type definitions of states, symbols, tape symbols, and L/R moves
+// The type definitions of states, symbols, tape symbols, and tape head moves
 type State = Int
 type Symbol = Char
 type TapeSymbol = Char
@@ -51,6 +51,9 @@ case class Config(prev: Tape, state: State, cur: TapeSymbol, next: Tape)
 // A helper function to extract first symbol and rest of word
 object `<|` { def unapply(w: Word) = w.headOption.map((_, w.drop(1))) }
 
+// A helper function to check whether a state is final
+def isFinal(tm: TM)(state: State): Boolean = tm.finalStates.contains(state)
+
 // A one-step move in a Turing machine
 def move(tm: TM)(config: Config): Option[Config] =
   val Config(prev, curSt, x, next) = config
@@ -75,29 +78,26 @@ def initConfig(tm: TM)(word: Word): Config = word match
   case a <| x => Config("", tm.initState, a, x)
   case _      => Config("", tm.initState, tm.blankSymbol, "")
 
+// A configuration at which a Turing machine halts on a word or a configuration
+def haltsAt(tm: TM)(word: Word): Config = haltsAt(tm)(initConfig(tm)(word))
+def haltsAt(tm: TM)(config: Config): Config = move(tm)(config) match
+  case None             => config
+  case Some(nextConfig) => haltsAt(tm)(nextConfig)
+
 // The acceptance of a word by a Turing machine
-def accept(tm: TM)(word: Word): Boolean =
-  def aux(config: Config): Boolean =
-    tm.finalStates.contains(config.state) || (move(tm)(config) match
-      case None             => false
-      case Some(nextConfig) => aux(nextConfig)
-    )
-  aux(initConfig(tm)(word))
+def accept(tm: TM)(word: Word): Boolean = isFinal(tm)(haltsAt(tm)(word).state)
 
 // An example acceptance of a word "0110"
 accept(tm1)("0110") // true
 
-// A multiple moves in a Turing machine
-def moves(tm: TM)(config: Config): Config = move(tm)(config) match
-  case None             => config
-  case Some(nextConfig) => moves(tm)(nextConfig)
-
 // A computation by a Turing machine
-def compute(tm: TM)(w: Word): Option[Word] =
-  val Config(prev, state, cur, next) = moves(tm)(initConfig(tm)(w))
-  if (prev != "" || !tm.finalStates.contains(state)) None
-  else if (!next.forall(tm.symbols.contains)) None
-  else Some(if (cur == tm.blankSymbol) next else cur + next)
+def compute(tm: TM)(word: Word): Option[Word] =
+  val Config(prev, state, cur, next) = haltsAt(tm)(word)
+  if      (prev != "")                          None
+  else if (!isFinal(tm)(state))                 None
+  else if (!next.forall(tm.symbols.contains))   None
+  else if (cur == tm.blankSymbol && next == "") Some("")
+  else                                          Some(cur + next)
 
 // Examples of computations by Turing machines
 compute(tm1)("0110")    // Some("1001")
