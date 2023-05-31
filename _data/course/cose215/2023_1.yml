@@ -159,8 +159,8 @@
   - index: 24
     date: 05/31
     title: The Origin of Computer Science
-    # pdf: ./slides/lec24.pdf
-    # handout: ./slides/lec24-handout.pdf
+    pdf: ./slides/lec24.pdf
+    handout: ./slides/lec24-handout.pdf
   - index: 25
     date: 06/05
     title: Undecidability
