@@ -13,7 +13,11 @@
       abbr: PLDI 2023
       url: https://pldi23.sigplan.org/
     materials:
-      preprint: /assets/data/publication/pldi23-park-jestfs.pdf
+      link: https://doi.org/10.1145/3591240
+      pdf: /assets/data/publication/pldi23-park-jestfs.pdf
+      # slides: /assets/data/slides/2023/pldi23-jestfs-slides.pdf
+      repo: https://github.com/jestfs/jestfs/
+      bib: javascript:show('pldi23-park-jestfs.bib')
 
 2022:
 
@@ -34,7 +38,7 @@
       slides: /assets/data/slides/2022/fse22-jsaver-slides.pdf
       video: https://www.youtube.com/watch?v=zEsanPIFrWs
       repo: https://github.com/kaist-plrg/jsaver
-      bib: javascript:show('csur21-park-psa.bib')
+      bib: javascript:show('fse22-park-jsaver.bib')
 
   - title: Filling the Gap between the JavaScript Language Specification and
       Tools using the JISET Family
