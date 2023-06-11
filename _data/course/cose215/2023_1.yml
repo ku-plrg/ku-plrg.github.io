@@ -174,8 +174,8 @@
   - index: 27
     date: 06/12
     title: Course Review
-    pdf: ./slides/lec26.pdf
-    handout: ./slides/lec26-handout.pdf
+    pdf: ./slides/lec27.pdf
+    handout: ./slides/lec27-handout.pdf
   - exam: Final Exam
     date: 06/14
     coverage: Lectures 14 - 26
