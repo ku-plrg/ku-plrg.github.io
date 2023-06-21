@@ -15,7 +15,7 @@
     materials:
       link: https://doi.org/10.1145/3591240
       pdf: /assets/data/publication/pldi23-park-jestfs.pdf
-      # slides: /assets/data/slides/2023/pldi23-jestfs-slides.pdf
+      slides: /assets/data/slides/2023/pldi23-jestfs-slides.pdf
       repo: https://github.com/jestfs/jestfs/
       bib: javascript:show('pldi23-park-jestfs.bib')
 
