@@ -1,7 +1,7 @@
 ---
 layout: course
 ---
-## COSE212: Programming Language, 2023 Fall
+## COSE212: Programming Languages, 2023 Fall
 
 ### Course Information
 
@@ -18,7 +18,7 @@ layout: course
 ### Course Materials
 
 - **Self-contained lecture notes are provided.**
-- Reference: TBD
+- Reference: **TBD**
 
 ### Installation of Scala and sbt
 
@@ -38,6 +38,8 @@ Please download and install them using the following links:
 
 
 ### Schedule
+
+**TBD**
 
 <!-- load schedule with PDF files -->
 <!-- TODO {%- include schedule.html data=site.data.course.cose212.2023_2 -%} -->
