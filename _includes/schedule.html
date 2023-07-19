@@ -1,4 +1,6 @@
 {%- assign _data = include.data -%}
+{%- assign _parts = _data.parts -%}
+{%- assign _options = _data.options -%}
 <table>
   <thead>
     <tr>
@@ -6,11 +8,13 @@
       <th>Date</th>
       <th>Title</th>
       <th>PDF<br>(handout)</th>
+      {%- if _options.code -%}
       <th>Code</th>
+      {%- endif -%}
       <th>Homework</th>
     </tr>
   </thead>
-  {%- for _part in _data -%}
+  {%- for _part in _data.parts -%}
   {%- assign _name = _part.name -%}
   {%- if _name -%}
   <thead>
@@ -63,12 +67,14 @@
         </div>
         {%- endif -%}
       </td>
+      {%- if _options.code -%}
       <td style="text-align: center;">
         {%- assign _code = _lecture.code -%}
         {%- if _code -%}
         <a href="{{ _code }}">code</a><br>
         {%- endif -%}
       </td>
+      {%- endif -%}
       <td style="text-align: center;">
         {%- assign _homework = _lecture.homework -%}
         {%- if _homework -%}

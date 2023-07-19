@@ -18,7 +18,12 @@ layout: course
 ### Course Materials
 
 - **Self-contained lecture notes are provided.**
-- Reference: **TBD**
+- Reference:
+  - [**Introduction to Programming Languages**](https://hjaem.info/itpl)
+    by [Jaemin Hong](https://hjaem.info/)
+    and [Sukyoung Ryu](https://plrg.kaist.ac.kr/ryu)
+  - [**Types and Programming Languages**](https://www.cis.upenn.edu/~bcpierce/tapl/),
+    [Benjamin C. Pierce](https://www.cis.upenn.edu/~bcpierce/), The MIT Press
 
 ### Installation of Scala and sbt
 
@@ -39,7 +44,5 @@ Please download and install them using the following links:
 
 ### Schedule
 
-**TBD**
-
 <!-- load schedule with PDF files -->
-<!-- TODO {%- include schedule.html data=site.data.course.cose212.2023_2 -%} -->
+{%- include schedule.html data=site.data.course.cose212.2023_2 -%}
