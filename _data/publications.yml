@@ -1,5 +1,20 @@
 2023:
 
+  - title: JavaScript Language Design and Implementation in Tandem
+    authors:
+      - Sukyoung Ryu
+      - Jihyeok Park
+    target:
+      name: Communications of the ACM
+      detail: To Appear # TODO
+      abbr: CACM
+      url: https://m-cacm.acm.org/
+    materials:
+      # link: TODO
+      # pdf: /assets/data/publication/cacm23-ryu-esmeta.pdf
+      repo: https://github.com/es-meta/esmeta
+      # bib: javascript:show('cacm-esmeta.bib')
+
   - title: Feature-Sensitive Coverage for Conformance Testing of Programming
       Language Implementations
     authors:
@@ -71,7 +86,7 @@
     target:
       abbr: CSUR
       name: ACM Computing Surveys
-      url: https://dl.acm.org/toc/csur/2022/54/7
+      url: https://dl.acm.org/journal/csur
       detail: Volume 54, Issue 7, Article No. 149, pp 1–37
     materials:
       link: https://doi.org/10.1145/3464457
