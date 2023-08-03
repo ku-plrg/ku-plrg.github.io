@@ -37,7 +37,8 @@ test synthesizers, specification type checkers, and program static analyzers.
 ![ESMeta](/assets/images/research/esmeta.jpg)
 
 - **Papers**:
-    [**PLDI 2023**]
+    [**CACM**]
+    [**[PLDI 2023](/assets/data/publication/pldi23-park-jestfs.pdf)**]
     [**[ESEC/FSE 2022](/assets/data/publication/fse22-park-jsaver.pdf)**]
     [**[ASE 2021](/assets/data/publication/ase21-park-jstar.pdf)**]
     [**[ICSE 2021](/assets/data/publication/icse21-park-jest.pdf)**]
