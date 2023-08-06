@@ -23,7 +23,7 @@
       - Kanguk Lee
       - Sukyoung Ryu
     target:
-      name: ACM SIGLAN Conference on Programming Language Design and
+      name: ACM SIGPLAN Conference on Programming Language Design and
         Implementation
       abbr: PLDI 2023
       url: https://pldi23.sigplan.org/
@@ -63,7 +63,7 @@
       - Seungmin An
     target:
       abbr: PLDI 2022
-      name: ACM SIGLAN Conference on Programming Language Design and
+      name: ACM SIGPLAN Conference on Programming Language Design and
         Implementation
       url: https://pldi22.sigplan.org/
       detail: Tutorial
