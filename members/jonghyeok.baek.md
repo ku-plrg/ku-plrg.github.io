@@ -14,4 +14,6 @@ I'm an undergraduate student in Korea University. I'm currently interested in pr
 - 2018.03 ~ Present - B.S. of Computer Science and Engineering, Korea University
 
 ## Contact Information
-Please contact at jonghyeok613 [at] gmail.com or jonghyeok613 [at] korea.ac.kr.
+{% assign author=site.data.authors["Jonghyeok Baek"] %}
+<div>{% include author-links.html author=author %}</div>
+
