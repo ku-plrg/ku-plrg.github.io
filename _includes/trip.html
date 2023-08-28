@@ -17,6 +17,35 @@
         </a>
       </li>
       {%- endif -%}
+
+      {%- if _trip.talk -%}
+      <strong>(Talk:&nbsp;</strong>
+      {%- for _talk in _trip.talk -%}
+      <li>
+        <a class="button button--circle pdf-button" itemprop="pdf"
+          href="{{ _talk.pdf }}" target="_blank">
+          <i class="fas fa-file-pdf"></i>
+        </a>
+      </li>
+      {%- endfor -%}
+      <strong>)</strong>
+      {%- endif -%}
+
+      {%- if _trip.poster -%}
+      <strong>(Poster:&nbsp;</strong>
+      {%- for _poster in _trip.poster -%}
+      <li>
+        <a class="button button--circle pdf-button" itemprop="pdf"
+          href="{{ _poster.pdf }}" target="_blank">
+          <i class="fas fa-file-pdf"></i>
+        </a>
+      </li>
+      {%- endfor -%}
+      <strong>)</strong>
+      {%- endif -%}
+
+      {%- if _trip.report -%}
+      <strong>(Report: &nbsp;</strong>
       {%- for _report in _trip.report -%}
       <li>
         <a class="button button--circle pdf-button" itemprop="pdf"
@@ -25,6 +54,8 @@
         </a>
       </li>
       {%- endfor -%}
+      <strong>)</strong>
+      {%- endif -%}
     </ul>
   </div>
 </li>

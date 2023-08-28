@@ -6,6 +6,10 @@
     place-url : https://sigpl.or.kr/school/2023s/
     location  : 춘천, 대한민국
     photos    : 9t685k7ZTf74gdrz8
+    talk      :
+      - pdf   : /assets/data/slides/2023/sigpl23-summer-park.pdf
+    poster    :
+      - pdf   : /assets/data/poster/2023/sigpl23-summer-advty-poster.pdf
+      - pdf   : /assets/data/poster/2023/sigpl23-summer-specsyn-poster.pdf
     # report    :
-    #   - author: Jihyeok Park
-    #     pdf   : /assets/data/reports/2023/sigpl23-summer-park.pdf
+    #   - pdf   : /assets/data/reports/2023/sigpl23-summer-park.pdf
