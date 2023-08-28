@@ -29,7 +29,12 @@
       .dblp-button {
         @include clickable($text-color-1, $dblp-color);
       }
-      .googlepluse-button {
+      .google-photos-button {
+        @include plain() { background-color: rgba(#000, .1); }
+        @include hover() { background-color: rgba(#000, .3); }
+        @include focus() { background-color: rgba(#000, .3); }
+      }
+      .google-plus-button {
         @include clickable($text-color-1, $google-plus-color);
       }
       .telegram-button {

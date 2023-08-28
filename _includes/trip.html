@@ -1,0 +1,30 @@
+{%- assign _trip = include.trip -%}
+<li>
+  {{ _trip.date-from }} - {{ _trip.date-to }}
+  {%- if _trip.place-url -%}
+  , <strong><a href="{{ _trip.place-url }}">{{ _trip.place }}</a></strong>
+  {%- else -%}
+  , <strong>{{ _trip.place }}</strong>
+  {%- endif -%}
+  , {{ _trip.location }}
+  <div class="trip-links">
+    <ul class="menu menu--nowrap menu--inline">
+      {%- if _trip.photos -%}
+      <li>
+        <a class="button button--circle google-photos-button" itemprop="sameAs"
+          href="https://photos.app.goo.gl/{{ _trip.photos }}" target="_blank">
+          <div class="icon">{%- include svg/icon/social/google-photos.svg -%}</div>
+        </a>
+      </li>
+      {%- endif -%}
+      {%- for _report in _trip.report -%}
+      <li>
+        <a class="button button--circle pdf-button" itemprop="pdf"
+          href="{{ _report.pdf }}" target="_blank">
+          <i class="fas fa-file-pdf"></i>
+        </a>
+      </li>
+      {%- endfor -%}
+    </ul>
+  </div>
+</li>
