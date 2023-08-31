@@ -10,7 +10,7 @@ layout: course
     [Science Library Bldg](https://goo.gl/maps/dJTtjpZEHCC4Xv5t5)
     ([과학도서관](https://naver.me/5Y1oxNnH))
   - **Email:** [jihyeok_park@korea.ac.kr](mailto:jihyeok_park@korea.ac.kr)
-- **Lecture:** 13:30--14:15 Mondays and Wednesdays @ 604,
+- **Lecture:** 13:30--14:45 Mondays and Wednesdays @ 604,
   [Woojung Hall of Informatics](https://goo.gl/maps/5ybbergVhsEvFSTK8)
   ([우정정보관](https://naver.me/G5rz0209))
 - **Office hours:** 14:00--16:00 Tuesdays (by appointment)
