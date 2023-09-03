@@ -55,6 +55,7 @@ Please see [Publications](/publications).
 ### Program Committee (PC) Members
 
 - 2024 -
+  [SAC (PL Track)](https://www.sigapp.org/sac/sac2024) /
   [ICSE](https://conf.researchr.org/home/icse-2024)
 - 2023 -
   [OOPSLA (ERC)](https://2023.splashcon.org/track/splash-2023-oopsla) /
