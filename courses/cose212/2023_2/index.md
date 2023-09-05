@@ -10,6 +10,7 @@ layout: course
     [Science Library Bldg](https://goo.gl/maps/dJTtjpZEHCC4Xv5t5)
     ([과학도서관](https://naver.me/5Y1oxNnH))
   - **Email:** [jihyeok_park@korea.ac.kr](mailto:jihyeok_park@korea.ac.kr)
+- **Teaching Assistant:** [Jonghyeok Baek (백종혁)](/members/jonghyeok.baek)
 - **Lecture:** 13:30--14:45 Mondays and Wednesdays @ 535,
   [Asan Science Building](https://goo.gl/maps/qzSnHwXsjsqE37357)
   ([아산이학관](https://naver.me/5aVSr1Qy))
