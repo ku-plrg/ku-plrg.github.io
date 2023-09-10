@@ -22,12 +22,12 @@ parts:
     lectures:
     - index: 2
       date: 09/11
-      title: Syntax
-      # pdf: ./slides/lec2.pdf
-      # handout: ./slides/lec2-handout.pdf
+      title: Syntax and Semantics (1)
+      pdf: ./slides/lec2.pdf
+      handout: ./slides/lec2-handout.pdf
     - index: 3
       date: 09/13
-      title: Semantics
+      title: Syntax and Semantics (2)
       # pdf: ./slides/lec3.pdf
       # handout: ./slides/lec3-handout.pdf
     - index: 4
