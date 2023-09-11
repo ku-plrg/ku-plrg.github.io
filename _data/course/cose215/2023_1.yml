@@ -45,7 +45,7 @@ parts:
       code: ./code/ENFA.scala
       homework:
         name: ex01
-        link: https://github.com/ku-plrg-classroom/docs/tree/main/fa-examples
+        link: https://github.com/ku-plrg-classroom/docs/tree/main/cose215/fa-examples
     - index: 6
       date: 03/27
       title: Regular Expressions and Languages
@@ -60,7 +60,7 @@ parts:
       code: ./code/EquivREAndFA.scala
       homework:
         name: hw02
-        link: https://github.com/ku-plrg-classroom/docs/tree/main/equiv-re-fa
+        link: https://github.com/ku-plrg-classroom/docs/tree/main/cose215/equiv-re-fa
         date: 04/13
     - index: 8
       date: 04/03
@@ -138,7 +138,7 @@ parts:
       handout: ./slides/lec20-handout.pdf
       homework:
         name: hw03
-        link: https://github.com/ku-plrg-classroom/docs/tree/main/equiv-pda-cfg
+        link: https://github.com/ku-plrg-classroom/docs/tree/main/cose215/equiv-pda-cfg
         date: 05/30
 
   - name: "Part 3: Turing Machines / Computability"
