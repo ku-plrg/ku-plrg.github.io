@@ -28,8 +28,11 @@ parts:
     - index: 3
       date: 09/13
       title: Syntax and Semantics (2)
-      # pdf: ./slides/lec3.pdf
-      # handout: ./slides/lec3-handout.pdf
+      pdf: ./slides/lec3.pdf
+      handout: ./slides/lec3-handout.pdf
+      homework:
+        name: ex01
+        link: https://github.com/ku-plrg-classroom/docs/tree/main/cose212/ae
     - index: 4
       date: 09/18
       title: Identifiers (1)
