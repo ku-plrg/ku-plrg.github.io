@@ -41,8 +41,11 @@ parts:
     - index: 5
       date: 09/20
       title: Identifiers (2)
-      # pdf: ./slides/lec5.pdf
-      # handout: ./slides/lec5-handout.pdf
+      pdf: ./slides/lec5.pdf
+      handout: ./slides/lec5-handout.pdf
+      homework:
+        name: ex02
+        link: https://github.com/ku-plrg-classroom/docs/tree/main/cose212/vae
     - index: 6
       date: 09/25
       title: First-Order Functions
