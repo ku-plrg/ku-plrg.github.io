@@ -57,8 +57,11 @@ parts:
     - index: 7
       date: 09/27
       title: First-Class Functions
-      # pdf: ./slides/lec7.pdf
-      # handout: ./slides/lec7-handout.pdf
+      pdf: ./slides/lec7.pdf
+      handout: ./slides/lec7-handout.pdf
+      homework:
+        name: ex04
+        link: https://github.com/ku-plrg-classroom/docs/tree/main/cose212/fvae
     - index: 8
       date: 10/02
       title: Lambda Calculus
