@@ -65,8 +65,8 @@ parts:
     - index: 8
       date: 10/02
       title: Lambda Calculus
-      # pdf: ./slides/lec8.pdf
-      # handout: ./slides/lec8-handout.pdf
+      pdf: ./slides/lec8.pdf
+      handout: ./slides/lec8-handout.pdf
     - index: 9
       date: 10/04
       title: Recursive Functions
