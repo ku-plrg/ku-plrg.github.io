@@ -70,8 +70,11 @@ parts:
     - index: 9
       date: 10/04
       title: Recursive Functions
-      # pdf: ./slides/lec9.pdf
-      # handout: ./slides/lec9-handout.pdf
+      pdf: ./slides/lec9.pdf
+      handout: ./slides/lec9-handout.pdf
+      homework:
+        name: ex05
+        link: https://github.com/ku-plrg-classroom/docs/tree/main/cose212/rfae
     - index: 10
       date: 10/09
       title: Mutable Data Structures - Boxes
