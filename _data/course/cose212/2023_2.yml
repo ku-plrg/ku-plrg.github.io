@@ -78,8 +78,12 @@ parts:
     - index: 10
       date: 10/09
       title: Mutable Data Structures - Boxes
-      # pdf: ./slides/lec10.pdf
-      # handout: ./slides/lec10-handout.pdf
+      pdf: ./slides/lec10.pdf
+      handout: ./slides/lec10-handout.pdf
+      homework:
+        name: hw02
+        link: https://github.com/ku-plrg-classroom/docs/tree/main/cose212/cobalt
+        date: 10/27
     - index: 11
       date: 10/11
       title: Mutable Variables
