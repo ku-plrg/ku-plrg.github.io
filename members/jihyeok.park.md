@@ -43,44 +43,77 @@ automatically generates language-based tools.
 
 
 ## Research Interest
+
 Please see [Research](/research).
 
 
 ## Publications
+
 Please see [Publications](/publications).
+
+- **Journal**:
+  - CACM (
+      2023
+    )
+  - CSUR (
+      [2021](https://doi.org/10.1145/3464457)
+    )
+  - IEEE Software (
+      [2019](https://doi.org/10.1109/MS.2018.110113408)
+    )
+- **PL Conference**:
+  - PLDI (
+      [2023](https://doi.org/10.1145/3591240)
+    )
+- **SE Conference**:
+  - ICSE (
+      [2021](https://doi.org/10.1109/ICSE43902.2021.00015)
+    )
+  - ESEC/FSE (
+      [2021](https://doi.org/10.1145/3468264.3468556)
+    / [2022](https://doi.org/10.1145/3540250.3549097)
+    )
+  - ASE (
+      [2020](https://doi.org/10.1145/3324884.3416632)
+    / [2021](https://doi.org/10.1109/ASE51524.2021.9678781)
+    )
 
 
 ## Professional Activities
 
-### Program Committee (PC) Members
+- **Program Committee (PC) Members**
+  - 2024 -
+    [SAC (PL Track)](https://www.sigapp.org/sac/sac2024) /
+    [ICSE](https://conf.researchr.org/home/icse-2024)
+  - 2023 -
+    [OOPSLA (ERC)](https://2023.splashcon.org/track/splash-2023-oopsla) /
+    [APLAS](https://conf.researchr.org/home/aplas-2023)
+  - 2022 -
+    [OOPSLA (ERC)](https://2023.splashcon.org/track/splash-2022-oopsla) /
+    [APLAS](https://conf.researchr.org/home/aplas-2022)
 
-- 2024 -
-  [SAC (PL Track)](https://www.sigapp.org/sac/sac2024) /
-  [ICSE](https://conf.researchr.org/home/icse-2024)
-- 2023 -
-  [OOPSLA (ERC)](https://2023.splashcon.org/track/splash-2023-oopsla) /
-  [APLAS](https://conf.researchr.org/home/aplas-2023)
-- 2022 -
-  [OOPSLA (ERC)](https://2023.splashcon.org/track/splash-2022-oopsla) /
-  [APLAS](https://conf.researchr.org/home/aplas-2022)
+- **Artifact Evaluation Committee (AEC) Members**
+  - 2023 -
+    [OOPSLA](https://2023.splashcon.org/track/splash-2023-oopsla)
+  - 2022 -
+    [OOPSLA](https://2023.splashcon.org/track/splash-2022-oopsla)
+  - 2019 -
+    [POPL](https://popl19.sigplan.org/track/POPL-2019-Research-Papers) /
+    [OOPSLA](https://conf.researchr.org/track/splash-2019/splash-2019-oopsla)
+  - 2018 -
+    [OOPSLA](https://conf.researchr.org/track/splash-2018/splash-2018-OOPSLA) /
+    [SAS](https://staticanalysis.org/sas2018/sas2018.html) /
+    [ISSTA](https://conf.researchr.org/home/issta-2018)
 
-### Artifact Evaluation Committee (AEC) Members
+- **Journal Reviewers**
+  - 2023 -
+      [IEEE TSE](https://www.computer.org/csdl/journal/ts)
+  - 2022 -
+      [IEEE TSE](https://www.computer.org/csdl/journal/ts)
 
-- 2023 -
-  [OOPSLA](https://2023.splashcon.org/track/splash-2023-oopsla)
-- 2022 -
-  [OOPSLA](https://2023.splashcon.org/track/splash-2022-oopsla)
-- 2019 -
-  [POPL](https://popl19.sigplan.org/track/POPL-2019-Research-Papers) /
-  [OOPSLA](https://conf.researchr.org/track/splash-2019/splash-2019-oopsla)
-- 2018 -
-  [OOPSLA](https://conf.researchr.org/track/splash-2018/splash-2018-OOPSLA) /
-  [SAS](https://staticanalysis.org/sas2018/sas2018.html) /
-  [ISSTA](https://conf.researchr.org/home/issta-2018)
-
-### Others
-- 2022 -
-  [ISSTA (Web Co-Chair)](https://conf.researchr.org/home/issta-2022)
+- **Others**
+  - 2022 -
+    [ISSTA (Web Co-Chair)](https://conf.researchr.org/home/issta-2022)
 
 
 ## Invited Participants
