@@ -51,16 +51,6 @@ Please see [Research](/research).
 
 Please see [Publications](/publications).
 
-- **Journal**:
-  - CACM (
-      2023
-    )
-  - CSUR (
-      [2021](https://doi.org/10.1145/3464457)
-    )
-  - IEEE Software (
-      [2019](https://doi.org/10.1109/MS.2018.110113408)
-    )
 - **PL Conference**:
   - PLDI (
       [2023](https://doi.org/10.1145/3591240)
@@ -76,6 +66,16 @@ Please see [Publications](/publications).
   - ASE (
       [2020](https://doi.org/10.1145/3324884.3416632)
     / [2021](https://doi.org/10.1109/ASE51524.2021.9678781)
+    )
+- **Journal**:
+  - CACM (
+      2023
+    )
+  - CSUR (
+      [2021](https://doi.org/10.1145/3464457)
+    )
+  - IEEE Software (
+      [2019](https://doi.org/10.1109/MS.2018.110113408)
     )
 
 
