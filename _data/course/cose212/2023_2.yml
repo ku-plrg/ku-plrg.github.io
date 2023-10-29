@@ -111,22 +111,22 @@ parts:
       coverage: Lectures 1 - 13
     - index: 14
       date: 10/30
-      title: Continuations
-      # pdf: ./slides/lec14.pdf
-      # handout: ./slides/lec14-handout.pdf
+      title: Continuations (1)
+      pdf: ./slides/lec14.pdf
+      handout: ./slides/lec14-handout.pdf
     - index: 15
       date: 11/01
-      title: First-Class Continuations
+      title: Continuations (2)
       # pdf: ./slides/lec15.pdf
       # handout: ./slides/lec15-handout.pdf
     - index: 16
       date: 11/06
-      title: First-Order Representation of Continuations (1)
+      title: First-Class Continuations
       # pdf: ./slides/lec16.pdf
       # handout: ./slides/lec16-handout.pdf
     - index: 17
       date: 11/08
-      title: First-Order Representation of Continuations (2)
+      title: Compiling with Continuations
       # pdf: ./slides/lec17.pdf
       # handout: ./slides/lec17-handout.pdf
 
