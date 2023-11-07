@@ -133,8 +133,8 @@ parts:
     - index: 17
       date: 11/08
       title: Compiling with Continuations
-      # pdf: ./slides/lec17.pdf
-      # handout: ./slides/lec17-handout.pdf
+      pdf: ./slides/lec17.pdf
+      handout: ./slides/lec17-handout.pdf
 
   - name: "Part 2: Typed Languages"
     lectures:
