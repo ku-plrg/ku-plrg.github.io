@@ -140,9 +140,13 @@ parts:
     lectures:
     - index: 18
       date: 11/13
-      title: Types
-      # pdf: ./slides/lec18.pdf
-      # handout: ./slides/lec18-handout.pdf
+      title: Type Systems
+      pdf: ./slides/lec18.pdf
+      handout: ./slides/lec18-handout.pdf
+      homework:
+        name: hw03
+        link: https://github.com/ku-plrg-classroom/docs/tree/main/cose212/magnet
+        date: 11/27
     - index: 19
       date: 11/15
       title: Typed Languages
