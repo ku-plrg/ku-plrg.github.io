@@ -107,9 +107,9 @@ Please see [Publications](/publications).
 
 - **Journal Reviewers**
   - 2023 -
-      [IEEE TSE](https://www.computer.org/csdl/journal/ts)
+      IEEE TSE
   - 2022 -
-      [IEEE TSE](https://www.computer.org/csdl/journal/ts)
+      [IEEE TSE](https://www.computer.org/digital-library/journals/ts/2022-reviewer-thanks)
 
 - **Others**
   - 2022 -
