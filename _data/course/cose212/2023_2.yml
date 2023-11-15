@@ -161,32 +161,32 @@ parts:
       # pdf: ./slides/lec20.pdf
       # handout: ./slides/lec20-handout.pdf
     - index: 21
-      date: 11/29
+      date: 11/22
       title: Algebraic Data Types (1)
       # pdf: ./slides/lec21.pdf
       # handout: ./slides/lec21-handout.pdf
     - index: 22
-      date: 12/04
+      date: 11/27
       title: Algebraic Data Types (2)
       # pdf: ./slides/lec22.pdf
       # handout: ./slides/lec22-handout.pdf
     - index: 23
-      date: 12/06
+      date: 11/29
       title: Parametric Polymorphism
       # pdf: ./slides/lec23.pdf
       # handout: ./slides/lec23-handout.pdf
     - index: 24
-      date: 12/11
+      date: 12/04
       title: Subtype Polymorphism
       # pdf: ./slides/lec24.pdf
       # handout: ./slides/lec24-handout.pdf
     - index: 25
-      date: 11/22
+      date: 12/06
       title: Type Inference (1)
       # pdf: ./slides/lec25.pdf
       # handout: ./slides/lec25-handout.pdf
     - index: 26
-      date: 11/27
+      date: 12/11
       title: Type Inference (2)
       # pdf: ./slides/lec26.pdf
       # handout: ./slides/lec26-handout.pdf
