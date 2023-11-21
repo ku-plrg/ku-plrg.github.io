@@ -166,8 +166,8 @@ parts:
     - index: 21
       date: 11/22
       title: Algebraic Data Types (1)
-      # pdf: ./slides/lec21.pdf
-      # handout: ./slides/lec21-handout.pdf
+      pdf: ./slides/lec21.pdf
+      handout: ./slides/lec21-handout.pdf
     - index: 22
       date: 11/27
       title: Algebraic Data Types (2)
