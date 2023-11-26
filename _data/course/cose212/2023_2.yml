@@ -171,8 +171,11 @@ parts:
     - index: 22
       date: 11/27
       title: Algebraic Data Types (2)
-      # pdf: ./slides/lec22.pdf
-      # handout: ./slides/lec22-handout.pdf
+      pdf: ./slides/lec22.pdf
+      handout: ./slides/lec22-handout.pdf
+      homework:
+        name: ex12
+        link: https://github.com/ku-plrg-classroom/docs/tree/main/cose212/atfae
     - index: 23
       date: 11/29
       title: Parametric Polymorphism
