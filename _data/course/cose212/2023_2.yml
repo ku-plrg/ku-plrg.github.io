@@ -187,8 +187,12 @@ parts:
     - index: 24
       date: 12/04
       title: Subtype Polymorphism
-      # pdf: ./slides/lec24.pdf
-      # handout: ./slides/lec24-handout.pdf
+      pdf: ./slides/lec24.pdf
+      handout: ./slides/lec24-handout.pdf
+      homework:
+        name: hw04
+        link: https://github.com/ku-plrg-classroom/docs/tree/main/cose212/battery
+        date: 12/14
     - index: 25
       date: 12/06
       title: Type Inference (1)
