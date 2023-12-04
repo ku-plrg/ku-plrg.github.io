@@ -14,9 +14,9 @@ parts:
       pdf: ./slides/lec1.pdf
       handout: ./slides/lec1-handout.pdf
       homework:
-        name: hw01
-        link: https://github.com/ku-plrg-classroom/docs/tree/main/scala-tutorial
-        date: 09/20
+        - name: hw01
+          link: https://github.com/ku-plrg-classroom/docs/tree/main/scala-tutorial
+          date: 09/20
 
   - name: "Part 1: Untyped Languages"
     lectures:
@@ -31,8 +31,8 @@ parts:
       pdf: ./slides/lec3.pdf
       handout: ./slides/lec3-handout.pdf
       homework:
-        name: ex01
-        link: https://github.com/ku-plrg-classroom/docs/tree/main/cose212/ae
+        - name: ex01
+          link: https://github.com/ku-plrg-classroom/docs/tree/main/cose212/ae
     - index: 4
       date: 09/18
       title: Identifiers (1)
@@ -44,24 +44,24 @@ parts:
       pdf: ./slides/lec5.pdf
       handout: ./slides/lec5-handout.pdf
       homework:
-        name: ex02
-        link: https://github.com/ku-plrg-classroom/docs/tree/main/cose212/vae
+        - name: ex02
+          link: https://github.com/ku-plrg-classroom/docs/tree/main/cose212/vae
     - index: 6
       date: 09/25
       title: First-Order Functions
       pdf: ./slides/lec6.pdf
       handout: ./slides/lec6-handout.pdf
       homework:
-        name: ex03
-        link: https://github.com/ku-plrg-classroom/docs/tree/main/cose212/f1vae
+        - name: ex03
+          link: https://github.com/ku-plrg-classroom/docs/tree/main/cose212/f1vae
     - index: 7
       date: 09/27
       title: First-Class Functions
       pdf: ./slides/lec7.pdf
       handout: ./slides/lec7-handout.pdf
       homework:
-        name: ex04
-        link: https://github.com/ku-plrg-classroom/docs/tree/main/cose212/fvae
+        - name: ex04
+          link: https://github.com/ku-plrg-classroom/docs/tree/main/cose212/fvae
     - index: 8
       date: 10/02
       title: Lambda Calculus
@@ -73,25 +73,25 @@ parts:
       pdf: ./slides/lec9.pdf
       handout: ./slides/lec9-handout.pdf
       homework:
-        name: ex05
-        link: https://github.com/ku-plrg-classroom/docs/tree/main/cose212/rfae
+        - name: ex05
+          link: https://github.com/ku-plrg-classroom/docs/tree/main/cose212/rfae
     - index: 10
       date: 10/09
       title: Mutable Data Structures - Boxes
       pdf: ./slides/lec10.pdf
       handout: ./slides/lec10-handout.pdf
       homework:
-        name: hw02
-        link: https://github.com/ku-plrg-classroom/docs/tree/main/cose212/cobalt
-        date: 10/27
+        - name: hw02
+          link: https://github.com/ku-plrg-classroom/docs/tree/main/cose212/cobalt
+          date: 10/27
     - index: 11
       date: 10/11
       title: Mutable Variables
       pdf: ./slides/lec11.pdf
       handout: ./slides/lec11-handout.pdf
       homework:
-        name: ex06
-        link: https://github.com/ku-plrg-classroom/docs/tree/main/cose212/mfae
+        - name: ex06
+          link: https://github.com/ku-plrg-classroom/docs/tree/main/cose212/mfae
     - index: 12
       date: 10/16
       title: Garbage Collection
@@ -103,8 +103,8 @@ parts:
       pdf: ./slides/lec13.pdf
       handout: ./slides/lec13-handout.pdf
       homework:
-        name: ex07
-        link: https://github.com/ku-plrg-classroom/docs/tree/main/cose212/lfae
+        - name: ex07
+          link: https://github.com/ku-plrg-classroom/docs/tree/main/cose212/lfae
     - exam: Midterm Exam
       date: 10/25
       pdf: ./midterm.pdf
@@ -120,16 +120,16 @@ parts:
       pdf: ./slides/lec15.pdf
       handout: ./slides/lec15-handout.pdf
       homework:
-        name: ex08
-        link: https://github.com/ku-plrg-classroom/docs/tree/main/cose212/fae-cps
+        - name: ex08
+          link: https://github.com/ku-plrg-classroom/docs/tree/main/cose212/fae-cps
     - index: 16
       date: 11/06
       title: First-Class Continuations
       pdf: ./slides/lec16.pdf
       handout: ./slides/lec16-handout.pdf
       homework:
-        name: ex09
-        link: https://github.com/ku-plrg-classroom/docs/tree/main/cose212/kfae
+        - name: ex09
+          link: https://github.com/ku-plrg-classroom/docs/tree/main/cose212/kfae
     - index: 17
       date: 11/08
       title: Compiling with Continuations
@@ -144,25 +144,25 @@ parts:
       pdf: ./slides/lec18.pdf
       handout: ./slides/lec18-handout.pdf
       homework:
-        name: hw03
-        link: https://github.com/ku-plrg-classroom/docs/tree/main/cose212/magnet
-        date: 11/27
+        - name: hw03
+          link: https://github.com/ku-plrg-classroom/docs/tree/main/cose212/magnet
+          date: 11/27
     - index: 19
       date: 11/15
       title: Typed Languages
       pdf: ./slides/lec19.pdf
       handout: ./slides/lec19-handout.pdf
       homework:
-        name: ex10
-        link: https://github.com/ku-plrg-classroom/docs/tree/main/cose212/tfae
+        - name: ex10
+          link: https://github.com/ku-plrg-classroom/docs/tree/main/cose212/tfae
     - index: 20
       date: 11/20
       title: Typing Recursive Functions
       pdf: ./slides/lec20.pdf
       handout: ./slides/lec20-handout.pdf
       homework:
-        name: ex11
-        link: https://github.com/ku-plrg-classroom/docs/tree/main/cose212/trfae
+        - name: ex11
+          link: https://github.com/ku-plrg-classroom/docs/tree/main/cose212/trfae
     - index: 21
       date: 11/22
       title: Algebraic Data Types (1)
@@ -174,25 +174,27 @@ parts:
       pdf: ./slides/lec22.pdf
       handout: ./slides/lec22-handout.pdf
       homework:
-        name: ex12
-        link: https://github.com/ku-plrg-classroom/docs/tree/main/cose212/atfae
+        - name: ex12
+          link: https://github.com/ku-plrg-classroom/docs/tree/main/cose212/atfae
     - index: 23
       date: 11/29
       title: Parametric Polymorphism
       pdf: ./slides/lec23.pdf
       handout: ./slides/lec23-handout.pdf
       homework:
-        name: ex13
-        link: https://github.com/ku-plrg-classroom/docs/tree/main/cose212/ptfae
+        - name: ex13
+          link: https://github.com/ku-plrg-classroom/docs/tree/main/cose212/ptfae
     - index: 24
       date: 12/04
       title: Subtype Polymorphism
       pdf: ./slides/lec24.pdf
       handout: ./slides/lec24-handout.pdf
       homework:
-        name: hw04
-        link: https://github.com/ku-plrg-classroom/docs/tree/main/cose212/battery
-        date: 12/14
+        - name: hw04
+          link: https://github.com/ku-plrg-classroom/docs/tree/main/cose212/battery
+          date: 12/14
+        - name: ex14
+          link: https://github.com/ku-plrg-classroom/docs/tree/main/cose212/stfae
     - index: 25
       date: 12/06
       title: Type Inference (1)

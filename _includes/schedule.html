@@ -76,13 +76,13 @@
       </td>
       {%- endif -%}
       <td style="text-align: center;">
-        {%- assign _homework = _lecture.homework -%}
-        {%- if _homework -%}
+        {%- for _homework in _lecture.homework -%}
         <a href="{{ _homework.link }}">{{ _homework.name }}</a>
         {%- if _homework.date -%}
         <br>(due: {{ _homework.date }})
         {%- endif -%}
-        {%- endif -%}
+        <br>
+        {%- endfor -%}
       </td>
       {%- endif -%}
     </tr>

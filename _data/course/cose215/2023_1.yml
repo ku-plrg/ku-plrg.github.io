@@ -19,7 +19,7 @@ parts:
       pdf: ./slides/lec2.pdf
       handout: ./slides/lec2-handout.pdf
       homework:
-        name: hw01
+      - name: hw01
         link: https://github.com/ku-plrg-classroom/docs/tree/main/scala-tutorial
         date: 03/23
 
@@ -44,7 +44,7 @@ parts:
       handout: ./slides/lec5-handout.pdf
       code: ./code/ENFA.scala
       homework:
-        name: ex01
+      - name: ex01
         link: https://github.com/ku-plrg-classroom/docs/tree/main/cose215/fa-examples
     - index: 6
       date: 03/27
@@ -59,7 +59,7 @@ parts:
       handout: ./slides/lec7-handout.pdf
       code: ./code/EquivREAndFA.scala
       homework:
-        name: hw02
+      - name: hw02
         link: https://github.com/ku-plrg-classroom/docs/tree/main/cose215/equiv-re-fa
         date: 04/13
     - index: 8
@@ -137,7 +137,7 @@ parts:
       pdf: ./slides/lec20.pdf
       handout: ./slides/lec20-handout.pdf
       homework:
-        name: hw03
+      - name: hw03
         link: https://github.com/ku-plrg-classroom/docs/tree/main/cose215/equiv-pda-cfg
         date: 05/30
 
