@@ -216,4 +216,4 @@ parts:
     - exam: Final Exam
       date: 12/20
       # pdf: ./final.pdf
-      coverage: Lectures 14 - 26
+      coverage: Lectures 14 - 24
