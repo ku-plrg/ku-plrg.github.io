@@ -1,4 +1,4 @@
-2023:
+2024:
 
   - title: JavaScript Language Design and Implementation in Tandem
     authors:
@@ -11,9 +11,11 @@
       url: https://m-cacm.acm.org/
     materials:
       # link: TODO
-      # pdf: /assets/data/publication/cacm23-ryu-esmeta.pdf
+      # pdf: /assets/data/publication/cacm24-ryu-esmeta.pdf
       repo: https://github.com/es-meta/esmeta
       # bib: javascript:show('cacm-esmeta.bib')
+
+2023:
 
   - title: Feature-Sensitive Coverage for Conformance Testing of Programming
       Language Implementations
