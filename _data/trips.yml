@@ -1,15 +1,31 @@
+# <format>
+#   - date-from : <yyyy.mm.dd>
+#     date-to   : <yyyy.mm.dd>
+#     place     : <place>
+#     place-url : <url>
+#     location  : <location>
+#     photos    : <google-album-id>
+#     talk      :
+#       - pdf   : <path.pdf>
+#     poster    :
+#       - pdf   : <path.pdf>
+#     report    :
+#       - pdf   : <path.pdf>
+
+2024:
+
+  - date-from : 2024.01.31
+    date-to   : 2024.02.02
+    place     : SIGPL Winter School 2024
+    place-url : https://sigpl.or.kr/school/2024w/
+    location  : KAIST, 대전, 대한민국
+    photos    : 9MmAWnxHv2wskaYJ7
+
 2023:
 
   - date-from : 2023.08.23
     date-to   : 2023.08.25
     place     : SIGPL Summer School 2023
     place-url : https://sigpl.or.kr/school/2023s/
-    location  : 춘천, 대한민국
+    location  : 강원대학교, 춘천, 대한민국
     photos    : 9t685k7ZTf74gdrz8
-    talk      :
-      - pdf   : /assets/data/slides/2023/sigpl23-summer-park.pdf
-    poster    :
-      - pdf   : /assets/data/poster/2023/sigpl23-summer-advty-poster.pdf
-      - pdf   : /assets/data/poster/2023/sigpl23-summer-specsyn-poster.pdf
-    # report    :
-    #   - pdf   : /assets/data/reports/2023/sigpl23-summer-park.pdf
