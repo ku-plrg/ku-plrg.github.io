@@ -10,9 +10,9 @@ layout: course
     [Science Library Bldg](https://goo.gl/maps/dJTtjpZEHCC4Xv5t5)
     ([과학도서관](https://naver.me/5Y1oxNnH))
   - **Email:** [jihyeok_park@korea.ac.kr](mailto:jihyeok_park@korea.ac.kr)
-- **Lecture:** 15:00--17:45 Mondays and Wednesdays @ 408,
-  [Science Library Bldg](https://goo.gl/maps/dJTtjpZEHCC4Xv5t5)
-  ([과학도서관](https://naver.me/5Y1oxNnH))
+- **Lecture:** 15:00--17:45 Mondays and Wednesdays @ 107,
+  [International Center for Converging Technology](https://maps.app.goo.gl/ooPmBvCKc7KWHmuw8)
+  ([미래융합기술관](https://naver.me/FLBWcZUR))
 - **Office hours:** 14:00--16:00 Tuesdays (by appointment)
 
 ### Course Materials

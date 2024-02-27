@@ -1,5 +1,22 @@
 2024:
 
+  - title: "PL4XGL: A Programming Language Approach to Explainable Graph
+      Learning"
+    authors:
+      - Minseok Jeon
+      - Jihyeok Park
+      - Hakjoo Oh
+    target:
+      name: ACM SIGPLAN Conference on Programming Language Design and
+        Implementation
+      abbr: PLDI 2024
+      url: https://pldi24.sigplan.org/
+    materials:
+      # link: TODO
+      # pdf: /assets/data/publication/pldi24-jeon-pl4xgl.pdf
+      # repo: TODO
+      # bib: javascript:show('pldi24-jeon-pl4xgl.bib')
+
   - title: JavaScript Language Design and Implementation in Tandem
     authors:
       - Sukyoung Ryu
