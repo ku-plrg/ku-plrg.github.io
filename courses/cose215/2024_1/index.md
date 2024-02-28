@@ -22,6 +22,9 @@ layout: course
 - Reference: [Introduction to Automata Theory, Languages, and Computation (3rd Edition)](http://infolab.stanford.edu/~ullman/ialc.html) <br>
   [<img src="https://m.media-amazon.com/images/I/41d4NezeXCL.jpg"
   width=200px/>](https://www.amazon.com/exec/obidos/ASIN/0321455363/acmorg-20)
+- Previous Exams:
+  - Midterm: [2023](../2023_1/midterm.pdf)
+  - Final: [2023](../2023_1/final.pdf)
 
 ### Installation of Scala and sbt
 
