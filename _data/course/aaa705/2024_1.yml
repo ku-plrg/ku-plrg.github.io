@@ -67,7 +67,7 @@ parts:
       # handout: ./slides/lec10-handout.pdf
     - index: 11
       date: 04/15
-      title: Differential Testing and Test Flakiness
+      title: Differential Testing
       # pdf: ./slides/lec11.pdf
       # handout: ./slides/lec11-handout.pdf
     - index: 12
