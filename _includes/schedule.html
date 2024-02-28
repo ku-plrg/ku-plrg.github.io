@@ -77,7 +77,11 @@
       {%- endif -%}
       <td style="text-align: center;">
         {%- for _homework in _lecture.homework -%}
+        {%- if _homework.link -%}
         <a href="{{ _homework.link }}">{{ _homework.name }}</a>
+        {%- else -%}
+        {{ _homework.name }}
+        {%- endif -%}
         {%- if _homework.date -%}
         <br>(due: {{ _homework.date }})
         {%- endif -%}

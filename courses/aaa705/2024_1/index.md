@@ -17,12 +17,16 @@ layout: course
 
 ### Course Materials
 
-- TBD
+- **Self-contained lecture notes are provided.**
+- References:
+  - [**Introduction to Software Testing** (2nd Ed.)](https://cs.gmu.edu/~offutt/softwaretest/)
+    by Paul Ammann and Jeff Offutt.
+  - [**Why Programs Fail** (2nd Ed.)](https://www.whyprogramsfail.com/)
+    by Andreas Zeller.
+
 
 
 ### Schedule
 
-- TBD
-
 <!-- load schedule with PDF files -->
-<!-- {%- include schedule.html data=site.data.course.aaa705.2024_1 -%} -->
+{%- include schedule.html data=site.data.course.aaa705.2024_1 -%}

@@ -1,0 +1,103 @@
+options:
+  code: false
+parts:
+  - name: "Part 0: Introduction"
+    lectures:
+    - index: 0
+      date: 03/04
+      title: Introduction
+      # pdf: ./slides/lec0.pdf
+      # handout: ./slides/lec0-handout.pdf
+
+  - name: "Part 1: Input Sampling"
+    lectures:
+    - index: 1
+      date: 03/06
+      title: Combinatorial Testing
+      # pdf: ./slides/lec1.pdf
+      # handout: ./slides/lec1-handout.pdf
+    - index: 2
+      date: 03/11
+      title: Random Testing
+      # pdf: ./slides/lec2.pdf
+      # handout: ./slides/lec2-handout.pdf
+    - index: 3
+      date: 03/13
+      title: Search Based Software Testing (SBST)
+      # pdf: ./slides/lec3.pdf
+      # handout: ./slides/lec3-handout.pdf
+    - index: 4
+      date: 03/18
+      title: Dynamic Symbolic Execution (DSE)
+      # pdf: ./slides/lec4.pdf
+      # handout: ./slides/lec4-handout.pdf
+
+  - name: "Part 2: Test Adequacy Criteria"
+    lectures:
+    - index: 5
+      date: 03/20
+      title: Coverage Criteria (1)
+      # pdf: ./slides/lec5.pdf
+      # handout: ./slides/lec5-handout.pdf
+      homework:
+      - name: hw01
+      #   link: TODO
+        date: 04/03
+    - index: 6
+      date: 03/25
+      title: Coverage Criteria (2)
+      # pdf: ./slides/lec6.pdf
+      # handout: ./slides/lec6-handout.pdf
+    - index: 7
+      date: 03/27
+      title: Mutation Testing
+      # pdf: ./slides/lec7.pdf
+      # handout: ./slides/lec7-handout.pdf
+
+  - name: "Part 3: Oracle Problem"
+    lectures:
+    - index: 8
+      date: 04/01
+      title: Metamorphic Testing
+      # pdf: ./slides/lec8.pdf
+      # handout: ./slides/lec8-handout.pdf
+    - index: 9
+      date: 04/03
+      title: Differential Testing and Test Flakiness
+      # pdf: ./slides/lec9.pdf
+      # handout: ./slides/lec9-handout.pdf
+
+  - name: "Part 3: Debugging with Tests"
+    lectures:
+    - index: 10
+      date: 04/08
+      title: Regression Testing
+      # pdf: ./slides/lec10.pdf
+      # handout: ./slides/lec10-handout.pdf
+      homework:
+      - name: hw02
+      #   link: TODO
+        date: 04/05
+    - index: 11
+      date: 04/15
+      title: Fault Localization
+      # pdf: ./slides/lec11.pdf
+      # handout: ./slides/lec11-handout.pdf
+
+  - name: "Part 4: Course Review and Project"
+    lectures:
+    - index: 12
+      date: 04/17
+      title: Course Review
+      # pdf: ./slides/lec12.pdf
+      # handout: ./slides/lec12-handout.pdf
+      homework:
+      - name: project
+      #   link: TODO
+        date: 05/20
+    - index: 13
+      date: 05/20
+      title: Project Presentation
+    - index: 14
+      date: 05/22
+      title: Project Presentation
