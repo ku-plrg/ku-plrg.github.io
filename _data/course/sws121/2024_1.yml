@@ -1,0 +1,86 @@
+options:
+  code: false
+parts:
+  - lectures:
+    - index: 0
+      date: 03/04
+      title: Introduction
+      pdf: ./slides/lec0.pdf
+      handout: ./slides/lec0-handout.pdf
+    - index: 1
+      date: 03/11
+      title: Basics
+      # pdf: ./slides/lec1.pdf
+      # handout: ./slides/lec1-handout.pdf
+    - index: 2
+      date: 03/18
+      title: Testing and Documentation
+      # pdf: ./slides/lec2.pdf
+      # handout: ./slides/lec2-handout.pdf
+    - index: 3
+      date: 03/25
+      title: Classes, Traits, and Objects
+      # pdf: ./slides/lec3.pdf
+      # handout: ./slides/lec3-handout.pdf
+    - index: 4
+      date: 04/01
+      title: First-Class Functions
+      # pdf: ./slides/lec4.pdf
+      # handout: ./slides/lec4-handout.pdf
+      homework:
+      - name: hw01
+        date: 04/15
+      #   link: TODO
+    - index: 5
+      date: 04/08
+      title: Packaging and Imports
+      # pdf: ./slides/lec5.pdf
+      # handout: ./slides/lec5-handout.pdf
+    - index: 6
+      date: 04/15
+      title: Collections
+      # pdf: ./slides/lec6.pdf
+      # handout: ./slides/lec6-handout.pdf
+    - index: 7
+      date: 04/29
+      title: Pattern Matching
+      # pdf: ./slides/lec7.pdf
+      # handout: ./slides/lec7-handout.pdf
+    - index: 8
+      date: 05/06
+      title: For Comprehensions
+      # pdf: ./slides/lec8.pdf
+      # handout: ./slides/lec8-handout.pdf
+      homework:
+      - name: hw02
+        date: 05/20
+      #   link: TODO
+    - index: 9
+      date: 05/13
+      title: Polymorphism
+      # pdf: ./slides/lec9.pdf
+      # handout: ./slides/lec9-handout.pdf
+    - index: 10
+      date: 05/20
+      title: Lazy Evaluation
+      # pdf: ./slides/lec10.pdf
+      # handout: ./slides/lec10-handout.pdf
+    - index: 11
+      date: 05/27
+      title: Variances
+      # pdf: ./slides/lec11.pdf
+      # handout: ./slides/lec11-handout.pdf
+    - index: 12
+      date: 06/03
+      title: Contextual Abstraction
+      # pdf: ./slides/lec12.pdf
+      # handout: ./slides/lec12-handout.pdf
+      homework:
+      - name: hw03
+        date: 06/17
+      #   link: TODO
+    - index: 13
+      date: 06/10
+      title: Course Review
+      # pdf: ./slides/lec13.pdf
+      # handout: ./slides/lec13-handout.pdf
