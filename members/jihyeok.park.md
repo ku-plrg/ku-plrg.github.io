@@ -107,9 +107,9 @@ Please see [Publications](/publications).
 
 - **Journal Reviewers**
   - 2023 -
-      IEEE TSE
+    [IEEE TSE](https://doi.org/10.1109/TSE.2023.3348716)
   - 2022 -
-      [IEEE TSE](https://www.computer.org/digital-library/journals/ts/2022-reviewer-thanks)
+    [IEEE TSE](https://www.computer.org/digital-library/journals/ts/2022-reviewer-thanks)
 
 - **Others**
   - 2022 -
