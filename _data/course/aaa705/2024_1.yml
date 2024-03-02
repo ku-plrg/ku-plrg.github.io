@@ -5,8 +5,8 @@ parts:
     - index: 0
       date: 03/04
       title: Introduction
-      # pdf: ./slides/lec0.pdf
-      # handout: ./slides/lec0-handout.pdf
+      pdf: ./slides/lec0.pdf
+      handout: ./slides/lec0-handout.pdf
     - index: 1
       date: 03/06
       title: Combinatorial Testing
