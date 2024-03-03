@@ -34,7 +34,7 @@ The interactive **build tool** [sbt](https://www.scala-sbt.org/) is built for
 Scala and Java projects.
 
 Please download and install them using the following links:
-- **JDK** >= 8 -
+- **JDK >= 8** -
   [https://www.oracle.com/java/technologies/downloads/](https://www.oracle.com/java/technologies/downloads/)
 - **sbt** -
   [https://www.scala-sbt.org/download.html](https://www.scala-sbt.org/download.html)

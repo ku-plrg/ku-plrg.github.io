@@ -13,16 +13,16 @@ layout: course
 - **Lecture:** 13:30--14:45 Mondays and Wednesdays @ 604,
   [Woojung Hall of Informatics](https://maps.app.goo.gl/31pXxfzqAuki6Yzv7)
   ([우정정보관](https://naver.me/xHDTlunb))
-- **Teaching Assistant:** TBD
+- **Teaching Assistant:** [Jungyeom Kim (김준겸)](/members/jungyeom.kim)
 - **Office hours:** 14:00--16:00 Tuesdays (by appointment)
 
 ### Course Materials
 
 - **Self-contained lecture notes are provided.**
-- Reference: [Introduction to Automata Theory, Languages, and Computation (3rd Edition)](http://infolab.stanford.edu/~ullman/ialc.html) <br>
+- **Reference:** [Introduction to Automata Theory, Languages, and Computation (3rd Edition)](http://infolab.stanford.edu/~ullman/ialc.html) <br>
   [<img src="https://m.media-amazon.com/images/I/41d4NezeXCL.jpg"
   width=200px/>](https://www.amazon.com/exec/obidos/ASIN/0321455363/acmorg-20)
-- Previous Exams:
+- **Previous Exams**
   - Midterm: [2023](../2023_1/midterm.pdf)
   - Final: [2023](../2023_1/final.pdf)
 
@@ -38,9 +38,12 @@ The interactive **build tool** [sbt](https://www.scala-sbt.org/) is built for
 Scala and Java projects.
 
 Please download and install them using the following links:
-- JDK >= 8 [https://www.oracle.com/java/technologies/downloads/](https://www.oracle.com/java/technologies/downloads/)
-- Scala - [https://www.scala-lang.org/download/](https://www.scala-lang.org/download/)
-- sbt - [https://www.scala-sbt.org/download.html](https://www.scala-sbt.org/download.html)
+- **JDK >= 8** -
+  [https://www.oracle.com/java/technologies/downloads/](https://www.oracle.com/java/technologies/downloads/)
+- **sbt** -
+  [https://www.scala-sbt.org/download.html](https://www.scala-sbt.org/download.html)
+- **Scala** -
+  [https://www.scala-lang.org/download/](https://www.scala-lang.org/download/)
 
 
 ### Schedule
