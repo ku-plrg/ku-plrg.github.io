@@ -15,8 +15,8 @@ parts:
     - index: 2
       date: 03/11
       title: Random Testing
-      # pdf: ./slides/lec2.pdf
-      # handout: ./slides/lec2-handout.pdf
+      pdf: ./slides/lec2.pdf
+      handout: ./slides/lec2-handout.pdf
     - index: 3
       date: 03/13
       title: Coverage Criteria (1)
