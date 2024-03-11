@@ -21,16 +21,28 @@ def sum(n: Int): Int =
 
 // A case class `Point` having `x`, `y`, and `color` fields
 // whose types are `Int`, `Int`, and `String`, respectively
-case class Point(x: Int, y: Int, color: String)
+case class Point(x: Int, y: Int, color: String):
+  // A method that returns a new point moved by (dx, dy)
+  def move(dx: Int, dy: Int): Point = Point(x + dx, y + dy, color)
+
+// A `Point` instance whose fields: x = 3, y = 4, and color = "RED"
+val point: Point = Point(3, 4, "RED")
 
 // An algebraic data type (ADT) for trees
 enum Tree:
   case Leaf(value: Int)
   case Branch(left: Tree, value: Int, right: Tree)
+  // A recursive method counts the number of the given integer in a tree
+  def count(x: Int): Int = this match
+    case Leaf(n)         if n == x  => 1
+    case Leaf(_)                    => 0
+    case Branch(l, n, r) if n == x  => l.count(x) + 1 + r.count(x)
+    case Branch(l, _, r)            => l.count(x) + r.count(x)
 
 // Import all constructors for variants of `Tree`
 import Tree.*
 
+// Example trees
 val tree1: Tree = Leaf(1)
 val tree2: Tree = Branch(Leaf(1), 2, Leaf(3))
 val tree3: Tree = Branch(Leaf(2), 4, Branch(Leaf(3), 1, Leaf(5)))
@@ -40,10 +52,12 @@ def sum(t: Tree): Int = t match
   case Leaf(n)         => n
   case Branch(l, n, r) => sum(l) + n + sum(r)
 
-// A method checks whether a tree is a branch whose value is even
-def isEvenBranch(t: Tree): Boolean = t match
-  case Branch(_, n, _) if n % 2 == 0 => true
-  case _                             => false
+// A recursive method counts the number of the given integer in a tree
+def count(t: Tree, x: Int): Int = t match
+  case Leaf(n)         if n == x  => 1
+  case Leaf(_)                    => 0
+  case Branch(l, n, r) if n == x  => count(l, x) + 1 + count(r, x)
+  case Branch(l, _, r)            => count(l, x) + count(r, x)
 
 // An algebraic data type (ADT) for natural numbers
 enum Nat:
