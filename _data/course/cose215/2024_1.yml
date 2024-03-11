@@ -18,6 +18,7 @@ parts:
       title: Basic Introduction of Scala
       pdf: ./slides/lec2.pdf
       handout: ./slides/lec2-handout.pdf
+      code: ./code/Basics.scala
       homework:
       - name: hw01
         link: https://github.com/ku-plrg-classroom/docs/tree/main/scala-tutorial
