@@ -13,9 +13,9 @@ parts:
       title: Mathematical Preliminaries
       pdf: ./slides/lec1.pdf
       handout: ./slides/lec1-handout.pdf
-      homework: 
+      homework:
        - name: ex01
-         link: ./exercises/ex01-math-prelim.pdf
+         link: ./ex/ex01.pdf
     - index: 2
       date: 03/11
       title: Basic Introduction of Scala
