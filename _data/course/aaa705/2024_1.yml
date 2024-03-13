@@ -19,18 +19,18 @@ parts:
       handout: ./slides/lec2-handout.pdf
     - index: 3
       date: 03/13
-      title: Coverage Criteria (1)
-      # pdf: ./slides/lec3.pdf
-      # handout: ./slides/lec3-handout.pdf
+      title: Coverage Criteria
+      pdf: ./slides/lec3.pdf
+      handout: ./slides/lec3-handout.pdf
+    - index: 4
+      date: 03/18
+      title: Coverage Criteria (Homework)
+      # pdf: ./slides/lec4.pdf
+      # handout: ./slides/lec4-handout.pdf
       homework:
       - name: hw01
       #   link: TODO
-        date: 03/27
-    - index: 4
-      date: 03/18
-      title: Coverage Criteria (2)
-      # pdf: ./slides/lec4.pdf
-      # handout: ./slides/lec4-handout.pdf
+        date: 03/25
     - index: 5
       date: 03/20
       title: Search Based Software Testing (SBST)
