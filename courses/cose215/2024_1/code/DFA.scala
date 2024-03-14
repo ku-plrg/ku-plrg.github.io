@@ -35,8 +35,8 @@ case class DFA(
   def accept(w: Word): Boolean =
     finalStates.contains(extTrans(initState, w))
 
-// DFA for example 1
-val dfa1: DFA = DFA(
+// DFA for L = { w a a | w \in {a, b}* }
+val dfa_waa: DFA = DFA(
   states      = Set(0, 1, 2),
   symbols     = Set('a', 'b'),
   trans       = Map(
@@ -47,8 +47,8 @@ val dfa1: DFA = DFA(
   finalStates = Set(2),
 )
 
-// DFA for example 2
-val dfa2: DFA = DFA(
+// DFA for L = { a^n b | n >= 0 }
+val dfa_anb: DFA = DFA(
   states      = Set(0, 1, 2),
   symbols     = Set('a', 'b'),
   trans       = Map(
@@ -59,8 +59,9 @@ val dfa2: DFA = DFA(
   finalStates = Set(1),
 )
 
-// DFA for example 3
-val dfa3: DFA = DFA(
+// DFA for L = { w \in {0, 1}* | N(w) \equiv 0 (mod 3) }
+// where N(w) is the natural number represented by w in binary
+val dfa_mod3: DFA = DFA(
   states      = Set(0, 1, 2),
   symbols     = Set('0', '1'),
   trans       = Map(
