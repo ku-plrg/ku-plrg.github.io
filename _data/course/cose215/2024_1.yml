@@ -16,6 +16,7 @@ parts:
       homework:
        - name: ex01
          link: ./ex/ex01.pdf
+         solution: ./ex/ex01-sol.pdf
     - index: 2
       date: 03/11
       title: Basic Introduction of Scala

@@ -56,10 +56,7 @@
         <div class="talk-links">
           <ul class="menu menu--nowrap menu--inline">
             <li>
-              <a class="button button--circle pdf-button"
-                 itemprop="pdf"
-                 href="{{ _lecture.handout }}"
-                 target="_blank">
+              <a class="button button--circle pdf-button" itemprop="pdf" href="{{ _lecture.handout }}" target="_blank">
                 <i class="fas fa-file-pdf"></i>
               </a>
             </li>
@@ -84,6 +81,9 @@
         {%- endif -%}
         {%- if _homework.date -%}
         <br>(due: {{ _homework.date }})
+        {%- endif -%}
+        {%- if _homework.solution -%}
+        <br>(<a href="{{ _homework.solution }}">sol)</a>
         {%- endif -%}
         <br>
         {%- endfor -%}
