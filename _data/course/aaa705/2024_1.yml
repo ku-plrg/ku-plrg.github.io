@@ -25,11 +25,11 @@ parts:
     - index: 4
       date: 03/18
       title: Coverage Criteria (Homework)
-      # pdf: ./slides/lec4.pdf
-      # handout: ./slides/lec4-handout.pdf
+      pdf: ./slides/lec4.pdf
+      handout: ./slides/lec4-handout.pdf
       homework:
       - name: hw01
-      #   link: TODO
+        link: https://github.com/ku-plrg-classroom/js-cov
         date: 03/25
     - index: 5
       date: 03/20
