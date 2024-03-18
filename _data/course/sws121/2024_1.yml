@@ -15,8 +15,11 @@ parts:
     - index: 2
       date: 03/18
       title: Testing and Documentation
-      # pdf: ./slides/lec2.pdf
-      # handout: ./slides/lec2-handout.pdf
+      pdf: ./slides/lec2.pdf
+      handout: ./slides/lec2-handout.pdf
+      homework:
+      - name: ex01
+        link: https://github.com/ku-plrg-classroom/docs/tree/main/scala-tutorial
     - index: 3
       date: 03/25
       title: Classes, Traits, and Objects
