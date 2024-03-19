@@ -64,10 +64,6 @@ parts:
       # pdf: ./slides/lec7.pdf
       # handout: ./slides/lec7-handout.pdf
       # code: ./code/EquivREAndFA.scala
-      # homework:
-      # - name: hw03
-      #   link: https://github.com/ku-plrg-classroom/docs/tree/main/cose215/equiv-re-fa
-      #   date: 04/10
     - index: 8
       date: 04/01
       title: Closure Properties of Regular Languages
@@ -78,6 +74,10 @@ parts:
       title: The Pumping Lemma for Regular Languages
       # pdf: ./slides/lec9.pdf
       # handout: ./slides/lec9-handout.pdf
+      # homework:
+      # - name: hw03
+      #   link: https://github.com/ku-plrg-classroom/docs/tree/main/cose215/equiv-re-fa
+      #   date: 04/17
     - index: 10
       date: 04/8
       title: Equivalence and Minimization of Finite Automata
@@ -92,10 +92,6 @@ parts:
       # pdf: ./slides/lec11.pdf
       # handout: ./slides/lec11-handout.pdf
       # code: ./code/CFG.scala
-      # homework:
-      # - name: hw04
-      #   link: https://github.com/ku-plrg-classroom/docs/tree/main/cose215/cfg-examples
-      #   date: 04/24
     - index: 12
       date: 04/15
       title: Examples of Context-Free Grammars
@@ -121,15 +117,15 @@ parts:
       title: Examples of Pushdown Automata
       # pdf: ./slides/lec15.pdf
       # handout: ./slides/lec15-handout.pdf
+      # homework:
+      # - name: hw04
+      #   link: https://github.com/ku-plrg-classroom/docs/tree/main/cose215/pda-examples
+      #   date: 05/15
     - index: 16
       date: 05/06
       title: Equivalence of Pushdown Automata and Context-Free Grammars
       # pdf: ./slides/lec16.pdf
       # handout: ./slides/lec16-handout.pdf
-      # homework:
-      # - name: hw05
-      #   link: https://github.com/ku-plrg-classroom/docs/tree/main/cose215/equiv-pda-cfg
-      #   date: 05/20
     - index: 17
       date: 05/08
       title: Deterministic Pushdown Automata (DPDA)
@@ -145,6 +141,10 @@ parts:
       title: Closure Properties of Context-Free Languages
       # pdf: ./slides/lec19.pdf
       # handout: ./slides/lec19-handout.pdf
+      # homework:
+      # - name: hw05
+      #   link: https://github.com/ku-plrg-classroom/docs/tree/main/cose215/equiv-pda-cfg
+      #   date: 05/29
     - index: 20
       date: 05/20
       title: The Pumping Lemma for Context-Free Languages
@@ -159,10 +159,6 @@ parts:
       # pdf: ./slides/lec21.pdf
       # handout: ./slides/lec21-handout.pdf
       # code: ./code/TM.scala
-      # homework:
-      # - name: hw06
-      #   link: https://github.com/ku-plrg-classroom/docs/tree/main/cose215/tm-examples
-      #   date: 05/20
     - index: 22
       date: 05/27
       title: Examples of Turing Machines
@@ -173,6 +169,10 @@ parts:
       title: Extensions of Turing Machines
       # pdf: ./slides/lec23.pdf
       # handout: ./slides/lec23-handout.pdf
+      # homework:
+      # - name: hw06
+      #   link: https://github.com/ku-plrg-classroom/docs/tree/main/cose215/tm-examples
+      #   date: 06/12
     - index: 24
       date: 06/03
       title: The Origin of Computer Science
