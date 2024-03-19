@@ -45,13 +45,13 @@ parts:
     - index: 5
       date: 03/20
       title: ε-Nondeterministic Finite Automata (ε-NFA)
-      # pdf: ./slides/lec5.pdf
-      # handout: ./slides/lec5-handout.pdf
-      # code: ./code/ENFA.scala
-      # homework:
-      # - name: hw02
-      #   link: https://github.com/ku-plrg-classroom/docs/tree/main/cose215/fa-examples
-      #   date: 04/03
+      pdf: ./slides/lec5.pdf
+      handout: ./slides/lec5-handout.pdf
+      code: ./code/ENFA.scala
+      homework:
+      - name: hw02
+        link: https://github.com/ku-plrg-classroom/docs/tree/main/cose215/fa-examples
+        date: 04/03
     - index: 6
       date: 03/25
       title: Regular Expressions and Languages
