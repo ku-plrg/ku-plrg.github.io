@@ -34,8 +34,8 @@ parts:
     - index: 5
       date: 03/20
       title: Search Based Software Testing (SBST)
-      # pdf: ./slides/lec5.pdf
-      # handout: ./slides/lec5-handout.pdf
+      pdf: ./slides/lec5.pdf
+      handout: ./slides/lec5-handout.pdf
     - index: 6
       date: 03/25
       title: Dynamic Symbolic Execution (DSE)
