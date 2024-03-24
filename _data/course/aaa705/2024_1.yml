@@ -39,8 +39,8 @@ parts:
     - index: 6
       date: 03/25
       title: Dynamic Symbolic Execution (DSE)
-      # pdf: ./slides/lec6.pdf
-      # handout: ./slides/lec6-handout.pdf
+      pdf: ./slides/lec6.pdf
+      handout: ./slides/lec6-handout.pdf
     - index: 7
       date: 03/27
       title: Mutation Testing
