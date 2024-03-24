@@ -23,8 +23,8 @@ parts:
     - index: 3
       date: 03/25
       title: Classes, Traits, and Objects
-      # pdf: ./slides/lec3.pdf
-      # handout: ./slides/lec3-handout.pdf
+      pdf: ./slides/lec3.pdf
+      handout: ./slides/lec3-handout.pdf
     - index: 4
       date: 04/01
       title: Functional Programming
