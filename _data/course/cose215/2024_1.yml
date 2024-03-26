@@ -61,9 +61,8 @@ parts:
     - index: 7
       date: 03/27
       title: Equivalence of Regular Expressions and Finite Automata
-      # pdf: ./slides/lec7.pdf
-      # handout: ./slides/lec7-handout.pdf
-      # code: ./code/EquivREAndFA.scala
+      pdf: ./slides/lec7.pdf
+      handout: ./slides/lec7-handout.pdf
     - index: 8
       date: 04/01
       title: Closure Properties of Regular Languages
