@@ -66,17 +66,17 @@ parts:
     - index: 8
       date: 04/01
       title: Closure Properties of Regular Languages
-      # pdf: ./slides/lec8.pdf
-      # handout: ./slides/lec8-handout.pdf
+      pdf: ./slides/lec8.pdf
+      handout: ./slides/lec8-handout.pdf
     - index: 9
       date: 04/03
       title: The Pumping Lemma for Regular Languages
       # pdf: ./slides/lec9.pdf
       # handout: ./slides/lec9-handout.pdf
-      # homework:
-      # - name: hw03
+      homework:
+      - name: hw03
       #   link: https://github.com/ku-plrg-classroom/docs/tree/main/cose215/equiv-re-fa
-      #   date: 04/17
+        date: 04/17
     - index: 10
       date: 04/8
       title: Equivalence and Minimization of Finite Automata
@@ -116,10 +116,10 @@ parts:
       title: Examples of Pushdown Automata
       # pdf: ./slides/lec15.pdf
       # handout: ./slides/lec15-handout.pdf
-      # homework:
-      # - name: hw04
+      homework:
+      - name: hw04
       #   link: https://github.com/ku-plrg-classroom/docs/tree/main/cose215/pda-examples
-      #   date: 05/15
+        date: 05/15
     - index: 16
       date: 05/06
       title: Equivalence of Pushdown Automata and Context-Free Grammars
@@ -140,10 +140,10 @@ parts:
       title: Closure Properties of Context-Free Languages
       # pdf: ./slides/lec19.pdf
       # handout: ./slides/lec19-handout.pdf
-      # homework:
-      # - name: hw05
+      homework:
+      - name: hw05
       #   link: https://github.com/ku-plrg-classroom/docs/tree/main/cose215/equiv-pda-cfg
-      #   date: 05/29
+        date: 05/29
     - index: 20
       date: 05/20
       title: The Pumping Lemma for Context-Free Languages
@@ -168,10 +168,10 @@ parts:
       title: Extensions of Turing Machines
       # pdf: ./slides/lec23.pdf
       # handout: ./slides/lec23-handout.pdf
-      # homework:
-      # - name: hw06
+      homework:
+      - name: hw06
       #   link: https://github.com/ku-plrg-classroom/docs/tree/main/cose215/tm-examples
-      #   date: 06/12
+        date: 06/12
     - index: 24
       date: 06/03
       title: The Origin of Computer Science
