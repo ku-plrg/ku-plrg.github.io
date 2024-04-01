@@ -28,8 +28,8 @@ parts:
     - index: 4
       date: 04/01
       title: Functional Programming
-      # pdf: ./slides/lec4.pdf
-      # handout: ./slides/lec4-handout.pdf
+      pdf: ./slides/lec4.pdf
+      handout: ./slides/lec4-handout.pdf
       homework:
       - name: hw01
         date: 04/15
