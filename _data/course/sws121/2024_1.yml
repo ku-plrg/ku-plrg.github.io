@@ -33,7 +33,7 @@ parts:
       homework:
       - name: hw01
         date: 04/15
-      #   link: TODO
+        link: https://github.com/ku-plrg-classroom/docs/tree/main/scala/scala-nat-poly
     - index: 5
       date: 04/08
       title: Immutable Collections
