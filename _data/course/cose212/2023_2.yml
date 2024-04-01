@@ -15,7 +15,7 @@ parts:
       handout: ./slides/lec1-handout.pdf
       homework:
         - name: hw01
-          link: https://github.com/ku-plrg-classroom/docs/tree/main/scala-tutorial
+          link: https://github.com/ku-plrg-classroom/docs/tree/main/scala/scala-tutorial
           date: 09/20
 
   - name: "Part 1: Untyped Languages"

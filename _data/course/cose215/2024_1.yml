@@ -25,7 +25,7 @@ parts:
       code: ./code/Basics.scala
       homework:
       - name: hw01
-        link: https://github.com/ku-plrg-classroom/docs/tree/main/scala-tutorial
+        link: https://github.com/ku-plrg-classroom/docs/tree/main/scala/scala-tutorial
         date: 03/25
 
   - name: "Part 1: Finite Automata"

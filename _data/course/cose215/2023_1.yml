@@ -20,7 +20,7 @@ parts:
       handout: ./slides/lec2-handout.pdf
       homework:
       - name: hw01
-        link: https://github.com/ku-plrg-classroom/docs/tree/main/scala-tutorial
+        link: https://github.com/ku-plrg-classroom/docs/tree/main/scala/scala-tutorial
         date: 03/23
 
   - name: "Part 1: Finite Automata"

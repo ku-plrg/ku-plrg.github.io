@@ -19,7 +19,7 @@ parts:
       handout: ./slides/lec2-handout.pdf
       homework:
       - name: ex01
-        link: https://github.com/ku-plrg-classroom/docs/tree/main/scala-tutorial
+        link: https://github.com/ku-plrg-classroom/docs/tree/main/scala/scala-tutorial
     - index: 3
       date: 03/25
       title: Classes, Traits, and Objects
