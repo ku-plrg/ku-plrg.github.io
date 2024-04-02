@@ -58,8 +58,8 @@ parts:
     - index: 9
       date: 04/03
       title: Regression Testing
-      # pdf: ./slides/lec9.pdf
-      # handout: ./slides/lec9-handout.pdf
+      pdf: ./slides/lec9.pdf
+      handout: ./slides/lec9-handout.pdf
     - index: 10
       date: 04/08
       title: Fault Localization
