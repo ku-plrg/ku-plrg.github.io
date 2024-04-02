@@ -74,11 +74,11 @@ parts:
     - index: 9
       date: 04/03
       title: The Pumping Lemma for Regular Languages
-      # pdf: ./slides/lec9.pdf
-      # handout: ./slides/lec9-handout.pdf
+      pdf: ./slides/lec9.pdf
+      handout: ./slides/lec9-handout.pdf
       homework:
       - name: hw03
-      #   link: https://github.com/ku-plrg-classroom/docs/tree/main/cose215/equiv-re-fa
+        link: https://github.com/ku-plrg-classroom/docs/tree/main/cose215/equiv-re-fa
         date: 04/17
     - index: 10
       date: 04/8
