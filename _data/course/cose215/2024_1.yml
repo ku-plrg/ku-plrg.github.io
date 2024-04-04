@@ -81,7 +81,7 @@ parts:
         link: https://github.com/ku-plrg-classroom/docs/tree/main/cose215/equiv-re-fa
         date: 04/17
     - index: 10
-      date: 04/8
+      date: 04/08
       title: Equivalence and Minimization of Finite Automata
       pdf: ./slides/lec10.pdf
       handout: ./slides/lec10-handout.pdf
