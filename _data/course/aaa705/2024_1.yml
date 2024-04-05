@@ -63,8 +63,8 @@ parts:
     - index: 10
       date: 04/08
       title: Fault Localization
-      # pdf: ./slides/lec10.pdf
-      # handout: ./slides/lec10-handout.pdf
+      pdf: ./slides/lec10.pdf
+      handout: ./slides/lec10-handout.pdf
     - index: 11
       date: 04/15
       title: Testing Oracles
