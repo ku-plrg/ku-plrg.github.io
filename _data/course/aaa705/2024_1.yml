@@ -68,8 +68,8 @@ parts:
     - index: 11
       date: 04/15
       title: Testing Oracles
-      # pdf: ./slides/lec11.pdf
-      # handout: ./slides/lec11-handout.pdf
+      pdf: ./slides/lec11.pdf
+      handout: ./slides/lec11-handout.pdf
     - index: 12
       date: 04/17
       title: Course Review
