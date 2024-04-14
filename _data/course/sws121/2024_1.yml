@@ -42,8 +42,8 @@ parts:
     - index: 6
       date: 04/15
       title: For Comprehensions
-      # pdf: ./slides/lec6.pdf
-      # handout: ./slides/lec6-handout.pdf
+      pdf: ./slides/lec6.pdf
+      handout: ./slides/lec6-handout.pdf
     - index: 7
       date: 04/29
       title: Lazy Evaluation
