@@ -73,11 +73,10 @@ parts:
     - index: 12
       date: 04/17
       title: Course Review
-      # pdf: ./slides/lec12.pdf
-      # handout: ./slides/lec12-handout.pdf
+      pdf: ./slides/lec12.pdf
+      handout: ./slides/lec12-handout.pdf
       homework:
       - name: project
-      #   link: TODO
         date: 05/20
     - index: 13
       date: 05/20
