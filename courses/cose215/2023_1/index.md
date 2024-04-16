@@ -3,6 +3,9 @@ layout: course
 ---
 ## COSE215: Theory of Computation, 2023 Spring
 
+**Note that this page is outdated. Please refer to the [recent course page](../).**
+{:.warning}
+
 ### Course Information
 
 - **Instructor:** [Jihyeok Park (박지혁)](/members/jihyeok.park)
