@@ -36,24 +36,26 @@ test synthesizers, specification type checkers, and program static analyzers.
 
 ![ESMeta](/assets/images/research/esmeta.jpg)
 
-- **Papers**:
-    [**CACM**]
-    [**[PLDI 2023](/assets/data/publication/pldi23-park-jestfs.pdf)**]
-    [**[ESEC/FSE 2022](/assets/data/publication/fse22-park-jsaver.pdf)**]
-    [**[ASE 2021](/assets/data/publication/ase21-park-jstar.pdf)**]
-    [**[ICSE 2021](/assets/data/publication/icse21-park-jest.pdf)**]
-    [**[ASE 2020](/assets/data/publication/ase20-park-jiset.pdf)**]
-- **Tutorial**:
-    [**[PLDI 2022](https://pldi22.sigplan.org/details/pldi-2022-tutorials/1/Filling-the-gap-between-the-JavaScript-language-specification-and-tools-using-the-JIS)**]
-    (slides -
+- **Tools**:
+  [**[ESMeta](https://github.com/es-meta/esmeta)**]
+- **Overall**:
+  [**[CACM 2024](/assets/data/publication/cacm24-ryu-esmeta.pdf)**]
+  [**[SIGPLAN Blogs](https://blog.sigplan.org/2023/01/12/from-research-prototypes-to-continuous-integration-guiding-the-design-and-implementation-of-javascript/)**]
+  [**[PLDI 2022](https://pldi22.sigplan.org/details/pldi-2022-tutorials/1/Filling-the-gap-between-the-JavaScript-language-specification-and-tools-using-the-JIS)**]
+  (slides -
     [1](/assets/data/slides/2022/pldi22-tutorial-1.pdf) /
     [2](/assets/data/slides/2022/pldi22-tutorial-2.pdf) /
     [3](/assets/data/slides/2022/pldi22-tutorial-3.pdf)
-    )
-- **SIGPLAN Blogs**:
-    [[**link**](https://blog.sigplan.org/2023/01/12/from-research-prototypes-to-continuous-integration-guiding-the-design-and-implementation-of-javascript/)]
-- **Tools**:
-    [**[ESMeta](https://github.com/es-meta/esmeta)**]
+  )
+  - **Mechanized Spec. Extraction**:
+    [**[ASE 2021](/assets/data/publication/ase21-park-jstar.pdf)**]
+  - **Conformance Test Synthesis**:
+    [**[ICSE 2021](/assets/data/publication/icse21-park-jest.pdf)**]
+    [**[PLDI 2023](/assets/data/publication/pldi23-park-jestfs.pdf)**]
+  - **Type Analysis for Spec.**:
+    [**[ASE 2020](/assets/data/publication/ase20-park-jiset.pdf)**]
+  - **Derivation of Static Analysis**:
+    [**[ESEC/FSE 2022](/assets/data/publication/fse22-park-jsaver.pdf)**]
 
 
 
@@ -66,7 +68,7 @@ collects runtime behaviors of instrumented code, static analysis
 over-approximates all program behaviors without actually executing programs. The
 static analysis quality is often evaluated by three criteria:
 
-- **Performance** denotes how fast static analysis analyzes programs. 
+- **Performance** denotes how fast static analysis analyzes programs.
 - **Precision** stands for the accuracy of analysis results.
 - **Soundness** represents whether analysis results cover all possible program
   behaviors at runtime.
