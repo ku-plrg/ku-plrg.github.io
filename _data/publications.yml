@@ -27,10 +27,10 @@
       abbr: CACM
       url: https://m-cacm.acm.org/
     materials:
-      # link: TODO
-      # pdf: /assets/data/publication/cacm24-ryu-esmeta.pdf
+      link: https://doi.org/10.1145/3624723
+      pdf: /assets/data/publication/cacm24-ryu-esmeta.pdf
       repo: https://github.com/es-meta/esmeta
-      # bib: javascript:show('cacm-esmeta.bib')
+      bib: javascript:show('cacm24-ryu-esmeta.bib')
 
 2023:
 
