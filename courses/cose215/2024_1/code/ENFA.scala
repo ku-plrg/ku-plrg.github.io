@@ -31,7 +31,7 @@ case class ENFA(
     def aux(rest: List[State], visited: Set[State]): Set[State] = rest match
       case Nil          => visited
       case p :: targets => aux(
-        rest    = (trans((p, None)) -- visited).toList ++ targets,
+        rest    = (trans((p, None)) -- visited - p).toList ++ targets,
         visited = visited + p,
       )
     aux(List(q), Set())
