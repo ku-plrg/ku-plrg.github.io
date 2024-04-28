@@ -47,8 +47,8 @@ parts:
     - index: 7
       date: 04/29
       title: Lazy Evaluation
-      # pdf: ./slides/lec7.pdf
-      # handout: ./slides/lec7-handout.pdf
+      pdf: ./slides/lec7.pdf
+      handout: ./slides/lec7-handout.pdf
     - index: 8
       date: 05/06
       title: Generics
