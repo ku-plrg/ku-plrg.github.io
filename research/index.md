@@ -41,7 +41,7 @@ test synthesizers, specification type checkers, and program static analyzers.
 - **Overall**:
   [**[CACM 2024](/assets/data/publication/cacm24-ryu-esmeta.pdf)**]
   [**[SIGPLAN Blogs](https://blog.sigplan.org/2023/01/12/from-research-prototypes-to-continuous-integration-guiding-the-design-and-implementation-of-javascript/)**]
-  [**[PLDI 2022](https://pldi22.sigplan.org/details/pldi-2022-tutorials/1/Filling-the-gap-between-the-JavaScript-language-specification-and-tools-using-the-JIS)**]
+  [**[PLDI 2022 Tutorial](https://pldi22.sigplan.org/details/pldi-2022-tutorials/1/Filling-the-gap-between-the-JavaScript-language-specification-and-tools-using-the-JIS)**]
   (slides -
     [1](/assets/data/slides/2022/pldi22-tutorial-1.pdf) /
     [2](/assets/data/slides/2022/pldi22-tutorial-2.pdf) /
