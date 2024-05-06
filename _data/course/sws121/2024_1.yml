@@ -52,8 +52,8 @@ parts:
     - index: 8
       date: 05/06
       title: Generics
-      # pdf: ./slides/lec8.pdf
-      # handout: ./slides/lec8-handout.pdf
+      pdf: ./slides/lec8.pdf
+      handout: ./slides/lec8-handout.pdf
       homework:
       - name: hw02
         date: 05/20
