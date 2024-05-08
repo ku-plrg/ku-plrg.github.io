@@ -1,3 +1,13 @@
+2024:
+
+  - date      : 2024.05.03
+    place     : 한국과학영재학교 (KSA)
+    place-url : https://www.ksa.hs.kr/
+    author    : Jihyeok Park
+    pdf       : /assets/data/slides/2024/ksa24-talk.pdf
+
+# ------------------------------------------------------------------------------
+
 2023:
 
   - date      : 2023.11.02
@@ -52,6 +62,8 @@
     place-url : http://sigsoft.or.kr/kcse2023/
     author    : Jihyeok Park
     pdf       : /assets/data/slides/2023/kcse23-jsaver.pdf
+
+# ------------------------------------------------------------------------------
 
 Before 2023:
 
