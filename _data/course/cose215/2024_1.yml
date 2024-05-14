@@ -144,11 +144,11 @@ parts:
     - index: 19
       date: 05/15
       title: Closure Properties of Context-Free Languages
-      # pdf: ./slides/lec19.pdf
-      # handout: ./slides/lec19-handout.pdf
+      pdf: ./slides/lec19.pdf
+      handout: ./slides/lec19-handout.pdf
       homework:
       - name: hw05
-      #   link: https://github.com/ku-plrg-classroom/docs/tree/main/cose215/equiv-pda-cfg
+        link: https://github.com/ku-plrg-classroom/docs/tree/main/cose215/equiv-cfg-pda
         date: 05/29
     - index: 20
       date: 05/20
