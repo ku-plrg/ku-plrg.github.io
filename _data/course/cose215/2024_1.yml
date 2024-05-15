@@ -125,7 +125,7 @@ parts:
       homework:
       - name: hw04
         link: https://github.com/ku-plrg-classroom/docs/tree/main/cose215/pda-examples
-        date: 05/15
+        date: 05/20
     - index: 16
       date: 05/06
       title: Equivalence of Pushdown Automata and Context-Free Grammars
