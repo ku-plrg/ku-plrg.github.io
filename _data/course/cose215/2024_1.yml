@@ -153,8 +153,8 @@ parts:
     - index: 20
       date: 05/20
       title: The Pumping Lemma for Context-Free Languages
-      # pdf: ./slides/lec20.pdf
-      # handout: ./slides/lec20-handout.pdf
+      pdf: ./slides/lec20.pdf
+      handout: ./slides/lec20-handout.pdf
 
   - name: "Part 3: Turing Machines / Computability"
     lectures:
