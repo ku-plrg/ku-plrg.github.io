@@ -161,9 +161,9 @@ parts:
     - index: 21
       date: 05/22
       title: Turing Machines (TMs)
-      # pdf: ./slides/lec21.pdf
-      # handout: ./slides/lec21-handout.pdf
-      # code: ./code/TM.scala
+      pdf: ./slides/lec21.pdf
+      handout: ./slides/lec21-handout.pdf
+      code: ./code/TM.scala
     - index: 22
       date: 05/27
       title: Examples of Turing Machines
