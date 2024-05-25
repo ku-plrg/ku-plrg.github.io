@@ -167,8 +167,8 @@ parts:
     - index: 22
       date: 05/27
       title: Examples of Turing Machines
-      # pdf: ./slides/lec22.pdf
-      # handout: ./slides/lec22-handout.pdf
+      pdf: ./slides/lec22.pdf
+      handout: ./slides/lec22-handout.pdf
     - index: 23
       date: 05/29
       title: Extensions of Turing Machines
