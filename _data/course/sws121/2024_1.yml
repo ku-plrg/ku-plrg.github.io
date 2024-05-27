@@ -71,8 +71,8 @@ parts:
     - index: 11
       date: 05/27
       title: Metaprogramming
-      # pdf: ./slides/lec11.pdf
-      # handout: ./slides/lec11-handout.pdf
+      pdf: ./slides/lec11.pdf
+      handout: ./slides/lec11-handout.pdf
     - index: 12
       date: 06/03
       title: Concurrent Programming
