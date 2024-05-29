@@ -19,5 +19,5 @@ interested in programming language, and static analysis.
 
 ## Contact Information
 <!-- include author links -->
-{% assign author=site.data.authors["Yongwook Choi"] %}
+{% assign author=site.data.authors["Seunghwan Kim"] %}
 <div>{% include author-links.html author=author %}</div>
