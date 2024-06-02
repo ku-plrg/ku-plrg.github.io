@@ -76,8 +76,8 @@ parts:
     - index: 12
       date: 06/03
       title: Concurrent Programming
-      # pdf: ./slides/lec12.pdf
-      # handout: ./slides/lec12-handout.pdf
+      pdf: ./slides/lec12.pdf
+      handout: ./slides/lec12-handout.pdf
       homework:
       - name: hw03
         date: 06/17
