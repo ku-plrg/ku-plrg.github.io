@@ -81,7 +81,7 @@ parts:
       homework:
       - name: hw03
         date: 06/17
-      #   link: TODO
+        link: https://github.com/ku-plrg-classroom/docs/tree/main/scala/scala-adv-feat
     - index: 13
       date: 06/10
       title: Course Review
