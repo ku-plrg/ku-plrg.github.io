@@ -186,8 +186,8 @@ parts:
     - index: 25
       date: 06/05
       title: Undecidability
-      # pdf: ./slides/lec25.pdf
-      # handout: ./slides/lec25-handout.pdf
+      pdf: ./slides/lec25.pdf
+      handout: ./slides/lec25-handout.pdf
     - index: 26
       date: 06/10
       title: P, NP, and NP-Complete Problems
