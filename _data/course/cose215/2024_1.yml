@@ -191,8 +191,8 @@ parts:
     - index: 26
       date: 06/10
       title: P, NP, and NP-Complete Problems
-      # pdf: ./slides/lec26.pdf
-      # handout: ./slides/lec26-handout.pdf
+      pdf: ./slides/lec26.pdf
+      handout: ./slides/lec26-handout.pdf
     - index: 27
       date: 06/12
       title: Course Review
