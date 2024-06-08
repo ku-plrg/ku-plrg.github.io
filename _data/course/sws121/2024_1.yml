@@ -85,5 +85,5 @@ parts:
     - index: 13
       date: 06/10
       title: Course Review
-      # pdf: ./slides/lec13.pdf
-      # handout: ./slides/lec13-handout.pdf
+      pdf: ./slides/lec13.pdf
+      handout: ./slides/lec13-handout.pdf
