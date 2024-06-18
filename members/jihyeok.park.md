@@ -83,6 +83,7 @@ Please see [Publications](/publications).
 
 - **Program Committee (PC) Members**
   - 2024 -
+    [SPLASH (DS)](https://2024.splashcon.org/track/splash-2024-Doctoral-Symposium) /
     [SAC (PL Track)](https://www.sigapp.org/sac/sac2024) /
     [ICSE](https://conf.researchr.org/home/icse-2024)
   - 2023 -
@@ -106,6 +107,8 @@ Please see [Publications](/publications).
     [ISSTA](https://conf.researchr.org/home/issta-2018)
 
 - **Journal Reviewers**
+  - 2024 -
+    IEEE TSE
   - 2023 -
     [IEEE TSE](https://doi.org/10.1109/TSE.2023.3348716)
   - 2022 -
