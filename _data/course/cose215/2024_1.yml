@@ -200,5 +200,5 @@ parts:
       handout: ./slides/lec27-handout.pdf
     - exam: Final Exam
       date: 06/19
-      # pdf: ./final.pdf
+      pdf: ./final.pdf
       coverage: Lectures 14 - 26
