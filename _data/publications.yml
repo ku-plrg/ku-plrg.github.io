@@ -28,7 +28,7 @@
     materials:
       link: https://doi.org/10.1145/3624723
       online: https://cacm.acm.org/research/javascript-language-design-and-implementation-in-tandem/
-      viedeo: https://www.youtube.com/watch?v=JGxc-KIUnQY
+      video: https://www.youtube.com/watch?v=JGxc-KIUnQY
       pdf: /assets/data/publication/cacm24-ryu-esmeta.pdf
       repo: https://github.com/es-meta/esmeta
       bib: javascript:show('cacm24-ryu-esmeta.bib')
