@@ -12,10 +12,10 @@
       abbr: PLDI 2024
       url: https://pldi24.sigplan.org/
     materials:
-      # link: TODO
-      # pdf: /assets/data/publication/pldi24-jeon-pl4xgl.pdf
-      # repo: TODO
-      # bib: javascript:show('pldi24-jeon-pl4xgl.bib')
+      link: https://doi.org/10.1145/3656464
+      pdf: /assets/data/publication/pldi24-jeon-pl4xgl.pdf
+      repo: https://github.com/kupl/PL4XGL
+      bib: javascript:show('pldi24-jeon-pl4xgl.bib')
 
   - title: JavaScript Language Design and Implementation in Tandem
     authors:
