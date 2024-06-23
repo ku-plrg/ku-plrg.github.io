@@ -53,23 +53,24 @@ Please see [Publications](/publications).
 
 - **PL Conference**:
   - PLDI (
-      [2023](https://doi.org/10.1145/3591240)
+      [2023](https://doi.org/10.1145/3591240) /
+      [2024](https://doi.org/10.1145/3656464)
     )
 - **SE Conference**:
   - ICSE (
       [2021](https://doi.org/10.1109/ICSE43902.2021.00015)
     )
   - ESEC/FSE (
-      [2021](https://doi.org/10.1145/3468264.3468556)
-    / [2022](https://doi.org/10.1145/3540250.3549097)
+      [2021](https://doi.org/10.1145/3468264.3468556) /
+      [2022](https://doi.org/10.1145/3540250.3549097)
     )
   - ASE (
-      [2020](https://doi.org/10.1145/3324884.3416632)
-    / [2021](https://doi.org/10.1109/ASE51524.2021.9678781)
+      [2020](https://doi.org/10.1145/3324884.3416632) /
+      [2021](https://doi.org/10.1109/ASE51524.2021.9678781)
     )
 - **Journal**:
   - CACM (
-      2023
+      [2023](https://doi.org/10.1145/3624723)
     )
   - CSUR (
       [2021](https://doi.org/10.1145/3464457)
