@@ -8,7 +8,11 @@
   {%- endif -%}
   {%- if _talk.author -%}
   {%- assign _author = site.data.authors[_talk.author] -%}
+  {%- if _author -%}
   &nbsp;by <a href="{{ _author.url }}">{{ _talk.author }}</a>
+  {%- else -%}
+  &nbsp;by {{ _talk.author }}
+  {%- endif -%}
   {%- endif -%}
   <div class="talk-links">
     <ul class="menu menu--nowrap menu--inline">

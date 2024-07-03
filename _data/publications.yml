@@ -14,6 +14,7 @@
     materials:
       link: https://doi.org/10.1145/3656464
       pdf: /assets/data/publication/pldi24-jeon-pl4xgl.pdf
+      slides: /assets/data/slides/2024/pldi24-pl4xgl-slides.pdf
       repo: https://github.com/kupl/PL4XGL
       bib: javascript:show('pldi24-jeon-pl4xgl.bib')
 
