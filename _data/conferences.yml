@@ -6,7 +6,7 @@
 #   date: MM DD - MM DD
 #   place: <place>
 #   rank: <CORE ranking>
-#   tags: [<PL | SE | SEC>]
+#   tag: <[PL]|[SE]|[SEC]>
 
 ---
 - name: POPL
@@ -16,7 +16,7 @@
   date: January 19 - January 25
   place: Denver, Colorado, USA
   rank: A*
-  tags: [PL]
+  tag: [PL]
 
 - name: PLDI
   year: 2024
@@ -25,19 +25,16 @@
   date: June 24 - June 28
   place: Copenhagen, Denmark
   rank: A*
-  tags: [PL]
+  tag: [PL]
 
 - name: ASPLOS
   year: 2025
   link: https://www.asplos-conference.org/asplos2025
-  deadline:
-    - "2024-03-01 23:59:59"
-    - "2024-06-24 23:59:59"
-    - "2024-10-18 23:59:59"
+  deadline: "2024-10-18 23:59:59"
   date: March 30 - April 3
   place: Rotterdam, The Netherlands
   rank: A*
-  tags: [PL]
+  tag: [PL]
 
 - name: CAV
   year: 2024
@@ -46,7 +43,7 @@
   date: July 22 - July 27
   place: Montreal, Canada
   rank: A*
-  tags: [PL]
+  tag: [PL]
 
 - name: OOPSLA
   year: 2024
@@ -55,7 +52,7 @@
   date: October 20 - October 25
   place: Pasadena, California, USA
   rank: A
-  tags: [PL]
+  tag: [PL]
 
 - name: PPoPP
   year: 2025
@@ -64,7 +61,7 @@
   date: March 1 – March 5
   place: Las Vegas, Nevada, USA
   rank: B
-  tags: [PL]
+  tag: [PL]
 
 - name: ICFP
   year: 2024
@@ -73,7 +70,7 @@
   date: September 2 - September 7
   place: Milan, Italy
   rank: A
-  tags: [PL]
+  tag: [PL]
 
 - name: ECOOP
   year: 2024
@@ -82,7 +79,7 @@
   date: September 16 - September 20
   place: Vienna, Austria
   rank: A
-  tags: [PL]
+  tag: [PL]
 
 - name: ESOP
   year: 2024
@@ -91,7 +88,7 @@
   date: April 6 - April 11
   place: Luxembourg City, Luxembourg
   rank: A
-  tags: [PL]
+  tag: [PL]
 
 - name: CC
   year: 2024
@@ -100,7 +97,7 @@
   date: March 2 - March 3
   place: Edinburgh, United Kingdom
   rank: B
-  tags: [PL]
+  tag: [PL]
 
 - name: SAS
   year: 2024
@@ -109,7 +106,7 @@
   date: October 20 - October 22
   place: Pasadena, California, USA
   rank: B
-  tags: [PL]
+  tag: [PL]
 
 - name: VMCAI
   year: 2024
@@ -118,18 +115,16 @@
   date: January 17 - January 19
   place: London, United Kingdom
   rank: B
-  tags: [PL]
+  tag: [PL]
 
 - name: ICSE
   year: 2025
   link: https://conf.researchr.org/home/icse-2025
-  deadline:
-    - "2024-03-22 23:59"
-    - "2024-08-02 23:59"
+  deadline: "2024-08-02 23:59"
   date: Apri 26 - May 4
   place: Ottawa, Canada
   rank: A*
-  tags: [SE]
+  tag: [SE]
 
 - name: FSE
   year: 2025
@@ -138,7 +133,7 @@
   date: July 23 – July 27
   place: Trondheim, Norway
   rank: A*
-  tags: [SE]
+  tag: [SE]
 
 - name: ASE
   year: 2024
@@ -147,7 +142,7 @@
   date: October 27 – November 1
   place: Sacramento, California, United States
   rank: A*
-  tags: [SE]
+  tag: [SE]
 
 - name: ISSTA
   year: 2025
@@ -156,7 +151,7 @@
   date: June 25 – June 28
   place: Trondheim, Norway
   rank: A
-  tags: [SE]
+  tag: [SE]
 
 - name: TACAS
   year: 2024
@@ -165,7 +160,7 @@
   date: April 8 - April 11
   place: Luxembourg City, Luxembourg
   rank: A
-  tags: [SE]
+  tag: [SE]
 
 - name: ICST
   year: 2025
@@ -174,7 +169,7 @@
   date: March 31 - April 04
   place: Naples, Italy
   rank: A
-  tags: [SE]
+  tag: [SE]
 
 - name: FASE
   year: 2024
@@ -183,7 +178,7 @@
   date: April 6 - April 11
   place: Luxembourg City, Luxembourg
   rank: B
-  tags: [SE]
+  tag: [SE]
 
 - name: GECCO
   year: 2024
@@ -192,59 +187,49 @@
   date: July 14 - July 18
   place: Melbourne, Australia
   rank: A
-  tags: [SE]
+  tag: [SE]
 
 - name: CCS
   year: 2024
   link: https://www.sigsac.org/ccs/CCS2024
-  deadline:
-    - "2024-01-28 23:59"
-    - "2024-04-29 23:59"
+  deadline: "2024-04-29 23:59"
   date: October 14 - October 18
   place: Salt Lake City, USA
   rank: A*
-  tags: [SEC]
+  tag: [SEC]
 
 - name: S&P
   year: 2025
   link: https://www.ieee-security.org/TC/SP2025
-  deadline:
-    - "2024-06-06 23:59"
-    - "2024-11-14 23:59"
+  deadline: "2024-11-14 23:59"
   date: May 12 - May 15
   place: San Francisco, California, USA
   rank: A*
-  tags: [SEC]
+  tag: [SEC]
 
 - name: USENIX Security
   year: 2025
   link: https://www.usenix.org/conference/usenixsecurity25
-  deadline:
-    - "2024-09-04 23:59"
-    - "2025-01-22 23:59"
+  deadline: "2024-09-04 23:59"
   date: August 13 - August 15
   place: Seattle, Washington, USA
   rank: A*
-  tags: [SEC]
+  tag: [SEC]
 
 - name: NDSS
   year: 2025
   link: https://www.ndss-symposium.org/ndss2025/submisions/call-for-papers/
-  deadline:
-    - "2024-04-17 23:59"
-    - "2024-07-10 23:59"
+  deadline: "2024-07-10 23:59"
   date: February 23 - February 28
   place: San Diego, California, USA
   rank: A*
-  tags: [SEC]
+  tag: [SEC]
 
 - name: AsiaCCS
   year: 2025
   link: https://asiaccs2025.hust.edu.vn/
-  deadline:
-    - "2024-09-20 23:59"
-    - "2025-01-20 23:59"
+  deadline: "2024-09-20 23:59"
   date: August 25 - August 29
   place: Hanoi, Vietnam
   rank: A
-  tags: [SEC]
+  tag: [SEC]
