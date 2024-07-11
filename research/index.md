@@ -15,6 +15,10 @@ technologies, including:
 - **automated testing** to generate test cases for software automatically on
   behalf of humans.
 
+If you want to know the deadline for the upcoming conferences, please visit the
+[conferences](/conferences) page.
+
+
 ## Recent Research Topics
 
 

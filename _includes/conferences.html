@@ -1,0 +1,17 @@
+<li class="conference-card">
+  <strong><a href="{{ conference.link }}">{{ conference.name }} {{ conference.year }}</a></strong>
+  <div>
+    <span><strong>Date:</strong> {{ conference.date }}</span><br>
+    <span><strong>Place:</strong> {{ conference.place }}</span><br>
+    <span><strong>Deadline:</strong> <span class="formatted-deadline" data-deadline="{{ conference.deadline }}"></span></span><br>
+    <div class="deadline-info">
+      <span class="countdown" data-deadline="{{ conference.deadline }}"></span> (based on KST)
+    </div>
+    <span><strong>Rank:</strong> {{ conference.rank }}</span><br>
+    <span><strong>Tags:</strong>
+      <span class="conference-tag">{{ conference.tag }}</span>
+    </span>
+  </div>
+</li>
+
+<script>{%- include scripts/utils/countdown.js -%}</script>
