@@ -1,5 +1,15 @@
+# <format>
+# - name: <conference name>
+#   year: YYYY
+#   link: <link>
+#   deadline: "YYYY-MM-DD HH:MM:SS"
+#   date: MM DD - MM DD
+#   place: <place>
+#   rank: <CORE ranking>
+#   tags: [<PL | SE | SEC>]
+
 ---
-- title: POPL
+- name: POPL
   year: 2025
   link: https://popl25.sigplan.org
   deadline: "2024-07-11 23:59:59"
@@ -8,7 +18,7 @@
   rank: A*
   tags: [PL]
 
-- title: PLDI
+- name: PLDI
   year: 2024
   link: https://pldi24.sigplan.org
   deadline: "2023-11-16 23:59:59"
@@ -17,7 +27,7 @@
   rank: A*
   tags: [PL]
 
-- title: ASPLOS
+- name: ASPLOS
   year: 2025
   link: https://www.asplos-conference.org/asplos2025
   deadline:
@@ -29,7 +39,7 @@
   rank: A*
   tags: [PL]
 
-- title: CAV
+- name: CAV
   year: 2024
   link: https://i-cav.org/2024
   deadline: "2024-01-19 23:59:59"
@@ -38,7 +48,7 @@
   rank: A*
   tags: [PL]
 
-- title: OOPSLA
+- name: OOPSLA
   year: 2024
   link: https://2024.splashcon.org/track/splash-2024-oopsla
   deadline: "2024-04-05 23:59:59"
@@ -47,7 +57,7 @@
   rank: A
   tags: [PL]
 
-- title: PPoPP
+- name: PPoPP
   year: 2025
   link: https://ppopp25.sigplan.org
   deadline: "2024-08-16 23:59:59"
@@ -56,7 +66,7 @@
   rank: B
   tags: [PL]
 
-- title: ICFP
+- name: ICFP
   year: 2024
   link: https://icfp24.sigplan.org
   deadline: "2024-02-28 23:59:59"
@@ -65,7 +75,7 @@
   rank: A
   tags: [PL]
 
-- title: ECOOP
+- name: ECOOP
   year: 2024
   link: https://2024.ecoop.org
   deadline: "2024-04-17 23:59:59"
@@ -74,7 +84,7 @@
   rank: A
   tags: [PL]
 
-- title: ESOP
+- name: ESOP
   year: 2024
   link: https://etaps.org/2024/conferences/esop
   deadline: "2023-10-12 23:59:59"
@@ -83,7 +93,7 @@
   rank: A
   tags: [PL]
 
-- title: CC
+- name: CC
   year: 2024
   link: https://conf.researchr.org/home/CC-2024
   deadline: "2023-11-10 23:59:59"
@@ -92,7 +102,7 @@
   rank: B
   tags: [PL]
 
-- title: SAS
+- name: SAS
   year: 2024
   link: https://2024.splashcon.org/home/sas-2024
   deadline: "2024-05-19 23:59:59"
@@ -101,7 +111,7 @@
   rank: B
   tags: [PL]
 
-- title: VMCAI
+- name: VMCAI
   year: 2024
   link: https://popl24.sigplan.org/home/VMCAI-2024
   deadline: "2024-08-31 23:59:59"
