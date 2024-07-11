@@ -14,6 +14,28 @@
 
 2024:
 
+  - date-from : 2024.06.26
+    date-to   : 2024.06.28
+    place     : PLDI 2024
+    place-url : https://pldi24.sigplan.org/
+    location  : Copenhagen, Denmark
+    photos    : 2joTXessSSBaywDV6
+    report    :
+      - pdf   : /assets/data/report/2024/pldi24-report-jungyeom.pdf
+      - pdf   : /assets/data/report/2024/pldi24-report-minseok.pdf
+
+  - date-from : 2024.06.23
+    date-to   : 2024.06.24
+    place     : Técnico Lisboa
+    place-url : https://tecnico.ulisboa.pt/en/
+    location  : Lisbon, Portugal
+    photos    : fBNnmocbaHYdTbRi6
+    talk      :
+      - pdf   : /assets/data/slides/2024/ist24-esmeta.pdf
+    report    :
+      - pdf   : /assets/data/report/2024/ist24-report-jungyeom.pdf
+      - pdf   : /assets/data/report/2024/ist24-report-minseok.pdf
+
   - date-from : 2024.01.31
     date-to   : 2024.02.02
     place     : SIGPL Winter School 2024
