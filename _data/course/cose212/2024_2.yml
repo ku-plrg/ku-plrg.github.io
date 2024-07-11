@@ -1,0 +1,159 @@
+options:
+  code: false
+parts:
+  - name: "Part 0: Basic Concepts"
+    lectures:
+    - index: 0
+      date: 09/04
+      title: Course Overview
+      # pdf: ./slides/lec0.pdf
+      # handout: ./slides/lec0-handout.pdf
+    - index: 1
+      date: 09/06
+      title: Basic Introduction of Scala
+      # pdf: ./slides/lec1.pdf
+      # handout: ./slides/lec1-handout.pdf
+
+  - name: "Part 1: Untyped Languages"
+    lectures:
+    - index: 2
+      date: 09/11
+      title: Syntax and Semantics (1)
+      # pdf: ./slides/lec2.pdf
+      # handout: ./slides/lec2-handout.pdf
+    - index: 3
+      date: 09/13
+      title: Syntax and Semantics (2)
+      # pdf: ./slides/lec3.pdf
+      # handout: ./slides/lec3-handout.pdf
+    - index: 4
+      date: 09/18
+      title: Identifiers (1)
+      # pdf: ./slides/lec4.pdf
+      # handout: ./slides/lec4-handout.pdf
+    - index: 5
+      date: 09/20
+      title: Identifiers (2)
+      # pdf: ./slides/lec5.pdf
+      # handout: ./slides/lec5-handout.pdf
+    - index: 6
+      date: 09/25
+      title: First-Order Functions
+      # pdf: ./slides/lec6.pdf
+      # handout: ./slides/lec6-handout.pdf
+    - index: 7
+      date: 09/27
+      title: First-Class Functions
+      # pdf: ./slides/lec7.pdf
+      # handout: ./slides/lec7-handout.pdf
+    - index: 8
+      date: 10/02
+      title: Lambda Calculus
+      # pdf: ./slides/lec8.pdf
+      # handout: ./slides/lec8-handout.pdf
+    - index: 9
+      date: 10/04
+      title: Recursive Functions
+      # pdf: ./slides/lec9.pdf
+      # handout: ./slides/lec9-handout.pdf
+    - index: 10
+      date: 10/09
+      title: Mutable Data Structures - Boxes
+      # pdf: ./slides/lec10.pdf
+      # handout: ./slides/lec10-handout.pdf
+    - index: 11
+      date: 10/11
+      title: Mutable Variables
+      # pdf: ./slides/lec11.pdf
+      # handout: ./slides/lec11-handout.pdf
+    - index: 12
+      date: 10/16
+      title: Garbage Collection
+      # pdf: ./slides/lec12.pdf
+      # handout: ./slides/lec12-handout.pdf
+    - index: 13
+      date: 10/18
+      title: Lazy Evaluation
+      # pdf: ./slides/lec13.pdf
+      # handout: ./slides/lec13-handout.pdf
+    - exam: Midterm Exam
+      date: 10/25
+      # pdf: ./midterm.pdf
+      coverage: Lectures 1 - 13
+    - index: 14
+      date: 10/30
+      title: Continuations (1)
+      # pdf: ./slides/lec14.pdf
+      # handout: ./slides/lec14-handout.pdf
+    - index: 15
+      date: 11/01
+      title: Continuations (2)
+      # pdf: ./slides/lec15.pdf
+      # handout: ./slides/lec15-handout.pdf
+    - index: 16
+      date: 11/06
+      title: First-Class Continuations
+      # pdf: ./slides/lec16.pdf
+      # handout: ./slides/lec16-handout.pdf
+    - index: 17
+      date: 11/08
+      title: Compiling with Continuations
+      # pdf: ./slides/lec17.pdf
+      # handout: ./slides/lec17-handout.pdf
+
+  - name: "Part 2: Typed Languages"
+    lectures:
+    - index: 18
+      date: 11/13
+      title: Type Systems
+      # pdf: ./slides/lec18.pdf
+      # handout: ./slides/lec18-handout.pdf
+    - index: 19
+      date: 11/15
+      title: Typed Languages
+      # pdf: ./slides/lec19.pdf
+      # handout: ./slides/lec19-handout.pdf
+    - index: 20
+      date: 11/20
+      title: Typing Recursive Functions
+      # pdf: ./slides/lec20.pdf
+      # handout: ./slides/lec20-handout.pdf
+    - index: 21
+      date: 11/22
+      title: Algebraic Data Types (1)
+      # pdf: ./slides/lec21.pdf
+      # handout: ./slides/lec21-handout.pdf
+    - index: 22
+      date: 11/27
+      title: Algebraic Data Types (2)
+      # pdf: ./slides/lec22.pdf
+      # handout: ./slides/lec22-handout.pdf
+    - index: 23
+      date: 11/29
+      title: Parametric Polymorphism
+      # pdf: ./slides/lec23.pdf
+      # handout: ./slides/lec23-handout.pdf
+    - index: 24
+      date: 12/04
+      title: Subtype Polymorphism
+      # pdf: ./slides/lec24.pdf
+      # handout: ./slides/lec24-handout.pdf
+    - index: 25
+      date: 12/06
+      title: Type Inference (1)
+      # pdf: ./slides/lec25.pdf
+      # handout: ./slides/lec25-handout.pdf
+    - index: 26
+      date: 12/11
+      title: Type Inference (2)
+      # pdf: ./slides/lec26.pdf
+      # handout: ./slides/lec26-handout.pdf
+    - index: 27
+      date: 12/13
+      title: Course Review
+      # pdf: ./slides/lec27.pdf
+      # handout: ./slides/lec27-handout.pdf
+    - exam: Final Exam
+      date: 12/20
+      # pdf: ./final.pdf
+      coverage: Lectures 14 - 24
