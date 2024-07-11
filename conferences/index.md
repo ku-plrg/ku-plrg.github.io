@@ -92,4 +92,4 @@ Last Update: {{ site.data.conferences.last_update }}
   {% endfor %}
   {% endfor %}
 </div>
-<script type="text/javascript" src="./js/main.js" async></script>
+<script type="text/javascript" src="./js/main.js"></script>
