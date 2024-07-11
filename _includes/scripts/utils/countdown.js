@@ -9,7 +9,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
     function updateCountdown() {
       const now = new Date();
-      const timeDifference = deadline - now;
+      const aoeNow = new Date(now.getTime() - 21 * 60 * 60 * 1000);
+      const timeDifference = deadline - aoeNow;
 
       if (timeDifference < 0) {
         element.innerHTML = "Deadline has passed";
