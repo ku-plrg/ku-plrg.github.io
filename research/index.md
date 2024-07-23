@@ -52,12 +52,12 @@ test synthesizers, specification type checkers, and program static analyzers.
     [3](/assets/data/slides/2022/pldi22-tutorial-3.pdf)
   )
   - **Mechanized Spec. Extraction**:
-    [**[ASE 2021](/assets/data/publication/ase21-park-jstar.pdf)**]
+    [**[ASE 2020](/assets/data/publication/ase20-park-jiset.pdf)**]
   - **Conformance Test Synthesis**:
     [**[ICSE 2021](/assets/data/publication/icse21-park-jest.pdf)**]
     [**[PLDI 2023](/assets/data/publication/pldi23-park-jestfs.pdf)**]
   - **Type Analysis for Spec.**:
-    [**[ASE 2020](/assets/data/publication/ase20-park-jiset.pdf)**]
+    [**[ASE 2021](/assets/data/publication/ase21-park-jstar.pdf)**]
   - **Derivation of Static Analysis**:
     [**[ESEC/FSE 2022](/assets/data/publication/fse22-park-jsaver.pdf)**]
 
