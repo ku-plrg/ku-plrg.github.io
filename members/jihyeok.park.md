@@ -82,8 +82,9 @@ Please see [Publications](/publications).
 
 ## Professional Activities
 
-- **Program Committee (PC) Members**
+- **Committee Members**
   - 2024 -
+    [APLAS (SRC & Posters)](https://conf.researchr.org/track/aplas-2024/src-and-posters%3F) /
     [SPLASH (DS)](https://2024.splashcon.org/track/splash-2024-Doctoral-Symposium) /
     [SAC (PL Track)](https://www.sigapp.org/sac/sac2024) /
     [ICSE](https://conf.researchr.org/home/icse-2024)
