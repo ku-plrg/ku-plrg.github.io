@@ -1,28 +1,29 @@
 options:
   code: true
+  update: false
 parts:
   - name: "Part 0: Basic Concepts"
     lectures:
     - index: 0
       date: 03/04
       title: Course Overview
-      pdf: ./slides/lec0.pdf
-      handout: ./slides/lec0-handout.pdf
+      pdf: slides/lec0.pdf
+      handout: slides/lec0-handout.pdf
     - index: 1
       date: 03/06
       title: Mathematical Preliminaries
-      pdf: ./slides/lec1.pdf
-      handout: ./slides/lec1-handout.pdf
+      pdf: slides/lec1.pdf
+      handout: slides/lec1-handout.pdf
       homework:
        - name: ex01
-         link: ./ex/ex01.pdf
-         solution: ./ex/ex01-sol.pdf
+         link: ex/ex01.pdf
+         solution: ex/ex01-sol.pdf
     - index: 2
       date: 03/11
       title: Basic Introduction of Scala
-      pdf: ./slides/lec2.pdf
-      handout: ./slides/lec2-handout.pdf
-      code: ./code/Basics.scala
+      pdf: slides/lec2.pdf
+      handout: slides/lec2-handout.pdf
+      code: code/Basics.scala
       homework:
       - name: hw01
         link: https://github.com/ku-plrg-classroom/docs/tree/main/scala/scala-tutorial
@@ -33,21 +34,21 @@ parts:
     - index: 3
       date: 03/13
       title: Deterministic Finite Automata (DFA)
-      pdf: ./slides/lec3.pdf
-      handout: ./slides/lec3-handout.pdf
-      code: ./code/DFA.scala
+      pdf: slides/lec3.pdf
+      handout: slides/lec3-handout.pdf
+      code: code/DFA.scala
     - index: 4
       date: 03/18
       title: Nondeterministic Finite Automata (NFA)
-      pdf: ./slides/lec4.pdf
-      handout: ./slides/lec4-handout.pdf
-      code: ./code/NFA.scala
+      pdf: slides/lec4.pdf
+      handout: slides/lec4-handout.pdf
+      code: code/NFA.scala
     - index: 5
       date: 03/20
       title: ε-Nondeterministic Finite Automata (ε-NFA)
-      pdf: ./slides/lec5.pdf
-      handout: ./slides/lec5-handout.pdf
-      code: ./code/ENFA.scala
+      pdf: slides/lec5.pdf
+      handout: slides/lec5-handout.pdf
+      code: code/ENFA.scala
       homework:
       - name: hw02
         link: https://github.com/ku-plrg-classroom/docs/tree/main/cose215/fa-examples
@@ -55,27 +56,27 @@ parts:
     - index: 6
       date: 03/25
       title: Regular Expressions and Languages
-      pdf: ./slides/lec6.pdf
-      handout: ./slides/lec6-handout.pdf
-      code: ./code/RE.scala
+      pdf: slides/lec6.pdf
+      handout: slides/lec6-handout.pdf
+      code: code/RE.scala
     - index: 7
       date: 03/27
       title: Equivalence of Regular Expressions and Finite Automata
-      pdf: ./slides/lec7.pdf
-      handout: ./slides/lec7-handout.pdf
+      pdf: slides/lec7.pdf
+      handout: slides/lec7-handout.pdf
     - index: 8
       date: 04/01
       title: Closure Properties of Regular Languages
-      pdf: ./slides/lec8.pdf
-      handout: ./slides/lec8-handout.pdf
+      pdf: slides/lec8.pdf
+      handout: slides/lec8-handout.pdf
       homework:
        - name: ex02
          link: https://github.com/ku-plrg-classroom/docs/tree/main/cose215/rl-closure
     - index: 9
       date: 04/03
       title: The Pumping Lemma for Regular Languages
-      pdf: ./slides/lec9.pdf
-      handout: ./slides/lec9-handout.pdf
+      pdf: slides/lec9.pdf
+      handout: slides/lec9-handout.pdf
       homework:
       - name: hw03
         link: https://github.com/ku-plrg-classroom/docs/tree/main/cose215/equiv-re-fa
@@ -83,8 +84,8 @@ parts:
     - index: 10
       date: 04/08
       title: Equivalence and Minimization of Finite Automata
-      pdf: ./slides/lec10.pdf
-      handout: ./slides/lec10-handout.pdf
+      pdf: slides/lec10.pdf
+      handout: slides/lec10-handout.pdf
       homework:
        - name: ex03
          link: https://github.com/ku-plrg-classroom/docs/tree/main/cose215/dfa-eq-min
@@ -94,34 +95,34 @@ parts:
     - index: 11
       date: 04/10
       title: Context-Free Grammars (CFGs) and Languages (CFLs)
-      pdf: ./slides/lec11.pdf
-      handout: ./slides/lec11-handout.pdf
-      code: ./code/CFG.scala
+      pdf: slides/lec11.pdf
+      handout: slides/lec11-handout.pdf
+      code: code/CFG.scala
     - index: 12
       date: 04/15
       title: Examples of Context-Free Grammars
-      pdf: ./slides/lec12.pdf
-      handout: ./slides/lec12-handout.pdf
+      pdf: slides/lec12.pdf
+      handout: slides/lec12-handout.pdf
     - index: 13
       date: 04/17
       title: Parse Trees and Ambiguity
-      pdf: ./slides/lec13.pdf
-      handout: ./slides/lec13-handout.pdf
+      pdf: slides/lec13.pdf
+      handout: slides/lec13-handout.pdf
     - exam: Midterm Exam
       date: 04/24
-      pdf: ./midterm.pdf
+      pdf: midterm.pdf
       coverage: Lectures 1 - 13
     - index: 14
       date: 04/29
       title: Pushdown Automata (PDA)
-      pdf: ./slides/lec14.pdf
-      handout: ./slides/lec14-handout.pdf
-      code: ./code/PDA.scala
+      pdf: slides/lec14.pdf
+      handout: slides/lec14-handout.pdf
+      code: code/PDA.scala
     - index: 15
       date: 05/01
       title: Examples of Pushdown Automata
-      pdf: ./slides/lec15.pdf
-      handout: ./slides/lec15-handout.pdf
+      pdf: slides/lec15.pdf
+      handout: slides/lec15-handout.pdf
       homework:
       - name: hw04
         link: https://github.com/ku-plrg-classroom/docs/tree/main/cose215/pda-examples
@@ -129,23 +130,23 @@ parts:
     - index: 16
       date: 05/06
       title: Equivalence of Pushdown Automata and Context-Free Grammars
-      pdf: ./slides/lec16.pdf
-      handout: ./slides/lec16-handout.pdf
+      pdf: slides/lec16.pdf
+      handout: slides/lec16-handout.pdf
     - index: 17
       date: 05/08
       title: Deterministic Pushdown Automata (DPDA)
-      pdf: ./slides/lec17.pdf
-      handout: ./slides/lec17-handout.pdf
+      pdf: slides/lec17.pdf
+      handout: slides/lec17-handout.pdf
     - index: 18
       date: 05/13
       title: Normal Forms of Context-Free Grammars
-      pdf: ./slides/lec18.pdf
-      handout: ./slides/lec18-handout.pdf
+      pdf: slides/lec18.pdf
+      handout: slides/lec18-handout.pdf
     - index: 19
       date: 05/15
       title: Closure Properties of Context-Free Languages
-      pdf: ./slides/lec19.pdf
-      handout: ./slides/lec19-handout.pdf
+      pdf: slides/lec19.pdf
+      handout: slides/lec19-handout.pdf
       homework:
       - name: hw05
         link: https://github.com/ku-plrg-classroom/docs/tree/main/cose215/equiv-cfg-pda
@@ -153,27 +154,27 @@ parts:
     - index: 20
       date: 05/20
       title: The Pumping Lemma for Context-Free Languages
-      pdf: ./slides/lec20.pdf
-      handout: ./slides/lec20-handout.pdf
+      pdf: slides/lec20.pdf
+      handout: slides/lec20-handout.pdf
 
   - name: "Part 3: Turing Machines / Computability"
     lectures:
     - index: 21
       date: 05/22
       title: Turing Machines (TMs)
-      pdf: ./slides/lec21.pdf
-      handout: ./slides/lec21-handout.pdf
-      code: ./code/TM.scala
+      pdf: slides/lec21.pdf
+      handout: slides/lec21-handout.pdf
+      code: code/TM.scala
     - index: 22
       date: 05/27
       title: Examples of Turing Machines
-      pdf: ./slides/lec22.pdf
-      handout: ./slides/lec22-handout.pdf
+      pdf: slides/lec22.pdf
+      handout: slides/lec22-handout.pdf
     - index: 23
       date: 05/29
       title: Extensions of Turing Machines
-      pdf: ./slides/lec23.pdf
-      handout: ./slides/lec23-handout.pdf
+      pdf: slides/lec23.pdf
+      handout: slides/lec23-handout.pdf
       homework:
       - name: hw06
         link: https://github.com/ku-plrg-classroom/docs/tree/main/cose215/tm-examples
@@ -181,24 +182,24 @@ parts:
     - index: 24
       date: 06/03
       title: The Origin of Computer Science
-      pdf: ./slides/lec24.pdf
-      handout: ./slides/lec24-handout.pdf
+      pdf: slides/lec24.pdf
+      handout: slides/lec24-handout.pdf
     - index: 25
       date: 06/05
       title: Undecidability
-      pdf: ./slides/lec25.pdf
-      handout: ./slides/lec25-handout.pdf
+      pdf: slides/lec25.pdf
+      handout: slides/lec25-handout.pdf
     - index: 26
       date: 06/10
       title: P, NP, and NP-Complete Problems
-      pdf: ./slides/lec26.pdf
-      handout: ./slides/lec26-handout.pdf
+      pdf: slides/lec26.pdf
+      handout: slides/lec26-handout.pdf
     - index: 27
       date: 06/12
       title: Course Review
-      pdf: ./slides/lec27.pdf
-      handout: ./slides/lec27-handout.pdf
+      pdf: slides/lec27.pdf
+      handout: slides/lec27-handout.pdf
     - exam: Final Exam
       date: 06/19
-      pdf: ./final.pdf
+      pdf: final.pdf
       coverage: Lectures 14 - 26
