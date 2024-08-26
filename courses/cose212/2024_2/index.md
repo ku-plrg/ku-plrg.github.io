@@ -48,3 +48,23 @@ Please download and install them using the following links:
 
 <!-- load schedule with PDF files -->
 {%- include schedule.html data=site.data.course.cose212.2024_2 -%}
+
+
+### Online Interpreters
+
+<div>
+  <link rel="stylesheet" href="../lib/main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="../lib/interp.js" defer></script>
+  <script src="../lib/main.js" defer></script>
+  <div class="center">
+    <div id="dropdown">
+      <span id="selected"></span>
+      <i class="arrow fa fa-angle-up transition-all ml-auto rotate-180"></i>
+      <ul style="display: none;"></ul>
+    </div>
+    <button id="run"><i class="fa fa-play"></i></button>
+  </div>
+  <div id="editor" style="font-size: .8em;"></div>
+  <pre id="result" style="font-size: .8em; line-height: 15px"><br></pre>
+</div>
