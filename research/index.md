@@ -42,9 +42,12 @@ test synthesizers, specification type checkers, and program static analyzers.
 
 - **Tools**:
   [**[ESMeta](https://github.com/es-meta/esmeta)**]
+- **News/Blogs**:
+  [**[Korean News](https://www.aitimes.kr/news/articleView.html?idxno=31089)**]
+  [**[ECMA News](https://ecma-international.org/news/ecma-international-enables-innovative-research-between-the-korean-kaist-research-group-and-tc39-ecmascript/)**]
+  [**[SIGPLAN Blogs](https://blog.sigplan.org/2023/01/12/from-research-prototypes-to-continuous-integration-guiding-the-design-and-implementation-of-javascript/)**]
 - **Overall**:
   [**[CACM 2024](/assets/data/publication/cacm24-ryu-esmeta.pdf)**]
-  [**[SIGPLAN Blogs](https://blog.sigplan.org/2023/01/12/from-research-prototypes-to-continuous-integration-guiding-the-design-and-implementation-of-javascript/)**]
   [**[PLDI 2022 Tutorial](https://pldi22.sigplan.org/details/pldi-2022-tutorials/1/Filling-the-gap-between-the-JavaScript-language-specification-and-tools-using-the-JIS)**]
   (slides -
     [1](/assets/data/slides/2022/pldi22-tutorial-1.pdf) /
