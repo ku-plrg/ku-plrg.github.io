@@ -10,8 +10,12 @@ layout: course
     [Science Library Bldg](https://goo.gl/maps/dJTtjpZEHCC4Xv5t5)
     ([과학도서관](https://naver.me/5Y1oxNnH))
   - **Email:** [jihyeok_park@korea.ac.kr](mailto:jihyeok_park@korea.ac.kr)
-- **Lecture:** TBD
-- **Teaching Assistant:** TBD
+- **Lecture:** 13:30--14:45 Mondays and Wednesdays @ 205,
+  [Woojung Hall of Informatics](https://maps.app.goo.gl/31pXxfzqAuki6Yzv7)
+  ([우정정보관](https://naver.me/G5rz0209))
+- **Teaching Assistant:**
+  - [Jungyeom Kim (김준겸)](/members/jungyeom.kim)
+  - [Seongmin Ko (고성민)](/members/seongmin.ko)
 - **Office hours:** 14:00--16:00 Tuesdays (by appointment)
 
 ### Course Materials
@@ -26,6 +30,15 @@ layout: course
 - **Previous Exams**
   - Midterm: [2023](../2023_2/midterm.pdf)
   - Final: [2023](../2023_2/final.pdf)
+
+
+### Discussion and Questions
+
+Please use the [CampusWire](https://campuswire.com) for discussion
+and questions about the course.
+- Link: [https://campuswire.com/c/G2CA06AE4](https://campuswire.com/c/G2CA06AE4)
+- Passcode: To be announced in the class
+
 
 ### Installation of Scala and sbt
 
