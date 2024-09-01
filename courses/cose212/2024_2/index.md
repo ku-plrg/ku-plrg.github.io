@@ -32,12 +32,17 @@ layout: course
   - Final: [2023](../2023_2/final.pdf)
 
 
+### Attendance
+
+Please use the [Blackboard](https://kulms.korea.ac.kr) for the attendance check.
+
+
 ### Discussion and Questions
 
 Please use the [CampusWire](https://campuswire.com) for discussion
 and questions about the course.
 - Link: [https://campuswire.com/c/G2CA06AE4](https://campuswire.com/c/G2CA06AE4)
-- Passcode: To be announced in the class
+- Passcode: See the [Blackboard](https://kulms.korea.ac.kr) announcement.
 
 
 ### Installation of Scala and sbt
