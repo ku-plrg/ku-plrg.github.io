@@ -32,9 +32,10 @@ layout: course
   - Final: [2023](../2023_2/final.pdf)
 
 
-### Attendance
+### Attendances and Homework
 
-Please use the [Blackboard](https://kulms.korea.ac.kr) for the attendance check.
+Please use the [Blackboard](https://kulms.korea.ac.kr) for the attendance check
+and the submission of homework.
 
 
 ### Discussion and Questions
