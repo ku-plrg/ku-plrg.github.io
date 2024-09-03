@@ -76,10 +76,8 @@
       {%- if _lecture.handout -%}
       <td style="text-align: center;">
         {%- assign _path = _base | append: _lecture.handout} -%}
-        {{ _path }}
         {%- for _file in site.static_files -%}
         {% if _file.path == _path %}
-        {{ _file.path }}
         {%- assign _t = _file.modified_time -%}
         <p style="margin: 0;">{{ _t | date: "%m/%d<br>(%H:%M)" }}</p>
         {% endif %}
