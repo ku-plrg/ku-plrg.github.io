@@ -27,9 +27,6 @@ layout: course
     and [Sukyoung Ryu](https://plrg.kaist.ac.kr/ryu)
   - [**Types and Programming Languages**](https://www.cis.upenn.edu/~bcpierce/tapl/),
     [Benjamin C. Pierce](https://www.cis.upenn.edu/~bcpierce/), The MIT Press
-- **Previous Exams**
-  - Midterm: [2023](../2023_2/midterm.pdf)
-  - Final: [2023](../2023_2/final.pdf)
 
 
 ### Attendances and Homework
@@ -45,6 +42,13 @@ and questions about the course.
 - Link: [https://campuswire.com/c/G2CA06AE4](https://campuswire.com/c/G2CA06AE4)
 - Passcode: See the [Blackboard](https://kulms.korea.ac.kr) announcement.
 
+### Exams
+
+- **Midterm:** October 23 (Wed.) 18:30 -- 21:00 (150 min.)
+- **Final:** December 18 (Wed.) 18:30 -- 21:00 (150 min.)
+- **Previous Exams**
+  - Midterm: [2023](../2023_2/midterm.pdf)
+  - Final: [2023](../2023_2/final.pdf)
 
 ### Installation of Scala and sbt
 
