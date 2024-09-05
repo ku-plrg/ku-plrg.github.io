@@ -18,12 +18,12 @@ infos:
     rank: A*
     rank-id: 84
 
-  ASPLOS:
-    tags: [ARCH, PL]
+  OOPSLA:
+    tags: [PL]
     bk21: 4
     kiise: 최우수
-    rank: A*
-    rank-id: 147
+    rank: A
+    rank-id: 18
 
   CAV:
     tags: [LOGIC, PL]
@@ -32,12 +32,12 @@ infos:
     rank: A*
     rank-id: 331
 
-  OOPSLA:
-    tags: [PL]
+  ASPLOS:
+    tags: [ARCH, PL]
     bk21: 4
     kiise: 최우수
-    rank: A
-    rank-id: 18
+    rank: A*
+    rank-id: 147
 
   PPoPP:
     tags: [PL]
@@ -192,12 +192,29 @@ list:
     place: Denver, Colorado, USA
 
   - name: PLDI
-    year: 2024
-    link: https://pldi24.sigplan.org
+    year: 2025
+    link: https://pldi25.sigplan.org
     deadline:
-      - "2023-11-16 23:59:59"
-    date: Jun 24 - Jun 28
-    place: Copenhagen, Denmark
+      - "2024-11-14 23:59:59"
+    date: Jun 16 - Jun 20
+    place: Seoul, South Korea
+
+  - name: OOPSLA
+    year: 2025
+    link: https://2025.splashcon.org/track/OOPSLA
+    deadline:
+      - "2024-10-15 23:59:59"
+      - "2025-03-25 23:59:59"
+    date: TBD   # TODO
+    place: TBD  # TODO
+
+  - name: CAV
+    year: 2024
+    link: https://i-cav.org/2024
+    deadline:
+      - "2024-01-19 23:59:59"
+    date: Jul 22 - Jul 27
+    place: Montreal, Canada
 
   - name: ASPLOS
     year: 2025
@@ -208,23 +225,6 @@ list:
       - "2024-10-18 23:59:59"
     date: Mar 30 - Apr 3
     place: Rotterdam, The Netherlands
-
-  - name: CAV
-    year: 2024
-    link: https://i-cav.org/2024
-    deadline:
-      - "2024-01-19 23:59:59"
-    date: Jul 22 - Jul 27
-    place: Montreal, Canada
-
-  - name: OOPSLA
-    year: 2024
-    link: https://2024.splashcon.org/track/splash-2024-oopsla
-    deadline:
-      - "2023-10-20 23:59:59"
-      - "2024-04-05 23:59:59"
-    date: Oct 20 - Oct 25
-    place: Pasadena, California, USA
 
   - name: PPoPP
     year: 2025
@@ -277,12 +277,12 @@ list:
     place: Pasadena, California, USA
 
   - name: VMCAI
-    year: 2024
-    link: https://popl24.sigplan.org/home/VMCAI-2024
+    year: 2025
+    link: https://conf.researchr.org/home/VMCAI-2025
     deadline:
-      - "2023-09-07 23:59:59"
-    date: Jan 17 - Jan 19
-    place: London, United Kingdom
+      - "2024-09-16 23:59:59"
+    date: Jan 21 - Jan 21
+    place: Denver, Colorado, United States
 
   - name: ICSE
     year: 2025
@@ -318,12 +318,12 @@ list:
     place: Trondheim, Norway
 
   - name: TACAS
-    year: 2024
-    link: https://etaps.org/2024/conferences/tacas
+    year: 2025
+    link: https://etaps.org/2025/conferences/tacas
     deadline:
-      - "2023-10-12 23:59"
-    date: Apr 8 - Apr 11
-    place: Luxembourg City, Luxembourg
+      - "2024-10-10 23:59:59"
+    date: May 3 - May 8
+    place: Hamilton, Canada
 
   - name: ICST
     year: 2025
@@ -334,12 +334,12 @@ list:
     place: Naples, Italy
 
   - name: FASE
-    year: 2024
+    year: 2025
     link: https://etaps.org/2025/conferences/fase
     deadline:
-      - "2023-10-12 23:59:59"
-    date: Apr 6 - Apr 11
-    place: Luxembourg City, Luxembourg
+      - "2024-10-10 23:59:59"
+    date: May 3 - May 8
+    place: Hamilton, Canada
 
   - name: GECCO
     year: 2024
