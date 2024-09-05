@@ -187,7 +187,7 @@ list:
     year: 2025
     link: https://popl25.sigplan.org
     deadline:
-      - "2024-07-11 23:59:59"
+      - "2024-07-11 23:59"
     date: Jan 19 - Jan 25
     place: Denver, Colorado, USA
 
@@ -195,7 +195,7 @@ list:
     year: 2025
     link: https://pldi25.sigplan.org
     deadline:
-      - "2024-11-14 23:59:59"
+      - "2024-11-14 23:59"
     date: Jun 16 - Jun 20
     place: Seoul, South Korea
 
@@ -203,8 +203,8 @@ list:
     year: 2025
     link: https://2025.splashcon.org/track/OOPSLA
     deadline:
-      - "2024-10-15 23:59:59"
-      - "2025-03-25 23:59:59"
+      - "2024-10-15 23:59"
+      - "2025-03-25 23:59"
     date: TBD   # TODO
     place: TBD  # TODO
 
@@ -212,7 +212,7 @@ list:
     year: 2024
     link: https://i-cav.org/2024
     deadline:
-      - "2024-01-19 23:59:59"
+      - "2024-01-19 23:59"
     date: Jul 22 - Jul 27
     place: Montreal, Canada
 
@@ -220,9 +220,9 @@ list:
     year: 2025
     link: https://www.asplos-conference.org/asplos2025
     deadline:
-      - "2024-03-01 23:59:59"
-      - "2024-06-24 23:59:59"
-      - "2024-10-18 23:59:59"
+      - "2024-03-01 23:59"
+      - "2024-06-24 23:59"
+      - "2024-10-18 23:59"
     date: Mar 30 - Apr 3
     place: Rotterdam, The Netherlands
 
@@ -230,7 +230,7 @@ list:
     year: 2025
     link: https://ppopp25.sigplan.org
     deadline:
-      - "2024-08-16 23:59:59"
+      - "2024-08-16 23:59"
     date: Mar 1 - Mar 5
     place: Las Vegas, Nevada, USA
 
@@ -238,7 +238,7 @@ list:
     year: 2024
     link: https://icfp24.sigplan.org
     deadline:
-      - "2024-02-28 23:59:59"
+      - "2024-02-28 23:59"
     date: Sep 2 - Sep 7
     place: Milan, Italy
 
@@ -246,8 +246,8 @@ list:
     year: 2024
     link: https://2024.ecoop.org
     deadline:
-      - "2024-01-17 23:59:59"
-      - "2024-04-17 23:59:59"
+      - "2024-01-17 23:59"
+      - "2024-04-17 23:59"
     date: Sep 16 - Sep 20
     place: Vienna, Austria
 
@@ -255,8 +255,8 @@ list:
     year: 2025
     link: https://etaps.org/2025/conferences/esop/
     deadline:
-      - "2024-05-30 23:59:59"
-      - "2024-10-10 23:59:59"
+      - "2024-05-30 23:59"
+      - "2024-10-10 23:59"
     date: Apr 6 - Apr 11
     place: Luxembourg City, Luxembourg
 
@@ -264,7 +264,7 @@ list:
     year: 2024
     link: https://conf.researchr.org/home/CC-2024
     deadline:
-      - "2023-11-13 23:59:59"
+      - "2023-11-13 23:59"
     date: Mar 2 - Mar 3
     place: Edinburgh, United Kingdom
 
@@ -272,7 +272,7 @@ list:
     year: 2024
     link: https://2024.splashcon.org/home/sas-2024
     deadline:
-      - "2024-05-19 23:59:59"
+      - "2024-05-19 23:59"
     date: Oct 20 - Oct 22
     place: Pasadena, California, USA
 
@@ -280,7 +280,7 @@ list:
     year: 2025
     link: https://conf.researchr.org/home/VMCAI-2025
     deadline:
-      - "2024-09-16 23:59:59"
+      - "2024-09-16 23:59"
     date: Jan 21 - Jan 21
     place: Denver, Colorado, United States
 
@@ -321,7 +321,7 @@ list:
     year: 2025
     link: https://etaps.org/2025/conferences/tacas
     deadline:
-      - "2024-10-10 23:59:59"
+      - "2024-10-10 23:59"
     date: May 3 - May 8
     place: Hamilton, Canada
 
@@ -337,7 +337,7 @@ list:
     year: 2025
     link: https://etaps.org/2025/conferences/fase
     deadline:
-      - "2024-10-10 23:59:59"
+      - "2024-10-10 23:59"
     date: May 3 - May 8
     place: Hamilton, Canada
 
@@ -345,7 +345,7 @@ list:
     year: 2024
     link: https://gecco-2024.sigevo.org/HomePage
     deadline:
-      - "2024-02-01 23:59:59"
+      - "2024-02-01 23:59"
     date: Jul 14 - Jul 18
     place: Melbourne, Australia
 
