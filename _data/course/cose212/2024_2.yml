@@ -25,8 +25,8 @@ parts:
     - index: 2
       date: 09/09
       title: Syntax and Semantics (1)
-      # pdf: slides/lec2.pdf
-      # handout: slides/lec2-handout.pdf
+      pdf: slides/lec2.pdf
+      handout: slides/lec2-handout.pdf
     - index: 3
       date: 09/11
       title: Syntax and Semantics (2)
