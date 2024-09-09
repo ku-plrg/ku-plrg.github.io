@@ -83,6 +83,8 @@ Please see [Publications](/publications).
 ## Professional Activities
 
 - **Committee Members**
+  - 2025 -
+    [SAC (PL Track)](https://www.sigapp.org/sac/sac2025)
   - 2024 -
     [APLAS (SRC & Posters)](https://conf.researchr.org/track/aplas-2024/src-and-posters%3F) /
     [SPLASH (DS)](https://2024.splashcon.org/track/splash-2024-Doctoral-Symposium) /
