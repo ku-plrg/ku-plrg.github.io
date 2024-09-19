@@ -51,11 +51,11 @@ parts:
     - index: 6
       date: 09/23
       title: First-Order Functions
-      # pdf: slides/lec6.pdf
-      # handout: slides/lec6-handout.pdf
+      pdf: slides/lec6.pdf
+      handout: slides/lec6-handout.pdf
       homework:
         - name: ex03
-          # link: https://github.com/ku-plrg-classroom/docs/tree/main/cose212/f1vae
+          link: https://github.com/ku-plrg-classroom/docs/tree/main/cose212/f1vae
     - index: 7
       date: 09/25
       title: First-Class Functions
