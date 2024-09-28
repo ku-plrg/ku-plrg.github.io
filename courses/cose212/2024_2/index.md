@@ -67,13 +67,9 @@ Please download and install them using the following links:
 - **Scala** - [https://www.scala-lang.org/download/](https://www.scala-lang.org/download/)
 
 
-### Schedule
-
-<!-- load schedule with PDF files -->
-{%- include schedule.html data=site.data.course.cose212.2024_2 -%}
-
-
 ### Online Interpreters
+
+In this course, you will implement interpreters for the following languages:
 
 <div>
   <link rel="stylesheet" href="../lib/main.css">
@@ -91,3 +87,9 @@ Please download and install them using the following links:
   <div id="editor" style="font-size: .8em;"></div>
   <pre id="result" style="font-size: .8em; line-height: 15px"><br></pre>
 </div>
+
+
+### Schedule
+
+<!-- load schedule with PDF files -->
+{%- include schedule.html data=site.data.course.cose212.2024_2 -%}
