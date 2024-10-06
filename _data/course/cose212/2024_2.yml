@@ -84,15 +84,18 @@ parts:
     - index: 10
       date: 10/07
       title: Mutable Data Structures - Boxes
-      # pdf: slides/lec10.pdf
-      # handout: slides/lec10-handout.pdf
+      pdf: slides/lec10.pdf
+      handout: slides/lec10-handout.pdf
+      homework:
+        - name: ex06
+          link: https://github.com/ku-plrg-classroom/docs/tree/main/cose212/bfae
     - index: 11
       date: 10/09
       title: Mutable Variables
       # pdf: slides/lec11.pdf
       # handout: slides/lec11-handout.pdf
       homework:
-        - name: ex06
+        - name: ex07
           # link: https://github.com/ku-plrg-classroom/docs/tree/main/cose212/mfae
     - index: 12
       date: 10/14
@@ -105,7 +108,7 @@ parts:
       # pdf: slides/lec13.pdf
       # handout: slides/lec13-handout.pdf
       homework:
-        - name: ex07
+        - name: ex08
           # link: https://github.com/ku-plrg-classroom/docs/tree/main/cose212/lfae
     - exam: Midterm Exam
       date: 10/23
@@ -122,7 +125,7 @@ parts:
       # pdf: slides/lec15.pdf
       # handout: slides/lec15-handout.pdf
       homework:
-        - name: ex08
+        - name: ex09
           # link: https://github.com/ku-plrg-classroom/docs/tree/main/cose212/fae-cps
     - index: 16
       date: 11/04
@@ -130,7 +133,7 @@ parts:
       # pdf: slides/lec16.pdf
       # handout: slides/lec16-handout.pdf
       homework:
-        - name: ex09
+        - name: ex10
           # link: https://github.com/ku-plrg-classroom/docs/tree/main/cose212/kfae
     - index: 17
       date: 11/06
@@ -155,7 +158,7 @@ parts:
       # pdf: slides/lec19.pdf
       # handout: slides/lec19-handout.pdf
       homework:
-        - name: ex10
+        - name: ex11
           # link: https://github.com/ku-plrg-classroom/docs/tree/main/cose212/tfae
     - index: 20
       date: 11/18
@@ -163,7 +166,7 @@ parts:
       # pdf: slides/lec20.pdf
       # handout: slides/lec20-handout.pdf
       homework:
-        - name: ex11
+        - name: ex12
           # link: https://github.com/ku-plrg-classroom/docs/tree/main/cose212/trfae
     - index: 21
       date: 11/20
@@ -176,7 +179,7 @@ parts:
       # pdf: slides/lec22.pdf
       # handout: slides/lec22-handout.pdf
       homework:
-        - name: ex12
+        - name: ex13
           # link: https://github.com/ku-plrg-classroom/docs/tree/main/cose212/atfae
     - index: 23
       date: 11/27
@@ -187,7 +190,7 @@ parts:
         - name: hw04
           # link: https://github.com/ku-plrg-classroom/docs/tree/main/cose212/battery
           date: 12/11
-        - name: ex13
+        - name: ex14
           # link: https://github.com/ku-plrg-classroom/docs/tree/main/cose212/ptfae
     - index: 24
       date: 12/02
@@ -195,7 +198,7 @@ parts:
       # pdf: slides/lec24.pdf
       # handout: slides/lec24-handout.pdf
       homework:
-        - name: ex14
+        - name: ex15
           # link: https://github.com/ku-plrg-classroom/docs/tree/main/cose212/stfae
     - index: 25
       date: 12/04
@@ -208,7 +211,7 @@ parts:
       # pdf: slides/lec26.pdf
       # handout: slides/lec26-handout.pdf
       homework:
-        - name: ex15
+        - name: ex16
           # link: https://github.com/ku-plrg-classroom/docs/tree/main/cose212/tifae
     - index: 27
       date: 12/11
