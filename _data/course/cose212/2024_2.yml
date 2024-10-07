@@ -92,11 +92,11 @@ parts:
     - index: 11
       date: 10/09
       title: Mutable Variables
-      # pdf: slides/lec11.pdf
-      # handout: slides/lec11-handout.pdf
+      pdf: slides/lec11.pdf
+      handout: slides/lec11-handout.pdf
       homework:
         - name: ex07
-          # link: https://github.com/ku-plrg-classroom/docs/tree/main/cose212/mfae
+          link: https://github.com/ku-plrg-classroom/docs/tree/main/cose212/mfae
     - index: 12
       date: 10/14
       title: Garbage Collection
