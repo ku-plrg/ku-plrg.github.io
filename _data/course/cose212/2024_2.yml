@@ -100,8 +100,8 @@ parts:
     - index: 12
       date: 10/14
       title: Garbage Collection
-      # pdf: slides/lec12.pdf
-      # handout: slides/lec12-handout.pdf
+      pdf: slides/lec12.pdf
+      handout: slides/lec12-handout.pdf
     - index: 13
       date: 10/16
       title: Lazy Evaluation
