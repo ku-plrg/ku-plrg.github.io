@@ -105,11 +105,11 @@ parts:
     - index: 13
       date: 10/16
       title: Lazy Evaluation
-      # pdf: slides/lec13.pdf
-      # handout: slides/lec13-handout.pdf
+      pdf: slides/lec13.pdf
+      handout: slides/lec13-handout.pdf
       homework:
         - name: ex08
-          # link: https://github.com/ku-plrg-classroom/docs/tree/main/cose212/lfae
+          link: https://github.com/ku-plrg-classroom/docs/tree/main/cose212/lfae
     - exam: Midterm Exam
       date: 10/23
       # pdf: midterm.pdf
