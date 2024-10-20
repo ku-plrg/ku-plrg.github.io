@@ -84,43 +84,44 @@ Please see [Publications](/publications).
 
 - **Committee Members**
   - 2025 -
-    [SAC (PL Track)](https://www.sigapp.org/sac/sac2025)
+    [**OOPSLA** (RC)](https://2025.splashcon.org/track/OOPSLA) /
+    [**SAC** (PL Track)](https://www.sigapp.org/sac/sac2025)
   - 2024 -
-    [APLAS (SRC & Posters)](https://conf.researchr.org/track/aplas-2024/src-and-posters%3F) /
-    [SPLASH (DS)](https://2024.splashcon.org/track/splash-2024-Doctoral-Symposium) /
-    [SAC (PL Track)](https://www.sigapp.org/sac/sac2024) /
-    [ICSE](https://conf.researchr.org/home/icse-2024)
+    [**APLAS** (SRC & Posters)](https://conf.researchr.org/track/aplas-2024/src-and-posters%3F) /
+    [**SPLASH** (DS)](https://2024.splashcon.org/track/splash-2024-Doctoral-Symposium) /
+    [**SAC** (PL Track)](https://www.sigapp.org/sac/sac2024) /
+    [**ICSE**](https://conf.researchr.org/home/icse-2024)
   - 2023 -
-    [OOPSLA (ERC)](https://2023.splashcon.org/track/splash-2023-oopsla) /
-    [APLAS](https://conf.researchr.org/home/aplas-2023)
+    [**OOPSLA** (ERC)](https://2023.splashcon.org/track/splash-2023-oopsla) /
+    [**APLAS**](https://conf.researchr.org/home/aplas-2023)
   - 2022 -
-    [OOPSLA (ERC)](https://2023.splashcon.org/track/splash-2022-oopsla) /
-    [APLAS](https://conf.researchr.org/home/aplas-2022)
+    [**OOPSLA** (ERC)](https://2023.splashcon.org/track/splash-2022-oopsla) /
+    [**APLAS**](https://conf.researchr.org/home/aplas-2022)
 
 - **Artifact Evaluation Committee (AEC) Members**
   - 2023 -
-    [OOPSLA](https://2023.splashcon.org/track/splash-2023-oopsla)
+    [**OOPSLA**](https://2023.splashcon.org/track/splash-2023-oopsla)
   - 2022 -
-    [OOPSLA](https://2023.splashcon.org/track/splash-2022-oopsla)
+    [**OOPSLA**](https://2023.splashcon.org/track/splash-2022-oopsla)
   - 2019 -
-    [POPL](https://popl19.sigplan.org/track/POPL-2019-Research-Papers) /
-    [OOPSLA](https://conf.researchr.org/track/splash-2019/splash-2019-oopsla)
+    [**POPL**](https://popl19.sigplan.org/track/POPL-2019-Research-Papers) /
+    [**OOPSLA**](https://conf.researchr.org/track/splash-2019/splash-2019-oopsla)
   - 2018 -
-    [OOPSLA](https://conf.researchr.org/track/splash-2018/splash-2018-OOPSLA) /
-    [SAS](https://staticanalysis.org/sas2018/sas2018.html) /
-    [ISSTA](https://conf.researchr.org/home/issta-2018)
+    [**OOPSLA**](https://conf.researchr.org/track/splash-2018/splash-2018-OOPSLA) /
+    [**SAS**](https://staticanalysis.org/sas2018/sas2018.html) /
+    [**ISSTA**](https://conf.researchr.org/home/issta-2018)
 
 - **Journal Reviewers**
   - 2024 -
-    IEEE TSE
+    **IEEE TSE**
   - 2023 -
-    [IEEE TSE](https://doi.org/10.1109/TSE.2023.3348716)
+    [**IEEE TSE**](https://doi.org/10.1109/TSE.2023.3348716)
   - 2022 -
-    [IEEE TSE](https://www.computer.org/digital-library/journals/ts/2022-reviewer-thanks)
+    [**IEEE TSE**](https://www.computer.org/digital-library/journals/ts/2022-reviewer-thanks)
 
 - **Others**
   - 2022 -
-    [ISSTA (Web Co-Chair)](https://conf.researchr.org/home/issta-2022)
+    [**ISSTA (Web Co-Chair)**](https://conf.researchr.org/home/issta-2022)
 
 
 ## Invited Participants
