@@ -205,8 +205,8 @@ list:
     deadline:
       - "2024-10-15 23:59"
       - "2025-03-25 23:59"
-    date: TBD   # TODO
-    place: TBD  # TODO
+    date: Oct 12 - Oct 18
+    place: Singapore
 
   - name: CAV
     year: 2024
@@ -261,12 +261,12 @@ list:
     place: Luxembourg City, Luxembourg
 
   - name: CC
-    year: 2024
-    link: https://conf.researchr.org/home/CC-2024
+    year: 2025
+    link: https://conf.researchr.org/home/CC-2025
     deadline:
-      - "2023-11-13 23:59"
-    date: Mar 2 - Mar 3
-    place: Edinburgh, United Kingdom
+      - "2024-11-10 23:59"
+    date: TBD
+    place: TBD
 
   - name: SAS
     year: 2024
