@@ -130,11 +130,11 @@ parts:
     - index: 16
       date: 11/04
       title: First-Class Continuations
-      # pdf: slides/lec16.pdf
-      # handout: slides/lec16-handout.pdf
+      pdf: slides/lec16.pdf
+      handout: slides/lec16-handout.pdf
       homework:
         - name: ex10
-          # link: https://github.com/ku-plrg-classroom/docs/tree/main/cose212/kfae
+          link: https://github.com/ku-plrg-classroom/docs/tree/main/cose212/kfae
     - index: 17
       date: 11/06
       title: Compiling with Continuations
