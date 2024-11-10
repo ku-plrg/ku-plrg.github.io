@@ -150,8 +150,8 @@ parts:
     - index: 18
       date: 11/11
       title: Type Systems
-      # pdf: slides/lec18.pdf
-      # handout: slides/lec18-handout.pdf
+      pdf: slides/lec18.pdf
+      handout: slides/lec18-handout.pdf
     - index: 19
       date: 11/13
       title: Typed Languages
