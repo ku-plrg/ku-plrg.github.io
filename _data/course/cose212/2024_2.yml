@@ -155,11 +155,11 @@ parts:
     - index: 19
       date: 11/13
       title: Typed Languages
-      # pdf: slides/lec19.pdf
-      # handout: slides/lec19-handout.pdf
+      pdf: slides/lec19.pdf
+      handout: slides/lec19-handout.pdf
       homework:
         - name: ex11
-          # link: https://github.com/ku-plrg-classroom/docs/tree/main/cose212/tfae
+          link: https://github.com/ku-plrg-classroom/docs/tree/main/cose212/tfae
     - index: 20
       date: 11/18
       title: Typing Recursive Functions
