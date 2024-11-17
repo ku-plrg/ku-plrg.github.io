@@ -163,11 +163,11 @@ parts:
     - index: 20
       date: 11/18
       title: Typing Recursive Functions
-      # pdf: slides/lec20.pdf
-      # handout: slides/lec20-handout.pdf
+      pdf: slides/lec20.pdf
+      handout: slides/lec20-handout.pdf
       homework:
         - name: ex12
-          # link: https://github.com/ku-plrg-classroom/docs/tree/main/cose212/trfae
+          link: https://github.com/ku-plrg-classroom/docs/tree/main/cose212/trfae
     - index: 21
       date: 11/20
       title: Algebraic Data Types (1)
