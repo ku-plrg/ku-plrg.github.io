@@ -188,7 +188,7 @@ parts:
       handout: slides/lec23-handout.pdf
       homework:
         - name: hw04
-          # link: https://github.com/ku-plrg-classroom/docs/tree/main/cose212/battery
+          link: https://github.com/ku-plrg-classroom/docs/tree/main/cose212/battery
           date: 12/11
         - name: ex14
           link: https://github.com/ku-plrg-classroom/docs/tree/main/cose212/ptfae
