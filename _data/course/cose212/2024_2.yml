@@ -203,8 +203,8 @@ parts:
     - index: 25
       date: 12/04
       title: Type Inference (1)
-      # pdf: slides/lec25.pdf
-      # handout: slides/lec25-handout.pdf
+      pdf: slides/lec25.pdf
+      handout: slides/lec25-handout.pdf
     - index: 26
       date: 12/09
       title: Type Inference (2)
