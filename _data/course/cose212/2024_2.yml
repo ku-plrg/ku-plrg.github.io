@@ -208,11 +208,11 @@ parts:
     - index: 26
       date: 12/09
       title: Type Inference (2)
-      # pdf: slides/lec26.pdf
-      # handout: slides/lec26-handout.pdf
+      pdf: slides/lec26.pdf
+      handout: slides/lec26-handout.pdf
       homework:
         - name: ex16
-          # link: https://github.com/ku-plrg-classroom/docs/tree/main/cose212/tifae
+          link: https://github.com/ku-plrg-classroom/docs/tree/main/cose212/tifae
     - index: 27
       date: 12/11
       title: Course Review
