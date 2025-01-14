@@ -209,12 +209,12 @@ list:
     place: Singapore
 
   - name: CAV
-    year: 2024
-    link: https://i-cav.org/2024
+    year: 2025
+    link: https://conferences.i-cav.org/2025/
     deadline:
-      - "2024-01-19 23:59"
-    date: Jul 22 - Jul 27
-    place: Montreal, Canada
+      - "2025-01-31 23:59"
+    date: Jul 21 - Jul 25
+    place: Zagreb, Croatia
 
   - name: ASPLOS
     year: 2025
@@ -235,21 +235,21 @@ list:
     place: Las Vegas, Nevada, USA
 
   - name: ICFP
-    year: 2024
-    link: https://icfp24.sigplan.org
+    year: 2025
+    link: https://icfp25.sigplan.org/
     deadline:
-      - "2024-02-28 23:59"
-    date: Sep 2 - Sep 7
-    place: Milan, Italy
+      - "2025-02-27 23:59"
+    date: Oct 12 - Oct 18
+    place: Singapore
 
   - name: ECOOP
-    year: 2024
-    link: https://2024.ecoop.org
+    year: 2025
+    link: https://2025.ecoop.org
     deadline:
-      - "2024-01-17 23:59"
-      - "2024-04-17 23:59"
-    date: Sep 16 - Sep 20
-    place: Vienna, Austria
+      - "2025-01-06 23:59"
+      - "2025-03-05 23:59"
+    date: Jun 30 - Jul 4
+    place: Bergen, Norway
 
   - name: ESOP
     year: 2025
@@ -264,17 +264,17 @@ list:
     year: 2025
     link: https://conf.researchr.org/home/CC-2025
     deadline:
-      - "2024-11-10 23:59"
-    date: TBD
-    place: TBD
+      - "2024-11-12 23:59"
+    date: Mar 1 - Mar 2
+    place: Las Vegas, Nevada, USA
 
   - name: SAS
-    year: 2024
-    link: https://2024.splashcon.org/home/sas-2024
+    year: 2025
+    link: https://2025.splashcon.org/home/sas-2025
     deadline:
-      - "2024-05-19 23:59"
-    date: Oct 20 - Oct 22
-    place: Pasadena, California, USA
+      - "2025-05-04 23:59"
+    date: Oct 12 - Oct 18
+    place: Singapore
 
   - name: VMCAI
     year: 2025
@@ -285,13 +285,13 @@ list:
     place: Denver, Colorado, United States
 
   - name: ICSE
-    year: 2025
-    link: https://conf.researchr.org/home/icse-2025
+    year: 2026
+    link: https://conf.researchr.org/home/icse-2026
     deadline:
-      - "2024-03-22 23:59"
-      - "2024-08-02 23:59"
-    date: Apr 26 - May 4
-    place: Ottawa, Canada
+      - "2025-03-14 23:59"
+      - "2025-07-18 23:59"
+    date: Apr 12 - Apr 18
+    place: Rio De Janeiro, Brazil
 
   - name: FSE
     year: 2025
@@ -302,12 +302,12 @@ list:
     place: Trondheim, Norway
 
   - name: ASE
-    year: 2024
-    link: https://conf.researchr.org/home/ase-2024
+    year: 2025
+    link: https://conf.researchr.org/home/ase-2025
     deadline:
-      - "2024-06-07 23:59"
-    date: Oct 27 - Nov 1
-    place: Sacramento, California, United States
+      - "2025-05-30 23:59"
+    date: Nov 16 - Nov 20
+    place: Seoul, South Korea
 
   - name: ISSTA
     year: 2025
@@ -342,19 +342,19 @@ list:
     place: Hamilton, Canada
 
   - name: GECCO
-    year: 2024
-    link: https://gecco-2024.sigevo.org/HomePage
+    year: 2025
+    link: https://gecco-2025.sigevo.org/HomePage
     deadline:
-      - "2024-02-01 23:59"
+      - "2025-01-29 23:59"
     date: Jul 14 - Jul 18
-    place: Melbourne, Australia
+    place: Málaga, Spain
 
   - name: CCS
-    year: 2024
-    link: https://www.sigsac.org/ccs/CCS2024
+    year: 2025
+    link: https://www.sigsac.org/ccs/CCS2025
     deadline:
-      - "2024-01-28 23:59"
-      - "2024-04-29 23:59"
+      - "2025-01-09 23:59"
+      - "2025-04-14 23:59"
     date: Oct 14 - Oct 18
     place: Salt Lake City, USA
 
