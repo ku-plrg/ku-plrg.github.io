@@ -14,12 +14,18 @@
 
 2024:
 
+  - date-from : 2024.10.22
+    date-to   : 2024.10.25
+    place     : OOPSLA 2024
+    place-url : https://2024.splashcon.org/track/splash-2024-oopsla
+    location  : Pasadena, CA, USA
+
   - date-from : 2024.08.21
     date-to   : 2024.08.23
     place     : SIGPL Summer School 2024
     place-url : https://sigpl.or.kr/school/2024s/
     location  : 성균관대학교, 수원, 대한민국
-    # photos    : 9MmAWnxHv2wskaYJ7
+    photos    : X5PEqMPsM4K6NoNj7
 
   - date-from : 2024.06.26
     date-to   : 2024.06.28
