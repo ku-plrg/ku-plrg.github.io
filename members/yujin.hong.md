@@ -8,7 +8,7 @@ aside:
 <img src="/assets/images/members/yujin.hong.jpg"
 align="right" style="margin-left: 1em" width="150em">
 
-I'm Yujin Hong, a student studying Computer Science. I'm currently interested in programming language and software testing.
+I'm Yujin Hong, a student studying Computer Science. I'm currently interested in programming language and automated testing.
 
 
 ## Educational Background
