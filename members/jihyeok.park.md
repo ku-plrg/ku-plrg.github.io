@@ -85,6 +85,7 @@ Please see [Publications](/publications).
 - **Committee Members**
   - 2025 -
     [**SAS**](https://2025.splashcon.org/home/sas-2025) /
+    [**SCAM**](https://conf.researchr.org/home/scam-2025) /
     [**OOPSLA** (RC)](https://2025.splashcon.org/track/OOPSLA) /
     [**SAC** (PL Track)](https://www.sigapp.org/sac/sac2025)
   - 2024 -
