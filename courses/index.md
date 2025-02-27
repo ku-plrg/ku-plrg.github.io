@@ -3,6 +3,10 @@ title: Courses
 layout: article
 ---
 
+### 2025 Spring
+
+- [**COSE215: Theory of Computation**](./cose215/2025_1/)
+
 ### 2024 Fall
 
 - [**COSE212: Programming Languages**](./cose212/2024_2/)
