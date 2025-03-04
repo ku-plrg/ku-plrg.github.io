@@ -1,4 +1,4 @@
 ---
 redirect_to:
-  - /courses/cose215/2024_1/
+  - /courses/cose215/2025_1/
 ---
