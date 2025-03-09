@@ -12,8 +12,8 @@ parts:
     - index: 1
       date: 03/10
       title: Mathematical Preliminaries
-      # pdf: slides/lec1.pdf
-      # handout: slides/lec1-handout.pdf
+      pdf: slides/lec1.pdf
+      handout: slides/lec1-handout.pdf
     - index: 2
       date: 03/12
       title: Basic Introduction of Scala
