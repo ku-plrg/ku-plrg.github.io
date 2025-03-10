@@ -9,10 +9,12 @@ aside:
 align="right" style="margin-left: 1em" width="150em">
 
 I'm Seongmin Ko, an undergraduate student studying computer science in Korea University. 
-Currently I am interested in programming languages, compiler and static analysis.
+Currently I am interested in programming languages, compiler,
+program synthesis, formal languages and static analysis.
 
 ## Educational Background
-- 2018.03 ~ Present - B.S. of Computer Science and Engineering, Korea University
+- 2024.09 ~ Present - M.S. of Computer Science, Korea University
+- 2018.03 ~ 2024.08 - B.S. of Computer Science and Mathematics, Korea University
 
 ## Contact Information
 {% assign author=site.data.authors["Seongmin Ko"] %}
