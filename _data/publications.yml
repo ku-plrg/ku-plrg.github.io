@@ -1,3 +1,24 @@
+2025:
+
+  - title: "JSSpecVis: A JavaScript Language Specification Visualization Tool"
+    authors:
+      - Minseok Choe
+      - Kyungho Song
+      - Hyunjoon Kim
+      - Jihyeok Park
+    target:
+      abbr: FSE 2025
+      name: ACM International Conference on the Foundations of Software Engineering
+      url: https://conf.researchr.org/home/fse-2025
+      detail: Demonstrations Track
+    materials:
+      # link: https://doi.org/10.1109/ICSE-C.2017.4
+      # pdf: /assets/data/publication/icse-demo17.pdf
+      # video: https://www.youtube.com/watch?v=ZI_emiRMoxQ
+      # slides: /assets/data/slides/2017/icse-demo17-slides.pdf
+      # repo: https://github.com/sukyoung/safe
+      # bib: javascript:show('icse-demo17.bib')
+
 2024:
 
   - title: "PL4XGL: A Programming Language Approach to Explainable Graph
