@@ -36,9 +36,9 @@ parts:
     - index: 4
       date: 03/19
       title: Nondeterministic Finite Automata (NFA)
-      # pdf: slides/lec4.pdf
-      # handout: slides/lec4-handout.pdf
-      # code: code/NFA.scala
+      pdf: slides/lec4.pdf
+      handout: slides/lec4-handout.pdf
+      code: code/NFA.scala
     - index: 5
       date: 03/24
       title: ε-Nondeterministic Finite Automata (ε-NFA)
