@@ -47,7 +47,7 @@ parts:
       code: code/ENFA.scala
       homework:
       - name: hw02
-        # link: https://github.com/ku-plrg-classroom/docs/tree/main/cose215/fa-examples
+        link: https://github.com/ku-plrg-classroom/docs/tree/main/cose215/fa-examples
         date: 04/07
     - index: 6
       date: 03/26
