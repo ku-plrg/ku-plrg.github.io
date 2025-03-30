@@ -1,6 +1,6 @@
 options:
   code: true
-  update: false
+  update: true
 parts:
   - name: "Part 0: Basic Concepts"
     lectures:
