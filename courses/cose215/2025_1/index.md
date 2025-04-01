@@ -53,6 +53,35 @@ Please download and install them using the following links:
   [https://www.scala-lang.org/download/](https://www.scala-lang.org/download/)
 
 
+### Online Automata Simulator
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.13/codemirror.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.13/mode/javascript/javascript.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.13/codemirror.min.css">
+<script src="./js/bundle.js"></script>
+<script src="./js/tex-mml-chtml.js"></script>
+<link rel="stylesheet" type="text/css" href="./css/style.css">
+<div id="viewer">
+  <div class="center">
+    <div id="kind" class="dropdown">
+      <span class="selected"></span>
+      <i class="arrow fa fa-angle-up transition-all ml-auto rotate-180"></i>
+      <ul style="display: none;"></ul>
+    </div>
+    <div id="example" class="dropdown">
+      <span class="selected"></span>
+      <i class="arrow fa fa-angle-up transition-all ml-auto rotate-180"></i>
+      <ul style="display: none;"></ul>
+    </div>
+    <button id="refresh"><i class="fa fa-refresh"></i></button>
+  </div>
+  <textarea id="data-editor"></textarea>
+  <input type="hidden" id="data" name="data" />
+  <div id="root"></div>
+</div>
+
+
 ### Schedule
 
 <!-- load schedule with PDF files -->
