@@ -83,7 +83,7 @@ infos:
 
   VMCAI:
     tags: [PL]
-    bk21:
+    bk21: "-"
     kiise: 우수
     rank: B
     rank-id: 1847
@@ -184,12 +184,12 @@ list:
 # ------------------------------------------------------------------------------
 
   - name: POPL
-    year: 2025
-    link: https://popl25.sigplan.org
+    year: 2026
+    link: https://conf.researchr.org/home/POPL-2026
     deadline:
-      - "2024-07-11 23:59"
-    date: Jan 19 - Jan 25
-    place: Denver, Colorado, USA
+      - "2025-07-10 23:59"
+    date: Jan 11 - Jan 17
+    place: Rennes, France
 
   - name: PLDI
     year: 2025
@@ -217,14 +217,13 @@ list:
     place: Zagreb, Croatia
 
   - name: ASPLOS
-    year: 2025
-    link: https://www.asplos-conference.org/asplos2025
+    year: 2026
+    link: https://www.asplos-conference.org/asplos2026
     deadline:
-      - "2024-03-01 23:59"
-      - "2024-06-24 23:59"
-      - "2024-10-18 23:59"
+      - "2025-03-12 15:59"
+      - "2025-08-20 15:59"
     date: Mar 30 - Apr 3
-    place: Rotterdam, The Netherlands
+    place: Pittsburgh, Pennsylvania, USA
 
   - name: PPoPP
     year: 2025
@@ -252,13 +251,13 @@ list:
     place: Bergen, Norway
 
   - name: ESOP
-    year: 2025
-    link: https://etaps.org/2025/conferences/esop/
+    year: 2026
+    link: https://etaps.org/2026/conferences/esop/
     deadline:
-      - "2024-05-30 23:59"
-      - "2024-10-10 23:59"
-    date: Apr 6 - Apr 11
-    place: Luxembourg City, Luxembourg
+      - "2025-06-03 23:59"
+      - "2025-10-16 23:59"
+    date: Apr 11 - Apr 16
+    place: Torino, Italy
 
   - name: CC
     year: 2025
@@ -359,12 +358,12 @@ list:
     place: Salt Lake City, USA
 
   - name: S&P
-    year: 2025
-    link: https://www.ieee-security.org/TC/SP2025
+    year: 2026
+    link: https://sp2026.ieee-security.org/
     deadline:
-      - "2024-06-06 23:59"
-      - "2024-11-14 23:59"
-    date: May 12 - May 15
+      - "2025-06-05 23:59"
+      - "2025-11-13 23:59"
+    date: May 18 - May 21
     place: San Francisco, California, USA
 
   - name: USENIX Security
@@ -377,12 +376,12 @@ list:
     place: Seattle, Washington, USA
 
   - name: NDSS
-    year: 2025
-    link: https://www.ndss-symposium.org/ndss2025/submisions/call-for-papers/
+    year: 2026
+    link: https://www.ndss-symposium.org/ndss2026/
     deadline:
-      - "2024-04-17 23:59"
-      - "2024-07-10 23:59"
-    date: Feb 23 - Feb 28
+      - "2025-04-23 23:59"
+      - "2025-08-06 23:59"
+    date: Feb 23 - Feb 27
     place: San Diego, California, USA
 
   - name: ASIACCS
