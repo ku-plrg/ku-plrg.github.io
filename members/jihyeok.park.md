@@ -84,6 +84,7 @@ Please see [Publications](/publications).
 
 - **Committee Members**
   - 2025 -
+    [**RPLS** (Co-Chair)](https://pldi25.sigplan.org/home/rpls-2025) /
     [**SAS**](https://2025.splashcon.org/home/sas-2025) /
     [**SCAM**](https://conf.researchr.org/home/scam-2025) /
     [**OOPSLA** (RC)](https://2025.splashcon.org/track/OOPSLA) /
@@ -99,6 +100,7 @@ Please see [Publications](/publications).
   - 2022 -
     [**OOPSLA** (ERC)](https://2023.splashcon.org/track/splash-2022-oopsla) /
     [**APLAS**](https://conf.researchr.org/home/aplas-2022)
+    [**ISSTA** (Web Co-Chair)](https://conf.researchr.org/home/issta-2022)
 
 - **Artifact Evaluation Committee (AEC) Members**
   - 2023 -
@@ -120,10 +122,6 @@ Please see [Publications](/publications).
     [**IEEE TSE**](https://doi.org/10.1109/TSE.2023.3348716)
   - 2022 -
     [**IEEE TSE**](https://www.computer.org/digital-library/journals/ts/2022-reviewer-thanks)
-
-- **Others**
-  - 2022 -
-    [**ISSTA (Web Co-Chair)**](https://conf.researchr.org/home/issta-2022)
 
 
 ## Invited Participants
