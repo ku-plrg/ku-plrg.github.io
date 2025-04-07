@@ -80,11 +80,11 @@ parts:
     - index: 10
       date: 04/09
       title: Equivalence and Minimization of Finite Automata
-      # pdf: slides/lec10.pdf
-      # handout: slides/lec10-handout.pdf
+      pdf: slides/lec10.pdf
+      handout: slides/lec10-handout.pdf
       homework:
       - name: ex02
-        # link: https://github.com/ku-plrg-classroom/docs/tree/main/cose215/dfa-eq-min
+        link: https://github.com/ku-plrg-classroom/docs/tree/main/cose215/dfa-eq-min
 
   - name: "Part 2: Pushdown Automata"
     lectures:
