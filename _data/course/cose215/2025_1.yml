@@ -97,8 +97,8 @@ parts:
     - index: 12
       date: 04/16
       title: Examples of Context-Free Grammars
-      # pdf: slides/lec12.pdf
-      # handout: slides/lec12-handout.pdf
+      pdf: slides/lec12.pdf
+      handout: slides/lec12-handout.pdf
     - index: 13
       date: 04/21
       title: Parse Trees and Ambiguity
