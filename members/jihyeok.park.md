@@ -152,7 +152,7 @@ Please see [Talks](/talks).
 
 ## Contact Information
 
-Room 609A, [Science Library Bldg](https://goo.gl/maps/fffV7i2PkwqF7yG47) <br>
+Room 507, IT Building (정운오IT교양관)<br>
 [College of Informatics](https://info.korea.ac.kr/) <br>
 [Korea University](https://www.korea.ac.kr/) <br>
 Anam-dong 5-ga, Seongbuk-gu <br>
