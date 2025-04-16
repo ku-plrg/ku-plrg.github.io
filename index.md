@@ -5,6 +5,10 @@ title: PLRG @ Korea University
 Welcome to **Programming Language Research Group (PLRG)** at **Korea University**!
 {:.success}
 
+<center>
+  <img src="/assets/images/main.jpg" alt="main image" width="80%">
+</center>
+
 Our research goal is to help developers design and implement high-quality
 software using diverse _programming language_ technologies.
 
@@ -25,7 +29,7 @@ postdocs. For more detailed information, please see [Research](/research) and
 
 ## Contact Information
 
-Room 609A, [Science Library Bldg](https://goo.gl/maps/fffV7i2PkwqF7yG47) <br>
+Room 507, IT Building (정운오IT교양관)<br>
 [College of Informatics](https://info.korea.ac.kr/) <br>
 [Korea University](https://www.korea.ac.kr/) <br>
 Anam-dong 5-ga, Seongbuk-gu <br>
