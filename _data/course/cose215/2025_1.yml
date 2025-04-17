@@ -102,8 +102,8 @@ parts:
     - index: 13
       date: 04/21
       title: Parse Trees and Ambiguity
-      # pdf: slides/lec13.pdf
-      # handout: slides/lec13-handout.pdf
+      pdf: slides/lec13.pdf
+      handout: slides/lec13-handout.pdf
     - exam: Midterm Exam
       date: 04/23
       # pdf: midterm.pdf
