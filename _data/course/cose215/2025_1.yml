@@ -106,7 +106,7 @@ parts:
       handout: slides/lec13-handout.pdf
     - exam: Midterm Exam
       date: 04/23
-      # pdf: midterm.pdf
+      pdf: midterm.pdf
       coverage: Lectures 1 - 13
     - index: 14
       date: 04/30
