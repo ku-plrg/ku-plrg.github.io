@@ -111,9 +111,9 @@ parts:
     - index: 14
       date: 04/30
       title: Pushdown Automata (PDA)
-      # pdf: slides/lec14.pdf
-      # handout: slides/lec14-handout.pdf
-      # code: code/PDA.scala
+      pdf: slides/lec14.pdf
+      handout: slides/lec14-handout.pdf
+      code: code/PDA.scala
     - index: 15
       date: 05/05
       title: Examples of Pushdown Automata
