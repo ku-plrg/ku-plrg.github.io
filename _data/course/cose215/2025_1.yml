@@ -117,11 +117,11 @@ parts:
     - index: 15
       date: 05/05
       title: Examples of Pushdown Automata
-      # pdf: slides/lec15.pdf
-      # handout: slides/lec15-handout.pdf
+      pdf: slides/lec15.pdf
+      handout: slides/lec15-handout.pdf
       homework:
       - name: hw04
-        # link: https://github.com/ku-plrg-classroom/docs/tree/main/cose215/pda-examples
+        link: https://github.com/ku-plrg-classroom/docs/tree/main/cose215/pda-examples
         date: 05/19
     - index: 16
       date: 05/07
