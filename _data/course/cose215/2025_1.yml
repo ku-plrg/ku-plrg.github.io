@@ -126,8 +126,8 @@ parts:
     - index: 16
       date: 05/07
       title: Equivalence of Pushdown Automata and Context-Free Grammars
-      # pdf: slides/lec16.pdf
-      # handout: slides/lec16-handout.pdf
+      pdf: slides/lec16.pdf
+      handout: slides/lec16-handout.pdf
     - index: 17
       date: 05/12
       title: Deterministic Pushdown Automata (DPDA)
