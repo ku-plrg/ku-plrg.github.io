@@ -169,11 +169,11 @@ parts:
     - index: 23
       date: 06/02
       title: Extensions of Turing Machines
-      # pdf: slides/lec23.pdf
-      # handout: slides/lec23-handout.pdf
+      pdf: slides/lec23.pdf
+      handout: slides/lec23-handout.pdf
       homework:
       - name: hw06
-        # link: https://github.com/ku-plrg-classroom/docs/tree/main/cose215/tm-examples
+        link: https://github.com/ku-plrg-classroom/docs/tree/main/cose215/tm-examples
         date: 06/16
     - index: 24
       date: 06/04
