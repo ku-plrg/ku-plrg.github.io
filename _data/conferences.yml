@@ -183,6 +183,23 @@ infos:
 list:
 # ------------------------------------------------------------------------------
 
+  - name: USENIX Security
+    year: 2026
+    link: https://www.usenix.org/conference/usenixsecurity26
+    deadline:
+      - "2025-08-26 23:59"
+      - "2026-02-05 23:59"
+    date: Aug 12 - Aug 14
+    place: Baltimore, Maryland, USA
+    
+  - name: FSE
+    year: 2026
+    link: https://conf.researchr.org/home/fse-2026
+    deadline:
+      - "2025-09-11 23:59"
+    date: Jul 5 - Jul 9
+    place: Montreal, Canada
+
   - name: POPL
     year: 2026
     link: https://conf.researchr.org/home/POPL-2026
