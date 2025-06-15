@@ -193,8 +193,8 @@ parts:
     - index: 27
       date: 06/16
       title: Course Review
-      # pdf: slides/lec27.pdf
-      # handout: slides/lec27-handout.pdf
+      pdf: slides/lec27.pdf
+      handout: slides/lec27-handout.pdf
     - exam: Final Exam
       date: 06/23
       # pdf: final.pdf
