@@ -25,7 +25,7 @@ Last Update: {{ site.data.conferences.last_update }}
     <div class="col-xs-12 col-sm-6">
       <ul class="styled-list">
         <li> <a href="https://www.kiise.or.kr/TopConferences/data/BK21%ED%94%8C%EB%9F%AC%EC%8A%A4%EC%82%AC%EC%97%85_CS%EB%B6%84%EC%95%BC_%EC%9A%B0%EC%88%98%EA%B5%AD%EC%A0%9C%ED%95%99%EC%88%A0%EB%8C%80%ED%9A%8C%EB%AA%A9%EB%A1%9D_2018.pdf">BK21</a> - IF 1-4</li>
-        <li> <a href="https://www.kiise.or.kr/TopConferences/data/SW%EB%B6%84%EC%95%BC%EC%9A%B0%EC%88%98%ED%95%99%EC%88%A0%EB%8C%80%ED%9A%8C%EB%AA%A9%EB%A1%9D_2020.pdf">KIISE</a> - 최우수 / 우수 </li>
+        <li> <a href="https://www.kiise.or.kr/TopConferences/data/SW%EB%B6%84%EC%95%BC%EC%9A%B0%EC%88%98%ED%95%99%EC%88%A0%EB%8C%80%ED%9A%8C%EB%AA%A9%EB%A1%9D_2024.pdf">KIISE</a> - 최우수 / 우수 </li>
         <li> <a href="https://portal.core.edu.au/conf-ranks/">CORE</a> - A* / A / B / C / Other</li>
       </ul>
     </div>

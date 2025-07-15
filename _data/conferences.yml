@@ -67,6 +67,13 @@ infos:
     rank: A
     rank-id: 514
 
+  TACAS:
+    tags: [PL]
+    bk21: 2
+    kiise: 우수
+    rank: A
+    rank-id: 1818
+
   CC:
     tags: [PL]
     bk21: 2
@@ -115,13 +122,6 @@ infos:
     kiise: 최우수
     rank: A
     rank-id: 1412
-
-  TACAS:
-    tags: [SE]
-    bk21: 2
-    kiise: 우수
-    rank: A
-    rank-id: 1818
 
   ICST:
     tags: [SE]
@@ -183,23 +183,6 @@ infos:
 list:
 # ------------------------------------------------------------------------------
 
-  - name: USENIX Security
-    year: 2026
-    link: https://www.usenix.org/conference/usenixsecurity26
-    deadline:
-      - "2025-08-26 23:59"
-      - "2026-02-05 23:59"
-    date: Aug 12 - Aug 14
-    place: Baltimore, Maryland, USA
-    
-  - name: FSE
-    year: 2026
-    link: https://conf.researchr.org/home/fse-2026
-    deadline:
-      - "2025-09-11 23:59"
-    date: Jul 5 - Jul 9
-    place: Montreal, Canada
-
   - name: POPL
     year: 2026
     link: https://conf.researchr.org/home/POPL-2026
@@ -217,13 +200,13 @@ list:
     place: Seoul, South Korea
 
   - name: OOPSLA
-    year: 2025
-    link: https://2025.splashcon.org/track/OOPSLA
+    year: 2026
+    link: https://conf.researchr.org/track/splash-2026/oopsla-2026
     deadline:
-      - "2024-10-15 23:59"
-      - "2025-03-25 23:59"
-    date: Oct 12 - Oct 18
-    place: Singapore
+      - "2025-10-10 23:59"
+      - "2026-03-17 23:59"
+    date: Oct 3 - Oct 9
+    place: Oakland, California, United States
 
   - name: CAV
     year: 2025
@@ -243,12 +226,12 @@ list:
     place: Pittsburgh, Pennsylvania, USA
 
   - name: PPoPP
-    year: 2025
-    link: https://ppopp25.sigplan.org
+    year: 2026
+    link: https://ppopp26.sigplan.org
     deadline:
-      - "2024-08-16 23:59"
-    date: Mar 1 - Mar 5
-    place: Las Vegas, Nevada, USA
+      - "2025-09-01 23:59"
+    date: Jan 31 - Feb 4
+    place: Sydney, Australia
 
   - name: ICFP
     year: 2025
@@ -259,19 +242,27 @@ list:
     place: Singapore
 
   - name: ECOOP
-    year: 2025
-    link: https://2025.ecoop.org
+    year: 2026
+    link: https://2026.ecoop.org/
     deadline:
-      - "2025-01-06 23:59"
-      - "2025-03-05 23:59"
-    date: Jun 30 - Jul 4
-    place: Bergen, Norway
+      - "2025-11-27 23:59"
+      - "2026-02-12 23:59"
+    date: Jun 29 - Jul 3
+    place: Brussels, Belgium
 
   - name: ESOP
     year: 2026
     link: https://etaps.org/2026/conferences/esop/
     deadline:
       - "2025-06-03 23:59"
+      - "2025-10-16 23:59"
+    date: Apr 11 - Apr 16
+    place: Torino, Italy
+
+  - name: TACAS
+    year: 2026
+    link: https://etaps.org/2026/conferences/tacas/
+    deadline:
       - "2025-10-16 23:59"
     date: Apr 11 - Apr 16
     place: Torino, Italy
@@ -293,12 +284,12 @@ list:
     place: Singapore
 
   - name: VMCAI
-    year: 2025
-    link: https://conf.researchr.org/home/VMCAI-2025
+    year: 2026
+    link: https://conf.researchr.org/home/VMCAI-2026
     deadline:
-      - "2024-09-16 23:59"
-    date: Jan 21 - Jan 21
-    place: Denver, Colorado, United States
+      - "2025-09-10 23:59"
+    date: Jan 11 - Jan 17
+    place: Rennes, France
 
   - name: ICSE
     year: 2026
@@ -310,12 +301,12 @@ list:
     place: Rio De Janeiro, Brazil
 
   - name: FSE
-    year: 2025
-    link: https://conf.researchr.org/home/fse-2025
+    year: 2026
+    link: https://conf.researchr.org/home/fse-2026
     deadline:
-      - "2024-09-12 23:59"
-    date: Jul 23 - Jul 27
-    place: Trondheim, Norway
+      - "2025-09-11 23:59"
+    date: Jul 5 - Jul 9
+    place: Montreal, Canada
 
   - name: ASE
     year: 2025
@@ -326,20 +317,12 @@ list:
     place: Seoul, South Korea
 
   - name: ISSTA
-    year: 2025
-    link: https://conf.researchr.org/home/issta-2025
+    year: 2026
+    link: https://conf.researchr.org/home/issta-2026
     deadline:
-      - "2024-10-31 23:59"
-    date: Jun 25 - Jun 28
-    place: Trondheim, Norway
-
-  - name: TACAS
-    year: 2025
-    link: https://etaps.org/2025/conferences/tacas
-    deadline:
-      - "2024-10-10 23:59"
-    date: May 3 - May 8
-    place: Hamilton, Canada
+      - "2026-01-29 23:59"
+    date: Oct 3 - Oct 9
+    place: Oakland, California, United States
 
   - name: ICST
     year: 2025
@@ -350,12 +333,12 @@ list:
     place: Naples, Italy
 
   - name: FASE
-    year: 2025
-    link: https://etaps.org/2025/conferences/fase
+    year: 2026
+    link: https://etaps.org/2026/conferences/fase
     deadline:
-      - "2024-10-10 23:59"
-    date: May 3 - May 8
-    place: Hamilton, Canada
+      - "2025-10-16 23:59"
+    date: Apr 11 - Apr 16
+    place: Torino, Italy
 
   - name: GECCO
     year: 2025
@@ -384,13 +367,13 @@ list:
     place: San Francisco, California, USA
 
   - name: USENIX Security
-    year: 2025
-    link: https://www.usenix.org/conference/usenixsecurity25
+    year: 2026
+    link: https://www.usenix.org/conference/usenixsecurity26
     deadline:
-      - "2024-09-04 23:59"
-      - "2025-01-22 23:59"
-    date: Aug 13 - Aug 15
-    place: Seattle, Washington, USA
+      - "2025-08-26 23:59"
+      - "2026-02-05 23:59"
+    date: Aug 12 - Aug 14
+    place: Baltimore, Maryland, USA
 
   - name: NDSS
     year: 2026
@@ -402,10 +385,10 @@ list:
     place: San Diego, California, USA
 
   - name: ASIACCS
-    year: 2025
-    link: https://asiaccs2025.hust.edu.vn/
+    year: 2026
+    link: https://asiaccs2026.cse.iitkgp.ac.in/
     deadline:
-      - "2024-09-20 23:59"
-      - "2025-01-20 23:59"
-    date: Aug 25 - Aug 29
-    place: Hanoi, Vietnam
+      - "2025-09-25 23:59"
+      - "2026-01-21 23:59"
+    date: Jun 1 - Jun 6
+    place: Bangalore, India
