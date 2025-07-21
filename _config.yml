@@ -109,3 +109,7 @@ plugins:
   - jekyll-sitemap
   - jemoji
   - jekyll-redirect-from
+
+## => Include
+include:
+  - .well-known # Prevent 404 errors for DevTools requests
