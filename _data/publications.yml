@@ -13,12 +13,12 @@
       url: https://conf.researchr.org/home/fse-2025
       detail: Demonstrations Track
     materials:
-      # link: https://doi.org/10.1145/3696630.3728579
-      # pdf: /assets/data/publication/icse-demo17.pdf
+      link: https://doi.org/10.1145/3696630.3728579
+      pdf: /assets/data/publication/fse-demo25.pdf
       video: https://www.youtube.com/watch?v=4XMjJPNmuBM
       slides: /assets/data/slides/2025/fse25-demo-slides.pdf
       repo: https://github.com/ku-plrg/js-spec-vis
-      # bib: javascript:show('icse-demo17.bib')
+      bib: javascript:show('fse-demo25.bib')
       visualizer: https://chromewebstore.google.com/detail/nlfpedidieegejndiikebcgclhggaocd?utm_source=item-share-cb
       debugger: https://es-meta.github.io/playground
 
