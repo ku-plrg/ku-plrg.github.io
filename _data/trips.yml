@@ -12,6 +12,22 @@
 #     report    :
 #       - pdf   : <path.pdf>
 
+2025:
+
+  - date-from : 2025.06.16
+    date-to   : 2025.06.20
+    place     : PLDI 2025
+    place-url : https://pldi25.sigplan.org/
+    location  : Seoul, South Korea
+    photos    : ctis5VitUKdR1YBT6
+    talk      :
+      - pdf   : /assets/data/slides/2025/rpls25-esmeta.pdf
+    report    :
+      - pdf   : /assets/data/report/2025/pldi25-report-hyunjoon-kim.pdf
+      - pdf   : /assets/data/report/2025/pldi25-report-jungyeom-kim.pdf
+      - pdf   : /assets/data/report/2025/pldi25-report-minseok-choe.pdf
+      - pdf   : /assets/data/report/2025/pldi25-report-seongmin-ko.pdf
+
 2024:
 
   - date-from : 2024.10.22
