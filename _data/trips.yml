@@ -13,6 +13,26 @@
 #       - pdf   : <path.pdf>
 
 2025:
+  - date-from : 2025.06.30
+    date-to   : 2025.07.04
+    place     : ECOOP 2025
+    place-url : https://2025.ecoop.org/
+    location  : Bergen, Norway
+    photos    : LGbrUtiuHcUVE9h4A
+    talk      :
+      - pdf   : /assets/data/slides/2025/plss25-esmeta.pdf
+
+  - date-from : 2025.06.23
+    date-to   : 2025.06.27
+    place     : FSE 2025
+    place-url : https://conf.researchr.org/home/fse-2025
+    location  : Trondheim, Norway
+    photos    : kdcVpzhza9VdJux7A
+    talk      :
+      - pdf   : /assets/data/slides/2025/fse25-demo-slides.pdf
+    report    :
+      - pdf   : /assets/data/report/2025/fse25-report-hyunjoon-kim.pdf
+      - pdf   : /assets/data/report/2025/fse25-report-minseok-choe.pdf
 
   - date-from : 2025.06.16
     date-to   : 2025.06.20
