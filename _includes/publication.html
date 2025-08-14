@@ -18,8 +18,11 @@
   {{ "and " }}
   {%- endif -%}
   {{ _author }}
+  {%- assign remaining = forloop.length | minus: forloop.index0 -%}
   {%- if _publication.co-first > forloop.index0 -%}
   {{ "*" }}
+  {%- elsif _publication.co-corr >= remaining -%}
+  {{ "†" }}
   {%- endif -%}
   {%- unless forloop.last -%}
   {{ ", " }}
@@ -28,6 +31,9 @@
   {%- endif -%}
   {%- if _publication.co-first -%}
   {{ " " }}(* equally contributed)
+  {%- endif -%}
+  {%- if _publication.co-corr -%}
+  {{ " " }}(† corresponding authors)
   {%- endif -%}
 
   <br>

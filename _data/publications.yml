@@ -1,5 +1,22 @@
 2025:
 
+  - title: "Debun: Detecting Bundled JavaScript Libraries on Web using Property-Order Graphs"
+    authors:
+      - Seojin Kim
+      - Sungmin Park
+      - Jihyeok Park
+    co-first: 2
+    target:
+      abbr: ASE 2025
+      name: IEEE/ACM International Conference on Automated Software Engineering
+      url: https://conf.researchr.org/home/ase-2025
+    materials:
+      # paper: 
+      # link: 
+      # slides: 
+      # repo: 
+      # bib: 
+
   - title: "JSSpecVis: A JavaScript Language Specification Visualization Tool"
     authors:
       - Minseok Choe
@@ -13,8 +30,8 @@
       url: https://conf.researchr.org/home/fse-2025
       detail: Demonstrations Track
     materials:
+      paper: /assets/data/publication/fse-demo25.pdf
       link: https://doi.org/10.1145/3696630.3728579
-      pdf: /assets/data/publication/fse-demo25.pdf
       video: https://www.youtube.com/watch?v=4XMjJPNmuBM
       slides: /assets/data/slides/2025/fse25-demo-slides.pdf
       repo: https://github.com/ku-plrg/js-spec-vis
@@ -30,14 +47,15 @@
       - Minseok Jeon
       - Jihyeok Park
       - Hakjoo Oh
+    co-corr: 2
     target:
       name: ACM SIGPLAN Conference on Programming Language Design and
         Implementation
       abbr: PLDI 2024
       url: https://pldi24.sigplan.org/
     materials:
+      paper: /assets/data/publication/pldi24-jeon-pl4xgl.pdf
       link: https://doi.org/10.1145/3656464
-      pdf: /assets/data/publication/pldi24-jeon-pl4xgl.pdf
       slides: /assets/data/slides/2024/pldi24-pl4xgl-slides.pdf
       repo: https://github.com/kupl/PL4XGL
       bib: javascript:show('pldi24-jeon-pl4xgl.bib')
@@ -51,10 +69,10 @@
       abbr: CACM
       url: https://m-cacm.acm.org/
     materials:
-      link: https://doi.org/10.1145/3624723
+      paper: /assets/data/publication/cacm24-ryu-esmeta.pdf
       online: https://cacm.acm.org/research/javascript-language-design-and-implementation-in-tandem/
+      link: https://doi.org/10.1145/3624723
       video: https://www.youtube.com/watch?v=JGxc-KIUnQY
-      pdf: /assets/data/publication/cacm24-ryu-esmeta.pdf
       repo: https://github.com/es-meta/esmeta
       bib: javascript:show('cacm24-ryu-esmeta.bib')
 
@@ -73,8 +91,8 @@
       abbr: PLDI 2023
       url: https://pldi23.sigplan.org/
     materials:
+      paper: /assets/data/publication/pldi23-park-jestfs.pdf
       link: https://doi.org/10.1145/3591240
-      pdf: /assets/data/publication/pldi23-park-jestfs.pdf
       slides: /assets/data/slides/2023/pldi23-jestfs-slides.pdf
       video: https://www.youtube.com/watch?v=FXkSMC-kUE8&t=2426s
       repo: https://github.com/jestfs/jestfs/
@@ -94,8 +112,8 @@
       abbr: ESEC/FSE 2022
       url: https://2022.esec-fse.org/
     materials:
+      paper: /assets/data/publication/fse22-park-jsaver.pdf
       link: https://doi.org/10.1145/3540250.3549097
-      pdf: /assets/data/publication/fse22-park-jsaver.pdf
       slides: /assets/data/slides/2022/fse22-jsaver-slides.pdf
       video: https://www.youtube.com/watch?v=zEsanPIFrWs
       repo: https://github.com/kaist-plrg/jsaver
@@ -135,8 +153,8 @@
       url: https://dl.acm.org/journal/csur
       detail: Volume 54, Issue 7, Article No. 149, pp 1–37
     materials:
+      paper: /assets/data/publication/csur21-park-psa.pdf
       link: https://doi.org/10.1145/3464457
-      pdf: /assets/data/publication/csur21-park-psa.pdf
       bib: javascript:show('csur21-park-psa.bib')
 
   - title: "JSTAR: JavaScript Specification Type Analyzer using Refinement"
@@ -151,8 +169,8 @@
       name: IEEE/ACM International Conference on Automated Software Engineering
       url: https://conf.researchr.org/home/ase-2021
     materials:
+      paper: /assets/data/publication/ase21-park-jstar.pdf
       link: https://doi.org/10.1109/ASE51524.2021.9678781
-      pdf: /assets/data/publication/ase21-park-jstar.pdf
       tech: /assets/data/publication/ase21-jstar-report.pdf
       slides: /assets/data/slides/2021/ase21-jstar-slides.pdf
       repo: https://github.com/kaist-plrg/jstar
@@ -171,8 +189,8 @@
         the Foundations of Software Engineering
       url: https://2021.esec-fse.org/
     materials:
+      paper: /assets/data/publication/fse21-park-ds.pdf
       link: https://doi.org/10.1145/3468264.3468556
-      pdf: /assets/data/publication/fse21-park-ds.pdf
       extended: https://arxiv.org/abs/2105.13699
       slides: /assets/data/slides/2021/fse21-slides.pdf
       repo: https://github.com/kaist-plrg/safe-ds
@@ -207,8 +225,8 @@
       name: IEEE/ACM International Conference on Software Engineering
       url: https://conf.researchr.org/home/icse-2021
     materials:
+      paper: /assets/data/publication/icse21-park-jest.pdf
       link: https://doi.org/10.1109/ICSE43902.2021.00015
-      pdf: /assets/data/publication/icse21-park-jest.pdf
       slides: /assets/data/slides/2021/icse21-slides.pdf
       video: https://www.youtube.com/watch?v=lX4iscqdx8Y
       repo: https://github.com/kaist-plrg/jest
@@ -227,8 +245,8 @@
       name: IEEE/ACM International Conference on Automated Software Engineering
       url: https://conf.researchr.org/home/ase-2020
     materials:
+      paper: /assets/data/publication/ase20-park-jiset.pdf
       link: https://doi.org/10.1145/3324884.3416632
-      pdf: /assets/data/publication/ase20-park-jiset.pdf
       tech: /assets/data/publication/ase20-park-jiset-report.pdf
       slides: /assets/data/slides/2020/ase20-slides.pdf
       repo: https://github.com/kaist-plrg/jiset
@@ -246,8 +264,8 @@
       name: IEEE Software
       url: https://www.computer.org/csdl/magazine/so
     materials:
+      paper: /assets/data/publication/ieeesw19.pdf
       link: https://doi.org/10.1109/MS.2018.110113408
-      pdf: /assets/data/publication/ieeesw19.pdf
       slides: /assets/data/slides/2019/ieeesw19-slides.pdf
       bib: javascript:show('ieeesw19.bib')
 
@@ -263,8 +281,8 @@
       name: ACM SIGPLAN Symposium on Scala
       url: https://conf.researchr.org/track/scala-2018/scala-2018-papers
     materials:
+      paper: /assets/data/publication/scala18.pdf
       link: https://doi.org/10.1145/3241653.3241657
-      pdf: /assets/data/publication/scala18.pdf
       bib: javascript:show('scala18.bib')
 
   - title: A Framework for Dynamic Inter-Device Task Dispatch with Eventual
@@ -281,8 +299,8 @@
       name: International Workshop on Programming Technology for the Future Web
       url: https://2018.programming-conference.org/track/proweb-2018-papers
     materials:
+      paper: /assets/data/publication/proweb18.pdf
       link: https://doi.org/10.1145/3191697.3191732
-      pdf: /assets/data/publication/proweb18.pdf
       slides: /assets/data/slides/2018/proweb18-slides.pdf
       bib: javascript:show('proweb18.bib')
 
@@ -302,7 +320,7 @@
       name: ACM SIGCOMM Workshop on Networking and Programming Languages
       url: https://conferences.sigcomm.org/sigcomm/2017/workshop-netpl.html
     materials:
-      pdf: /assets/data/publication/netpl17.pdf
+      paper: /assets/data/publication/netpl17.pdf
 
   - title: "Revisiting Recency Abstraction for JavaScript: Towards an
             Intuitive, Compositional, and Efficient Heap Abstraction"
@@ -317,8 +335,8 @@
         Program Analysis
       url: https://pldi17.sigplan.org/track/SOAP-2017-papers
     materials:
+      paper: /assets/data/publication/soap17.pdf
       link: https://doi.org/10.1145/3088515.3088516
-      pdf: /assets/data/publication/soap17.pdf
       tech: /assets/data/publication/soap17-tech.pdf
       slides: /assets/data/slides/2017/soap17-slides.pdf
       bib: javascript:show('soap17.bib')
@@ -335,8 +353,8 @@
       url: https://icse2017.gatech.edu/
       detail: Demonstrations Track
     materials:
+      paper: /assets/data/publication/icse-demo17.pdf
       link: https://doi.org/10.1109/ICSE-C.2017.4
-      pdf: /assets/data/publication/icse-demo17.pdf
       video: https://www.youtube.com/watch?v=ZI_emiRMoxQ
       slides: /assets/data/slides/2017/icse-demo17-slides.pdf
       poster: /assets/data/publication/icse-demo17-poster.pdf
@@ -354,8 +372,8 @@
       name: International Conference on Modularity
       url: https://modularity.info/conference/2014/index.html
     materials:
+      paper: /assets/data/publication/mod-src14.pdf
       link: https://doi.org/10.1145/2584469.2584472
-      pdf: /assets/data/publication/mod-src14.pdf
       slides: /assets/data/slides/2014/mod-src14-slides.pdf
       poster: /assets/data/publication/mod-src14-poster.pdf
       bib: javascript:show('mod-src14.bib')
