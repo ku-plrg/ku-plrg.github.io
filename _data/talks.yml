@@ -1,14 +1,29 @@
 2025:
 
+  - date      : 2025.07.04
+    title     : Trusted JavaScript Language Environments with ESMeta
+    place     : PLSS 2025
+    place-url : https://2025.ecoop.org/home/plss-2025
+    pdf       : /assets/data/slides/2025/plss25-esmeta.pdf
+
+  - date      : 2025.06.17
+    title     : Trusted JavaScript Language Environments with ESMeta
+    place     : RPLS 2025
+    place-url : https://pldi25.sigplan.org/home/rpls-2025
+    pdf       : /assets/data/slides/2025/rpls25-esmeta.pdf
+    youtube   : r4imci31ntw
+    yt-start  : 10497
+
   - date      : 2025.05.14
+    title     : 기계화 명세를 이용한 자바스크립트 언어의 설계와 구현
     place     : 고려대학교 CS 콜로퀴움
-    author    : Jihyeok Park
+    place-url : https://cs.korea.ac.kr/
     pdf       : /assets/data/slides/2025/colloquium25-spring.pdf
 
   - date      : 2025.04.18
+    title     : 기계화 명세를 통한 안전한 자바스크립트 언어 생태계 확보 기술
     place     : SWCS 2025 Invite Talk
     place-url : https://www.kiise.or.kr/conference/swcs/2025/
-    author    : Jihyeok Park
     pdf       : /assets/data/slides/2025/swcs25-talk.pdf
 
 # ------------------------------------------------------------------------------
@@ -16,21 +31,21 @@
 2024:
 
   - date      : 2024.11.20
+    title     : Language Design and Implementation using JavaScript Mechanized Specification
     place     : UNIST CSE Seminar
     place-url : https://cse.unist.ac.kr/
-    author    : Jihyeok Park
     pdf       : /assets/data/slides/2024/unist24-seminar.pdf
 
   - date      : 2024.06.24
+    title     : Language Design and Implementation using JavaScript Mechanized Specification
     place     : Instituto Superior Técnico of University of Lisbon
     place-url : https://tecnico.ulisboa.pt/en/
-    author    : Jihyeok Park
     pdf       : /assets/data/slides/2024/ist24-esmeta.pdf
 
   - date      : 2024.05.03
-    place     : 한국과학영재학교 (KSA)
+    title     : JavaScript 언어 생태계 자동화 연구를 하기까지의 여정
+    place     : 한국과학영재학교 수리정보과학부 콜로퀴움
     place-url : https://www.ksa.hs.kr/
-    author    : Jihyeok Park
     pdf       : /assets/data/slides/2024/ksa24-talk.pdf
 
 # ------------------------------------------------------------------------------
@@ -38,56 +53,51 @@
 2023:
 
   - date      : 2023.11.02
+    title     : 자바스크립트 엔진 보안과 퍼징
     place     : 고려대학교 융합보안대학원 세미나
     place-url : https://cssa.korea.ac.kr
-    author    : Jihyeok Park
     pdf       : /assets/data/slides/2023/cssa23-talk.pdf
 
   - date      : 2023.10.11
+    title     : 기계화 명세를 이용한 자바스크립트 언어의 설계와 구현
     place     : 고려대학교 CS 콜로퀴움
-    author    : Jihyeok Park
+    place-url : https://cs.korea.ac.kr/
     pdf       : /assets/data/slides/2023/colloquium23-fall.pdf
 
   - date      : 2023.08.24
+    title     : PL 구현체를 위한 새로운 커버리지를 제안하기까지의 여정
     place     : SIGPL Summer School 2023
     place-url : https://sigpl.or.kr/school/2023s/
-    author    : Jihyeok Park
     pdf       : /assets/data/slides/2023/sigpl23-summer-park.pdf
 
-  - date      : 2023.06.21
-    place     : PLDI 2023
-    place-url : "https://pldi23.sigplan.org/details/pldi-2023-pldi/21/\
-                 Feature-Sensitive-Coverage-for-Conformance-Testing-of-\
-                 Programming-Language-Implementa"
-    author    : Jihyeok Park
-    pdf       : /assets/data/slides/2023/pldi23-jestfs-slides.pdf
-    youtube   : FXkSMC-kUE8&t=2426s
-
   - date      : 2023.05.15
+    title     : 프로그래밍 언어 연구란?
     place     : 고려대학교 KUGODS 연사 초청 특강
-    author    : Jihyeok Park
+    place-url : https://cs.korea.ac.kr/
     pdf       : /assets/data/slides/2023/kugods23-talk.pdf
 
   - date      : 2023.04.20
+    title     : Guiding the Design and Implementation of JavaScript using Mechanized Specification
     place     : 고려대학교 KU-KIST융합대학원 저널클럽
-    author    : Jihyeok Park
+    place-url : https://kukistschool.korea.ac.kr
     pdf       : /assets/data/slides/2023/kukist23-talk.pdf
 
   - date      : 2023.03.15
+    title     : 기계화 명세를 이용한 자바스크립트 언어의 설계와 구현
     place     : 고려대학교 CS 콜로퀴움
-    author    : Jihyeok Park
+    place-url : https://cs.korea.ac.kr/
     pdf       : /assets/data/slides/2023/colloquium23-spring.pdf
 
   - date      : 2023.03.10
+    title     : 기계화 명세를 이용한 JavaScript 언어의 설계와 구현
     place     : 고려대학교 소프트웨어 분석 연구실 세미나
     place-url : http://prl.korea.ac.kr/
-    author    : Jihyeok Park
     pdf       : /assets/data/slides/2023/sal23-seminar.pdf
 
   - date      : 2023.02.09
+    title     : Automatically Deriving JavaScript Static Analyzers from Specifications using Meta-Level Static Analysis
     place     : KCSE 2023 Invite Talk
     place-url : http://sigsoft.or.kr/kcse2023/
-    author    : Jihyeok Park
     pdf       : /assets/data/slides/2023/kcse23-jsaver.pdf
 
 # ------------------------------------------------------------------------------
@@ -95,152 +105,87 @@
 Before 2023:
 
   - date      : 2022.12.23
+    title     : Automatically Deriving JavaScript Static Analyzers from Specifications using Meta-Level Static Analysis
     place     : KSC 2022 Invite Talk
     place-url : https://www.kiise.or.kr/conference/KSC/2022/
-    author    : Jihyeok Park
     pdf       : /assets/data/slides/2022/ksc22-jsaver.pdf
 
   - date      : 2022.02.13
+    title     : JavaScript Static Analysis for Evolving Language Specifications
     place     : SIGPL Winter School 2022
     place-url : https://sigpl.or.kr/school/2022w/
-    author    : Jihyeok Park
     pdf       : /assets/data/slides/2022/sigpl22-winter-park.pdf
 
   - date      : 2022.02.09
+    title     : JavaScript Static Analysis for Evolving Language Specifications
     place     : STAAR Workshop
-    place-url : https://staar.knu.ac.kr/
-    author    : Jihyeok Park
-    pdf       : /assets/data/slides/2022/erc22-workshop.pdf
+    place-url : https://staar2021.github.io/2nd_Workshop/02_Workshop.html
+    pdf       : /assets/data/slides/2022/staar22-workshop.pdf
 
   - date      : 2022.01.26
+    title     : JavaScript Static Analysis for Evolving Language Specifications
     place     : TC39 Meeting
     place-url : https://github.com/tc39/agendas/blob/main/2022/01.md
-    author    : Jihyeok Park
     pdf       : /assets/data/slides/2022/tc39-park-meeting.pdf
 
   - date      : 2022.01.20
+    title     : "JSTAR: JavaScript Specification Type Analyzer using Refinement"
     place     : KCSE 2022 Invite Talk
     place-url : http://sigsoft.or.kr/KCSE2022/
-    author    : Jihyeok Park
     pdf       : /assets/data/slides/2022/kcse22-park-jstar.pdf
 
   - date      : 2022.01.20
+    title     : "JEST: N+1-version Differential Testing of Both JavaScript Engines and Specification"
     place     : KCSE 2022 Invite Talk
     place-url : http://sigsoft.or.kr/KCSE2022/
-    author    : Jihyeok Park
     pdf       : /assets/data/slides/2022/kcse22-park-jest.pdf
 
   - date      : 2022.01.05
+    title     : JavaScript Static Analysis for Evolving Language Specifications
     place     : Agoric
     place-url : https://agoric.com/
-    author    : Jihyeok Park
     pdf       : /assets/data/slides/2022/agoric22-slides.pdf
 
   - date      : 2021.12.21
+    title     : "JEST: N+1-version Differential Testing of Both JavaScript Engines and Specification"
     place     : KSC 2021 Invite Talk
     place-url : https://www.kiise.or.kr/conference/KSC/2021/
-    author    : Jihyeok Park
     pdf       : /assets/data/slides/2021/ksc21-talk-slides.pdf
 
   - date      : 2021.12.15
+    title     : JavaScript Static Analysis for Evolving Language Specifications
     place     : DI ENS Seminar
     place-url : https://www.di.ens.fr/
-    author    : Jihyeok Park
     pdf       : /assets/data/slides/2021/diens21-talk-slides.pdf
 
-  - date      : 2021.11.17
-    place     : ASE 2021
-    place-url : https://conf.researchr.org/track/ase-2021/ase-2021-papers
-    author    : Jihyeok Park
-    pdf       : /assets/data/slides/2021/ase21-jstar-slides.pdf
-
   - date      : 2021.10.12
+    title     : "JEST: N+1-version Differential Testing of Both JavaScript Engines and Specification"
     place     : EIRIC Seminar
     place-url : https://www.eiric.or.kr/community/webinar_detail.php?Seq=55
-    author    : Jihyeok Park
     pdf       : /assets/data/slides/2021/eiric21-talk-slides.pdf
     youtube   : tibudCY2388
 
   - date      : 2021.09.17
+    title     : JavaScript Static Analysis for Evolving Language Specifications
     place     : KAISTPL
     place-url : https://plrg.kaist.ac.kr/kaistpl
-    author    : Jihyeok Park
     pdf       : /assets/data/slides/2021/kaistpl21-talk-slides.pdf
     youtube   : kk46PZO6jWI
 
-  - date      : 2021.07.13
-    place     : ECOOP/ISSTA 2021 DS
-    place-url : "https://2021.ecoop.org/details/ecoop-issta-2021-doctoral-\
-                 symposium/4/JavaScript-Static-Analysis-with-Evolving-Engines\
-                 -and-Specification-Senior-Presentati"
-    author    : Jihyeok Park
-    pdf       : /assets/data/slides/2021/issta21-ds-slides.pdf
-
   - date      : 2021.06.28
+    title     : Towards Co-evolution of JavaScript Specification and Tools
     place     : KAIST Prosys Lab
     place-url : https://prosys.kaist.ac.kr/
-    author    : Jihyeok Park
     pdf       : /assets/data/slides/2021/ps-lab21-talk-slides.pdf
 
   - date      : 2021.06.23
+    title     : "JISET: JavaScript IR-based Semantics Extraction Toolchain"
     place     : KCC 2021 Invite Talk
     place-url : https://www.kiise.or.kr/conference/kcc/2021/
-    author    : Jihyeok Park
     pdf       : /assets/data/slides/2021/kcc21-talk-slides.pdf
 
-  - date      : 2021.05.28
-    place     : ICSE 2021
-    place-url : "https://conf.researchr.org/details/icse-2021/icse-2021-papers/\
-                 43/JEST-N-1-version-Differential-Testing-of-Both-\
-                 JavaScript-Engines-and-Specification"
-    author    : Jihyeok Park
-    pdf       : /assets/data/slides/2021/icse21-slides.pdf
-    youtube   : lX4iscqdx8Y
-
-  - date      : 2020.09.23
-    place     : ASE 2020
-    place-url : "https://conf.researchr.org/details/ase-2020/ase-2020-papers/77/\
-                 JISET-JavaScript-IR-based-Semantics-Extraction-Toolchain"
-    author    : Jihyeok Park
-    pdf       : /assets/data/slides/2020/ase20-slides.pdf
-
   - date      : 2019.11.26
+    title     : Update-Tolerant JavaScript Static Analysis for Frequently Released ECMAScript
     place     : NUS Seminar
     place-url : https://events.comp.nus.edu.sg/view/16664
-    author    : Jihyeok Park
     pdf       : /assets/data/slides/2019/nus19-talk-slides.pdf
-
-  - date      : 2018.11.28
-    place     : ICSME 2019 J1C2
-    place-url : https://icsme2018.github.io/program/Accepted.html
-    author    : Jihyeok Park
-    pdf       : /assets/data/slides/2019/ieeesw19-slides.pdf
-
-  - date      : 2018.04.10
-    place     : ProWeb 2018
-    place-url : "https://2018.programming-conference.org/details/\
-                 proweb-2018-papers/1/A-Framework-for-Dynamic-Inter-\
-                 Device-Task-Dispatch-with-Eventual-Consistency"
-    author    : Jihyeok Park
-    pdf       : /assets/data/slides/2018/proweb18-slides.pdf
-
-  - date      : 2017.06.18
-    place     : SOAP 2017
-    place-url : "https://pldi17.sigplan.org/details/SOAP-2017-papers/1/\
-                 Revisiting-Recency-Abstraction-for-JavaScript-Towards-
-                 an-Intuitive-Compositional-a"
-    author    : Jihyeok Park
-    pdf       : /assets/data/slides/2017/soap17-slides.pdf
-
-  - date      : 2017.05.24
-    place     : ICSE 2017 Demo
-    place-url : https://icse2017.gatech.edu/?q=demo-track#demo-2.3
-    author    : Jihyeok Park
-    pdf       : /assets/data/slides/2017/icse-demo17-slides.pdf
-    youtube   : ZI_emiRMoxQ
-
-  - date      : 2014.04.22
-    place     : Modularity 2014 SRC
-    place-url : https://dl.acm.org/doi/proceedings/10.1145/2577080
-    author    : Jihyeok Park
-    pdf       : /assets/data/slides/2014/mod-src14-slides.pdf

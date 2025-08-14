@@ -52,32 +52,28 @@ Please see [Research](/research).
 Please see [Publications](/publications).
 
 - **PL Conference**:
-  - PLDI (
+  - PLDI -
       [2023](https://doi.org/10.1145/3591240) /
       [2024](https://doi.org/10.1145/3656464)
-    )
 - **SE Conference**:
-  - ICSE (
+  - ICSE -
+      [2017 (Demo)](https://doi.org/10.1109/ICSE-C.2017.4) /
       [2021](https://doi.org/10.1109/ICSE43902.2021.00015)
-    )
-  - ESEC/FSE (
+  - FSE -
       [2021](https://doi.org/10.1145/3468264.3468556) /
-      [2022](https://doi.org/10.1145/3540250.3549097)
-    )
-  - ASE (
+      [2022](https://doi.org/10.1145/3540250.3549097) /
+      [2025 (Demo)](https://doi.org/10.1145/3696630.3728579)
+  - ASE -
       [2020](https://doi.org/10.1145/3324884.3416632) /
-      [2021](https://doi.org/10.1109/ASE51524.2021.9678781)
-    )
+      [2021](https://doi.org/10.1109/ASE51524.2021.9678781) /
+      2025
 - **Journal**:
-  - CACM (
+  - CACM -
       [2023](https://doi.org/10.1145/3624723)
-    )
-  - CSUR (
+  - CSUR -
       [2021](https://doi.org/10.1145/3464457)
-    )
-  - IEEE Software (
+  - IEEE Software -
       [2019](https://doi.org/10.1109/MS.2018.110113408)
-    )
 
 
 ## Professional Activities
@@ -87,7 +83,7 @@ Please see [Publications](/publications).
     [**RPLS** (Co-Chair)](https://pldi25.sigplan.org/home/rpls-2025) /
     [**SAS**](https://2025.splashcon.org/home/sas-2025) /
     [**SCAM**](https://conf.researchr.org/home/scam-2025) /
-    [**OOPSLA** (RC)](https://2025.splashcon.org/track/OOPSLA) /
+    [**OOPSLA**](https://2025.splashcon.org/track/OOPSLA) /
     [**SAC** (PL Track)](https://www.sigapp.org/sac/sac2025)
   - 2024 -
     [**APLAS** (SRC & Posters)](https://conf.researchr.org/track/aplas-2024/src-and-posters%3F) /
@@ -95,11 +91,11 @@ Please see [Publications](/publications).
     [**SAC** (PL Track)](https://www.sigapp.org/sac/sac2024) /
     [**ICSE**](https://conf.researchr.org/home/icse-2024)
   - 2023 -
-    [**OOPSLA** (ERC)](https://2023.splashcon.org/track/splash-2023-oopsla) /
+    [**OOPSLA**](https://2023.splashcon.org/track/splash-2023-oopsla) /
     [**APLAS**](https://conf.researchr.org/home/aplas-2023)
   - 2022 -
-    [**OOPSLA** (ERC)](https://2023.splashcon.org/track/splash-2022-oopsla) /
-    [**APLAS**](https://conf.researchr.org/home/aplas-2022)
+    [**OOPSLA**](https://2023.splashcon.org/track/splash-2022-oopsla) /
+    [**APLAS**](https://conf.researchr.org/home/aplas-2022) /
     [**ISSTA** (Web Co-Chair)](https://conf.researchr.org/home/issta-2022)
 
 - **Artifact Evaluation Committee (AEC) Members**
@@ -130,12 +126,13 @@ Please see [Publications](/publications).
 
 
 ## Honors & Awards
+- **고려대학교 우수강좌**, COSE212 Programming Languages (2023-2)
 - **Ph.D. Dissertation Award**, College of Engineering, KAIST, 2022.
 - **An Outstanding Ph.D. Thesis**, School of Computing, KAIST, 2022.
 - **ACM SIGSOFT Distinguished Paper Award**, ICSE 2021.
 - **Ph.D. Fellowship Award**, NAVER Corp., 2020.
 - **Outstanding Teaching Assistant Award**, KAIST CS320 Programming Languages <br>
-  (5 times - 2016 Fall / 2017 Spring / 2018 Spring / 2018 Fall / 2019 Spring).
+  (2016-2 / 2017-1 / 2018-1 / 2018-2 / 2019-1).
 - **Outstanding Teaching Assistant Award**, KAIST CS109 Programming Practice, 2016 Spring.
 - **Best Paper Award**, SOAP 2017.
 - **ACM Student Research Competition 3rd**, Modularity 2014.
