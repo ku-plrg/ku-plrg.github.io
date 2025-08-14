@@ -1,12 +1,16 @@
 {%- assign _talk = include.talk -%}
 <li>
-  {{ _talk.date }}, <strong>{{ _talk.title }}</strong>
+  <strong>{{ _talk.title }}</strong>
+  <br>
+  {{ _talk.date }}
+  {{ " @ " }}
   {%- if _talk.place-url -%}
-  , <a href="{{ _talk.place-url }}">{{ _talk.place }}</a>
+  <a href="{{ _talk.place-url }}">{{ _talk.place }}</a>
   {%- else -%}
-  , {{ _talk.place }}
+  {{ _talk.place }}
   {%- endif -%}
-  <div class="talk-links">
+  {{ " - " }}
+  <div class="author-links">
     <ul class="menu menu--nowrap menu--inline">
     {%- if _talk.pdf -%}
       <li>
@@ -18,11 +22,7 @@
 
     {%- if _talk.youtube -%}
       <li>
-        {% if _talk.yt-start %}
-        <a class="button button--circle youtube-button" itemprop="sameAs" href="https://www.youtube.com/watch?v={{ _talk.youtube }}&t={{ _talk.yt-start }}" target="_blank">
-        {% else %}
         <a class="button button--circle youtube-button" itemprop="sameAs" href="https://www.youtube.com/watch?v={{ _talk.youtube }}" target="_blank">
-        {% endif %}
           <div class="icon">{%- include svg/icon/social/youtube.svg -%}</div>
         </a>
       </li>

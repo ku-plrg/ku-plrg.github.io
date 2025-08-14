@@ -1,23 +1,23 @@
 2025:
 
   - title: "Debun: Detecting Bundled JavaScript Libraries on Web using Property-Order Graphs"
+    doi: accepted # TODO
     authors:
       - Seojin Kim
       - Sungmin Park
       - Jihyeok Park
     co-first: 2
     target:
-      abbr: ASE 2025
-      name: IEEE/ACM International Conference on Automated Software Engineering
+      name: ASE 2025
+      detail: IEEE/ACM International Conference on Automated Software Engineering
       url: https://conf.researchr.org/home/ase-2025
+    # pdf: TODO
     materials:
-      # paper: 
-      # link: 
-      # slides: 
-      # repo: 
-      # bib: 
+      # slides: TODO
+      # repo: TODO
 
   - title: "JSSpecVis: A JavaScript Language Specification Visualization Tool"
+    doi: https://doi.org/10.1145/3696630.3728579
     authors:
       - Minseok Choe
       - Kyungho Song
@@ -25,60 +25,56 @@
       - Jihyeok Park
     co-first: 2
     target:
-      abbr: FSE 2025
-      name: ACM International Conference on the Foundations of Software Engineering
+      name: FSE 2025 Demo
+      detail: ACM International Conference on the Foundations of Software Engineering - Demonstrations Track
       url: https://conf.researchr.org/home/fse-2025
-      detail: Demonstrations Track
+    pdf: /assets/data/publication/fse-demo25.pdf
+    youtube: 4XMjJPNmuBM
     materials:
-      paper: /assets/data/publication/fse-demo25.pdf
-      link: https://doi.org/10.1145/3696630.3728579
-      video: https://www.youtube.com/watch?v=4XMjJPNmuBM
       slides: /assets/data/slides/2025/fse25-demo-slides.pdf
       repo: https://github.com/ku-plrg/js-spec-vis
-      bib: javascript:show('fse-demo25.bib')
       visualizer: https://chromewebstore.google.com/detail/nlfpedidieegejndiikebcgclhggaocd?utm_source=item-share-cb
       debugger: https://es-meta.github.io/playground
 
 2024:
 
-  - title: "PL4XGL: A Programming Language Approach to Explainable Graph
-      Learning"
+  - title: "PL4XGL: A Programming Language Approach to Explainable Graph Learning"
+    doi: https://doi.org/10.1145/3656464
     authors:
       - Minseok Jeon
       - Jihyeok Park
       - Hakjoo Oh
     co-corr: 2
     target:
-      name: ACM SIGPLAN Conference on Programming Language Design and
+      detail: ACM SIGPLAN Conference on Programming Language Design and
         Implementation
-      abbr: PLDI 2024
+      name: PLDI 2024
       url: https://pldi24.sigplan.org/
+    pdf: /assets/data/publication/pldi24-jeon-pl4xgl.pdf
+    youtube: dc64pCBXx9o
     materials:
-      paper: /assets/data/publication/pldi24-jeon-pl4xgl.pdf
-      link: https://doi.org/10.1145/3656464
       slides: /assets/data/slides/2024/pldi24-pl4xgl-slides.pdf
       repo: https://github.com/kupl/PL4XGL
-      bib: javascript:show('pldi24-jeon-pl4xgl.bib')
 
   - title: JavaScript Language Design and Implementation in Tandem
+    doi: https://doi.org/10.1145/3624723
     authors:
       - Sukyoung Ryu
       - Jihyeok Park
     target:
-      name: Communications of the ACM
-      abbr: CACM
+      detail: Communications of the ACM
+      name: CACM
       url: https://m-cacm.acm.org/
+    pdf: /assets/data/publication/cacm24-ryu-esmeta.pdf
+    youtube: JGxc-KIUnQY
     materials:
-      paper: /assets/data/publication/cacm24-ryu-esmeta.pdf
       online: https://cacm.acm.org/research/javascript-language-design-and-implementation-in-tandem/
-      link: https://doi.org/10.1145/3624723
-      video: https://www.youtube.com/watch?v=JGxc-KIUnQY
       repo: https://github.com/es-meta/esmeta
-      bib: javascript:show('cacm24-ryu-esmeta.bib')
 
 2023:
 
   - title: Feature-Sensitive Coverage for Conformance Testing of Programming
+    doi: https://doi.org/10.1145/3591240
       Language Implementations
     authors:
       - Jihyeok Park
@@ -86,38 +82,35 @@
       - Kanguk Lee
       - Sukyoung Ryu
     target:
-      name: ACM SIGPLAN Conference on Programming Language Design and
+      detail: ACM SIGPLAN Conference on Programming Language Design and
         Implementation
-      abbr: PLDI 2023
+      name: PLDI 2023
       url: https://pldi23.sigplan.org/
+    pdf: /assets/data/publication/pldi23-park-jestfs.pdf
+    youtube: Yz1dGw_rAzQ
     materials:
-      paper: /assets/data/publication/pldi23-park-jestfs.pdf
-      link: https://doi.org/10.1145/3591240
       slides: /assets/data/slides/2023/pldi23-jestfs-slides.pdf
-      video: https://www.youtube.com/watch?v=FXkSMC-kUE8&t=2426s
       repo: https://github.com/jestfs/jestfs/
-      bib: javascript:show('pldi23-park-jestfs.bib')
 
 2022:
 
   - title: Automatically Deriving JavaScript Static Analyzers from
+    doi: https://doi.org/10.1145/3540250.3549097
       Specifications using Meta-Level Static Analysis
     authors:
       - Jihyeok Park
       - Seungmin An
       - Sukyoung Ryu
     target:
-      name: ACM Joint European Software Engineering Conference and Symposium on
+      detail: ACM Joint European Software Engineering Conference and Symposium on
         the Foundations of Software Engineering
-      abbr: ESEC/FSE 2022
+      name: ESEC/FSE 2022
       url: https://2022.esec-fse.org/
+    pdf: /assets/data/publication/fse22-park-jsaver.pdf
+    youtube: zEsanPIFrWs
     materials:
-      paper: /assets/data/publication/fse22-park-jsaver.pdf
-      link: https://doi.org/10.1145/3540250.3549097
       slides: /assets/data/slides/2022/fse22-jsaver-slides.pdf
-      video: https://www.youtube.com/watch?v=zEsanPIFrWs
       repo: https://github.com/kaist-plrg/jsaver
-      bib: javascript:show('fse22-park-jsaver.bib')
 
   - title: Filling the Gap between the JavaScript Language Specification and
       Tools using the JISET Family
@@ -126,15 +119,11 @@
       - Jihyeok Park
       - Seungmin An
     target:
-      abbr: PLDI 2022
-      name: ACM SIGPLAN Conference on Programming Language Design and
-        Implementation
+      name: PLDI 2022 Tutorial
+      detail: ACM SIGPLAN Conference on Programming Language Design and
+        Implementation - Tutorial
       url: https://pldi22.sigplan.org/
-      detail: Tutorial
     materials:
-      link: "https://pldi22.sigplan.org/details/pldi-2022-tutorials/1/\
-             Filling-the-gap-between-the-JavaScript-language-specification-\
-             and-tools-using-the-JIS"
       slides-1: /assets/data/slides/2022/pldi22-tutorial-1.pdf
       slides-2: /assets/data/slides/2022/pldi22-tutorial-2.pdf
       slides-3: /assets/data/slides/2022/pldi22-tutorial-3.pdf
@@ -142,22 +131,21 @@
 2021:
 
   - title: A Survey of Parametric Static Analysis
+    doi: https://doi.org/10.1145/3464457
     authors:
       - Jihyeok Park
       - Hongki Lee
       - Sukyoung Ryu
     co-first: 2
     target:
-      abbr: CSUR
-      name: ACM Computing Surveys
+      name: CSUR
+      detail: ACM Computing Surveys - vol. 54, issue 7, no. 149, pp. 1-37
       url: https://dl.acm.org/journal/csur
-      detail: Volume 54, Issue 7, Article No. 149, pp 1–37
+    pdf: /assets/data/publication/csur21-park-psa.pdf
     materials:
-      paper: /assets/data/publication/csur21-park-psa.pdf
-      link: https://doi.org/10.1145/3464457
-      bib: javascript:show('csur21-park-psa.bib')
 
   - title: "JSTAR: JavaScript Specification Type Analyzer using Refinement"
+    doi: https://doi.org/10.1109/ASE51524.2021.9678781
     authors:
       - Jihyeok Park
       - Seungmin An
@@ -165,18 +153,17 @@
       - Yusung Sim
       - Sukyoung Ryu
     target:
-      abbr: ASE 2021
-      name: IEEE/ACM International Conference on Automated Software Engineering
+      name: ASE 2021
+      detail: IEEE/ACM International Conference on Automated Software Engineering
       url: https://conf.researchr.org/home/ase-2021
+    pdf: /assets/data/publication/ase21-park-jstar.pdf
     materials:
-      paper: /assets/data/publication/ase21-park-jstar.pdf
-      link: https://doi.org/10.1109/ASE51524.2021.9678781
       tech: /assets/data/publication/ase21-jstar-report.pdf
       slides: /assets/data/slides/2021/ase21-jstar-slides.pdf
       repo: https://github.com/kaist-plrg/jstar
-      bib: javascript:show('ase21-park-jstar.bib')
 
   - title: Accelerating JavaScript Static Analysis via Dynamic Shortcuts
+    doi: https://doi.org/10.1145/3468264.3468556
     authors:
       - Joonyoung Park
       - Jihyeok Park
@@ -184,35 +171,28 @@
       - Sukyoung Ryu
     co-first: 2
     target:
-      abbr: ESEC/FSE 2021
-      name: ACM Joint European Software Engineering Conference and Symposium on
+      name: ESEC/FSE 2021
+      detail: ACM Joint European Software Engineering Conference and Symposium on
         the Foundations of Software Engineering
       url: https://2021.esec-fse.org/
+    pdf: /assets/data/publication/fse21-park-ds.pdf
     materials:
-      paper: /assets/data/publication/fse21-park-ds.pdf
-      link: https://doi.org/10.1145/3468264.3468556
       extended: https://arxiv.org/abs/2105.13699
       slides: /assets/data/slides/2021/fse21-slides.pdf
       repo: https://github.com/kaist-plrg/safe-ds
-      bib: javascript:show('fse21-park-ds.bib')
 
   - title: JavaScript Static Analysis with Evolving Engines and Specification
     authors:
       - Jihyeok Park
     target:
-      abbr: ISSTA 2021
-      name: ACM SIGSOFT International Symposium on Software Testing and Analysis
+      name: ISSTA 2021 DS
+      detail: ACM SIGSOFT International Symposium on Software Testing and Analysis - Doctoral Symposium
       url: https://conf.researchr.org/home/issta-2021
-      detail: Doctoral Symposium
     materials:
-      link: "https://conf.researchr.org/details/issta-2021/\
-             ecoop-issta-2021-doctoral-symposium/4/\
-             JavaScript-Static-Analysis-with-Evolving-Engines-\
-             and-Specification-Senior-Presentati"
       slides: /assets/data/slides/2021/issta21-ds-slides.pdf
 
-  - title: "JEST: N+1-version Differential Testing of Both JavaScript Engines \
-            and Specification"
+  - title: "JEST: N+1-version Differential Testing of Both JavaScript Engines and Specification"
+    doi: https://doi.org/10.1109/ICSE43902.2021.00015
     authors:
       - Jihyeok Park
       - Seungmin An
@@ -221,40 +201,38 @@
       - Sukyoung Ryu
     award: ACM SIGSOFT Distinguished Paper Award
     target:
-      abbr: ICSE 2021
-      name: IEEE/ACM International Conference on Software Engineering
+      name: ICSE 2021
+      detail: IEEE/ACM International Conference on Software Engineering
       url: https://conf.researchr.org/home/icse-2021
+    pdf: /assets/data/publication/icse21-park-jest.pdf
+    youtube: lX4iscqdx8Y
     materials:
-      paper: /assets/data/publication/icse21-park-jest.pdf
-      link: https://doi.org/10.1109/ICSE43902.2021.00015
       slides: /assets/data/slides/2021/icse21-slides.pdf
-      video: https://www.youtube.com/watch?v=lX4iscqdx8Y
       repo: https://github.com/kaist-plrg/jest
-      bib: javascript:show('icse21-park-jest.bib')
 
 2020:
 
   - title: "JISET: JavaScript IR-based Semantics Extraction Toolchain"
+    doi: https://doi.org/10.1145/3324884.3416632
     authors:
       - Jihyeok Park
       - Jihee Park
       - Seungmin An
       - Sukyoung Ryu
     target:
-      abbr: ASE 2020
-      name: IEEE/ACM International Conference on Automated Software Engineering
+      name: ASE 2020
+      detail: IEEE/ACM International Conference on Automated Software Engineering
       url: https://conf.researchr.org/home/ase-2020
+    pdf: /assets/data/publication/ase20-park-jiset.pdf
     materials:
-      paper: /assets/data/publication/ase20-park-jiset.pdf
-      link: https://doi.org/10.1145/3324884.3416632
       tech: /assets/data/publication/ase20-park-jiset-report.pdf
       slides: /assets/data/slides/2020/ase20-slides.pdf
       repo: https://github.com/kaist-plrg/jiset
-      bib: javascript:show('ase20-park-jiset.bib')
 
 2019:
 
   - title: Toward Analysis and Bug Finding of JavaScript Web Applications in
+    doi: https://doi.org/10.1109/MS.2018.110113408
       the Wild
     authors:
       - Sukyoung Ryu
@@ -262,31 +240,30 @@
       - Joonyoung Park
     target:
       name: IEEE Software
+      detail: vol. 36, no. 3, pp. 74-82
       url: https://www.computer.org/csdl/magazine/so
+    pdf: /assets/data/publication/ieeesw19.pdf
     materials:
-      paper: /assets/data/publication/ieeesw19.pdf
-      link: https://doi.org/10.1109/MS.2018.110113408
       slides: /assets/data/slides/2019/ieeesw19-slides.pdf
-      bib: javascript:show('ieeesw19.bib')
 
 2018:
 
   - title: Path Dependent Types with Path-Equality
+    doi: https://doi.org/10.1145/3241653.3241657
     authors:
       - Jaemin Hong
       - Jihyeok Park
       - Sukyoung Ryu
     target:
-      abbr: Scala 2018
-      name: ACM SIGPLAN Symposium on Scala
+      name: Scala 2018
+      detail: ACM SIGPLAN Symposium on Scala
       url: https://conf.researchr.org/track/scala-2018/scala-2018-papers
+    pdf: /assets/data/publication/scala18.pdf
+    youtube: 6jVUuKPiYK4
     materials:
-      paper: /assets/data/publication/scala18.pdf
-      link: https://doi.org/10.1145/3241653.3241657
-      bib: javascript:show('scala18.bib')
 
-  - title: A Framework for Dynamic Inter-Device Task Dispatch with Eventual
-      Consistency
+  - title: A Framework for Dynamic Inter-Device Task Dispatch with Eventual Consistency
+    doi: https://doi.org/10.1145/3191697.3191732
     authors:
       - Jihyeok Park
       - Joonyoung Park
@@ -295,19 +272,16 @@
       - Byoungoh Kim
       - Sukyoung Ryu
     target:
-      abbr: ProWeb 2018
-      name: International Workshop on Programming Technology for the Future Web
+      name: ProWeb 2018
+      detail: International Workshop on Programming Technology for the Future Web
       url: https://2018.programming-conference.org/track/proweb-2018-papers
+    pdf: /assets/data/publication/proweb18.pdf
     materials:
-      paper: /assets/data/publication/proweb18.pdf
-      link: https://doi.org/10.1145/3191697.3191732
       slides: /assets/data/slides/2018/proweb18-slides.pdf
-      bib: javascript:show('proweb18.bib')
 
 2017:
 
-  - title: Toward Building Memory-safe Network Functions with Modest
-      Performance Overhead
+  - title: Toward Building Memory-safe Network Functions with Modest Performance Overhead
     authors:
       - Keunhong Lee
       - Shinae Woo
@@ -316,64 +290,60 @@
       - Sukyoung Ryu
       - Sue Moon
     target:
-      abbr: NetPL 2017
-      name: ACM SIGCOMM Workshop on Networking and Programming Languages
+      name: NetPL 2017
+      detail: ACM SIGCOMM Workshop on Networking and Programming Languages
       url: https://conferences.sigcomm.org/sigcomm/2017/workshop-netpl.html
+    pdf: /assets/data/publication/netpl17.pdf
+    youtube: p_85Zys3Yzs
     materials:
-      paper: /assets/data/publication/netpl17.pdf
 
-  - title: "Revisiting Recency Abstraction for JavaScript: Towards an
-            Intuitive, Compositional, and Efficient Heap Abstraction"
+  - title: "Revisiting Recency Abstraction for JavaScript: Towards an Intuitive, Compositional, and Efficient Heap Abstraction"
+    doi: https://doi.org/10.1145/3088515.3088516
     authors:
       - Jihyeok Park
       - Xavier Rival
       - Sukyoung Ryu
     award: Best Paper Award
     target:
-      abbr: SOAP 2017
-      name: ACM SIGPLAN International Workshop on the State Of the Art in Java
+      name: SOAP 2017
+      detail: ACM SIGPLAN International Workshop on the State Of the Art in Java
         Program Analysis
       url: https://pldi17.sigplan.org/track/SOAP-2017-papers
+    pdf: /assets/data/publication/soap17.pdf
     materials:
-      paper: /assets/data/publication/soap17.pdf
-      link: https://doi.org/10.1145/3088515.3088516
       tech: /assets/data/publication/soap17-tech.pdf
       slides: /assets/data/slides/2017/soap17-slides.pdf
-      bib: javascript:show('soap17.bib')
 
   - title: Analysis of JavaScript Web Applications Using SAFE 2.0
+    doi: https://doi.org/10.1109/ICSE-C.2017.4
     authors:
       - Jihyeok Park
       - Yeonhee Ryou
       - Joonyoung Park
       - Sukyoung Ryu
     target:
-      abbr: ICSE 2017
-      name: IEEE/ACM International Conference on Software Engineering
+      name: ICSE 2017 Demo
+      detail: IEEE/ACM International Conference on Software Engineering - Demonstrations Track
       url: https://icse2017.gatech.edu/
-      detail: Demonstrations Track
+    pdf: /assets/data/publication/icse-demo17.pdf
+    youtube: ZI_emiRMoxQ
     materials:
-      paper: /assets/data/publication/icse-demo17.pdf
-      link: https://doi.org/10.1109/ICSE-C.2017.4
-      video: https://www.youtube.com/watch?v=ZI_emiRMoxQ
       slides: /assets/data/slides/2017/icse-demo17-slides.pdf
       poster: /assets/data/publication/icse-demo17-poster.pdf
       repo: https://github.com/sukyoung/safe
-      bib: javascript:show('icse-demo17.bib')
 
 2014:
 
   - title: JavaScript API Misuse Detection by Using TypeScript
+    doi: https://doi.org/10.1145/2584469.2584472
     authors:
       - Jihyeok Park
     award: ACM Student Research Competition 3rd
     target:
-      abbr: Modularity 2014
-      name: International Conference on Modularity
+      name: Modularity 2014
+      detail: International Conference on Modularity
       url: https://modularity.info/conference/2014/index.html
+    pdf: /assets/data/publication/mod-src14.pdf
     materials:
-      paper: /assets/data/publication/mod-src14.pdf
-      link: https://doi.org/10.1145/2584469.2584472
       slides: /assets/data/slides/2014/mod-src14-slides.pdf
       poster: /assets/data/publication/mod-src14-poster.pdf
-      bib: javascript:show('mod-src14.bib')

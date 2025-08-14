@@ -2,6 +2,13 @@
 <li>
   <!-- title -->
   <strong>{{ _publication.title }}</strong>
+  {%- if _publication.doi -%}
+  {%- if _publication.doi == "accepted" -%}
+  {{ "" }} <span class="detail">(Accepted)</span>
+  {%- else -%}
+  {{ "" }} [<a href="{{ _publication.doi }}">doi</a>]
+  {%- endif -%}
+  {%- endif -%}
 
   <br>
 
@@ -30,27 +37,22 @@
   {%- endfor -%}
   {%- endif -%}
   {%- if _publication.co-first -%}
-  {{ " " }}(* equally contributed)
+  {{ " " }}<span class="detail">(* equally contributed)</span>
   {%- endif -%}
   {%- if _publication.co-corr -%}
-  {{ " " }}(† corresponding authors)
+  {{ " " }}<span class="detail">(† corresponding authors)</span>
   {%- endif -%}
 
   <br>
 
   <!-- conference/workshop/journal -->
-  <a href="{{ _publication.target.url }}">
-    {%- if _publication.target.abbr -%}
-    <strong>{{ _publication.target.abbr }}</strong>{{ ": " }}
-    {{ _publication.target.name }}
-    {%- else -%}
-    <strong>{{ _publication.target.name }}</strong>
+    <a href="{{ _publication.target.url }}">
+      <strong>{{ _publication.target.name }}</strong>
+    </a>
+    {%- if _publication.target.detail -%}
+    {{ "" }}
+    <span class="detail">({{ _publication.target.detail }})</span>
     {%- endif -%}
-  </a>
-  {%- if _publication.target.detail -%}
-  {{ " " }}
-  ({{ _publication.target.detail }})
-  {%- endif -%}
 
   <br>
 
@@ -60,10 +62,34 @@
   <br>
   {%- endif -%}
 
+  <div class="author-links">
+    <ul class="menu menu--nowrap menu--inline">
+    {%- if _publication.pdf -%}
+      <li>
+        <a class="button button--circle pdf-button" itemprop="pdf" href="{{ _publication.pdf }}" target="_blank">
+          <i class="fas fa-file-pdf"></i>
+        </a>
+      </li>
+    {%- endif -%}
+    {%- if _publication.youtube -%}
+      <li>
+        <a class="button button--circle youtube-button" itemprop="sameAs" href="https://www.youtube.com/watch?v={{ _publication.youtube }}" target="_blank">
+          <div class="icon">{%- include svg/icon/social/youtube.svg -%}</div>
+        </a>
+      </li>
+    {%- endif -%}
+    </ul>
+  </div>
+
   <!-- materials -->
+  {%- if _publication.materials.size > 0 -%}
+  [ {{ "" }}
   {%- for _pair in _publication.materials -%}
   {%- assign _name = _pair[0] -%}
   {%- assign _link = _pair[1] -%}
-  [<a href="{{ _link }}">{{ _name }}</a>]
+  <a href="{{ _link }}">{{ _name }}</a>
+  {% unless forloop.last %} | {% endunless %}
   {%- endfor -%}
+  ]
+  {%- endif -%}
 </li>

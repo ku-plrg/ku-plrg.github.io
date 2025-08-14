@@ -1,13 +1,16 @@
 {%- assign _trip = include.trip -%}
 <li>
   {{ _trip.date-from }} - {{ _trip.date-to }}
+  <strong>
   {%- if _trip.place-url -%}
-  , <strong><a href="{{ _trip.place-url }}">{{ _trip.place }}</a></strong>
+  , <a href="{{ _trip.place-url }}">{{ _trip.place }}</a>
   {%- else -%}
-  , <strong>{{ _trip.place }}</strong>
+  , {{ _trip.place }}
   {%- endif -%}
-  , {{ _trip.location }}
-  <div class="trip-links">
+  &nbsp;@ {{ _trip.location }}
+  </strong>
+  <br>
+  <div class="author-links">
     <ul class="menu menu--nowrap menu--inline">
       {%- if _trip.photos -%}
       <li>
@@ -19,7 +22,7 @@
       {%- endif -%}
 
       {%- if _trip.talk -%}
-      <strong>(Talk:&nbsp;</strong>
+      &nbsp;<strong>|</strong>&nbsp;Talk:&nbsp;
       {%- for _talk in _trip.talk -%}
       <li>
         <a class="button button--circle pdf-button" itemprop="pdf"
@@ -28,11 +31,10 @@
         </a>
       </li>
       {%- endfor -%}
-      <strong>)</strong>
       {%- endif -%}
 
       {%- if _trip.poster -%}
-      <strong>(Poster:&nbsp;</strong>
+      &nbsp;<strong>|</strong>&nbsp;Poster:&nbsp;
       {%- for _poster in _trip.poster -%}
       <li>
         <a class="button button--circle pdf-button" itemprop="pdf"
@@ -41,11 +43,10 @@
         </a>
       </li>
       {%- endfor -%}
-      <strong>)</strong>
       {%- endif -%}
 
       {%- if _trip.report -%}
-      <strong>(Report: &nbsp;</strong>
+      &nbsp;<strong>|</strong>&nbsp;Report:&nbsp;
       {%- for _report in _trip.report -%}
       <li>
         <a class="button button--circle pdf-button" itemprop="pdf"
@@ -54,7 +55,6 @@
         </a>
       </li>
       {%- endfor -%}
-      <strong>)</strong>
       {%- endif -%}
     </ul>
   </div>

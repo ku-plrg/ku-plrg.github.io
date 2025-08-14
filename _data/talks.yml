@@ -11,8 +11,7 @@
     place     : RPLS 2025
     place-url : https://pldi25.sigplan.org/home/rpls-2025
     pdf       : /assets/data/slides/2025/rpls25-esmeta.pdf
-    youtube   : r4imci31ntw
-    yt-start  : 10497
+    youtube   : ZPZtfycDoJ0
 
   - date      : 2025.05.14
     title     : 기계화 명세를 이용한 자바스크립트 언어의 설계와 구현
