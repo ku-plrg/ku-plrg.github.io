@@ -1,24 +1,19 @@
 ---
 layout: course
 ---
-## COSE212: Programming Languages, 2024 Fall
-
-**Note that this page is outdated. Please refer to the [recent course page](../).**
-{:.warning}
+## COSE212: Programming Languages, 2025 Fall
 
 ### Course Information
 
 - **Instructor:** [Jihyeok Park (박지혁)](/members/jihyeok.park)
-  - **Office:** 609A,
-    [Science Library Bldg](https://goo.gl/maps/dJTtjpZEHCC4Xv5t5)
-    ([과학도서관](https://naver.me/5Y1oxNnH))
+  - **Office:** 507,
+    [Jung Woonoh IT & General Education Center](https://maps.app.goo.gl/PAkjVWnfKNHNASo66)
+    ([정운오IT교양관](https://naver.me/GPdYvCNz))
   - **Email:** [jihyeok_park@korea.ac.kr](mailto:jihyeok_park@korea.ac.kr)
-- **Lecture:** 13:30--14:45 Mondays and Wednesdays @ 205,
-  [Woojung Hall of Informatics](https://maps.app.goo.gl/31pXxfzqAuki6Yzv7)
-  ([우정정보관](https://naver.me/G5rz0209))
-- **Teaching Assistant:**
-  - [Jungyeom Kim (김준겸)](/members/jungyeom.kim)
-  - [Seongmin Ko (고성민)](/members/seongmin.ko)
+- **Lecture:** 13:30--14:45 Mondays and Wednesdays @ B102,
+  [Jung Woonoh IT & General Education Center](https://maps.app.goo.gl/PAkjVWnfKNHNASo66)
+  ([정운오IT교양관](https://naver.me/GPdYvCNz))
+- **Teaching Assistant:** TBD
 - **Office hours:** 14:00--16:00 Tuesdays (by appointment)
 
 ### Course Materials
@@ -34,24 +29,20 @@ layout: course
 
 ### Attendances and Homework
 
-Please use the [Blackboard](https://kulms.korea.ac.kr) for the attendance check
-and the submission of homework.
-
-
-### Discussion and Questions
-
-Please use the [CampusWire](https://campuswire.com) for discussion
-and questions about the course.
-- Link: [https://campuswire.com/c/G2CA06AE4](https://campuswire.com/c/G2CA06AE4)
-- Passcode: See the [Blackboard](https://kulms.korea.ac.kr) announcement.
+Please use the [LMS](https://lms.korea.ac.kr/) for the attendance check and the
+submission of homework.
 
 ### Exams
 
-- **Midterm:** October 23 (Wed.) 18:30 -- 21:00 (150 min.)
-- **Final:** December 18 (Wed.) 18:30 -- 21:00 (150 min.)
+- **Midterm:** October 22 (Wed.) 18:30 -- 21:00 (150 min.)
+- **Final:** December 17 (Wed.) 18:30 -- 21:00 (150 min.)
 - **Previous Exams**
-  - Midterm: [2023](../2023_2/midterm.pdf)
-  - Final: [2023](../2023_2/final.pdf)
+  - Midterm:
+    [2023](../2023_2/midterm.pdf) /
+    [2024](../2024_2/midterm.pdf)
+  - Final:
+    [2023](../2023_2/final.pdf) /
+    [2024](../2024_2/final.pdf)
 
 ### Installation of Scala and sbt
 
@@ -65,9 +56,12 @@ The interactive **build tool** [sbt](https://www.scala-sbt.org/) is built for
 Scala and Java projects.
 
 Please download and install them using the following links:
-- **JDK >= 8** - [https://www.oracle.com/java/technologies/downloads/](https://www.oracle.com/java/technologies/downloads/)
-- **sbt** - [https://www.scala-sbt.org/download.html](https://www.scala-sbt.org/download.html)
-- **Scala** - [https://www.scala-lang.org/download/](https://www.scala-lang.org/download/)
+- **JDK >= 17** -
+  [https://www.oracle.com/java/technologies/downloads/](https://www.oracle.com/java/technologies/downloads/)
+- **sbt** -
+  [https://www.scala-sbt.org/download.html](https://www.scala-sbt.org/download.html)
+- **Scala** -
+  [https://www.scala-lang.org/download/](https://www.scala-lang.org/download/)
 
 
 ### Online Interpreters
@@ -95,4 +89,4 @@ In this course, you will implement interpreters for the following languages:
 ### Schedule
 
 <!-- load schedule with PDF files -->
-{%- include schedule.html data=site.data.course.cose212.2024_2 -%}
+{%- include schedule.html data=site.data.course.cose212.2025_2 -%}
