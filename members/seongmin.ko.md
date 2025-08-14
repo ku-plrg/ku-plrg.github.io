@@ -12,6 +12,8 @@ I'm Seongmin Ko, an undergraduate student studying computer science in Korea Uni
 Currently I am interested in programming languages, compiler,
 program synthesis, formal languages and static analysis.
 
+<br><br>
+
 ## Educational Background
 - 2024.09 ~ Present - M.S. of Computer Science, Korea University
 - 2018.03 ~ 2024.08 - B.S. of Computer Science and Mathematics, Korea University
