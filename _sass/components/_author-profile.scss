@@ -43,4 +43,15 @@
     float: left;
   }
   @include overflow(auto);
+  position: relative;
+  z-index: 2;         /* Ensure internal links stay clickable */
+}
+.author-card {
+  position: relative; /* Required for absolutely positioned link */
+}
+.author-card .cover-link {
+  position: absolute; /* Overlay the entire card */
+  inset: 0;           /* Top:0, Right:0, Bottom:0, Left:0 */
+  z-index: 1;         /* Place below internal links but above background */
+  text-indent: -9999px; /* Hide text visually if any */
 }
