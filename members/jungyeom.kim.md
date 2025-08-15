@@ -5,12 +5,13 @@ aside:
   toc: true
 ---
 
-<img src="/assets/images/members/jungyeom.kim.jpg"
-align="right" style="margin-left: 1em" width="150em">
+<img src="/assets/images/members/jungyeom.kim.jpg" class="profile-img">
 
 I'm Jungyeom Kim from Korea University. Currently, I am majoring in computer science. My main interest is abstract interpretation and static analysis. In addition to the programming language, there is a lot of interest in algorithms, data structures, problem-solving, and competitive programming.
 
 [[Curriculum Vitae (CV)](/assets/data/cv/cv_jungyeom_kim.pdf)]
+
+<div style="clear: right;"></div>
 
 ## Educational Background
 - 2024.03 ~ Present - M.S. of Computer Science, Korea University

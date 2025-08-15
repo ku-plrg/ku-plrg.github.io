@@ -5,13 +5,12 @@ aside:
   toc: true
 ---
 
-<img src="/assets/images/members/sungmin.park.jpg"
-align="right" style="margin-left: 1em" width="150em">
+<img src="/assets/images/members/sungmin.park.jpg" class="profile-img">
 
 I'm Sungmin Park, an undergraduate student studying computer science in Korea University. 
 Currently I am interested in programming languages and static analysis.
 
-<br><br><br>
+<div style="clear: right;"></div>
 
 ## Educational Background
 - 2022.03 ~ Present - B.S. of Computer Science and Engineering, Korea University

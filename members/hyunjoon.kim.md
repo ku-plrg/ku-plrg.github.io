@@ -5,12 +5,11 @@ aside:
   toc: true
 ---
 
-<img src="/assets/images/members/hyunjoon.kim.jpg"
-align="right" style="margin-left: 1em" width="150em">
+<img src="/assets/images/members/hyunjoon.kim.jpg" class="profile-img">
 
 Currently, I am a member of the [Programming Language Research Group (PLRG)](/) at [Korea University](https://www.korea.ac.kr), advised by [Jihyeok Park](/members/jihyeok.park). My main research interest is program analysis, including both static and dynamic approaches.
 
-<br><br>
+<div style="clear: right;"></div>
 
 ## Educational Background
 - 2025.03 ~ Present - M.S. of Computer Science, Korea University

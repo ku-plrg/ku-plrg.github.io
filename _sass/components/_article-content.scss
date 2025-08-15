@@ -215,4 +215,14 @@
       font-weight: map-get($base, font-weight-bold);
     }
   }
+  .profile-img {
+    float: right;
+    margin-left: 1em;
+    width: 150px;
+    @include media-breakpoint-down(md) {
+      float: none;
+      display: block;
+      margin: 0 auto 1em;
+    }
+  }
 }
