@@ -43,7 +43,7 @@ test synthesizers, specification type checkers, and program static analyzers.
 - **Tools**:
   [**[ESMeta](https://github.com/es-meta/esmeta)**]
 - **News/Blogs**:
-  [**[Korean News](https://www.aitimes.kr/news/articleView.html?idxno=31089)**]
+  [**[News](https://www.aitimes.kr/news/articleView.html?idxno=31089)**]
   [**[ECMA News](https://ecma-international.org/news/ecma-international-enables-innovative-research-between-the-korean-kaist-research-group-and-tc39-ecmascript/)**]
   [**[SIGPLAN Blogs](https://blog.sigplan.org/2023/01/12/from-research-prototypes-to-continuous-integration-guiding-the-design-and-implementation-of-javascript/)**]
 - **Overall**:

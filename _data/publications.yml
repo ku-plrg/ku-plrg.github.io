@@ -55,6 +55,7 @@
     materials:
       slides: /assets/data/slides/2024/pldi24-pl4xgl-slides.pdf
       repo: https://github.com/kupl/PL4XGL
+      news: https://www.m-i.kr/news/articleView.html?idxno=1135778
 
   - title: JavaScript Language Design and Implementation in Tandem
     doi: https://doi.org/10.1145/3624723
@@ -70,6 +71,7 @@
     materials:
       online: https://cacm.acm.org/research/javascript-language-design-and-implementation-in-tandem/
       repo: https://github.com/es-meta/esmeta
+      news: https://www.aitimes.kr/news/articleView.html?idxno=31089
 
 2023:
 
