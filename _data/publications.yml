@@ -17,7 +17,7 @@
       # repo: TODO
 
   - title: "JSSpecVis: A JavaScript Language Specification Visualization Tool"
-    doi: https://doi.org/10.1145/3696630.3728579
+    doi: 10.1145/3696630.3728579
     authors:
       - Minseok Choe
       - Kyungho Song
@@ -39,7 +39,7 @@
 2024:
 
   - title: "PL4XGL: A Programming Language Approach to Explainable Graph Learning"
-    doi: https://doi.org/10.1145/3656464
+    doi: 10.1145/3656464
     authors:
       - Minseok Jeon
       - Jihyeok Park
@@ -58,7 +58,7 @@
       news: https://www.m-i.kr/news/articleView.html?idxno=1135778
 
   - title: JavaScript Language Design and Implementation in Tandem
-    doi: https://doi.org/10.1145/3624723
+    doi: 10.1145/3624723
     authors:
       - Sukyoung Ryu
       - Jihyeok Park
@@ -75,9 +75,8 @@
 
 2023:
 
-  - title: Feature-Sensitive Coverage for Conformance Testing of Programming
-    doi: https://doi.org/10.1145/3591240
-      Language Implementations
+  - title: Feature-Sensitive Coverage for Conformance Testing of Programming Language Implementations
+    doi: 10.1145/3591240
     authors:
       - Jihyeok Park
       - Dongjun Youn
@@ -96,9 +95,8 @@
 
 2022:
 
-  - title: Automatically Deriving JavaScript Static Analyzers from
-    doi: https://doi.org/10.1145/3540250.3549097
-      Specifications using Meta-Level Static Analysis
+  - title: Automatically Deriving JavaScript Static Analyzers from Specifications using Meta-Level Static Analysis
+    doi: 10.1145/3540250.3549097
     authors:
       - Jihyeok Park
       - Seungmin An
@@ -133,7 +131,7 @@
 2021:
 
   - title: A Survey of Parametric Static Analysis
-    doi: https://doi.org/10.1145/3464457
+    doi: 10.1145/3464457
     authors:
       - Jihyeok Park
       - Hongki Lee
@@ -147,7 +145,7 @@
     materials:
 
   - title: "JSTAR: JavaScript Specification Type Analyzer using Refinement"
-    doi: https://doi.org/10.1109/ASE51524.2021.9678781
+    doi: 10.1109/ASE51524.2021.9678781
     authors:
       - Jihyeok Park
       - Seungmin An
@@ -165,7 +163,7 @@
       repo: https://github.com/kaist-plrg/jstar
 
   - title: Accelerating JavaScript Static Analysis via Dynamic Shortcuts
-    doi: https://doi.org/10.1145/3468264.3468556
+    doi: 10.1145/3468264.3468556
     authors:
       - Joonyoung Park
       - Jihyeok Park
@@ -194,7 +192,7 @@
       slides: /assets/data/slides/2021/issta21-ds-slides.pdf
 
   - title: "JEST: N+1-version Differential Testing of Both JavaScript Engines and Specification"
-    doi: https://doi.org/10.1109/ICSE43902.2021.00015
+    doi: 10.1109/ICSE43902.2021.00015
     authors:
       - Jihyeok Park
       - Seungmin An
@@ -215,7 +213,7 @@
 2020:
 
   - title: "JISET: JavaScript IR-based Semantics Extraction Toolchain"
-    doi: https://doi.org/10.1145/3324884.3416632
+    doi: 10.1145/3324884.3416632
     authors:
       - Jihyeok Park
       - Jihee Park
@@ -233,9 +231,8 @@
 
 2019:
 
-  - title: Toward Analysis and Bug Finding of JavaScript Web Applications in
-    doi: https://doi.org/10.1109/MS.2018.110113408
-      the Wild
+  - title: Toward Analysis and Bug Finding of JavaScript Web Applications in the Wild
+    doi: 10.1109/MS.2018.110113408
     authors:
       - Sukyoung Ryu
       - Jihyeok Park
@@ -251,7 +248,7 @@
 2018:
 
   - title: Path Dependent Types with Path-Equality
-    doi: https://doi.org/10.1145/3241653.3241657
+    doi: 10.1145/3241653.3241657
     authors:
       - Jaemin Hong
       - Jihyeok Park
@@ -265,7 +262,7 @@
     materials:
 
   - title: A Framework for Dynamic Inter-Device Task Dispatch with Eventual Consistency
-    doi: https://doi.org/10.1145/3191697.3191732
+    doi: 10.1145/3191697.3191732
     authors:
       - Jihyeok Park
       - Joonyoung Park
@@ -300,7 +297,7 @@
     materials:
 
   - title: "Revisiting Recency Abstraction for JavaScript: Towards an Intuitive, Compositional, and Efficient Heap Abstraction"
-    doi: https://doi.org/10.1145/3088515.3088516
+    doi: 10.1145/3088515.3088516
     authors:
       - Jihyeok Park
       - Xavier Rival
@@ -317,7 +314,7 @@
       slides: /assets/data/slides/2017/soap17-slides.pdf
 
   - title: Analysis of JavaScript Web Applications Using SAFE 2.0
-    doi: https://doi.org/10.1109/ICSE-C.2017.4
+    doi: 10.1109/ICSE-C.2017.4
     authors:
       - Jihyeok Park
       - Yeonhee Ryou
@@ -337,7 +334,7 @@
 2014:
 
   - title: JavaScript API Misuse Detection by Using TypeScript
-    doi: https://doi.org/10.1145/2584469.2584472
+    doi: 10.1145/2584469.2584472
     authors:
       - Jihyeok Park
     award: ACM Student Research Competition 3rd
