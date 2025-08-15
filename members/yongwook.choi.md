@@ -13,6 +13,8 @@ I'm Yongwook Choi, an undergraduate student studying computer science. \
 I previously worked as a frontend/DX engineer and built various custom toolkits using JavaScript and web technologies.
 Based on prior experiences, I am deeply interested in code generation and static analysis of dynamic languages.
 
+<div style="clear: right;"></div>
+
 ## Educational Background
 
 - 2019.03 ~ Present - B.S. Dept. of Computer Science and Engineering, Korea

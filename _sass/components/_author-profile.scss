@@ -12,8 +12,8 @@
   font-size: map-get($base, font-size-sm);
   background-color: $text-background-color;
   @include media-breakpoint-down(md) {
-    max-width: 16rem;
-    min-width: 16rem;
+    max-width: 13rem;
+    min-width: 13rem;
     align: center;
     text-align: center;
   }
