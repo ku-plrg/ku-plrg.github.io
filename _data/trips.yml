@@ -6,11 +6,12 @@
 #     location  : <location>
 #     photos    : <google-album-id>
 #     talk      :
-#       - pdf   : <path.pdf>
+#       - pdf     : <path.pdf>
+#         youtube : <youtube-id>
 #     poster    :
-#       - pdf   : <path.pdf>
+#       - pdf     : <path.pdf>
 #     report    :
-#       - pdf   : <path.pdf>
+#       - pdf     : <path.pdf>
 
 2025:
   - date-from : 2025.06.30
@@ -20,7 +21,7 @@
     location  : Bergen, Norway
     photos    : LGbrUtiuHcUVE9h4A
     talk      :
-      - pdf   : /assets/data/slides/2025/plss25-esmeta.pdf
+      - pdf     : /assets/data/slides/2025/plss25-esmeta.pdf
 
   - date-from : 2025.06.23
     date-to   : 2025.06.27
@@ -29,10 +30,11 @@
     location  : Trondheim, Norway
     photos    : kdcVpzhza9VdJux7A
     talk      :
-      - pdf   : /assets/data/slides/2025/fse25-demo-slides.pdf
+      - pdf     : /assets/data/slides/2025/fse25-demo-slides.pdf
+        youtube : ZPZtfycDoJ0
     report    :
-      - pdf   : /assets/data/report/2025/fse25-report-hyunjoon-kim.pdf
-      - pdf   : /assets/data/report/2025/fse25-report-minseok-choe.pdf
+      - pdf     : /assets/data/report/2025/fse25-report-hyunjoon-kim.pdf
+      - pdf     : /assets/data/report/2025/fse25-report-minseok-choe.pdf
 
   - date-from : 2025.06.16
     date-to   : 2025.06.20
@@ -41,12 +43,12 @@
     location  : Seoul, South Korea
     photos    : ctis5VitUKdR1YBT6
     talk      :
-      - pdf   : /assets/data/slides/2025/rpls25-esmeta.pdf
+      - pdf     : /assets/data/slides/2025/rpls25-esmeta.pdf
     report    :
-      - pdf   : /assets/data/report/2025/pldi25-report-hyunjoon-kim.pdf
-      - pdf   : /assets/data/report/2025/pldi25-report-jungyeom-kim.pdf
-      - pdf   : /assets/data/report/2025/pldi25-report-minseok-choe.pdf
-      - pdf   : /assets/data/report/2025/pldi25-report-seongmin-ko.pdf
+      - pdf     : /assets/data/report/2025/pldi25-report-hyunjoon-kim.pdf
+      - pdf     : /assets/data/report/2025/pldi25-report-jungyeom-kim.pdf
+      - pdf     : /assets/data/report/2025/pldi25-report-minseok-choe.pdf
+      - pdf     : /assets/data/report/2025/pldi25-report-seongmin-ko.pdf
 
 2024:
 
@@ -71,8 +73,8 @@
     location  : Copenhagen, Denmark
     photos    : 2joTXessSSBaywDV6
     report    :
-      - pdf   : /assets/data/report/2024/pldi24-report-jungyeom.pdf
-      - pdf   : /assets/data/report/2024/pldi24-report-minseok.pdf
+      - pdf     : /assets/data/report/2024/pldi24-report-jungyeom.pdf
+      - pdf     : /assets/data/report/2024/pldi24-report-minseok.pdf
 
   - date-from : 2024.06.23
     date-to   : 2024.06.24
@@ -81,10 +83,10 @@
     location  : Lisbon, Portugal
     photos    : fBNnmocbaHYdTbRi6
     talk      :
-      - pdf   : /assets/data/slides/2024/ist24-esmeta.pdf
+      - pdf     : /assets/data/slides/2024/ist24-esmeta.pdf
     report    :
-      - pdf   : /assets/data/report/2024/ist24-report-jungyeom.pdf
-      - pdf   : /assets/data/report/2024/ist24-report-minseok.pdf
+      - pdf     : /assets/data/report/2024/ist24-report-jungyeom.pdf
+      - pdf     : /assets/data/report/2024/ist24-report-minseok.pdf
 
   - date-from : 2024.01.31
     date-to   : 2024.02.02

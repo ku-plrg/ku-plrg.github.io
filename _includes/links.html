@@ -1,0 +1,29 @@
+{%- assign _data = include.data -%}
+
+<div class="author-links">
+  <ul class="menu menu--nowrap menu--inline">
+    {%- if _data.photos -%}
+      <li>
+        <a class="button button--circle google-photos-button" itemprop="sameAs"
+          href="https://photos.app.goo.gl/{{ _data.photos }}" target="_blank">
+          <div class="icon">{%- include svg/icon/social/google-photos.svg -%}</div>
+        </a>
+      </li>
+    {%- endif -%}
+    {%- if _data.pdf -%}
+      <li>
+        <a class="button button--circle pdf-button" itemprop="pdf"
+          href="{{ _data.pdf }}" target="_blank">
+          <i class="fas fa-file-pdf"></i>
+        </a>
+      </li>
+    {%- endif -%}
+    {%- if _data.youtube -%}
+      <li>
+        <a class="button button--circle youtube-button" itemprop="sameAs" href="https://www.youtube.com/watch?v={{ _data.youtube }}" target="_blank">
+          <div class="icon">{%- include svg/icon/social/youtube.svg -%}</div>
+        </a>
+      </li>
+    {%- endif -%}
+  </ul>
+</div>

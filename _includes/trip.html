@@ -10,52 +10,29 @@
   &nbsp;@ {{ _trip.location }}
   </strong>
   <br>
-  <div class="author-links">
-    <ul class="menu menu--nowrap menu--inline">
-      {%- if _trip.photos -%}
-      <li>
-        <a class="button button--circle google-photos-button" itemprop="sameAs"
-          href="https://photos.app.goo.gl/{{ _trip.photos }}" target="_blank">
-          <div class="icon">{%- include svg/icon/social/google-photos.svg -%}</div>
-        </a>
-      </li>
-      {%- endif -%}
+  {%- include links.html data=_trip -%}
 
-      {%- if _trip.talk -%}
-      &nbsp;<strong>|</strong>&nbsp;talk:&nbsp;
-      {%- for _talk in _trip.talk -%}
-      <li>
-        <a class="button button--circle pdf-button" itemprop="pdf"
-          href="{{ _talk.pdf }}" target="_blank">
-          <i class="fas fa-file-pdf"></i>
-        </a>
-      </li>
-      {%- endfor -%}
-      {%- endif -%}
+  <!-- links for talks -->
+  {%- if _trip.talk -%}
+  {{ "" }}<strong>|</strong> talk: {{ "" }}
+  {%- for _data in _trip.talk -%}
+  {%- include links.html data=_data -%}
+  {%- endfor -%}
+  {%- endif -%}
 
-      {%- if _trip.poster -%}
-      &nbsp;<strong>|</strong>&nbsp;poster:&nbsp;
-      {%- for _poster in _trip.poster -%}
-      <li>
-        <a class="button button--circle pdf-button" itemprop="pdf"
-          href="{{ _poster.pdf }}" target="_blank">
-          <i class="fas fa-file-pdf"></i>
-        </a>
-      </li>
-      {%- endfor -%}
-      {%- endif -%}
+  <!-- likns for reports -->
+  {%- if _trip.report -%}
+  {{ "" }}<strong>|</strong> report: {{ "" }}
+  {%- for _data in _trip.report -%}
+  {%- include links.html data=_data -%}
+  {%- endfor -%}
+  {%- endif -%}
 
-      {%- if _trip.report -%}
-      &nbsp;<strong>|</strong>&nbsp;report:&nbsp;
-      {%- for _report in _trip.report -%}
-      <li>
-        <a class="button button--circle pdf-button" itemprop="pdf"
-          href="{{ _report.pdf }}" target="_blank">
-          <i class="fas fa-file-pdf"></i>
-        </a>
-      </li>
-      {%- endfor -%}
-      {%- endif -%}
-    </ul>
-  </div>
+  <!-- links for posters -->
+  {%- if _trip.poster -%}
+  {{ "" }}<strong>|</strong> poster: {{ "" }}
+  {%- for _data in _trip.poster -%}
+  {%- include links.html data=_data -%}
+  {%- endfor -%}
+  {%- endif -%}
 </li>

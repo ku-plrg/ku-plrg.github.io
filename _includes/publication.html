@@ -62,24 +62,8 @@
   <br>
   {%- endif -%}
 
-  <div class="author-links">
-    <ul class="menu menu--nowrap menu--inline">
-    {%- if _publication.pdf -%}
-      <li>
-        <a class="button button--circle pdf-button" itemprop="pdf" href="{{ _publication.pdf }}" target="_blank">
-          <i class="fas fa-file-pdf"></i>
-        </a>
-      </li>
-    {%- endif -%}
-    {%- if _publication.youtube -%}
-      <li>
-        <a class="button button--circle youtube-button" itemprop="sameAs" href="https://www.youtube.com/watch?v={{ _publication.youtube }}" target="_blank">
-          <div class="icon">{%- include svg/icon/social/youtube.svg -%}</div>
-        </a>
-      </li>
-    {%- endif -%}
-    </ul>
-  </div>
+  <!-- links -->
+  {%- include links.html data=_publication -%}
 
   <!-- materials -->
   {%- if _publication.materials.size > 0 -%}
