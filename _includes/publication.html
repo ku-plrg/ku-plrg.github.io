@@ -14,28 +14,26 @@
 
   <!-- authors -->
   {%- assign _authors = _publication.authors -%}
-  {%- if _authors.size == 1 -%}
-  {{ _authors[0]}}
-  {%- elsif _authors.size == 2 -%}
-  {{ _authors[0] | append: " and " }}
-  {{ _authors[1]}}
-  {%- else -%}
   {%- for _author in _authors -%}
   {%- if forloop.last -%}
   {{ "and " }}
   {%- endif -%}
+  {%- assign _our_author = site.data.authors[_author] -%}
+  {%- if _our_author %}
+  <a href="{{ _our_author.url }}"><strong>{{ _author }}</strong></a>
+  {%- else -%}
   {{ _author }}
+  {%- endif -%}
   {%- assign remaining = forloop.length | minus: forloop.index0 -%}
   {%- if _publication.co-first > forloop.index0 -%}
   {{ "*" }}
   {%- elsif _publication.co-corr >= remaining -%}
   {{ "†" }}
   {%- endif -%}
-  {%- unless forloop.last -%}
+  {%- unless forloop.last or _authors.size == 2-%}
   {{ ", " }}
   {%- endunless -%}
   {%- endfor -%}
-  {%- endif -%}
   {%- if _publication.co-first -%}
   {{ " " }}<span class="detail">(* equally contributed)</span>
   {%- endif -%}

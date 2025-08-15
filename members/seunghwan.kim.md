@@ -5,11 +5,14 @@ aside:
   toc: true
 ---
 
-<img src="/assets/images/members/seunghwan.kim.jpg"
-align="right" style="margin-left: 1em" width="150em">
+{% include former-member.html %}
+
+<img src="/assets/images/members/seunghwan.kim.jpg" class="profile-img">
 
 I'm Seunghwan Kim, an undergraduate student studying Computer Science and Engineering. I'm currently 
 interested in programming language, and static analysis.
+
+<div style="clear: right;"></div>
 
 ## Educational Background
 

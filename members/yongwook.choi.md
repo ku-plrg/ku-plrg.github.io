@@ -5,6 +5,8 @@ aside:
   toc: true
 ---
 
+{% include former-member.html %}
+
 <img src="/assets/images/members/yongwook.choi.jpg" style="float: right; position: relative; z-index: 1; margin-left: 1em" width="150em">
 
 I'm Yongwook Choi, an undergraduate student studying computer science. \

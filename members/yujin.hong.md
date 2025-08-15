@@ -5,8 +5,9 @@ aside:
   toc: true
 ---
 
-<img src="/assets/images/members/yujin.hong.jpg"
-align="right" style="margin-left: 1em" width="150em">
+{% include former-member.html %}
+
+<img src="/assets/images/members/yujin.hong.jpg" class="profile-img">
 
 I'm Yujin Hong, a student studying Computer Science. I'm currently interested in programming language and automated testing.
 

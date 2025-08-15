@@ -5,11 +5,14 @@ aside:
   toc: true
 ---
 
-<img src="/assets/images/members/jinwoo.choi.jpg"
-align="right" style="margin-left: 1em" width="150em">
+{% include former-member.html %}
+
+<img src="/assets/images/members/jinwoo.choi.jpg" class="profile-img">
 
 I'm Jinwoo Choi, an undergraduate student studying computer science in Korea University.
 Currently I am interested in program analysis and Web/App developing.
+
+<div style="clear: right;"></div>
 
 ## Educational Background
 

@@ -5,11 +5,14 @@ aside:
   toc: true
 ---
 
-<img src="/assets/images/members/kyungho.song.jpg"
-align="right" style="margin-left: 1em" width="150em">
+{% include former-member.html %}
+
+<img src="/assets/images/members/kyungho.song.jpg" class="profile-img">
 
 I'm Kyungho Song, an undergraduate student studying Computer Science and Engineering. I'm currently 
 interested in programming language, and static analysis.
+
+<div style="clear: right;"></div>
 
 ## Educational Background
 
