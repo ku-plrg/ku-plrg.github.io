@@ -6,7 +6,7 @@ aside:
 ---
 **I’m recruiting motivated graduate and undergraduate students, as well as
 postdocs**, interested in programming languages and software engineering. See
-[Research](/research) and [Publications](/publications) for details.
+[**Research**](/research) and [**Publications**](/publications) for details.
 {:.success}
 
 <img src="/assets/images/members/jihyeok.park.jpg" class="profile-img">

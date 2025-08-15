@@ -31,7 +31,7 @@ postdocs. For more detailed information, please see [Research](/research) and
 
 **I’m recruiting motivated graduate and undergraduate students, as well as
 postdocs**, interested in programming languages and software engineering. See
-[Research](/research) and [Publications](/publications) for details.
+[**Research**](/research) and [**Publications**](/publications) for details.
 {:.success}
 
 Room 507, Jung Woonoh IT & General Education Center (정운오IT교양관)<br>
