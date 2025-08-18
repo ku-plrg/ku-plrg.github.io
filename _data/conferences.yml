@@ -192,12 +192,12 @@ list:
     place: Rennes, France
 
   - name: PLDI
-    year: 2025
-    link: https://pldi25.sigplan.org
+    year: 2026
+    link: https://pldi26.sigplan.org
     deadline:
-      - "2024-11-14 23:59"
-    date: Jun 16 - Jun 20
-    place: Seoul, South Korea
+      - "2025-11-13 23:59"
+    date: Jun 15 - Jun 19
+    place: Boulder, Colorado, United States
 
   - name: OOPSLA
     year: 2026
