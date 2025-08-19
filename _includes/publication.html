@@ -15,8 +15,14 @@
   <!-- authors -->
   {%- assign _authors = _publication.authors -%}
   {%- for _author in _authors -%}
+  {%- assign _size = _authors.size -%}
   {%- if forloop.last -%}
+  {%- if _size == 1 -%}
+  {%- elsif _size == 2 -%}
+  {{ " and " }}
+  {%- else -%}
   {{ "and " }}
+  {%- endif -%}
   {%- endif -%}
   {%- assign _our_author = site.data.authors[_author] -%}
   {%- if _our_author %}
@@ -30,7 +36,7 @@
   {%- elsif _publication.co-corr >= remaining -%}
   {{ "†" }}
   {%- endif -%}
-  {%- unless forloop.last or _authors.size == 2-%}
+  {%- unless forloop.last or _size == 2 -%}
   {{ ", " }}
   {%- endunless -%}
   {%- endfor -%}
