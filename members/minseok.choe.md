@@ -7,12 +7,13 @@ aside:
 
 <img src="/assets/images/members/minseok.choe.jpg" class="profile-img">
 
-I am Minseok Choe, an undergraudate sudent in Korea Univ. I'm majoring in computer science and engineering and currently interested in programming language, static analysis and software engineering.
+I am Minseok Choe, a master’s student in Computer Science and Engineering at Korea University. My research interests include software engineering and static analysis for the JavaScript ecosystem, and mechanized specification for broader areas.
 
 <div style="clear: right;"></div>
 
 ## Educational Background
-- 2021.03 ~ Present - B.S. of Computer Science and Engineering, Korea University
+- 2025.09 ~ Present - M.S. of Computer Science and Engineering, Korea University
+- 2021.03 ~ 2025.08 - B.S. of Computer Science and Engineering, Korea University
 
 ## Contact Information
 {% assign author=site.data.authors["Minseok Choe"] %}
