@@ -78,6 +78,8 @@ Please see [**Publications**](/publications).
 ## Professional Activities
 
 - **Committee Members**
+  - 2026 -
+    [**PLDI**](https://pldi26.sigplan.org/)
   - 2025 -
     [**RPLS** (Co-Chair)](https://pldi25.sigplan.org/home/rpls-2025) /
     [**SAS**](https://2025.splashcon.org/home/sas-2025) /
