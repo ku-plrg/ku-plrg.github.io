@@ -26,7 +26,7 @@
   {%- endif -%}
   {%- assign _our_author = site.data.authors[_author] -%}
   {%- if _our_author %}
-  <a href="{{ _our_author.url }}"><strong>{{ _author }}</strong></a>
+  <a href="{{ _our_author.url }}">{{ _author }}</a>
   {%- else -%}
   {{ _author }}
   {%- endif -%}
