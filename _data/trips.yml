@@ -14,6 +14,16 @@
 #       - pdf     : <path.pdf>
 
 2025:
+
+  - date-from : 2025.08.20
+    date-to   : 2025.08.22
+    place     : SIGPL Summer School 2025
+    place-url : https://sigpl.or.kr/school/2025s/
+    location  : 서강대학교, 서울, 대한민국
+    photos    : BW1UdqaEgRW6Ak5u5
+    talk      :
+      - pdf     : /assets/data/slides/2025/sigpl25-summer-park.pdf
+
   - date-from : 2025.06.30
     date-to   : 2025.07.04
     place     : ECOOP 2025
@@ -103,3 +113,5 @@
     place-url : https://sigpl.or.kr/school/2023s/
     location  : 강원대학교, 춘천, 대한민국
     photos    : 9t685k7ZTf74gdrz8
+    talk      :
+      - pdf     : /assets/data/slides/2023/sigpl23-summer-park.pdf

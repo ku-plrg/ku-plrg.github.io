@@ -1,5 +1,11 @@
 2025:
 
+  - date      : 2025.08.21
+    title     : 안전한 자바스크립트 언어 생태계 확보 기술
+    place     : SIGPL Summer School 2025
+    place-url : https://sigpl.or.kr/school/2025s/
+    pdf       : /assets/data/slides/2025/sigpl25-summer-park.pdf
+
   - date      : 2025.07.04
     title     : Trusted JavaScript Language Environments with ESMeta
     place     : PLSS 2025
