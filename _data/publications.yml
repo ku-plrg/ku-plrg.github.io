@@ -109,6 +109,7 @@
     pdf: /assets/data/publication/fse22-park-jsaver.pdf
     youtube: zEsanPIFrWs
     materials:
+      report: /assets/data/publication/fse22-jsaver-report.pdf
       slides: /assets/data/slides/2022/fse22-jsaver-slides.pdf
       repo: https://github.com/kaist-plrg/jsaver
 
