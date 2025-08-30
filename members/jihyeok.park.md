@@ -150,7 +150,7 @@ Please see [**Talks**](/talks).
 
 ## Contact Information
 
-Room 507, Jung Woonoh IT & General Education Center (정운오IT교양관)<br>
+Room 507, IT & General Education Center (정운오IT교양관)<br>
 [Dept. of Computer Science and Engineering](https://cs.korea.ac.kr/) <br>
 [Korea University](https://www.korea.ac.kr/) <br>
 Anam-dong 5-ga, Seongbuk-gu <br>

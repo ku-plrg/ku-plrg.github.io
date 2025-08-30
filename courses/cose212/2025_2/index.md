@@ -3,17 +3,23 @@ layout: course
 ---
 ## COSE212: Programming Languages, 2025 Fall
 
+The primary goal of this course is to learn essential concepts of programming
+languages by designing and implementing their interpreters.
+
 ### Course Information
 
 - **Instructor:** [Jihyeok Park (박지혁)](/members/jihyeok.park)
   - **Office:** 507,
-    [Jung Woonoh IT & General Education Center](https://maps.app.goo.gl/PAkjVWnfKNHNASo66)
+    [IT & General Education Center](https://maps.app.goo.gl/PAkjVWnfKNHNASo66)
     ([정운오IT교양관](https://naver.me/GPdYvCNz))
   - **Email:** [jihyeok_park@korea.ac.kr](mailto:jihyeok_park@korea.ac.kr)
 - **Lecture:** 13:30--14:45 Mondays and Wednesdays @ B102,
-  [Jung Woonoh IT & General Education Center](https://maps.app.goo.gl/PAkjVWnfKNHNASo66)
+  [IT & General Education Center](https://maps.app.goo.gl/PAkjVWnfKNHNASo66)
   ([정운오IT교양관](https://naver.me/GPdYvCNz))
-- **Teaching Assistant:** TBD
+- **Teaching Assistant:**
+  - [Seongmin Ko (고성민)](/members/seongmin.ko)
+  - [Hyunjoon Kim (김현준)](/members/hyunjoon.kim)
+  - [Minseok Choe (최민석)](/members/minseok.choe)
 - **Office hours:** 14:00--16:00 Tuesdays (by appointment)
 
 ### Course Materials
@@ -31,6 +37,24 @@ layout: course
 
 Please use the [LMS](https://lms.korea.ac.kr/) for the attendance check and the
 submission of homework.
+
+#### Policy on Academic Integrity
+
+The use of Large Language Models (LLMs), such as ChatGPT, is permitted and
+encouraged. However, students remain fully responsible for the **originality**
+and **comprehension** of all submitted work. The following rules apply when
+evaluating coding assignments. **Violations will be treated as academic
+dishonesty** and will result in one of the following consequences: a grade of
+**zero (0) on the assignment**, or, in the most serious cases, an automatic
+grade of **F for the entire course**.
+
+* Submissions that exhibit direct **copy-and-paste** similarity with other
+  students' work, or copying with superficial or uninformed modifications,
+  constitute **academic dishonesty**.
+
+* The instructor reserves the right to require an **oral explanation** of any
+  submitted code. Inability to provide a clear, reasonable, and coherent
+  explanation will be deemed proof that the work is **not the student's own**.
 
 ### Exams
 
