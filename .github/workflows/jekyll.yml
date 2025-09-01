@@ -37,7 +37,7 @@ jobs:
           # Needed for actually picking up commit date
           fetch-depth: 0
       - name: Restore Timestamps
-        uses: chetan/git-restore-mtime-action@v1
+        uses: chetan/git-restore-mtime-action@v2
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
