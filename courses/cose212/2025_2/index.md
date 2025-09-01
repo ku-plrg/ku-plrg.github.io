@@ -3,8 +3,8 @@ layout: course
 ---
 ## COSE212: Programming Languages, 2025 Fall
 
-The primary goal of this course is to learn essential concepts of programming
-languages by designing and implementing their interpreters.
+The primary goal of this course is to learn **essential concepts** of
+**programming languages** by designing and implementing their interpreters.
 
 ### Course Information
 
@@ -16,7 +16,7 @@ languages by designing and implementing their interpreters.
 - **Lecture:** 13:30--14:45 Mondays and Wednesdays @ B102,
   [IT & General Education Center](https://maps.app.goo.gl/PAkjVWnfKNHNASo66)
   ([정운오IT교양관](https://naver.me/GPdYvCNz))
-- **Teaching Assistant:**
+- **Teaching Assistant:** [cose212@googlegroups.com](mailto:cose212@googlegroups.com)
   - [Seongmin Ko (고성민)](/members/seongmin.ko)
   - [Hyunjoon Kim (김현준)](/members/hyunjoon.kim)
   - [Minseok Choe (최민석)](/members/minseok.choe)
