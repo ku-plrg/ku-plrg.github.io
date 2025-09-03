@@ -11,6 +11,7 @@
     place     : PLSS 2025
     place-url : https://2025.ecoop.org/home/plss-2025
     pdf       : /assets/data/slides/2025/plss25-esmeta.pdf
+    youtube   : r_Zw8bUQKMs
 
   - date      : 2025.06.17
     title     : Trusted JavaScript Language Environments with ESMeta
