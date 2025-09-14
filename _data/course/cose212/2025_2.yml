@@ -38,8 +38,8 @@ parts:
     - index: 4
       date: 09/15
       title: Identifiers (1)
-      # pdf: slides/lec4.pdf
-      # handout: slides/lec4-handout.pdf
+      pdf: slides/lec4.pdf
+      handout: slides/lec4-handout.pdf
     - index: 5
       date: 09/17
       title: Identifiers (2)
