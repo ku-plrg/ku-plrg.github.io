@@ -1,5 +1,18 @@
 2025:
 
+  - title: Verification and Classification of Exploits for Node.js Vulnerabilities
+    doi:  accepted # TODO
+    authors:
+      - Sungmin Park
+    target:
+      name: ASE 2025 SRC
+      detail: IEEE/ACM International Conference on Automated Software Engineering - Student Research Competition
+      url: https://conf.researchr.org/home/ase-2025
+    # pdf: TODO
+    materials:
+      # slides: TODO
+      # poster: TODO
+
   - title: "Debun: Detecting Bundled JavaScript Libraries on Web using Property-Order Graphs"
     doi: accepted # TODO
     authors:
@@ -340,8 +353,8 @@
       - Jihyeok Park
     award: ACM Student Research Competition 3rd
     target:
-      name: Modularity 2014
-      detail: International Conference on Modularity
+      name: Modularity 2014 SRC
+      detail: International Conference on Modularity - Student Research Competition
       url: https://modularity.info/conference/2014/index.html
     pdf: /assets/data/publication/mod-src14.pdf
     materials:
