@@ -71,7 +71,7 @@ parts:
       handout: slides/lec8-handout.pdf
       homework:
         - name: hw02
-          link: https://github.com/ku-plrg-classroom/docs/tree/main/cose212/cobalt
+          link: https://github.com/ku-plrg-classroom/docs/tree/main/cose212/mini-fsharp
           date: 10/13
     - index: 9
       date: 10/01
