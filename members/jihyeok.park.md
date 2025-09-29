@@ -79,7 +79,8 @@ Please see [**Publications**](/publications).
 
 - **Committee Members**
   - 2026 -
-    [**PLDI**](https://pldi26.sigplan.org/)
+    [**PLDI**](https://pldi26.sigplan.org/) /
+    [**SAC** (PL Track)](https://www.sigapp.org/sac/sac2026)
   - 2025 -
     [**RPLS** (Co-Chair)](https://pldi25.sigplan.org/home/rpls-2025) /
     [**SAS**](https://2025.splashcon.org/home/sas-2025) /
