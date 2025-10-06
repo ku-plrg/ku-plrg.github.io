@@ -84,11 +84,11 @@ parts:
     - index: 10
       date: 10/06
       title: Mutable Data Structures - Boxes
-      # pdf: slides/lec10.pdf
-      # handout: slides/lec10-handout.pdf
+      pdf: slides/lec10.pdf
+      handout: slides/lec10-handout.pdf
       homework:
         - name: ex06
-          # link: https://github.com/ku-plrg-classroom/docs/tree/main/cose212/bfae
+          link: https://github.com/ku-plrg-classroom/docs/tree/main/cose212/bfae
     - index: 11
       date: 10/08
       title: Mutable Variables
