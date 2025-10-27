@@ -117,8 +117,8 @@ parts:
     - index: 14
       date: 10/27
       title: Continuations (1)
-      # pdf: slides/lec14.pdf
-      # handout: slides/lec14-handout.pdf
+      pdf: slides/lec14.pdf
+      handout: slides/lec14-handout.pdf
     - index: 15
       date: 10/29
       title: Continuations (2)
