@@ -10,10 +10,45 @@ Last Update: {{ site.data.conferences.last_update }}
 <script type="text/javascript" src="./js/jquery.countdown.min.js"></script>
 <script src="./js/moment.min.js"></script>
 <script src="./js/moment-timezone-with-data.min.js"></script>
+<script type="text/javascript">
+window.onload = function() {
+  let tags = document.getElementById("tag-list").getElementsByClassName("tag");
+  for (tag of tags) {
+    let tr = tag.parentElement.parentElement;
+    tr.onclick = function() {
+      if (this.classList.contains("highlighted")) {
+        this.classList.remove("highlighted");
+      } else {
+        this.classList.add("highlighted");
+      }
+      redrawConfList();
+    }
+  }
+};
+function redrawConfList() {
+  let selectedTags = [];
+  let tags = document.getElementById("tag-list").getElementsByClassName("tag");
+  for (tag of tags) {
+    let tr = tag.parentElement.parentElement;
+    if (tr.classList.contains("highlighted")) selectedTags.push(tag.innerText);
+  }
+  console.log(selectedTags);
+  let confs = document.getElementsByClassName("conf");
+  for (conf of confs) {
+    let tag = conf.getElementsByClassName("tag")[0].innerText;
+    console.log(tag);
+    if (selectedTags.length == 0 || selectedTags.indexOf(tag) >= 0) {
+      conf.style.display = "block";
+    } else {
+      conf.style.display = "none";
+    }
+  }
+}
+</script>
 <div id="conf-list">
   <div class="row">
     <div class="col-xs-12 col-sm-6">
-      <table class="styled-table">
+      <table class="styled-table" id="tag-list">
         <thead><tr><th>Tag</th><th>Description</th></tr></thead>
         <tr><td><p class="tag pl">PL</p></td><td>Programming Languages</td></tr>
         <tr><td><p class="tag se">SE</p></td><td>Software Engineering</td></tr>

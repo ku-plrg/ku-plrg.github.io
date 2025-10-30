@@ -36,10 +36,16 @@
 
   .styled-table tbody tr {
     border-bottom: 1px solid #dddddd;
-  }
-
-  .styled-table tbody tr:nth-of-type(even) {
-    background-color: #f3f3f3;
+    cursor: pointer;
+    transition: background-color 0.2s, box-shadow 0.2s;
+    &:hover {
+      background-color: #F0F0F0;
+      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+    }
+    &.highlighted {
+      background-color: #DCDCDC;
+      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+    }
   }
 
   .styled-table tbody tr:last-of-type {

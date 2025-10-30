@@ -268,12 +268,12 @@ list:
     place: Torino, Italy
 
   - name: CC
-    year: 2025
-    link: https://conf.researchr.org/home/CC-2025
+    year: 2026
+    link: https://conf.researchr.org/home/CC-2026
     deadline:
-      - "2024-11-12 23:59"
-    date: Mar 1 - Mar 2
-    place: Las Vegas, Nevada, USA
+      - "2025-11-10 23:59"
+    date: Jan 31 - Feb 1
+    place: Sydney, Australia
 
   - name: SAS
     year: 2025
@@ -325,12 +325,12 @@ list:
     place: Oakland, California, United States
 
   - name: ICST
-    year: 2025
-    link: https://conf.researchr.org/home/icst-2025
+    year: 2026
+    link: https://conf.researchr.org/home/icst-2026
     deadline:
-      - "2024-09-25 23:59"
-    date: Mar 31 - Apr 04
-    place: Naples, Italy
+      - "2025-12-22 23:59"
+    date: May 18 - May 22
+    place: Daejeon, South Korea
 
   - name: FASE
     year: 2026
