@@ -79,6 +79,7 @@ Please see [**Publications**](/publications).
 
 - **Committee Members**
   - 2026 -
+    [**CCS**](https://www.sigsac.org/ccs/CCS2026/) /
     [**PLDI**](https://pldi26.sigplan.org/) /
     [**SAC** (PL Track)](https://www.sigapp.org/sac/sac2026)
   - 2025 -
@@ -114,6 +115,8 @@ Please see [**Publications**](/publications).
     [**ISSTA**](https://conf.researchr.org/home/issta-2018)
 
 - **Journal Reviewers**
+  - 2025 -
+    **ACM TOSEM**
   - 2024 -
     [**IEEE TSE**](https://doi.org/10.1109/TSE.2024.3525202)
   - 2023 -
