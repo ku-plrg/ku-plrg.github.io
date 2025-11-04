@@ -138,11 +138,11 @@ parts:
     - index: 17
       date: 11/05
       title: Compiling with Continuations
-      # pdf: slides/lec17.pdf
-      # handout: slides/lec17-handout.pdf
+      pdf: slides/lec17.pdf
+      handout: slides/lec17-handout.pdf
       homework:
         - name: hw03
-          # link: https://github.com/ku-plrg-classroom/docs/tree/main/cose212/magnet
+          link: https://github.com/ku-plrg-classroom/docs/tree/main/cose212/mini-python
           date: 11/19
 
   - name: "Part 2: Typed Languages"
