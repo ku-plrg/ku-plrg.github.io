@@ -1,4 +1,4 @@
-last_update: "2025-07-15"
+last_update: "2025-11-14"
 
 # ------------------------------------------------------------------------------
 infos:
@@ -209,12 +209,12 @@ list:
     place: Oakland, California, United States
 
   - name: CAV
-    year: 2025
-    link: https://conferences.i-cav.org/2025/
+    year: 2026
+    link: https://conferences.i-cav.org/2026/
     deadline:
-      - "2025-01-31 23:59"
-    date: Jul 21 - Jul 25
-    place: Zagreb, Croatia
+      - "2026-01-28 23:59"
+    date: Jul 26 - Jul 29
+    place: Lisbon, Portugal
 
   - name: ASPLOS
     year: 2026
@@ -222,8 +222,8 @@ list:
     deadline:
       - "2025-03-12 15:59"
       - "2025-08-20 15:59"
-    date: Mar 30 - Apr 3
-    place: Pittsburgh, Pennsylvania, USA
+    date: Mar 22 - Mar 26
+    place: Pittsburgh, USA
 
   - name: PPoPP
     year: 2026
@@ -234,12 +234,12 @@ list:
     place: Sydney, Australia
 
   - name: ICFP
-    year: 2025
-    link: https://icfp25.sigplan.org/
+    year: 2026
+    link: https://icfp26.sigplan.org/
     deadline:
-      - "2025-02-27 23:59"
-    date: Oct 12 - Oct 18
-    place: Singapore
+      - "2026-02-19 23:59"
+    date: Aug 24 - Aug 29
+    place: United States
 
   - name: ECOOP
     year: 2026
@@ -271,7 +271,7 @@ list:
     year: 2026
     link: https://conf.researchr.org/home/CC-2026
     deadline:
-      - "2025-11-10 23:59"
+      - "2025-11-11 23:59"
     date: Jan 31 - Feb 1
     place: Sydney, Australia
 
@@ -279,7 +279,7 @@ list:
     year: 2025
     link: https://2025.splashcon.org/home/sas-2025
     deadline:
-      - "2025-05-04 23:59"
+      - "2025-05-11 23:59"
     date: Oct 12 - Oct 18
     place: Singapore
 
@@ -288,7 +288,7 @@ list:
     link: https://conf.researchr.org/home/VMCAI-2026
     deadline:
       - "2025-09-10 23:59"
-    date: Jan 11 - Jan 17
+    date: Jan 12 - Jan 13
     place: Rennes, France
 
   - name: ICSE
@@ -341,21 +341,21 @@ list:
     place: Torino, Italy
 
   - name: GECCO
-    year: 2025
-    link: https://gecco-2025.sigevo.org/HomePage
+    year: 2026
+    link: https://gecco-2026.sigevo.org/HomePage
     deadline:
-      - "2025-01-29 23:59"
-    date: Jul 14 - Jul 18
-    place: Málaga, Spain
+      - "2026-01-26 23:59"
+    date: Jul 13 - Jul 17
+    place: San José, Costa Rica
 
   - name: CCS
-    year: 2025
-    link: https://www.sigsac.org/ccs/CCS2025
+    year: 2026
+    link: https://www.sigsac.org/ccs/CCS2026
     deadline:
-      - "2025-01-09 23:59"
-      - "2025-04-14 23:59"
-    date: Oct 14 - Oct 18
-    place: Salt Lake City, USA
+      - "2026-01-14 23:59"
+      - "2026-04-29 23:59"
+    date: Nov 15 - Nov 19
+    place: The Hague, Netherlands
 
   - name: S&P
     year: 2026
