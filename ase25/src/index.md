@@ -1,4 +1,4 @@
 ---
 redirect_to:
-  - https://youtu.be/4XMjJPNmuBM
+  - https://youtu.be/pv0YcK5Cm_k
 ---
