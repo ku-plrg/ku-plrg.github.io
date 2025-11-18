@@ -10,8 +10,8 @@
       url: https://conf.researchr.org/home/ase-2025
     # pdf: TODO
     materials:
-      # slides: TODO
-      # poster: TODO
+      # slides: /assets/data/slides/2025/ase25-src-slides.pdf TODO
+      # poster: /assets/data/poster/2025/ase25-src-poster.pdf TODO
 
   - title: "Debun: Detecting Bundled JavaScript Libraries on Web using Property-Order Graphs"
     doi: accepted # TODO
@@ -24,10 +24,12 @@
       name: ASE 2025
       detail: IEEE/ACM International Conference on Automated Software Engineering
       url: https://conf.researchr.org/home/ase-2025
-    # pdf: TODO
+    pdf: /assets/data/publication/ase25-park-debun.pdf
+    youtube: v9dH4osHS0I
     materials:
-      # slides: TODO
-      # repo: TODO
+      slides: /assets/data/slides/2025/ase25-debun-slides.pdf
+      poster: /assets/data/poster/2025/ase25-debun-poster.pdf
+      repo: https://github.com/ku-plrg/debun-ase25
 
   - title: "JSSpecVis: A JavaScript Language Specification Visualization Tool"
     doi: 10.1145/3696630.3728579
