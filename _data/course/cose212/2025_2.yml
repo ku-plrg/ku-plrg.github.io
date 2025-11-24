@@ -188,7 +188,7 @@ parts:
       handout: slides/lec23-handout.pdf
       homework:
         - name: hw04
-          # link: https://github.com/ku-plrg-classroom/docs/tree/main/cose212/mini-scala
+          link: https://github.com/ku-plrg-classroom/docs/tree/main/cose212/mini-scala
           date: 12/10
         - name: ex14
           link: https://github.com/ku-plrg-classroom/docs/tree/main/cose212/ptfae
