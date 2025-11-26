@@ -4,6 +4,7 @@
     doi:  accepted # TODO
     authors:
       - Sungmin Park
+    award: ACM Student Research Competition 2nd
     target:
       name: ASE 2025 SRC
       detail: IEEE/ACM International Conference on Automated Software Engineering - Student Research Competition
