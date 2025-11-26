@@ -16,6 +16,6 @@ Currently I am interested in programming languages and static analysis.
 - 2022.03 ~ Present - B.S. of Computer Science and Engineering, Korea University
 
 ## Contact Information
-{% assign author=site.data.authors["Sungmin park"] %}
+{% assign author=site.data.authors["Sungmin Park"] %}
 <div>{% include author-links.html author=author %}</div>
 

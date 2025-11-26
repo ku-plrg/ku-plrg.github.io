@@ -1,7 +1,6 @@
 2025:
-
   - title: Verification and Classification of Exploits for Node.js Vulnerabilities
-    doi:  accepted # TODO
+    doi: accepted # TODO
     authors:
       - Sungmin Park
     award: ACM Student Research Competition 2nd
@@ -9,7 +8,7 @@
       name: ASE 2025 SRC
       detail: IEEE/ACM International Conference on Automated Software Engineering - Student Research Competition
       url: https://conf.researchr.org/home/ase-2025
-    # pdf: TODO
+    pdf: /assets/data/publication/ase-src25.pdf
     materials:
       slides: /assets/data/slides/2025/ase25-src-slides.pdf
       poster: /assets/data/poster/2025/ase25-src-poster.pdf
@@ -53,7 +52,6 @@
       debugger: https://es-meta.github.io/playground
 
 2024:
-
   - title: "PL4XGL: A Programming Language Approach to Explainable Graph Learning"
     doi: 10.1145/3656464
     authors:
@@ -90,7 +88,6 @@
       news: https://www.aitimes.kr/news/articleView.html?idxno=31089
 
 2023:
-
   - title: Feature-Sensitive Coverage for Conformance Testing of Programming Language Implementations
     doi: 10.1145/3591240
     authors:
@@ -110,7 +107,6 @@
       repo: https://github.com/jestfs/jestfs/
 
 2022:
-
   - title: Automatically Deriving JavaScript Static Analyzers from Specifications using Meta-Level Static Analysis
     doi: 10.1145/3540250.3549097
     authors:
@@ -118,7 +114,8 @@
       - Seungmin An
       - Sukyoung Ryu
     target:
-      detail: ACM Joint European Software Engineering Conference and Symposium on
+      detail:
+        ACM Joint European Software Engineering Conference and Symposium on
         the Foundations of Software Engineering
       name: ESEC/FSE 2022
       url: https://2022.esec-fse.org/
@@ -146,7 +143,6 @@
       slides-3: /assets/data/slides/2022/pldi22-tutorial-3.pdf
 
 2021:
-
   - title: A Survey of Parametric Static Analysis
     doi: 10.1145/3464457
     authors:
@@ -189,7 +185,8 @@
     co-first: 2
     target:
       name: ESEC/FSE 2021
-      detail: ACM Joint European Software Engineering Conference and Symposium on
+      detail:
+        ACM Joint European Software Engineering Conference and Symposium on
         the Foundations of Software Engineering
       url: https://2021.esec-fse.org/
     pdf: /assets/data/publication/fse21-park-ds.pdf
@@ -228,7 +225,6 @@
       repo: https://github.com/kaist-plrg/jest
 
 2020:
-
   - title: "JISET: JavaScript IR-based Semantics Extraction Toolchain"
     doi: 10.1145/3324884.3416632
     authors:
@@ -247,7 +243,6 @@
       repo: https://github.com/kaist-plrg/jiset
 
 2019:
-
   - title: Toward Analysis and Bug Finding of JavaScript Web Applications in the Wild
     doi: 10.1109/MS.2018.110113408
     authors:
@@ -263,7 +258,6 @@
       slides: /assets/data/slides/2019/ieeesw19-slides.pdf
 
 2018:
-
   - title: Path Dependent Types with Path-Equality
     doi: 10.1145/3241653.3241657
     authors:
@@ -296,7 +290,6 @@
       slides: /assets/data/slides/2018/proweb18-slides.pdf
 
 2017:
-
   - title: Toward Building Memory-safe Network Functions with Modest Performance Overhead
     authors:
       - Keunhong Lee
@@ -349,7 +342,6 @@
       repo: https://github.com/sukyoung/safe
 
 2014:
-
   - title: JavaScript API Misuse Detection by Using TypeScript
     doi: 10.1145/2584469.2584472
     authors:
