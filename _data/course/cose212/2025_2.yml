@@ -195,11 +195,11 @@ parts:
     - index: 24
       date: 12/01
       title: Subtype Polymorphism
-      # pdf: slides/lec24.pdf
-      # handout: slides/lec24-handout.pdf
+      pdf: slides/lec24.pdf
+      handout: slides/lec24-handout.pdf
       homework:
         - name: ex15
-          # link: https://github.com/ku-plrg-classroom/docs/tree/main/cose212/stfae
+          link: https://github.com/ku-plrg-classroom/docs/tree/main/cose212/stfae
     - index: 25
       date: 12/03
       title: Type Inference (1)
