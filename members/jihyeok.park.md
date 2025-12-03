@@ -79,6 +79,7 @@ Please see [**Publications**](/publications).
 
 - **Committee Members**
   - 2026 -
+    [**ICSME**](https://conf.researchr.org/home/icsme-2026) /
     [**CCS**](https://www.sigsac.org/ccs/CCS2026/) /
     [**PLDI**](https://pldi26.sigplan.org/) /
     [**SAC** (PL Track)](https://www.sigapp.org/sac/sac2026)
