@@ -30,6 +30,7 @@
       slides: /assets/data/slides/2025/ase25-debun-slides.pdf
       poster: /assets/data/poster/2025/ase25-debun-poster.pdf
       repo: https://github.com/ku-plrg/debun-ase25
+      news: https://www.m-i.kr/news/articleView.html?idxno=1311442
 
   - title: "JSSpecVis: A JavaScript Language Specification Visualization Tool"
     doi: 10.1145/3696630.3728579
