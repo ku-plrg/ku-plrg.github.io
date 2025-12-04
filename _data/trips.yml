@@ -15,6 +15,21 @@
 
 2025:
 
+  - date-from : 2025.11.16
+    date-to   : 2025.11.20
+    place     : ASE 2025
+    place-url : https://conf.researchr.org/home/ase-2025
+    location  : Seoul, South Korea
+    photos    : Ka5P6eAhVHcKAcyg7
+    talk      :
+      - pdf     : /assets/data/slides/2025/ase25-debun-slides.pdf
+      - pdf     : /assets/data/slides/2025/ase25-src-slides.pdf
+    report    :
+      - pdf     : /assets/data/report/2025/ase25-report-jungwoongkim.pdf
+      - pdf     : /assets/data/report/2025/ase25-report-minseokchoe.pdf
+      - pdf     : /assets/data/report/2025/ase25-report-seongminko.pdf
+      - pdf     : /assets/data/report/2025/ase25-report-sungminpark.pdf
+
   - date-from : 2025.08.20
     date-to   : 2025.08.22
     place     : SIGPL Summer School 2025
