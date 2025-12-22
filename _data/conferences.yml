@@ -309,12 +309,12 @@ list:
     place: Montreal, Canada
 
   - name: ASE
-    year: 2025
-    link: https://conf.researchr.org/home/ase-2025
+    year: 2026
+    link: https://conf.researchr.org/home/ase-2026
     deadline:
-      - "2025-05-30 23:59"
-    date: Nov 16 - Nov 20
-    place: Seoul, South Korea
+      - "2026-03-26 23:59"
+    date: Oct 12 - Oct 16
+    place: Munich, Germany
 
   - name: ISSTA
     year: 2026
