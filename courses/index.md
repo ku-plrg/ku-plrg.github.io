@@ -3,6 +3,11 @@ title: Courses
 layout: article
 ---
 
+#### 2026 Spring
+
+- COSE215: Theory of Computation
+- AAA551: Programming Language Theory
+
 #### 2025 Fall
 
 - [COSE212: Programming Languages](./cose212/2025_2/)
