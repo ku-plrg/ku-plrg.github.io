@@ -1,6 +1,6 @@
 2025:
   - title: Verification and Classification of Exploits for Node.js Vulnerabilities
-    doi: accepted # TODO
+    doi: 10.1109/ASE63991.2025.00390
     authors:
       - Sungmin Park
     award: ACM Student Research Competition 2nd
@@ -14,7 +14,7 @@
       poster: /assets/data/poster/2025/ase25-src-poster.pdf
 
   - title: "Debun: Detecting Bundled JavaScript Libraries on Web using Property-Order Graphs"
-    doi: accepted # TODO
+    doi: 10.1109/ASE63991.2025.00015
     authors:
       - Seojin Kim
       - Sungmin Park
