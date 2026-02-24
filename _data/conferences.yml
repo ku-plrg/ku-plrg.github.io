@@ -1,4 +1,4 @@
-last_update: "2025-11-14"
+last_update: "2026-02-24"
 
 # ------------------------------------------------------------------------------
 infos:
@@ -184,12 +184,12 @@ list:
 # ------------------------------------------------------------------------------
 
   - name: POPL
-    year: 2026
-    link: https://conf.researchr.org/home/POPL-2026
+    year: 2027
+    link: https://conf.researchr.org/home/POPL-2027
     deadline:
-      - "2025-07-10 23:59"
-    date: Jan 11 - Jan 17
-    place: Rennes, France
+      - "2026-07-09 23:59"
+    date: Jan 10 - Jan 16
+    place: Mexico City, Mexico
 
   - name: PLDI
     year: 2026
@@ -292,13 +292,12 @@ list:
     place: Rennes, France
 
   - name: ICSE
-    year: 2026
-    link: https://conf.researchr.org/home/icse-2026
+    year: 2027
+    link: https://conf.researchr.org/home/icse-2027
     deadline:
-      - "2025-03-14 23:59"
-      - "2025-07-18 23:59"
-    date: Apr 12 - Apr 18
-    place: Rio De Janeiro, Brazil
+      - "2026-06-30 23:59"
+    date: Apr 25 - May 1
+    place: Dublin, Ireland
 
   - name: FSE
     year: 2026
