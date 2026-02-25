@@ -80,6 +80,7 @@ Please see [**Publications**](/publications).
 - **Committee Members**
   - 2026 -
     [**CCS**](https://www.sigsac.org/ccs/CCS2026/) /
+    [**ASE**](https://conf.researchr.org/home/ase-2026) /
     [**ICSME**](https://conf.researchr.org/home/icsme-2026) /
     [**SOAP**](https://pldi26.sigplan.org/home/SOAP-2026) /
     [**PLDI**](https://pldi26.sigplan.org/) /
@@ -117,6 +118,8 @@ Please see [**Publications**](/publications).
     [**ISSTA**](https://conf.researchr.org/home/issta-2018)
 
 - **Journal Reviewers**
+  - 2026 -
+    **ACM TOSEM**
   - 2025 -
     **ACM TOSEM**
   - 2024 -
