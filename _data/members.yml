@@ -3,13 +3,12 @@ Professors:
 # Postdocs:
 # PhD Students:
 Master Students:
-  - Jungyeom Kim
   - Seongmin Ko
   - Hyunjoon Kim
   - Minseok Choe
+  - Sungmin Park
   - Woojin Choi
 Undergraduate Students:
-  - Sungmin Park
   - Jungwoong Kim
   - Youngmin Cho
   - Garham Lee
@@ -37,3 +36,6 @@ Alumni:
   # - name: Seongjin Lee
   #   category: BS
   #   year: 2025
+  - name: Jungyeom Kim
+    category: MS
+    year: 2026
