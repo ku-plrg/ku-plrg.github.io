@@ -6,7 +6,7 @@ layout: article
 #### 2026 Spring
 
 - [COSE215: Theory of Computation](./cose215/2026_1/)
-- AAA551: Programming Language Theory
+- [AAA551: Programming Language Theory](./aaa551/2026_1/)
 
 #### 2025 Fall
 
