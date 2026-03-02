@@ -25,6 +25,22 @@ layout: course
 - **Reference:** [Introduction to Automata Theory, Languages, and Computation (3rd Edition)](http://infolab.stanford.edu/~ullman/ialc.html) <br>
   [<img src="https://m.media-amazon.com/images/I/41d4NezeXCL.jpg"
   width=200px/>](https://www.amazon.com/exec/obidos/ASIN/0321455363/acmorg-20)
+
+
+### Grading
+
+Please use the [LMS](https://lms.korea.ac.kr/) for the attendance check and the
+submission of homework.
+
+- **Homework:** 20%
+- **Midterm:** 30%
+- **Final:** 40%
+- **Attendance:** 10%
+
+### Exams
+
+- **Midterm:** April 22 (Wed.) 13:30 -- 14:45 (75 min.)
+- **Final:** December 17 (Wed.) 13:30 -- 14:45 (75 min.)
 - **Previous Exams**
   - Midterm:
     [2023](../2023_1/midterm.pdf) /
@@ -34,6 +50,24 @@ layout: course
     [2023](../2023_1/final.pdf) /
     [2024](../2024_1/final.pdf) /
     [2025](../2025_1/final.pdf)
+
+#### Policy on Academic Integrity
+
+The use of Large Language Models (LLMs), such as ChatGPT, is permitted and
+encouraged. However, students remain fully responsible for the **originality**
+and **comprehension** of all submitted work. The following rules apply when
+evaluating coding assignments. **Violations will be treated as academic
+dishonesty** and will result in one of the following consequences: a grade of
+**zero (0) on the assignment**, or, in the most serious cases, an automatic
+grade of **F for the entire course**.
+
+* Submissions that exhibit direct **copy-and-paste** similarity with other
+  students' work, or copying with superficial or uninformed modifications,
+  constitute **academic dishonesty**.
+
+* The instructor reserves the right to require an **oral explanation** of any
+  submitted code. Inability to provide a clear, reasonable, and coherent
+  explanation will be deemed proof that the work is **not the student's own**.
 
 ### Installation of Scala and sbt
 
