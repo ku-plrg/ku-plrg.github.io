@@ -11,8 +11,12 @@ parts:
     - index: 1
       date: 03/05
       title: Basic Introduction to Scala
-      # pdf: slides/lec1.pdf
-      # handout: slides/lec1-handout.pdf
+      pdf: slides/lec1.pdf
+      handout: slides/lec1-handout.pdf
+      homework:
+      - name: ex01
+        link: https://github.com/ku-plrg-classroom/docs/tree/main/scala/scala-tutorial
+
   - name: "Part 1: Semantics"
     lectures:
     - index: 2
