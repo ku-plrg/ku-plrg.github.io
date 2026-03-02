@@ -5,7 +5,7 @@ parts:
   - lectures:
     - index: 0
       date: 03/03
-      title: Introduction
+      title: Course Overview
       pdf: slides/lec0.pdf
       handout: slides/lec0-handout.pdf
     - index: 1
