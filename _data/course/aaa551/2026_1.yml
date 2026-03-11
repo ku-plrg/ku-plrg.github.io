@@ -31,7 +31,7 @@ parts:
       handout: slides/lec3-handout.pdf
     - index: 4
       date: 03/17
-      title: CEK Machine
+      title: Lambda Calculus and CEK Machine
       # pdf: slides/lec4.pdf
       # handout: slides/lec4-handout.pdf
     - index: 5
