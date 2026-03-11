@@ -23,6 +23,7 @@ parts:
       homework:
       - name: ex01
         link: https://github.com/ku-plrg-classroom/docs/tree/main/scala/scala-tutorial
+        date: 03/18
 
   - name: "Part 1: Finite Automata"
     lectures:
