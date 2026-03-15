@@ -37,8 +37,8 @@ parts:
     - index: 5
       date: 03/19
       title: Denotational Semantics
-      # pdf: slides/lec5.pdf
-      # handout: slides/lec5-handout.pdf
+      pdf: slides/lec5.pdf
+      handout: slides/lec5-handout.pdf
     - index: 6
       date: 03/24
       title: Fixed-Point Theory
