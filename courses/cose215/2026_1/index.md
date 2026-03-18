@@ -1,5 +1,7 @@
 ---
 layout: course
+mermaid: false # disable default mermaid rendering for this page
+mathjax: false # disable default MathJax rendering for this page
 ---
 ## COSE215: Theory of Computation, 2026 Spring
 
@@ -87,6 +89,12 @@ Please download and install them using the following links:
   [https://www.scala-sbt.org/download.html](https://www.scala-sbt.org/download.html)
 - **Scala** -
   [https://www.scala-lang.org/download/](https://www.scala-lang.org/download/)
+
+
+### Online Automata Simulator
+
+<!-- load schedule with PDF files -->
+{%- include automata-viewer.html -%}
 
 
 ### Schedule
