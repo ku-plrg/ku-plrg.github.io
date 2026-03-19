@@ -42,12 +42,12 @@ parts:
     - index: 5
       date: 03/23
       title: ε-Nondeterministic Finite Automata (ε-NFA)
-      # pdf: slides/lec5.pdf
-      # handout: slides/lec5-handout.pdf
+      pdf: slides/lec5.pdf
+      handout: slides/lec5-handout.pdf
       code: code/ENFA.scala
       homework:
       - name: hw01
-        #link: https://github.com/ku-plrg-classroom/docs/tree/main/cose215/fa-examples
+        link: https://github.com/ku-plrg-classroom/docs/tree/main/cose215/fa-examples
         date: 03/30
     - index: 6
       date: 03/25
