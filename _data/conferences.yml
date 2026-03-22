@@ -1,4 +1,4 @@
-last_update: "2026-02-24"
+last_update: "2026-03-22"
 
 # ------------------------------------------------------------------------------
 infos:
@@ -217,13 +217,13 @@ list:
     place: Lisbon, Portugal
 
   - name: ASPLOS
-    year: 2026
-    link: https://www.asplos-conference.org/asplos2026
+    year: 2027
+    link: https://www.asplos-conference.org/asplos2026/call-for-papers-asplos27/
     deadline:
-      - "2025-03-12 15:59"
-      - "2025-08-20 15:59"
-    date: Mar 22 - Mar 26
-    place: Pittsburgh, USA
+      - "2026-04-15 23:59"
+      - "2026-09-09 23:59"
+    date: Mar 22 - Mar 26   # not yet announced
+    place: Pittsburgh, USA  # not yet announced
 
   - name: PPoPP
     year: 2026
@@ -276,12 +276,12 @@ list:
     place: Sydney, Australia
 
   - name: SAS
-    year: 2025
-    link: https://2025.splashcon.org/home/sas-2025
+    year: 2026
+    link: https://conf.researchr.org/home/splash-issta-2026/sas-2026
     deadline:
-      - "2025-05-11 23:59"
-    date: Oct 12 - Oct 18
-    place: Singapore
+      - "2026-05-01 23:59"
+    date: Oct 6 - Oct 8
+    place: Oakland, California, United States
 
   - name: VMCAI
     year: 2026
@@ -300,12 +300,12 @@ list:
     place: Dublin, Ireland
 
   - name: FSE
-    year: 2026
-    link: https://conf.researchr.org/home/fse-2026
+    year: 2027
+    link: https://www.esec-fse.org/upcoming_events
     deadline:
-      - "2025-09-11 23:59"
-    date: Jul 5 - Jul 9
-    place: Montreal, Canada
+      - "2026-10-09 23:59"
+    date: Jul 12 - Jul 16
+    place: Shenzhen, China
 
   - name: ASE
     year: 2026
@@ -366,13 +366,13 @@ list:
     place: San Francisco, California, USA
 
   - name: USENIX Security
-    year: 2026
-    link: https://www.usenix.org/conference/usenixsecurity26
+    year: 2027
+    link: https://www.usenix.org/conference/usenixsecurity27
     deadline:
-      - "2025-08-26 23:59"
-      - "2026-02-05 23:59"
-    date: Aug 12 - Aug 14
-    place: Baltimore, Maryland, USA
+      - "2026-08-25 23:59"
+      - "2027-01-26 23:59"
+    date: Aug 11 - Aug 13
+    place: Denver, Colorado, USA
 
   - name: NDSS
     year: 2026
@@ -384,10 +384,10 @@ list:
     place: San Diego, California, USA
 
   - name: ASIACCS
-    year: 2026
-    link: https://asiaccs2026.cse.iitkgp.ac.in/
+    year: 2027
+    link: https://asiaccs2027.cityu.edu.mo/
     deadline:
-      - "2025-09-25 23:59"
-      - "2026-01-21 23:59"
-    date: Jun 1 - Jun 6
-    place: Bangalore, India
+      - "2026-08-21 23:59"
+      - "2026-12-11 23:59"
+    date: Jul 12 - Jul 16
+    place: Macau, China
