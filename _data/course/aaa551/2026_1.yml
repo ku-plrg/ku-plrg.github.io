@@ -57,11 +57,11 @@ parts:
     - index: 9
       date: 04/02
       title: Abstract Machines
-      # pdf: slides/lec9.pdf
-      # handout: slides/lec9-handout.pdf
+      pdf: slides/lec9.pdf
+      handout: slides/lec9-handout.pdf
       homework:
       - name: hw01
-        # link: todo
+        link: https://github.com/ku-plrg-classroom/docs/tree/main/aaa551/abs-machine
         date: 04/16
     - index: 10
       date: 04/07
