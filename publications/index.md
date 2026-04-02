@@ -2,7 +2,7 @@
 layout: article
 title: Publications
 ---
-<div class="post-content">
+<div id="pub-content">
 {%- for _pair in site.data.publications -%}
 {%- assign _year = _pair[0] -%}
 <h3>{{ _year }}</h3>
