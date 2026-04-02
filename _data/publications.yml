@@ -1,5 +1,20 @@
+2026:
+  - title: "Selective Feature-Sensitive Coverage for Conformance Testing of Programming Languages"
+    doi: accepted # TODO
+    authors:
+      - Kanguk Lee
+      - Seunghwan Kim
+      - Jihyeok Park
+      - Sukyoung Ryu
+    co-corr: 2
+    target:
+      name: TOSEM
+      detail: Transactions on Software Engineering and Methodology
+      url: https://dl.acm.org/journal/tosem
+    # pdf: TODO
+
 2025:
-  - title: Verification and Classification of Exploits for Node.js Vulnerabilities
+  - title: "Verification and Classification of Exploits for Node.js Vulnerabilities"
     doi: 10.1109/ASE63991.2025.00390
     authors:
       - Sungmin Park
@@ -156,7 +171,6 @@
       detail: ACM Computing Surveys - vol. 54, issue 7, no. 149, pp. 1-37
       url: https://dl.acm.org/journal/csur
     pdf: /assets/data/publication/csur21-park-psa.pdf
-    materials:
 
   - title: "JSTAR: JavaScript Specification Type Analyzer using Refinement"
     doi: 10.1109/ASE51524.2021.9678781
