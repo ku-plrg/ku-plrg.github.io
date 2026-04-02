@@ -1,6 +1,9 @@
 {%- assign _publication = include.publication -%}
 <li>
   <!-- title -->
+  <a href="{{ _publication.target.url }}" class="venue-tag">
+    {{ _publication.target.name }}
+  </a>
   <strong>{{ _publication.title }}</strong>
   {%- if _publication.doi -%}
   {%- if _publication.doi == "accepted" -%}
@@ -49,35 +52,24 @@
 
   <br>
 
-  <!-- conference/workshop/journal -->
-    <a href="{{ _publication.target.url }}">
-      <strong>{{ _publication.target.name }}</strong>
-    </a>
-    {%- if _publication.target.detail -%}
-    {{ "" }}
-    <span class="detail">({{ _publication.target.detail }})</span>
-    {%- endif -%}
-
-  <br>
-
   <!-- awards -->
   {%- if _publication.award -%}
   <strong>🏅 <font color='red'>{{ _publication.award }}</font></strong>
   <br>
   {%- endif -%}
 
-  <!-- links -->
-  {%- include links.html data=_publication -%}
+  <!-- conference/workshop/journal -->
+  {%- if _publication.target.detail -%}
+  <span class="detail">{{ _publication.target.detail }}</span>
+  <br>
+  {%- endif -%}
 
   <!-- materials -->
   {%- if _publication.materials.size > 0 -%}
-  [ {{ "" }}
   {%- for _pair in _publication.materials -%}
   {%- assign _name = _pair[0] -%}
   {%- assign _link = _pair[1] -%}
-  <a href="{{ _link }}">{{ _name }}</a>
-  {% unless forloop.last %} | {% endunless %}
+  <a href="{{ _link }}" class="pub-links">{{ _name }}</a>
   {%- endfor -%}
-  ]
   {%- endif -%}
 </li>

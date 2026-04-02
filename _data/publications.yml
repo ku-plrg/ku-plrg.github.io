@@ -23,8 +23,8 @@
       name: ASE 2025 SRC
       detail: IEEE/ACM International Conference on Automated Software Engineering - Student Research Competition
       url: https://conf.researchr.org/home/ase-2025
-    pdf: /assets/data/publication/ase-src25.pdf
     materials:
+      pdf: /assets/data/publication/ase-src25.pdf
       slides: /assets/data/slides/2025/ase25-src-slides.pdf
       poster: /assets/data/poster/2025/ase25-src-poster.pdf
 
@@ -39,9 +39,9 @@
       name: ASE 2025
       detail: IEEE/ACM International Conference on Automated Software Engineering
       url: https://conf.researchr.org/home/ase-2025
-    pdf: /assets/data/publication/ase25-park-debun.pdf
-    youtube: v9dH4osHS0I
     materials:
+      pdf: /assets/data/publication/ase25-park-debun.pdf
+      video: https://www.youtube.com/watch?v=v9dH4osHS0I
       slides: /assets/data/slides/2025/ase25-debun-slides.pdf
       poster: /assets/data/poster/2025/ase25-debun-poster.pdf
       repo: https://github.com/ku-plrg/debun-ase25
@@ -59,9 +59,9 @@
       name: FSE 2025 Demo
       detail: ACM International Conference on the Foundations of Software Engineering - Demonstrations Track
       url: https://conf.researchr.org/home/fse-2025
-    pdf: /assets/data/publication/fse-demo25.pdf
-    youtube: 4XMjJPNmuBM
     materials:
+      pdf: /assets/data/publication/fse-demo25.pdf
+      video: https://www.youtube.com/watch?v=4XMjJPNmuBM
       slides: /assets/data/slides/2025/fse25-demo-slides.pdf
       repo: https://github.com/ku-plrg/js-spec-vis
       visualizer: https://chromewebstore.google.com/detail/nlfpedidieegejndiikebcgclhggaocd?utm_source=item-share-cb
@@ -80,9 +80,9 @@
         Implementation
       name: PLDI 2024
       url: https://pldi24.sigplan.org/
-    pdf: /assets/data/publication/pldi24-jeon-pl4xgl.pdf
-    youtube: dc64pCBXx9o
     materials:
+      pdf: /assets/data/publication/pldi24-jeon-pl4xgl.pdf
+      video: https://www.youtube.com/watch?v=dc64pCBXx9o
       slides: /assets/data/slides/2024/pldi24-pl4xgl-slides.pdf
       repo: https://github.com/kupl/PL4XGL
       news: https://www.m-i.kr/news/articleView.html?idxno=1135778
@@ -96,9 +96,9 @@
       detail: Communications of the ACM
       name: CACM
       url: https://m-cacm.acm.org/
-    pdf: /assets/data/publication/cacm24-ryu-esmeta.pdf
-    youtube: JGxc-KIUnQY
     materials:
+      pdf: /assets/data/publication/cacm24-ryu-esmeta.pdf
+      video: https://www.youtube.com/watch?v=JGxc-KIUnQY
       online: https://cacm.acm.org/research/javascript-language-design-and-implementation-in-tandem/
       repo: https://github.com/es-meta/esmeta
       news: https://www.aitimes.kr/news/articleView.html?idxno=31089
@@ -116,9 +116,9 @@
         Implementation
       name: PLDI 2023
       url: https://pldi23.sigplan.org/
-    pdf: /assets/data/publication/pldi23-park-jestfs.pdf
-    youtube: Yz1dGw_rAzQ
     materials:
+      pdf: /assets/data/publication/pldi23-park-jestfs.pdf
+      video: https://www.youtube.com/watch?v=Yz1dGw_rAzQ
       slides: /assets/data/slides/2023/pldi23-jestfs-slides.pdf
       repo: https://github.com/jestfs/jestfs/
 
@@ -135,9 +135,9 @@
         the Foundations of Software Engineering
       name: ESEC/FSE 2022
       url: https://2022.esec-fse.org/
-    pdf: /assets/data/publication/fse22-park-jsaver.pdf
-    youtube: zEsanPIFrWs
     materials:
+      pdf: /assets/data/publication/fse22-park-jsaver.pdf
+      video: https://www.youtube.com/watch?v=zEsanPIFrWs
       report: /assets/data/publication/fse22-jsaver-report.pdf
       slides: /assets/data/slides/2022/fse22-jsaver-slides.pdf
       repo: https://github.com/kaist-plrg/jsaver
@@ -170,7 +170,8 @@
       name: CSUR
       detail: ACM Computing Surveys - vol. 54, issue 7, no. 149, pp. 1-37
       url: https://dl.acm.org/journal/csur
-    pdf: /assets/data/publication/csur21-park-psa.pdf
+    materials:
+      pdf: /assets/data/publication/csur21-park-psa.pdf
 
   - title: "JSTAR: JavaScript Specification Type Analyzer using Refinement"
     doi: 10.1109/ASE51524.2021.9678781
@@ -184,8 +185,8 @@
       name: ASE 2021
       detail: IEEE/ACM International Conference on Automated Software Engineering
       url: https://conf.researchr.org/home/ase-2021
-    pdf: /assets/data/publication/ase21-park-jstar.pdf
     materials:
+      pdf: /assets/data/publication/ase21-park-jstar.pdf
       tech: /assets/data/publication/ase21-jstar-report.pdf
       slides: /assets/data/slides/2021/ase21-jstar-slides.pdf
       repo: https://github.com/kaist-plrg/jstar
@@ -204,8 +205,8 @@
         ACM Joint European Software Engineering Conference and Symposium on
         the Foundations of Software Engineering
       url: https://2021.esec-fse.org/
-    pdf: /assets/data/publication/fse21-park-ds.pdf
     materials:
+      pdf: /assets/data/publication/fse21-park-ds.pdf
       extended: https://arxiv.org/abs/2105.13699
       slides: /assets/data/slides/2021/fse21-slides.pdf
       repo: https://github.com/kaist-plrg/safe-ds
@@ -233,9 +234,9 @@
       name: ICSE 2021
       detail: IEEE/ACM International Conference on Software Engineering
       url: https://conf.researchr.org/home/icse-2021
-    pdf: /assets/data/publication/icse21-park-jest.pdf
-    youtube: lX4iscqdx8Y
     materials:
+      pdf: /assets/data/publication/icse21-park-jest.pdf
+      video: https://www.youtube.com/watch?v=lX4iscqdx8Y
       slides: /assets/data/slides/2021/icse21-slides.pdf
       repo: https://github.com/kaist-plrg/jest
 
@@ -251,8 +252,8 @@
       name: ASE 2020
       detail: IEEE/ACM International Conference on Automated Software Engineering
       url: https://conf.researchr.org/home/ase-2020
-    pdf: /assets/data/publication/ase20-park-jiset.pdf
     materials:
+      pdf: /assets/data/publication/ase20-park-jiset.pdf
       tech: /assets/data/publication/ase20-park-jiset-report.pdf
       slides: /assets/data/slides/2020/ase20-slides.pdf
       repo: https://github.com/kaist-plrg/jiset
@@ -268,8 +269,8 @@
       name: IEEE Software
       detail: vol. 36, no. 3, pp. 74-82
       url: https://www.computer.org/csdl/magazine/so
-    pdf: /assets/data/publication/ieeesw19.pdf
     materials:
+      pdf: /assets/data/publication/ieeesw19.pdf
       slides: /assets/data/slides/2019/ieeesw19-slides.pdf
 
 2018:
@@ -283,9 +284,9 @@
       name: Scala 2018
       detail: ACM SIGPLAN Symposium on Scala
       url: https://conf.researchr.org/track/scala-2018/scala-2018-papers
-    pdf: /assets/data/publication/scala18.pdf
-    youtube: 6jVUuKPiYK4
     materials:
+      pdf: /assets/data/publication/scala18.pdf
+      video: https://www.youtube.com/watch?v=6jVUuKPiYK4
 
   - title: A Framework for Dynamic Inter-Device Task Dispatch with Eventual Consistency
     doi: 10.1145/3191697.3191732
@@ -300,8 +301,8 @@
       name: ProWeb 2018
       detail: International Workshop on Programming Technology for the Future Web
       url: https://2018.programming-conference.org/track/proweb-2018-papers
-    pdf: /assets/data/publication/proweb18.pdf
     materials:
+      pdf: /assets/data/publication/proweb18.pdf
       slides: /assets/data/slides/2018/proweb18-slides.pdf
 
 2017:
@@ -317,9 +318,9 @@
       name: NetPL 2017
       detail: ACM SIGCOMM Workshop on Networking and Programming Languages
       url: https://conferences.sigcomm.org/sigcomm/2017/workshop-netpl.html
-    pdf: /assets/data/publication/netpl17.pdf
-    youtube: p_85Zys3Yzs
     materials:
+      pdf: /assets/data/publication/netpl17.pdf
+      video: https://www.youtube.com/watch?v=p_85Zys3Yzs
 
   - title: "Revisiting Recency Abstraction for JavaScript: Towards an Intuitive, Compositional, and Efficient Heap Abstraction"
     doi: 10.1145/3088515.3088516
@@ -333,8 +334,8 @@
       detail: ACM SIGPLAN International Workshop on the State Of the Art in Java
         Program Analysis
       url: https://pldi17.sigplan.org/track/SOAP-2017-papers
-    pdf: /assets/data/publication/soap17.pdf
     materials:
+      pdf: /assets/data/publication/soap17.pdf
       tech: /assets/data/publication/soap17-tech.pdf
       slides: /assets/data/slides/2017/soap17-slides.pdf
 
@@ -349,9 +350,9 @@
       name: ICSE 2017 Demo
       detail: IEEE/ACM International Conference on Software Engineering - Demonstrations Track
       url: https://icse2017.gatech.edu/
-    pdf: /assets/data/publication/icse-demo17.pdf
-    youtube: ZI_emiRMoxQ
     materials:
+      pdf: /assets/data/publication/icse-demo17.pdf
+      video: https://www.youtube.com/watch?v=ZI_emiRMoxQ
       slides: /assets/data/slides/2017/icse-demo17-slides.pdf
       poster: /assets/data/publication/icse-demo17-poster.pdf
       repo: https://github.com/sukyoung/safe
@@ -366,7 +367,7 @@
       name: Modularity 2014 SRC
       detail: International Conference on Modularity - Student Research Competition
       url: https://modularity.info/conference/2014/index.html
-    pdf: /assets/data/publication/mod-src14.pdf
     materials:
+      pdf: /assets/data/publication/mod-src14.pdf
       slides: /assets/data/slides/2014/mod-src14-slides.pdf
       poster: /assets/data/publication/mod-src14-poster.pdf

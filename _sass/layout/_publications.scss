@@ -118,3 +118,47 @@
     visibility: hidden;
   }
 }
+
+.venue-tag {
+  display: inline-block;
+  background-color: #00462a;
+  color: #ffffff !important;
+  padding: 2px 6px;
+  border-radius: 5px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-decoration: none !important;
+  margin-right: 1px;
+  transition: opacity 0.2s;
+  position: relative;
+  top: -1px;
+}
+
+.venue-tag:hover {
+  opacity: 0.8;
+  color: #ffffff;
+}
+
+h3 {
+  margin-top: 40px!important;
+}
+
+li {
+  margin-bottom: 15px;
+  line-height: 1.2;
+}
+
+.pub-links {
+  background-color: #f3f4f6;
+  border: none;
+  padding: 2px 8px;
+  font-size: 0.85rem;
+  color: #4b5563;
+  border-radius: 4px;
+  margin-right: 4px;
+}
+
+.pub-links:hover {
+  background: #f5f5f5;
+  border-color: #bbb;
+}
