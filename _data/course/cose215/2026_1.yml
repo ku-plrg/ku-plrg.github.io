@@ -74,8 +74,8 @@ parts:
     - index: 9
       date: 04/06
       title: The Pumping Lemma for Regular Languages
-      # pdf: slides/lec9.pdf
-      # handout: slides/lec9-handout.pdf
+      pdf: slides/lec9.pdf
+      handout: slides/lec9-handout.pdf
     - index: 10
       date: 04/08
       title: Equivalence and Minimization of Finite Automata
