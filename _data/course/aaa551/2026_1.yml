@@ -71,8 +71,8 @@ parts:
     - index: 11
       date: 04/09
       title: Systematic Program Proofs
-      # pdf: slides/lec11.pdf
-      # handout: slides/lec11-handout.pdf
+      pdf: slides/lec11.pdf
+      handout: slides/lec11-handout.pdf
     - index: 12
       date: 04/14
       title: Separation Logic (1)
