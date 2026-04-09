@@ -91,7 +91,7 @@ Please see [**Publications**](/publications).
     [**OOPSLA**](https://2025.splashcon.org/track/OOPSLA) /
     [**SAS**](https://2025.splashcon.org/home/sas-2025) /
     [**SCAM**](https://conf.researchr.org/home/scam-2025) /
-    [**RPLS** (Co-Chair)](https://pldi25.sigplan.org/home/rpls-2025) /
+    [**RPLS**](https://pldi25.sigplan.org/home/rpls-2025) /
     [**SAC** (PL Track)](https://www.sigapp.org/sac/sac2025)
   - 2024 -
     [**APLAS** (SRC & Posters)](https://conf.researchr.org/track/aplas-2024/src-and-posters%3F) /
