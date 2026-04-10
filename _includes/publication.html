@@ -18,6 +18,7 @@
   <!-- authors -->
   {%- assign _authors = _publication.authors -%}
   {%- for _author in _authors -%}
+  {%- assign _name = _author.name -%}
   {%- assign _size = _authors.size -%}
   {%- if forloop.last -%}
   {%- if _size == 1 -%}
@@ -27,16 +28,16 @@
   {{ "and " }}
   {%- endif -%}
   {%- endif -%}
-  {%- assign _our_author = site.data.authors[_author] -%}
+  {%- assign _our_author = site.data.authors[_name] -%}
   {%- if _our_author %}
-  <a href="{{ _our_author.url }}">{{ _author }}</a>
+  <a href="{{ _our_author.url }}">{{ _name }}</a>
   {%- else -%}
-  {{ _author }}
+  {{ _name }}
   {%- endif -%}
   {%- assign remaining = forloop.length | minus: forloop.index0 -%}
   {%- if _publication.co-first > forloop.index0 -%}
   {{ "*" }}
-  {%- elsif _publication.co-corr >= remaining -%}
+  {%- elsif _author.corr -%}
   {{ "†" }}
   {%- endif -%}
   {%- unless forloop.last or _size == 2 -%}
@@ -45,9 +46,6 @@
   {%- endfor -%}
   {%- if _publication.co-first -%}
   {{ " " }}<span class="detail">(* equally contributed)</span>
-  {%- endif -%}
-  {%- if _publication.co-corr -%}
-  {{ " " }}<span class="detail">(† corresponding authors)</span>
   {%- endif -%}
 
   <br>

@@ -5,6 +5,8 @@ aside:
   toc: true
 ---
 
+{% include former-member.html %}
+
 <img src="/assets/images/members/jungyeom.kim.jpg" class="profile-img">
 
 I'm Jungyeom Kim from Korea University. Currently, I am majoring in computer science. My main interest is abstract interpretation and static analysis. In addition to the programming language, there is a lot of interest in algorithms, data structures, problem-solving, and competitive programming.
