@@ -42,7 +42,7 @@ submission of homework.
 ### Exams
 
 - **Midterm:** April 22 (Wed.) 13:30 -- 14:45 (75 min.)
-- **Final:** December 17 (Wed.) 13:30 -- 14:45 (75 min.)
+- **Final:** June 17 (Wed.) 13:30 -- 14:45 (75 min.)
 - **Previous Exams**
   - Midterm:
     [2023](../2023_1/midterm.pdf) /
