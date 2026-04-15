@@ -222,7 +222,7 @@ list:
     deadline:
       - "2026-04-15 23:59"
       - "2026-09-09 23:59"
-    date: TBD
+    date: Apr 11 - Apr 15
     place: Crete, Greece
 
   - name: PPoPP
@@ -375,13 +375,13 @@ list:
     place: Denver, Colorado, USA
 
   - name: NDSS
-    year: 2026
-    link: https://www.ndss-symposium.org/ndss2026/
+    year: 2027
+    link: https://www.ndss-symposium.org/ndss2027/submissions/call-for-papers/
     deadline:
-      - "2025-04-23 23:59"
-      - "2025-08-06 23:59"
-    date: Feb 23 - Feb 27
-    place: San Diego, California, USA
+      - "2026-05-06 23:59"
+      - "2026-08-19 23:59"
+    date: TBD
+    place: TBD
 
   - name: ASIACCS
     year: 2027
