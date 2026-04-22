@@ -89,8 +89,8 @@ parts:
     - index: 14
       date: 04/28
       title: Simply-Typed Lambda Calculus
-      # pdf: slides/lec14.pdf
-      # handout: slides/lec14-handout.pdf
+      pdf: slides/lec14.pdf
+      handout: slides/lec14-handout.pdf
     - index: 15
       date: 04/30
       title: Type Soundness
