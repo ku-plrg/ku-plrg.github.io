@@ -114,18 +114,14 @@ parts:
     - index: 14
       date: 04/29
       title: Pushdown Automata (PDA)
-      # pdf: slides/lec14.pdf
-      # handout: slides/lec14-handout.pdf
+      pdf: slides/lec14.pdf
+      handout: slides/lec14-handout.pdf
       code: code/PDA.scala
     - index: 15
       date: 05/04
       title: Examples of Pushdown Automata
       # pdf: slides/lec15.pdf
       # handout: slides/lec15-handout.pdf
-      homework:
-      - name: hw03
-        #link: https://github.com/ku-plrg-classroom/docs/tree/main/cose215/pda-examples
-        date: 05/11
     - index: 16
       date: 05/06
       title: Equivalence of Pushdown Automata and Context-Free Grammars
@@ -136,6 +132,10 @@ parts:
       title: Deterministic Pushdown Automata (DPDA)
       # pdf: slides/lec17.pdf
       # handout: slides/lec17-handout.pdf
+      homework:
+      - name: hw03
+        # link: https://github.com/ku-plrg-classroom/docs/tree/main/cose215/pda-examples
+        date: 05/18
     - index: 18
       date: 05/13
       title: Normal Forms of Context-Free Grammars
