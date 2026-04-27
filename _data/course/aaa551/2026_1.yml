@@ -88,12 +88,12 @@ parts:
     lectures:
     - index: 14
       date: 04/28
-      title: Simply-Typed Lambda Calculus
+      title: Type System
       pdf: slides/lec14.pdf
       handout: slides/lec14-handout.pdf
     - index: 15
       date: 04/30
-      title: Type Soundness
+      title: Simply-Typed Lambda Calculus
       # pdf: slides/lec15.pdf
       # handout: slides/lec15-handout.pdf
     - index: 16
