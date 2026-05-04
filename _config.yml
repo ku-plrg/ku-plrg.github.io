@@ -113,3 +113,13 @@ plugins:
 ## => Include
 include:
   - .well-known # Prevent 404 errors for DevTools requests
+
+exclude:
+  - jekyll-text-theme-2.2.6.gem
+  - jekyll-text-theme.gemspec
+  - README.md
+  - vendor/
+  - .bundle/
+  - .sass-cache/
+  - Gemfile
+  - Gemfile.lock

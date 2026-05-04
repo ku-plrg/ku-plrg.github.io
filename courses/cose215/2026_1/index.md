@@ -45,13 +45,13 @@ submission of homework.
 - **Final:** June 17 (Wed.) 13:30 -- 14:45 (75 min.)
 - **Previous Exams**
   - Midterm:
-    [2023](../2023_1/midterm.pdf) /
-    [2024](../2024_1/midterm.pdf) /
-    [2025](../2025_1/midterm.pdf)
+    [2023](../exam/midterm-2023-1.pdf) /
+    [2024](../exam/midterm-2024-1.pdf) /
+    [2025](../exam/midterm-2025-1.pdf)
   - Final:
-    [2023](../2023_1/final.pdf) /
-    [2024](../2024_1/final.pdf) /
-    [2025](../2025_1/final.pdf)
+    [2023](../exam/final-2023-1.pdf) /
+    [2024](../exam/final-2024-1.pdf) /
+    [2025](../exam/final-2025-1.pdf)
 
 #### Policy on Academic Integrity
 

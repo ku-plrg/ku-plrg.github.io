@@ -62,11 +62,11 @@ grade of **F for the entire course**.
 - **Final:** December 17 (Wed.) 18:30 -- 21:00 (150 min.)
 - **Previous Exams**
   - Midterm:
-    [2023](../2023_2/midterm.pdf) /
-    [2024](../2024_2/midterm.pdf)
+    [2023](../exam/midterm-2023-2.pdf) /
+    [2024](../exam/midterm-2024-2.pdf)
   - Final:
-    [2023](../2023_2/final.pdf) /
-    [2024](../2024_2/final.pdf)
+    [2023](../exam/final-2023-2.pdf) /
+    [2024](../exam/final-2024-2.pdf)
 
 ### Installation of Scala and sbt
 

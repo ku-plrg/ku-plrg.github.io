@@ -32,11 +32,11 @@ mathjax: false # disable default MathJax rendering for this page
   width=200px/>](https://www.amazon.com/exec/obidos/ASIN/0321455363/acmorg-20)
 - **Previous Exams**
   - Midterm:
-    [2023](../2023_1/midterm.pdf) /
-    [2024](../2024_1/midterm.pdf)
+    [2023](../exam/midterm-2023-1.pdf) /
+    [2024](../exam/midterm-2024-1.pdf)
   - Final:
-    [2023](../2023_1/final.pdf) /
-    [2024](../2024_1/final.pdf)
+    [2023](../exam/final-2023-1.pdf) /
+    [2024](../exam/final-2024-1.pdf)
 
 ### Installation of Scala and sbt
 
