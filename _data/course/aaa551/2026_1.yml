@@ -104,8 +104,8 @@ parts:
     - index: 17
       date: 05/07
       title: Universal Types
-      # pdf: slides/lec17.pdf
-      # handout: slides/lec17-handout.pdf
+      pdf: slides/lec17.pdf
+      handout: slides/lec17-handout.pdf
     - index: 18
       date: 05/12
       title: Existential Types
