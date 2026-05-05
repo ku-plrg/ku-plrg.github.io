@@ -108,51 +108,51 @@ parts:
       handout: slides/lec17-handout.pdf
     - index: 18
       date: 05/12
-      title: Existential Types
+      title: Subtyping
       # pdf: slides/lec18.pdf
       # handout: slides/lec18-handout.pdf
     - index: 19
       date: 05/14
-      title: Substructural Types
+      title: Existential Types
       # pdf: slides/lec19.pdf
       # handout: slides/lec19-handout.pdf
     - index: 20
       date: 05/19
-      title: Effect Types
+      title: Type Operators
       # pdf: slides/lec20.pdf
       # handout: slides/lec20-handout.pdf
     - index: 21
       date: 05/21
-      title: Abstract Interpretation (1)
+      title: Curry-Howard Isomorphism
       # pdf: slides/lec21.pdf
       # handout: slides/lec21-handout.pdf
     - index: 22
       date: 05/26
-      title: Abstract Interpretation (2)
+      title: Dependent Types
       # pdf: slides/lec22.pdf
       # handout: slides/lec22-handout.pdf
     - index: 23
       date: 05/28
-      title: Flow-Sensitive Type Analysis
+      title: Calculus of Constructions
       # pdf: slides/lec23.pdf
       # handout: slides/lec23-handout.pdf
+    - index: 24
+      date: 06/02
+      title: Flow-Sensitive Types
+      # pdf: slides/lec24.pdf
+      # handout: slides/lec24-handout.pdf
       homework:
       - name: hw02
         # link: todo
-        date: 06/11
-    - index: 24
-      date: 06/02
-      title: Context-Sensitive Type Analysis
-      # pdf: slides/lec24.pdf
-      # handout: slides/lec24-handout.pdf
+        date: 06/09
     - index: 25
       date: 06/04
-      title: Curry–Howard Isomorphism
+      title: Substructural Types
       # pdf: slides/lec25.pdf
       # handout: slides/lec25-handout.pdf
     - index: 26
       date: 06/09
-      title: Dependent Types
+      title: Effect Systems
       # pdf: slides/lec26.pdf
       # handout: slides/lec26-handout.pdf
     - index: 27
