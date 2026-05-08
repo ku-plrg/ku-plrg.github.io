@@ -130,11 +130,11 @@ parts:
     - index: 17
       date: 05/11
       title: Deterministic Pushdown Automata (DPDA)
-      # pdf: slides/lec17.pdf
-      # handout: slides/lec17-handout.pdf
+      pdf: slides/lec17.pdf
+      handout: slides/lec17-handout.pdf
       homework:
       - name: hw03
-        # link: https://github.com/ku-plrg-classroom/docs/tree/main/cose215/pda-examples
+        link: https://github.com/ku-plrg-classroom/docs/tree/main/cose215/pda-examples
         date: 05/18
     - index: 18
       date: 05/13
