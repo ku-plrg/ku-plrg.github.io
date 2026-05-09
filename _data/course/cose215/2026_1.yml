@@ -127,6 +127,9 @@ parts:
       title: Equivalence of Pushdown Automata and Context-Free Grammars
       pdf: slides/lec16.pdf
       handout: slides/lec16-handout.pdf
+      homework:
+      - name: ex05
+        link: https://github.com/ku-plrg-classroom/docs/tree/main/cose215/equiv-cfg-pda
     - index: 17
       date: 05/11
       title: Deterministic Pushdown Automata (DPDA)
@@ -146,9 +149,6 @@ parts:
       title: Closure Properties of Context-Free Languages
       # pdf: slides/lec19.pdf
       # handout: slides/lec19-handout.pdf
-      homework:
-      - name: ex05
-        #link: https://github.com/ku-plrg-classroom/docs/tree/main/cose215/equiv-cfg-pda
     - index: 20
       date: 05/20
       title: The Pumping Lemma for Context-Free Languages
