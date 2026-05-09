@@ -114,8 +114,8 @@ parts:
     - index: 19
       date: 05/14
       title: Existential Types
-      # pdf: slides/lec19.pdf
-      # handout: slides/lec19-handout.pdf
+      pdf: slides/lec19.pdf
+      handout: slides/lec19-handout.pdf
     - index: 20
       date: 05/19
       title: Type Operators
