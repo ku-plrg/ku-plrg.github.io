@@ -5,6 +5,8 @@ aside:
   toc: true
 ---
 
+{% include former-member.html %}
+
 
 <img src="/assets/images/members/garham.lee.jpg" class="profile-img">
 

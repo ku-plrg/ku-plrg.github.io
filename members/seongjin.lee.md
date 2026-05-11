@@ -5,6 +5,8 @@ aside:
   toc: true
 ---
 
+{% include former-member.html %}
+
 <img src="/assets/images/members/seongjin.lee.jpg" class="profile-img">
 
 I'm Seongjin Lee, an undergraduate student studying computer science in Korea University. 

@@ -5,6 +5,8 @@ aside:
   toc: true
 ---
 
+{% include former-member.html %}
+
 <img src="/assets/images/members/jungwoong.kim.jpg" class="profile-img">
 
 I'm Jungwoong Kim, an undergraduate student studying computer science in Korea University. 
