@@ -144,11 +144,17 @@ parts:
       title: Normal Forms of Context-Free Grammars
       pdf: slides/lec18.pdf
       handout: slides/lec18-handout.pdf
+      homework:
+      - name: ex06
+        link: https://github.com/ku-plrg-classroom/docs/tree/main/cose215/cfg-cnf
     - index: 19
       date: 05/18
       title: Closure Properties of Context-Free Languages
       pdf: slides/lec19.pdf
       handout: slides/lec19-handout.pdf
+      homework:
+      - name: ex07
+        link: https://github.com/ku-plrg-classroom/docs/tree/main/cose215/cfl-closure
     - index: 20
       date: 05/20
       title: The Pumping Lemma for Context-Free Languages
