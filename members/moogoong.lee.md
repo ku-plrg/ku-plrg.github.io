@@ -13,7 +13,7 @@ Currently I am interested in programming languages and static analysis.
 <div style="clear: right;"></div>
 
 ## Educational Background
-- 2024.03 ~ Present - B.S. of Computer Science and Engineering, Korea University
+- 2022.03 ~ Present - B.S. of Computer Science and Engineering, Korea University
 
 ## Contact Information
 {% assign author=site.data.authors["Moogoong Lee"] %}
