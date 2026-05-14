@@ -14,8 +14,8 @@ program synthesis, formal languages and static analysis.
 <div style="clear: right;"></div>
 
 ## Educational Background
-- 2024.09 ~ Present - M.S. of Computer Science, Korea University
-- 2018.03 ~ 2024.08 - B.S. of Computer Science and Mathematics, Korea University
+- 2024.09 ~ Present - M.S. of Computer Science and Engineering, Korea University
+- 2018.03 ~ 2024.08 - B.S. of Computer Science and Engineering, Korea University
 
 ## Contact Information
 {% assign author=site.data.authors["Seongmin Ko"] %}
