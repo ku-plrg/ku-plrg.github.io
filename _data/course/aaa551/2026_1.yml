@@ -119,8 +119,8 @@ parts:
     - index: 20
       date: 05/19
       title: Type Operators
-      # pdf: slides/lec20.pdf
-      # handout: slides/lec20-handout.pdf
+      pdf: slides/lec20.pdf
+      handout: slides/lec20-handout.pdf
     - index: 21
       date: 05/21
       title: Curry-Howard Isomorphism
