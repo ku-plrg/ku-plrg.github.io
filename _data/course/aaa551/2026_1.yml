@@ -124,8 +124,8 @@ parts:
     - index: 21
       date: 05/21
       title: Curry-Howard Isomorphism
-      # pdf: slides/lec21.pdf
-      # handout: slides/lec21-handout.pdf
+      pdf: slides/lec21.pdf
+      handout: slides/lec21-handout.pdf
     - index: 22
       date: 05/26
       title: Dependent Types
