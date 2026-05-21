@@ -130,13 +130,6 @@ infos:
     rank: A
     rank-id: 1221
 
-  FASE:
-    tags: [SE]
-    bk21: 1
-    kiise: 우수
-    rank: B
-    rank-id: 554
-
   GECCO:
     tags: [SE]
     bk21: 1
@@ -251,21 +244,21 @@ list:
     place: Brussels, Belgium
 
   - name: ESOP
-    year: 2026
-    link: https://etaps.org/2026/conferences/esop/
+    year: 2027
+    link: https://etaps.org/2027/conferences/esop/
     deadline:
-      - "2025-06-03 23:59"
-      - "2025-10-16 23:59"
-    date: Apr 11 - Apr 16
-    place: Torino, Italy
+      - "2026-05-28 23:59"
+      - "2026-10-15 23:59"
+    date: Apr 10 - Apr 15
+    place: Copenhagen, Denmark
 
   - name: TACAS
-    year: 2026
-    link: https://etaps.org/2026/conferences/tacas/
+    year: 2027
+    link: https://etaps.org/2027/conferences/tacas/
     deadline:
-      - "2025-10-16 23:59"
-    date: Apr 11 - Apr 16
-    place: Torino, Italy
+      - "2026-10-15 23:59"
+    date: Apr 10 - Apr 15
+    place: Copenhagen, Denmark
 
   - name: CC
     year: 2026
@@ -331,14 +324,6 @@ list:
     date: May 18 - May 22
     place: Daejeon, South Korea
 
-  - name: FASE
-    year: 2026
-    link: https://etaps.org/2026/conferences/fase
-    deadline:
-      - "2025-10-16 23:59"
-    date: Apr 11 - Apr 16
-    place: Torino, Italy
-
   - name: GECCO
     year: 2026
     link: https://gecco-2026.sigevo.org/HomePage
@@ -357,13 +342,13 @@ list:
     place: The Hague, Netherlands
 
   - name: S&P
-    year: 2026
-    link: https://sp2026.ieee-security.org/
+    year: 2027
+    link: https://sp2027.ieee-security.org/
     deadline:
-      - "2025-06-05 23:59"
-      - "2025-11-13 23:59"
-    date: May 18 - May 21
-    place: San Francisco, California, USA
+      - "2026-06-11 23:59"
+      - "2026-11-17 23:59"
+    date: TBD
+    place: Montreal, Canada
 
   - name: USENIX Security
     year: 2027
