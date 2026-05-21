@@ -80,6 +80,8 @@ Please see [**Publications**](/publications).
 ## Professional Activities
 
 - **Committee Members**
+  - 2027 -
+    [**FSE**](https://conf.researchr.org/home/fse-2027)
   - 2026 -
     [**CCS**](https://www.sigsac.org/ccs/CCS2026/) /
     [**ASE**](https://conf.researchr.org/home/ase-2026) /
