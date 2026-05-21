@@ -166,8 +166,8 @@ parts:
     - index: 21
       date: 05/25
       title: Turing Machines (TMs)
-      # pdf: slides/lec21.pdf
-      # handout: slides/lec21-handout.pdf
+      pdf: slides/lec21.pdf
+      handout: slides/lec21-handout.pdf
       code: code/TM.scala
     - index: 22
       date: 05/27
