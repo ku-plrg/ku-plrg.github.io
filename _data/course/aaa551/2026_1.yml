@@ -129,11 +129,11 @@ parts:
     - index: 22
       date: 05/26
       title: Dependent Types
-      # pdf: slides/lec22.pdf
-      # handout: slides/lec22-handout.pdf
+      pdf: slides/lec22.pdf
+      handout: slides/lec22-handout.pdf
     - index: 23
       date: 05/28
-      title: Calculus of Constructions
+      title: Refinement Types
       # pdf: slides/lec23.pdf
       # handout: slides/lec23-handout.pdf
     - index: 24
