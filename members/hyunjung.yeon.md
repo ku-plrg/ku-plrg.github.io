@@ -1,4 +1,3 @@
-
 ---
 layout: member
 title: HyunJung Yeon (연현중)
