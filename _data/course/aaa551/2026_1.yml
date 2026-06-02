@@ -143,7 +143,7 @@ parts:
       handout: slides/lec24-handout.pdf
       homework:
       - name: hw02
-        # link: https://github.com/ku-plrg-classroom/docs/tree/main/aaa551/occur-ty
+        link: https://github.com/ku-plrg-classroom/docs/tree/main/aaa551/occur-ty
         date: 06/16
     - index: 25
       date: 06/04
