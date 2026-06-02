@@ -141,7 +141,7 @@ parts:
       title: Flow-Sensitive Types
       pdf: slides/lec24.pdf
       handout: slides/lec24-handout.pdf
-      mework:
+      homework:
       - name: hw02
         # link: https://github.com/ku-plrg-classroom/docs/tree/main/aaa551/occur-ty
         date: 06/16
