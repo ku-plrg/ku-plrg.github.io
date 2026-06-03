@@ -148,8 +148,8 @@ parts:
     - index: 25
       date: 06/04
       title: Substructural Types
-      # pdf: slides/lec25.pdf
-      # handout: slides/lec25-handout.pdf
+      pdf: slides/lec25.pdf
+      handout: slides/lec25-handout.pdf
     - index: 26
       date: 06/09
       title: Effect Systems
