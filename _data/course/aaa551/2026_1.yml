@@ -153,8 +153,8 @@ parts:
     - index: 26
       date: 06/09
       title: Effect Systems
-      # pdf: slides/lec26.pdf
-      # handout: slides/lec26-handout.pdf
+      pdf: slides/lec26.pdf
+      handout: slides/lec26-handout.pdf
     - index: 27
       date: 06/11
       title: Course Review
