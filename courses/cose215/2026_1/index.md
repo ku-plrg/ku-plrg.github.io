@@ -48,10 +48,12 @@ submission of homework.
     [2023](../exam/midterm-2023-1.pdf) /
     [2024](../exam/midterm-2024-1.pdf) /
     [2025](../exam/midterm-2025-1.pdf)
+    ([sol](../exam/midterm-2025-1-sol.pdf))
   - Final:
     [2023](../exam/final-2023-1.pdf) /
     [2024](../exam/final-2024-1.pdf) /
     [2025](../exam/final-2025-1.pdf)
+    ([sol](../exam/final-2025-1-sol.pdf))
 
 #### Policy on Academic Integrity
 
