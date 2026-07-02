@@ -7,8 +7,8 @@ aside:
 
 <img src="/assets/images/members/sangwoo.bae.jpg" class="profile-img">
 
-I'm Sangwoo Bae, an undergraduate student studying computer science in Korea University. 
-Currently I am interested in programming languages and static analysis.
+I'm Sangwoo Bae, an undergraduate student in Sogang University. 
+Currently I am interested in programming languages and software engineering.
 
 <div style="clear: right;"></div>
 
