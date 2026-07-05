@@ -1,4 +1,18 @@
 2026:
+  - title: "Synthesizing Parsing Expression Grammars via Analysis-based Pruning"
+    doi: accepted
+    authors:
+      - name: Seongmin Ko
+      - name: Jihyeok Park
+        corr: true
+    target:
+      name: SAS 2026
+      detail: Static Analysis Symposium
+      url: https://conf.researchr.org/home/splash-issta-2026/sas-2026
+    materials:
+      # pdf: TODO
+      # repo: TODO
+
   - title: "Selective Feature-Sensitive Coverage for Conformance Testing of Programming Languages"
     doi: 10.1145/3808231
     authors:
@@ -12,7 +26,8 @@
       name: TOSEM
       detail: Transactions on Software Engineering and Methodology
       url: https://dl.acm.org/journal/tosem
-    # pdf: TODO
+    materials:
+      # pdf: TODO
 
 2025:
   - title: "Verification and Classification of Exploits for Node.js Vulnerabilities"
