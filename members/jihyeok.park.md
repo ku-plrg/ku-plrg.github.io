@@ -83,6 +83,7 @@ Please see [**Publications**](/publications).
 
 - **Committee Members**
   - 2027 -
+    [**ICSE**](https://conf.researchr.org/home/icse-2027) /
     [**FSE**](https://conf.researchr.org/home/fse-2027)
   - 2026 -
     [**CCS**](https://www.sigsac.org/ccs/CCS2026/) /
