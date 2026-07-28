@@ -5,6 +5,11 @@ layout: article
 
 #### 2026 Spring
 
+- COSE212: Programming Languages
+- AAA705: Software Testing and Quality Assurance
+
+#### 2026 Spring
+
 - [COSE215: Theory of Computation](./cose215/2026_1/)
 - [AAA551: Programming Language Theory](./aaa551/2026_1/)
 
@@ -14,7 +19,7 @@ layout: article
 
 #### 2025 Spring
 
-- [COSE215: Theory of Computation](./cose215/2025_1/)
+- COSE215: Theory of Computation
 
 #### 2024 Fall
 
