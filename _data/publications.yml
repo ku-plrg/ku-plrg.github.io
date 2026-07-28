@@ -1,6 +1,6 @@
 2026:
 
-  - title: "Debun: Detecting Bundled JavaScript Libraries on Web using Property-Order Graphs"
+  - title: "MiniPoly: Automatic Extraction of Efficient JavaScript Polyfill  from Language Specification"
     doi: accepted
     authors:
       - name: Jungwoong Kim
@@ -13,9 +13,9 @@
       detail: IEEE/ACM International Conference on Automated Software Engineering
       url: https://conf.researchr.org/home/ase-2026
     materials:
-      # pdf: /assets/data/publication/ase25-park-debun.pdf
-      # slides: /assets/data/slides/2025/ase25-debun-slides.pdf
-      # repo: https://github.com/ku-plrg/debun-ase25
+      # pdf: TODO
+      # slides: TODO
+      # repo: TODO
 
   - title: "Synthesizing Parsing Expression Grammars via Analysis-based Pruning"
     doi: accepted
@@ -29,6 +29,7 @@
       url: https://conf.researchr.org/home/splash-issta-2026/sas-2026
     materials:
       # pdf: TODO
+      # slides: TODO
       # repo: TODO
 
   - title: "Selective Feature-Sensitive Coverage for Conformance Testing of Programming Languages"
