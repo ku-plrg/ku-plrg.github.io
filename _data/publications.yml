@@ -1,4 +1,22 @@
 2026:
+
+  - title: "Debun: Detecting Bundled JavaScript Libraries on Web using Property-Order Graphs"
+    doi: accepted
+    authors:
+      - name: Jungwoong Kim
+      - name: Youngmin Cho
+      - name: Jihyeok Park
+        corr: true
+    co-first: 2
+    target:
+      name: ASE 2026
+      detail: IEEE/ACM International Conference on Automated Software Engineering
+      url: https://conf.researchr.org/home/ase-2026
+    materials:
+      # pdf: /assets/data/publication/ase25-park-debun.pdf
+      # slides: /assets/data/slides/2025/ase25-debun-slides.pdf
+      # repo: https://github.com/ku-plrg/debun-ase25
+
   - title: "Synthesizing Parsing Expression Grammars via Analysis-based Pruning"
     doi: accepted
     authors:
