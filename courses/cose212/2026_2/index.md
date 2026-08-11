@@ -1,10 +1,7 @@
 ---
 layout: course
 ---
-## COSE212: Programming Languages, 2025 Fall
-
-**Note that this page is outdated. Please refer to the [recent course page](../).**
-{:.warning}
+## COSE212: Programming Languages, 2026 Fall
 
 The primary goal of this course is to learn **essential concepts** of
 **programming languages** by designing and implementing their interpreters.
@@ -16,14 +13,11 @@ The primary goal of this course is to learn **essential concepts** of
     [IT & General Education Center](https://maps.app.goo.gl/PAkjVWnfKNHNASo66)
     ([정운오IT교양관](https://naver.me/GPdYvCNz))
   - **Email:** [jihyeok_park@korea.ac.kr](mailto:jihyeok_park@korea.ac.kr)
-- **Lecture:** 13:30--14:45 Mondays and Wednesdays @ B102,
+- **Lecture:** 13:30--14:45 Mondays and Wednesdays @ 610,
   [IT & General Education Center](https://maps.app.goo.gl/PAkjVWnfKNHNASo66)
   ([정운오IT교양관](https://naver.me/GPdYvCNz))
 - **Teaching Assistant:** [cose212@googlegroups.com](mailto:cose212@googlegroups.com)
-  - [Seongmin Ko (고성민)](/members/seongmin.ko)
-  - [Hyunjoon Kim (김현준)](/members/hyunjoon.kim)
-  - [Minseok Choe (최민석)](/members/minseok.choe)
-- **Office hours:** 14:00--16:00 Tuesdays (by appointment)
+- **Office hours:** By appointment via e-mail
 
 ### Course Materials
 
@@ -35,6 +29,21 @@ The primary goal of this course is to learn **essential concepts** of
   - [**Types and Programming Languages**](https://www.cis.upenn.edu/~bcpierce/tapl/),
     [Benjamin C. Pierce](https://www.cis.upenn.edu/~bcpierce/), The MIT Press
 
+
+### Grading
+
+- **3 Homework Assignments: 15%**
+- **Midterm exam: 40%**
+- **Final exam: 40%**
+- **Attendance: 5%**
+  - **All or nothing:** you get the full **5%** if you attend at least **2/3**
+    of the checks, and **0%** otherwise.
+  - There is **no attendance check** in the first week; it starts on
+    **September 7**.
+
+**Homework #0** (the Scala tutorial) is **not graded**, but it is a preparation
+for the upcoming homework assignments, so submitting it as practice is strongly
+recommended.
 
 ### Attendances and Homework
 
@@ -61,15 +70,25 @@ grade of **F for the entire course**.
 
 ### Exams
 
-- **Midterm:** October 22 (Wed.) 18:30 -- 21:00 (150 min.)
-- **Final:** December 17 (Wed.) 18:30 -- 21:00 (150 min.)
+- **Midterm:** October 21 (Wed.) 18:30 -- 21:00 (150 min.)
+- **Final:** December 16 (Wed.) 18:30 -- 21:00 (150 min.)
 - **Previous Exams**
   - Midterm:
     [2023](../exam/midterm-2023-2.pdf) /
-    [2024](../exam/midterm-2024-2.pdf)
+    [2024](../exam/midterm-2024-2.pdf) /
+    [2025](../exam/midterm-2025-2.pdf)
   - Final:
     [2023](../exam/final-2023-2.pdf) /
-    [2024](../exam/final-2024-2.pdf)
+    [2024](../exam/final-2024-2.pdf) /
+    [2025](../exam/final-2025-2.pdf)
+
+### Lectures without Offline Classes
+
+On the four days listed below, there will be no offline lectures. Instead,
+lecture videos will be uploaded to the [LMS](https://lms.korea.ac.kr/).
+
+- October 5 (Mon.) / 7 (Wed.) -- International Conference
+- October 12 (Mon.) / 14 (Wed.) -- International Conference
 
 ### Installation of Scala and sbt
 
@@ -82,13 +101,15 @@ systems with easy access to huge ecosystems of libraries.
 The interactive **build tool** [sbt](https://www.scala-sbt.org/) is built for
 Scala and Java projects.
 
-Please download and install them using the following links:
-- **JDK >= 17** -
-  [https://www.oracle.com/java/technologies/downloads/](https://www.oracle.com/java/technologies/downloads/)
-- **sbt** -
-  [https://www.scala-sbt.org/download.html](https://www.scala-sbt.org/download.html)
-- **Scala** -
-  [https://www.scala-lang.org/download/](https://www.scala-lang.org/download/)
+Please follow the step-by-step installation guide:
+
+- [**Installation Guide (JDK and sbt)**](https://github.com/ku-plrg-classroom/docs/blob/main/INSTALL.md)
+
+<!-- TODO: remove these direct links once INSTALL.md is published. -->
+If you prefer to install them yourself:
+- **JDK 21 (LTS)** -- [Eclipse Temurin](https://adoptium.net/temurin/releases/?version=21)
+  (JDK 17 also works; JDK 25 or later is **not** supported)
+- **sbt** -- [https://www.scala-sbt.org/download/](https://www.scala-sbt.org/download/)
 
 
 ### Online Interpreters
@@ -116,4 +137,4 @@ In this course, you will implement interpreters for the following languages:
 ### Schedule
 
 <!-- load schedule with PDF files -->
-{%- include schedule.html data=site.data.course.cose212.2025_2 -%}
+{%- include schedule.html data=site.data.course.cose212.2026_2 -%}

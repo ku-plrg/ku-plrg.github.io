@@ -3,9 +3,9 @@ title: Courses
 layout: article
 ---
 
-#### 2026 Spring
+#### 2026 Fall
 
-- COSE212: Programming Languages
+- [COSE212: Programming Languages](./cose212/2026_2/)
 - AAA705: Software Testing and Quality Assurance
 
 #### 2026 Spring
