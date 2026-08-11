@@ -1,4 +1,4 @@
-last_update: "2026-07-28"
+last_update: "2026-08-12"
 
 # ------------------------------------------------------------------------------
 infos:
@@ -178,46 +178,46 @@ list:
     place: Mexico City, Mexico
 
   - name: PLDI
-    year: 2026
-    link: https://pldi26.sigplan.org
+    year: 2027
+    link: https://pldi27.sigplan.org/
     deadline:
-      - "2025-11-13 23:59"
-    date: Jun 15 - Jun 19
-    place: Boulder, Colorado, United States
+      - "2026-11-12 23:59"
+    date: Jun 5 - Jun 11
+    place: Atlanta, Georgia, United States
 
   - name: OOPSLA
-    year: 2026
-    link: https://conf.researchr.org/track/splash-2026/oopsla-2026
+    year: 2027
+    link: https://conf.researchr.org/track/splash-2027/splashoopsla2027
     deadline:
-      - "2025-10-10 23:59"
-      - "2026-03-17 23:59"
-    date: Oct 3 - Oct 9
-    place: Oakland, California, United States
+      - "2026-10-14 23:59"
+      - "2027-04-07 23:59"
+    date: Oct 10 - Oct 15
+    place: Prague, Czechia
 
   - name: CAV
-    year: 2026
-    link: https://conferences.i-cav.org/2026/
+    year: 2027
+    link: https://conferences.i-cav.org/2027/
     deadline:
-      - "2026-01-28 23:59"
-    date: Jul 26 - Jul 29
-    place: Lisbon, Portugal
+      - "2027-01-20 23:59"
+    date: Jul 19 - Jul 23
+    place: Amsterdam, The Netherlands
 
   - name: ASPLOS
     year: 2027
-    link: https://www.asplos-conference.org/asplos2026/call-for-papers-asplos27/
+    link: https://www.asplos-conference.org/asplos2027/
     deadline:
       - "2026-04-15 23:59"
       - "2026-09-09 23:59"
     date: Apr 11 - Apr 15
-    place: Crete, Greece
+    place: Heraklion, Crete, Greece
 
   - name: PPoPP
     year: 2027
     link: https://conf.researchr.org/home/PPoPP-2027
     deadline:
       - "2026-08-03 23:59"
-    date: Mar 30 - Mar 24
-    place: TBD
+    date: Mar 20 - Mar 24
+    place: Salt Lake City, Utah, United States
 
   - name: ICFP
     year: 2026
@@ -225,7 +225,7 @@ list:
     deadline:
       - "2026-02-19 23:59"
     date: Aug 24 - Aug 29
-    place: United States
+    place: Indianapolis, Indiana, United States
 
   - name: ECOOP
     year: 2027
@@ -265,7 +265,7 @@ list:
     year: 2026
     link: https://conf.researchr.org/home/splash-issta-2026/sas-2026
     deadline:
-      - "2026-05-01 23:59"
+      - "2026-05-07 23:59"
     date: Oct 6 - Oct 8
     place: Oakland, California, United States
 
@@ -302,12 +302,12 @@ list:
     place: Munich, Germany
 
   - name: ISSTA
-    year: 2026
-    link: https://conf.researchr.org/home/issta-2026
+    year: 2027
+    link: https://conf.researchr.org/home/issta-2027
     deadline:
-      - "2026-01-29 23:59"
-    date: Oct 3 - Oct 9
-    place: Oakland, California, United States
+      - "2027-01-11 23:59"
+    date: Sep 7 - Sep 10
+    place: Singapore
 
   - name: ICST
     year: 2027
@@ -346,12 +346,12 @@ list:
 
   - name: NDSS
     year: 2027
-    link: https://www.ndss-symposium.org/ndss2027/submissions/call-for-papers/
+    link: https://www.ndss-symposium.org/ndss2027/
     deadline:
       - "2026-05-06 23:59"
       - "2026-08-19 23:59"
-    date: TBD
-    place: TBD
+    date: Mar 22 - Mar 26
+    place: Seoul, Republic of Korea
 
   - name: ASIACCS
     year: 2027
