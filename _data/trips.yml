@@ -20,7 +20,7 @@
     place     : ASE 2025
     place-url : https://conf.researchr.org/home/ase-2025
     location  : Seoul, South Korea
-    photos    : Ka5P6eAhVHcKAcyg7
+    photos    : qBsWdDxKBmrHHpY76
     talk      :
       - pdf     : /assets/data/slides/2025/ase25-debun-slides.pdf
       - pdf     : /assets/data/slides/2025/ase25-src-slides.pdf
@@ -35,7 +35,7 @@
     place     : SIGPL Summer School 2025
     place-url : https://sigpl.or.kr/school/2025s/
     location  : 서강대학교, 서울, 대한민국
-    photos    : BW1UdqaEgRW6Ak5u5
+    photos    : fmiGtgJAq9jCHvZ29
     talk      :
       - pdf     : /assets/data/slides/2025/sigpl25-summer-park.pdf
 
@@ -44,7 +44,7 @@
     place     : ECOOP 2025
     place-url : https://2025.ecoop.org/
     location  : Bergen, Norway
-    photos    : LGbrUtiuHcUVE9h4A
+    photos    : yEpN9EEGW1j7t2eAA
     talk      :
       - pdf     : /assets/data/slides/2025/plss25-esmeta.pdf
 
@@ -53,7 +53,7 @@
     place     : FSE 2025
     place-url : https://conf.researchr.org/home/fse-2025
     location  : Trondheim, Norway
-    photos    : kdcVpzhza9VdJux7A
+    photos    : MW7XTnSLJxM9h5bx8
     talk      :
       - pdf     : /assets/data/slides/2025/fse25-demo-slides.pdf
         youtube : ZPZtfycDoJ0
@@ -66,7 +66,7 @@
     place     : PLDI 2025
     place-url : https://pldi25.sigplan.org/
     location  : Seoul, South Korea
-    photos    : ctis5VitUKdR1YBT6
+    photos    : 9qUWTHwVDMaRnPESA
     talk      :
       - pdf     : /assets/data/slides/2025/rpls25-esmeta.pdf
     report    :
@@ -82,21 +82,21 @@
     place     : OOPSLA 2024
     place-url : https://2024.splashcon.org/track/splash-2024-oopsla
     location  : Pasadena, CA, USA
-    photos    : HQcnHpMmdwkv5x26A
+    photos    : f5VwauCi2bHrcpfr9
 
   - date-from : 2024.08.21
     date-to   : 2024.08.23
     place     : SIGPL Summer School 2024
     place-url : https://sigpl.or.kr/school/2024s/
     location  : 성균관대학교, 수원, 대한민국
-    photos    : X5PEqMPsM4K6NoNj7
+    photos    : 4QPPdhXugb5pf9Uz8
 
   - date-from : 2024.06.26
     date-to   : 2024.06.28
     place     : PLDI 2024
     place-url : https://pldi24.sigplan.org/
     location  : Copenhagen, Denmark
-    photos    : 2joTXessSSBaywDV6
+    photos    : reQXTtQ4s1Tai9MH9
     report    :
       - pdf     : /assets/data/report/2024/pldi24-report-jungyeom.pdf
       - pdf     : /assets/data/report/2024/pldi24-report-minseok.pdf
@@ -106,7 +106,7 @@
     place     : Técnico Lisboa
     place-url : https://tecnico.ulisboa.pt/en/
     location  : Lisbon, Portugal
-    photos    : fBNnmocbaHYdTbRi6
+    photos    : RVVPPeFFXPKa3TQs7
     talk      :
       - pdf     : /assets/data/slides/2024/ist24-esmeta.pdf
     report    :
@@ -118,7 +118,7 @@
     place     : SIGPL Winter School 2024
     place-url : https://sigpl.or.kr/school/2024w/
     location  : KAIST, 대전, 대한민국
-    photos    : 9MmAWnxHv2wskaYJ7
+    photos    : X7y35dS5zZzhSYNs7
 
 2023:
 
@@ -127,6 +127,6 @@
     place     : SIGPL Summer School 2023
     place-url : https://sigpl.or.kr/school/2023s/
     location  : 강원대학교, 춘천, 대한민국
-    photos    : 9t685k7ZTf74gdrz8
+    photos    : h4tePZBh91JsiSmo8
     talk      :
       - pdf     : /assets/data/slides/2023/sigpl23-summer-park.pdf
