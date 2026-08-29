@@ -1,5 +1,18 @@
 2026:
 
+  - title: "Toward Automatically Detecting Cross-Engine Asymptotic Complexity Divergence in JavaScript"
+    doi: accepted
+    authors:
+      - name: Minseok Choe
+    target:
+      name: ASE 2026 SRC
+      detail: IEEE/ACM International Conference on Automated Software Engineering - Student Research Competition
+      url: https://conf.researchr.org/home/ase-2026
+    materials:
+      # pdf: TODO
+      # slides: TODO
+      # poster: TODO
+
   - title: "MiniPoly: Automatic Extraction of Efficient JavaScript Polyfill from Language Specification"
     doi: accepted
     authors:
