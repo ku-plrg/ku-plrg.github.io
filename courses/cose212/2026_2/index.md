@@ -32,41 +32,23 @@ The primary goal of this course is to learn **essential concepts** of
 
 ### Grading
 
-- **3 Homework Assignments: 15%**
-- **Midterm exam: 40%**
-- **Final exam: 40%**
-- **Attendance: 5%**
-  - **All or nothing:** you get the full **5%** if you attend at least **2/3**
+- **3 Projects: 0%**
+  - You will implement **three** different mini languages: **MiniFSharp**,
+    **MiniPython**, and **MiniScala**.
+  - They are **not graded** and need **no submission**. However, some exam
+    questions might be related to them, so we **strongly recommend** solving
+    them by yourself.
+- **Midterm exam: 45%**
+- **Final exam: 45%**
+- **Attendance: 10%**
+  - **All or nothing:** you get the full **10%** if you attend at least **2/3**
     of the checks, and **0%** otherwise.
   - There is **no attendance check** in the first week; it starts on
     **September 7**.
 
-**Homework #0** (the Scala tutorial) is **not graded**, but it is a preparation
-for the upcoming homework assignments, so submitting it as practice is strongly
-recommended.
+### Attendance
 
-### Attendances and Homework
-
-Please use the [LMS](https://lms.korea.ac.kr/) for the attendance check and the
-submission of homework.
-
-#### Policy on Academic Integrity
-
-The use of Large Language Models (LLMs), such as ChatGPT, is permitted and
-encouraged. However, students remain fully responsible for the **originality**
-and **comprehension** of all submitted work. The following rules apply when
-evaluating coding assignments. **Violations will be treated as academic
-dishonesty** and will result in one of the following consequences: a grade of
-**zero (0) on the assignment**, or, in the most serious cases, an automatic
-grade of **F for the entire course**.
-
-* Submissions that exhibit direct **copy-and-paste** similarity with other
-  students' work, or copying with superficial or uninformed modifications,
-  constitute **academic dishonesty**.
-
-* The instructor reserves the right to require an **oral explanation** of any
-  submitted code. Inability to provide a clear, reasonable, and coherent
-  explanation will be deemed proof that the work is **not the student's own**.
+Please use the [LMS](https://lms.korea.ac.kr/) for the attendance check.
 
 ### Exams
 
@@ -74,13 +56,19 @@ grade of **F for the entire course**.
 - **Final:** December 16 (Wed.) 18:30 -- 21:00 (150 min.)
 - **Previous Exams**
   - Midterm:
-    [2023](../exam/midterm-2023-2.pdf) /
-    [2024](../exam/midterm-2024-2.pdf) /
+    [2023](../exam/midterm-2023-2.pdf)
+    ([sol](../exam/midterm-2023-2-sol.pdf)) /
+    [2024](../exam/midterm-2024-2.pdf)
+    ([sol](../exam/midterm-2024-2-sol.pdf)) /
     [2025](../exam/midterm-2025-2.pdf)
+    ([sol](../exam/midterm-2025-2-sol.pdf))
   - Final:
-    [2023](../exam/final-2023-2.pdf) /
-    [2024](../exam/final-2024-2.pdf) /
+    [2023](../exam/final-2023-2.pdf)
+    ([sol](../exam/final-2023-2-sol.pdf)) /
+    [2024](../exam/final-2024-2.pdf)
+    ([sol](../exam/final-2024-2-sol.pdf)) /
     [2025](../exam/final-2025-2.pdf)
+    ([sol](../exam/final-2025-2-sol.pdf))
 
 ### Lectures without Offline Classes
 

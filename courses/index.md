@@ -15,7 +15,7 @@ layout: article
 
 #### 2025 Fall
 
-- [COSE212: Programming Languages](./cose212/2025_2/)
+- COSE212: Programming Languages
 
 #### 2025 Spring
 
