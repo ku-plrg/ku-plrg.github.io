@@ -23,6 +23,15 @@ layout: course
     by Paul Ammann and Jeff Offutt.
   - [**Why Programs Fail** (2nd Ed.)](https://www.whyprogramsfail.com/)
     by Andreas Zeller.
+  - [**CS453: Automated Software Testing**](https://coinse.github.io/teaching/2026/cs453/)
+    by [Shin Yoo](https://coinse.github.io/) (KAIST) -- lecture slides on
+    closely related topics.
+
+### Grading
+
+- **4 Homework Assignments: 80%**
+  - Each assignment is worth **20%**.
+- **Attendance: 20%**
 
 ### Lectures without Offline Classes
 
