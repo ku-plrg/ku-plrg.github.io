@@ -4,7 +4,7 @@ layout: course
 ### COSE405: Computer Science Colloquium, 2026 Fall
 
 Weekly **invited talks** by speakers from academic institutions and industry.
-Each session is a **50-minute talk** followed by an on-the-spot **Q&A**.
+Each talk runs **16:45--17:45**, including an on-the-spot **Q&A**.
 
 #### Course Information
 
@@ -16,6 +16,8 @@ Each session is a **50-minute talk** followed by an on-the-spot **Q&A**.
 - **Lecture:** 16:30--17:45 Wednesdays @ 301,
   [Aegineung](https://goo.gl/maps/ZvwWbCB9WAuXgjs2A)
   ([애기능생활관](https://naver.me/GEAdeVYu))
+  - **Attendance** is open **16:30--16:45** — finish the check before the talk
+    starts at 16:45.
 - **Office hours:** By appointment via e-mail
 - **Materials:** each speaker is asked for **reading material** or their
   **slides**, shared after the talk on the [LMS](https://lms.korea.ac.kr/).
