@@ -1,7 +1,7 @@
 ---
 layout: course
 ---
-## COSE212: Programming Languages, 2025 Fall
+### COSE212: Programming Languages, 2025 Fall
 
 **Note that this page is outdated. Please refer to the [recent course page](../).**
 {:.warning}
@@ -9,7 +9,7 @@ layout: course
 The primary goal of this course is to learn **essential concepts** of
 **programming languages** by designing and implementing their interpreters.
 
-### Course Information
+#### Course Information
 
 - **Instructor:** [Jihyeok Park (박지혁)](/members/jihyeok.park)
   - **Office:** 507,
@@ -25,7 +25,7 @@ The primary goal of this course is to learn **essential concepts** of
   - [Minseok Choe (최민석)](/members/minseok.choe)
 - **Office hours:** 14:00--16:00 Tuesdays (by appointment)
 
-### Course Materials
+#### Course Materials
 
 - **Self-contained lecture notes are provided.**
 - Reference:
@@ -36,12 +36,12 @@ The primary goal of this course is to learn **essential concepts** of
     [Benjamin C. Pierce](https://www.cis.upenn.edu/~bcpierce/), The MIT Press
 
 
-### Attendances and Homework
+#### Attendances and Homework
 
 Please use the [LMS](https://lms.korea.ac.kr/) for the attendance check and the
 submission of homework.
 
-#### Policy on Academic Integrity
+##### Policy on Academic Integrity
 
 The use of Large Language Models (LLMs), such as ChatGPT, is permitted and
 encouraged. However, students remain fully responsible for the **originality**
@@ -59,7 +59,7 @@ grade of **F for the entire course**.
   submitted code. Inability to provide a clear, reasonable, and coherent
   explanation will be deemed proof that the work is **not the student's own**.
 
-### Exams
+#### Exams
 
 - **Midterm:** October 22 (Wed.) 18:30 -- 21:00 (150 min.)
 - **Final:** December 17 (Wed.) 18:30 -- 21:00 (150 min.)
@@ -71,7 +71,7 @@ grade of **F for the entire course**.
     [2023](../exam/final-2023-2.pdf) /
     [2024](../exam/final-2024-2.pdf)
 
-### Installation of Scala and sbt
+#### Installation of Scala and sbt
 
 [Scala](https://www.scala-lang.org/) is a general-purpose programming language
 combining **object-oriented** and **functional** programming in one concise,
@@ -91,7 +91,7 @@ Please download and install them using the following links:
   [https://www.scala-lang.org/download/](https://www.scala-lang.org/download/)
 
 
-### Online Interpreters
+#### Online Interpreters
 
 In this course, you will implement interpreters for the following languages:
 
@@ -113,7 +113,7 @@ In this course, you will implement interpreters for the following languages:
 </div>
 
 
-### Schedule
+#### Schedule
 
 <!-- load schedule with PDF files -->
 {%- include schedule.html data=site.data.course.cose212.2025_2 -%}

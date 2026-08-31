@@ -1,9 +1,13 @@
 ---
 layout: course
 ---
-## AAA705: Software Testing and Quality Assurance, 2026 Fall
+### AAA705: Software Testing and Quality Assurance, 2026 Fall
 
-### Course Information
+The primary goal of this course is to learn **automated techniques** for
+**software testing**: how to generate tests, measure their quality, and use
+them to locate faults.
+
+#### Course Information
 
 - **Instructor:** [Jihyeok Park (박지혁)](/members/jihyeok.park)
   - **Office:** 507,
@@ -15,7 +19,7 @@ layout: course
   ([애기능생활관](https://naver.me/GEAdeVYu))
 - **Office hours:** By appointment via e-mail
 
-### Course Materials
+#### Course Materials
 
 - **Self-contained lecture notes are provided.**
 - References:
@@ -27,13 +31,13 @@ layout: course
     by [Shin Yoo](https://coinse.github.io/) (KAIST) -- lecture slides on
     closely related topics.
 
-### Grading
+#### Grading
 
 - **4 Homework Assignments: 80%**
   - Each assignment is worth **20%**.
 - **Attendance: 20%**
 
-### Lectures without Offline Classes
+#### Lectures without Offline Classes
 
 There will be no offline lectures on the days listed below. The four homework
 assignments take the place of these class hours.
@@ -41,7 +45,7 @@ assignments take the place of these class hours.
 - October 5 (Mon.) -- National Foundation Day (substitute holiday)
 - October 7 (Wed.) / 12 (Mon.) / 14 (Wed.) -- Business trip
 
-### Schedule
+#### Schedule
 
 <!-- load schedule with PDF files -->
 {%- include schedule.html data=site.data.course.aaa705.2026_2 -%}

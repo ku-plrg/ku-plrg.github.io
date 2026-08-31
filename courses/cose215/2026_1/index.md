@@ -3,9 +3,9 @@ layout: course
 mermaid: false # disable default mermaid rendering for this page
 mathjax: false # disable default MathJax rendering for this page
 ---
-## COSE215: Theory of Computation, 2026 Spring
+### COSE215: Theory of Computation, 2026 Spring
 
-### Course Information
+#### Course Information
 
 - **Instructor:** [Jihyeok Park (박지혁)](/members/jihyeok.park)
   - **Office:** 507,
@@ -21,7 +21,7 @@ mathjax: false # disable default MathJax rendering for this page
   - [Sungmin Park (박성민)](/members/sungmin.park)
 - **Office hours:** 14:00--16:00 Tuesdays (by appointment)
 
-### Course Materials
+#### Course Materials
 
 - **Self-contained lecture notes are provided.**
 - **Reference:** [Introduction to Automata Theory, Languages, and Computation (3rd Edition)](http://infolab.stanford.edu/~ullman/ialc.html) <br>
@@ -29,7 +29,7 @@ mathjax: false # disable default MathJax rendering for this page
   width=200px/>](https://www.amazon.com/exec/obidos/ASIN/0321455363/acmorg-20)
 
 
-### Grading
+#### Grading
 
 Please use the [LMS](https://lms.korea.ac.kr/) for the attendance check and the
 submission of homework.
@@ -39,7 +39,7 @@ submission of homework.
 - **Final:** 40%
 - **Attendance:** 10%
 
-### Exams
+#### Exams
 
 - **Midterm:** April 22 (Wed.) 13:30 -- 14:45 (75 min.)
 - **Final:** June 17 (Wed.) 13:30 -- 14:45 (75 min.)
@@ -55,7 +55,7 @@ submission of homework.
     [2025](../exam/final-2025-1.pdf)
     ([sol](../exam/final-2025-1-sol.pdf))
 
-#### Policy on Academic Integrity
+##### Policy on Academic Integrity
 
 The use of Large Language Models (LLMs), such as ChatGPT, is permitted and
 encouraged. However, students remain fully responsible for the **originality**
@@ -73,7 +73,7 @@ grade of **F for the entire course**.
   submitted code. Inability to provide a clear, reasonable, and coherent
   explanation will be deemed proof that the work is **not the student's own**.
 
-### Installation of Scala and sbt
+#### Installation of Scala and sbt
 
 [Scala](https://www.scala-lang.org/) is a general-purpose programming language
 combining **object-oriented** and **functional** programming in one concise,
@@ -93,13 +93,13 @@ Please download and install them using the following links:
   [https://www.scala-lang.org/download/](https://www.scala-lang.org/download/)
 
 
-### Online Automata Simulator
+#### Online Automata Simulator
 
 <!-- load schedule with PDF files -->
 {%- include automata-viewer.html -%}
 
 
-### Schedule
+#### Schedule
 
 <!-- load schedule with PDF files -->
 {%- include schedule.html data=site.data.course.cose215.2026_1 -%}

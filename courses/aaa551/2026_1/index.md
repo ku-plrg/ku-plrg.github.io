@@ -1,9 +1,9 @@
 ---
 layout: course
 ---
-## AAA551: Programming Language Theory, 2026 Spring
+### AAA551: Programming Language Theory, 2026 Spring
 
-### Course Information
+#### Course Information
 
 - **Instructor:** [Jihyeok Park (박지혁)](/members/jihyeok.park)
   - **Office:** 507,
@@ -15,7 +15,7 @@ layout: course
   ([정운오IT교양관](https://naver.me/GPdYvCNz))
 - **Office hours:** 14:00--16:00 Tuesdays (by appointment)
 
-### Course Materials
+#### Course Materials
 
 - **Self-contained lecture notes are provided.**
 - **Reference:**
@@ -27,7 +27,7 @@ layout: course
     by Xavier Rival and Kwangkeun Yi.
 
 
-### Grading
+#### Grading
 
 Please use the [LMS](https://lms.korea.ac.kr/) for the attendance check and the
 submission of homework.
@@ -35,7 +35,7 @@ submission of homework.
 - **Homework:** 80%
 - **Attendance:** 20%
 
-### Installation of Scala and sbt
+#### Installation of Scala and sbt
 
 [Scala](https://www.scala-lang.org/) is a general-purpose programming language
 combining **object-oriented** and **functional** programming in one concise,
@@ -55,7 +55,7 @@ Please download and install them using the following links:
   [https://www.scala-lang.org/download/](https://www.scala-lang.org/download/)
 
 
-### Schedule
+#### Schedule
 
 <!-- load schedule with PDF files -->
 {%- include schedule.html data=site.data.course.aaa551.2026_1 -%}

@@ -1,12 +1,12 @@
 ---
 layout: course
 ---
-## COSE212: Programming Languages, 2024 Fall
+### COSE212: Programming Languages, 2024 Fall
 
 **Note that this page is outdated. Please refer to the [recent course page](../).**
 {:.warning}
 
-### Course Information
+#### Course Information
 
 - **Instructor:** [Jihyeok Park (박지혁)](/members/jihyeok.park)
   - **Office:** 609A,
@@ -21,7 +21,7 @@ layout: course
   - [Seongmin Ko (고성민)](/members/seongmin.ko)
 - **Office hours:** 14:00--16:00 Tuesdays (by appointment)
 
-### Course Materials
+#### Course Materials
 
 - **Self-contained lecture notes are provided.**
 - Reference:
@@ -32,20 +32,20 @@ layout: course
     [Benjamin C. Pierce](https://www.cis.upenn.edu/~bcpierce/), The MIT Press
 
 
-### Attendances and Homework
+#### Attendances and Homework
 
 Please use the [Blackboard](https://kulms.korea.ac.kr) for the attendance check
 and the submission of homework.
 
 
-### Discussion and Questions
+#### Discussion and Questions
 
 Please use the [CampusWire](https://campuswire.com) for discussion
 and questions about the course.
 - Link: [https://campuswire.com/c/G2CA06AE4](https://campuswire.com/c/G2CA06AE4)
 - Passcode: See the [Blackboard](https://kulms.korea.ac.kr) announcement.
 
-### Exams
+#### Exams
 
 - **Midterm:** October 23 (Wed.) 18:30 -- 21:00 (150 min.)
 - **Final:** December 18 (Wed.) 18:30 -- 21:00 (150 min.)
@@ -53,7 +53,7 @@ and questions about the course.
   - Midterm: [2023](../2023_2/midterm.pdf)
   - Final: [2023](../2023_2/final.pdf)
 
-### Installation of Scala and sbt
+#### Installation of Scala and sbt
 
 [Scala](https://www.scala-lang.org/) is a general-purpose programming language
 combining **object-oriented** and **functional** programming in one concise,
@@ -70,7 +70,7 @@ Please download and install them using the following links:
 - **Scala** - [https://www.scala-lang.org/download/](https://www.scala-lang.org/download/)
 
 
-### Online Interpreters
+#### Online Interpreters
 
 In this course, you will implement interpreters for the following languages:
 
@@ -92,7 +92,7 @@ In this course, you will implement interpreters for the following languages:
 </div>
 
 
-### Schedule
+#### Schedule
 
 <!-- load schedule with PDF files -->
 {%- include schedule.html data=site.data.course.cose212.2024_2 -%}

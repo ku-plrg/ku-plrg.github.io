@@ -1,9 +1,9 @@
 ---
 layout: course
 ---
-## SWS121: Secure Programming, 2024 Spring
+### SWS121: Secure Programming, 2024 Spring
 
-### Course Information
+#### Course Information
 
 - **Instructor:** [Jihyeok Park (박지혁)](/members/jihyeok.park)
   - **Office:** 609A,
@@ -14,7 +14,7 @@ layout: course
   [Aegineung](https://goo.gl/maps/ZvwWbCB9WAuXgjs2A)
   ([애기능생활관](https://naver.me/GEAdeVYu))
 
-### Course Materials
+#### Course Materials
 
 - **Self-contained lecture notes are provided.**
 - References:
@@ -22,7 +22,7 @@ layout: course
   - [Scala 3 Book](https://docs.scala-lang.org/scala3/book/introduction.html)
   - [Scala 3 Reference](https://docs.scala-lang.org/scala3/reference/index.html)
 
-### Installation of Scala and sbt
+#### Installation of Scala and sbt
 
 [Scala](https://www.scala-lang.org/) is a general-purpose programming language
 combining **object-oriented** and **functional** programming in one concise,
@@ -41,7 +41,7 @@ Please download and install them using the following links:
 - **Scala** -
   [https://www.scala-lang.org/download/](https://www.scala-lang.org/download/)
 
-### Schedule
+#### Schedule
 
 <!-- load schedule with PDF files -->
 {%- include schedule.html data=site.data.course.sws121.2024_1 -%}

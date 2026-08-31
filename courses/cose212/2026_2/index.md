@@ -1,12 +1,12 @@
 ---
 layout: course
 ---
-## COSE212: Programming Languages, 2026 Fall
+### COSE212: Programming Languages, 2026 Fall
 
 The primary goal of this course is to learn **essential concepts** of
 **programming languages** by designing and implementing their interpreters.
 
-### Course Information
+#### Course Information
 
 - **Instructor:** [Jihyeok Park (박지혁)](/members/jihyeok.park)
   - **Office:** 507,
@@ -19,7 +19,7 @@ The primary goal of this course is to learn **essential concepts** of
 - **Teaching Assistant:** [cose212@googlegroups.com](mailto:cose212@googlegroups.com)
 - **Office hours:** By appointment via e-mail
 
-### Course Materials
+#### Course Materials
 
 - **Self-contained lecture notes are provided.**
 - Reference:
@@ -30,7 +30,7 @@ The primary goal of this course is to learn **essential concepts** of
     [Benjamin C. Pierce](https://www.cis.upenn.edu/~bcpierce/), The MIT Press
 
 
-### Grading
+#### Grading
 
 - **3 Projects: 0%**
   - You will implement **three** different mini languages: **MiniFSharp**,
@@ -46,11 +46,11 @@ The primary goal of this course is to learn **essential concepts** of
   - There is **no attendance check** in the first week; it starts on
     **September 7**.
 
-### Attendance
+#### Attendance
 
 Please use the [LMS](https://lms.korea.ac.kr/) for the attendance check.
 
-### Exams
+#### Exams
 
 - **Midterm:** October 21 (Wed.) 18:30 -- 21:00 (150 min.)
 - **Final:** December 16 (Wed.) 18:30 -- 21:00 (150 min.)
@@ -70,7 +70,7 @@ Please use the [LMS](https://lms.korea.ac.kr/) for the attendance check.
     [2025](../exam/final-2025-2.pdf)
     ([sol](../exam/final-2025-2-sol.pdf))
 
-### Lectures without Offline Classes
+#### Lectures without Offline Classes
 
 On the four days listed below, there will be no offline lectures. Instead,
 lecture videos will be uploaded to the [LMS](https://lms.korea.ac.kr/).
@@ -78,7 +78,7 @@ lecture videos will be uploaded to the [LMS](https://lms.korea.ac.kr/).
 - October 5 (Mon.) / 7 (Wed.) -- International Conference
 - October 12 (Mon.) / 14 (Wed.) -- International Conference
 
-### Installation of Scala and sbt
+#### Installation of Scala and sbt
 
 [Scala](https://www.scala-lang.org/) is a general-purpose programming language
 combining **object-oriented** and **functional** programming in one concise,
@@ -100,7 +100,7 @@ If you prefer to install them yourself:
 - **sbt** -- [https://www.scala-sbt.org/download/](https://www.scala-sbt.org/download/)
 
 
-### Online Interpreters
+#### Online Interpreters
 
 In this course, you will implement interpreters for the following languages:
 
@@ -122,7 +122,7 @@ In this course, you will implement interpreters for the following languages:
 </div>
 
 
-### Schedule
+#### Schedule
 
 <!-- load schedule with PDF files -->
 {%- include schedule.html data=site.data.course.cose212.2026_2 -%}

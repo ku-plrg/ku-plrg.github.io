@@ -3,12 +3,12 @@ layout: course
 mermaid: false # disable default mermaid rendering for this page
 mathjax: false # disable default MathJax rendering for this page
 ---
-## COSE215: Theory of Computation, 2025 Spring
+### COSE215: Theory of Computation, 2025 Spring
 
 **Note that this page is outdated. Please refer to the [recent course page](../).**
 {:.warning}
 
-### Course Information
+#### Course Information
 
 - **Instructor:** [Jihyeok Park (박지혁)](/members/jihyeok.park)
   - **Office:** 609A,
@@ -24,7 +24,7 @@ mathjax: false # disable default MathJax rendering for this page
   - [Hyunjoon Kim (김현준)](/members/hyunjoon.kim)
 - **Office hours:** 14:00--16:00 Tuesdays (by appointment)
 
-### Course Materials
+#### Course Materials
 
 - **Self-contained lecture notes are provided.**
 - **Reference:** [Introduction to Automata Theory, Languages, and Computation (3rd Edition)](http://infolab.stanford.edu/~ullman/ialc.html) <br>
@@ -38,7 +38,7 @@ mathjax: false # disable default MathJax rendering for this page
     [2023](../exam/final-2023-1.pdf) /
     [2024](../exam/final-2024-1.pdf)
 
-### Installation of Scala and sbt
+#### Installation of Scala and sbt
 
 [Scala](https://www.scala-lang.org/) is a general-purpose programming language
 combining **object-oriented** and **functional** programming in one concise,
@@ -58,13 +58,13 @@ Please download and install them using the following links:
   [https://www.scala-lang.org/download/](https://www.scala-lang.org/download/)
 
 
-### Online Automata Simulator
+#### Online Automata Simulator
 
 <!-- load schedule with PDF files -->
 {%- include automata-viewer.html -%}
 
 
-### Schedule
+#### Schedule
 
 <!-- load schedule with PDF files -->
 {%- include schedule.html data=site.data.course.cose215.2025_1 -%}

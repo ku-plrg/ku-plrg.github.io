@@ -1,12 +1,12 @@
 ---
 layout: course
 ---
-## COSE215: Theory of Computation, 2024 Spring
+### COSE215: Theory of Computation, 2024 Spring
 
 **Note that this page is outdated. Please refer to the [recent course page](../).**
 {:.warning}
 
-### Course Information
+#### Course Information
 
 - **Instructor:** [Jihyeok Park (박지혁)](/members/jihyeok.park)
   - **Office:** 609A,
@@ -19,7 +19,7 @@ layout: course
 - **Teaching Assistant:** [Jungyeom Kim (김준겸)](/members/jungyeom.kim)
 - **Office hours:** 14:00--16:00 Tuesdays (by appointment)
 
-### Course Materials
+#### Course Materials
 
 - **Self-contained lecture notes are provided.**
 - **Reference:** [Introduction to Automata Theory, Languages, and Computation (3rd Edition)](http://infolab.stanford.edu/~ullman/ialc.html) <br>
@@ -29,7 +29,7 @@ layout: course
   - Midterm: [2023](../2023_1/midterm.pdf)
   - Final: [2023](../2023_1/final.pdf)
 
-### Installation of Scala and sbt
+#### Installation of Scala and sbt
 
 [Scala](https://www.scala-lang.org/) is a general-purpose programming language
 combining **object-oriented** and **functional** programming in one concise,
@@ -49,7 +49,7 @@ Please download and install them using the following links:
   [https://www.scala-lang.org/download/](https://www.scala-lang.org/download/)
 
 
-### Schedule
+#### Schedule
 
 <!-- load schedule with PDF files -->
 {%- include schedule.html data=site.data.course.cose215.2024_1 -%}

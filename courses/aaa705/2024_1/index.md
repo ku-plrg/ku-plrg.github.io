@@ -1,12 +1,12 @@
 ---
 layout: course
 ---
-## AAA705: Software Testing and Quality Assurance, 2024 Spring
+### AAA705: Software Testing and Quality Assurance, 2024 Spring
 
 **Note that this page is outdated. Please refer to the [recent course page](../).**
 {:.warning}
 
-### Course Information
+#### Course Information
 
 - **Instructor:** [Jihyeok Park (박지혁)](/members/jihyeok.park)
   - **Office:** 609A,
@@ -18,7 +18,7 @@ layout: course
   ([미래융합기술관](https://naver.me/FLBWcZUR))
 - **Office hours:** 14:00--16:00 Tuesdays (by appointment)
 
-### Course Materials
+#### Course Materials
 
 - **Self-contained lecture notes are provided.**
 - References:
@@ -29,7 +29,7 @@ layout: course
 
 
 
-### Schedule
+#### Schedule
 
 <!-- load schedule with PDF files -->
 {%- include schedule.html data=site.data.course.aaa705.2024_1 -%}

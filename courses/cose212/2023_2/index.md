@@ -1,12 +1,12 @@
 ---
 layout: course
 ---
-## COSE212: Programming Languages, 2023 Fall
+### COSE212: Programming Languages, 2023 Fall
 
 **Note that this page is outdated. Please refer to the [recent course page](../).**
 {:.warning}
 
-### Course Information
+#### Course Information
 
 - **Instructor:** [Jihyeok Park (박지혁)](/members/jihyeok.park)
   - **Office:** 609A,
@@ -19,7 +19,7 @@ layout: course
   ([아산이학관](https://naver.me/5aVSr1Qy))
 - **Office hours:** 14:00--16:00 Tuesdays (by appointment)
 
-### Course Materials
+#### Course Materials
 
 - **Self-contained lecture notes are provided.**
 - Reference:
@@ -29,7 +29,7 @@ layout: course
   - [**Types and Programming Languages**](https://www.cis.upenn.edu/~bcpierce/tapl/),
     [Benjamin C. Pierce](https://www.cis.upenn.edu/~bcpierce/), The MIT Press
 
-### Installation of Scala and sbt
+#### Installation of Scala and sbt
 
 [Scala](https://www.scala-lang.org/) is a general-purpose programming language
 combining **object-oriented** and **functional** programming in one concise,
@@ -46,7 +46,7 @@ Please download and install them using the following links:
 - sbt - [https://www.scala-sbt.org/download.html](https://www.scala-sbt.org/download.html)
 
 
-### Schedule
+#### Schedule
 
 <!-- load schedule with PDF files -->
 {%- include schedule.html data=site.data.course.cose212.2023_2 -%}
