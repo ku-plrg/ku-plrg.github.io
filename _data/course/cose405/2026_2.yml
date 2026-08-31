@@ -1,0 +1,82 @@
+options:
+  code: false
+  update: false
+  speaker: true
+  pdf: false
+  homework: false
+
+# NOTE: Titles are not confirmed by the speakers yet; fill them in as they
+# arrive and announce the change on the LMS. Speaker names stay in Hangul until
+# the romanized spellings are confirmed. The 10/28 industry guest lecture has
+# both the speaker and the affiliation withheld until the invitation is
+# confirmed by the speaker in person.
+#
+# NOTE: Slides and readings go on the LMS, not here -- they belong to the
+# invited speakers.
+#
+# NOTE: 10/21 and 12/16 are exam weeks with no talk. Each is a reflective essay,
+# which counts as a class session.
+parts:
+  - lectures:
+    - index: 0
+      date: 09/02
+      title: Orientation
+      speaker: 박지혁 (Korea University)
+    - index: 1
+      date: 09/09
+      title: TBA
+      speaker: 장부루 (Korea University)
+    - index: 2
+      date: 09/16
+      title: TBA
+      speaker: 안상정 (Korea University Anam Hospital)
+    - index: 3
+      date: 09/23
+      title: TBA
+      speaker: 이상민 (Korea University)
+    - index: 4
+      date: 09/30
+      title: TBA
+      speaker: 강형엽 (Korea University)
+    - index: 5
+      date: 10/07
+      title: TBA
+      speaker: 이정범 (Korea University)
+    - index: 6
+      date: 10/14
+      title: TBA
+      speaker: 정형진 (Korea University)
+    - exam: Midterm
+      date: 10/21
+      coverage: Essay (by 10/24)
+    - index: 7
+      date: 10/28
+      title: TBA
+      speaker: TBA
+    - index: 8
+      date: 11/04
+      title: TBA
+      speaker: 이희조 (Korea University)
+    - index: 9
+      date: 11/11
+      title: TBA
+      speaker: 김세연 (Korea University)
+    - index: 10
+      date: 11/18
+      title: TBA
+      speaker: 박성우 (Korea University)
+    - index: 11
+      date: 11/25
+      title: TBA
+      speaker: 문경식 (Korea University)
+    - index: 12
+      date: 12/02
+      title: TBA
+      speaker: 서홍석 (Korea University)
+    - index: 13
+      date: 12/09
+      title: TBA
+      speaker: 박채용 (Korea University)
+    - exam: Final
+      date: 12/16
+      coverage: Essay (by 12/19)

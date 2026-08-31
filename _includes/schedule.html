@@ -3,20 +3,36 @@
 {%- assign _options = _data.options -%}
 {%- assign _base = page.path | prepend: "/" | replace: 'index.md', '' -%}
 
+{%- comment -%} count the columns to size the full-width rows {%- endcomment -%}
+{%- assign _cols = 3 -%}
+{%- if _options.speaker -%}{%- assign _cols = _cols | plus: 1 -%}{%- endif -%}
+{%- unless _options.pdf == false -%}{%- assign _cols = _cols | plus: 1 -%}{%- endunless -%}
+{%- if _options.update -%}{%- assign _cols = _cols | plus: 1 -%}{%- endif -%}
+{%- if _options.code -%}{%- assign _cols = _cols | plus: 1 -%}{%- endif -%}
+{%- unless _options.homework == false -%}{%- assign _cols = _cols | plus: 1 -%}{%- endunless -%}
+{%- assign _coverage_cols = _cols | minus: 3 -%}
+
 <table>
   <thead>
     <tr>
       <th>#</th>
       <th>Date</th>
       <th>Title</th>
+      {%- if _options.speaker -%}
+      <th>Speaker</th>
+      {%- endif -%}
+      {%- unless _options.pdf == false -%}
       <th>PDF</th>
+      {%- endunless -%}
       {%- if _options.update -%}
       <th>Update</th>
       {%- endif -%}
       {%- if _options.code -%}
       <th>Code</th>
       {%- endif -%}
+      {%- unless _options.homework == false -%}
       <th>Homework</th>
+      {%- endunless -%}
     </tr>
   </thead>
   {%- for _part in _data.parts -%}
@@ -24,7 +40,7 @@
   {%- if _name -%}
   <thead>
     <tr>
-      <th colspan="7">{{ _name }}</th>
+      <th colspan="{{ _cols }}">{{ _name }}</th>
     </tr>
   </thead>
   {%- endif -%}
@@ -43,7 +59,7 @@
         <strong>{{ _lecture.exam }}</strong>
         {%- endif -%}
       </td>
-      <td style="text-align: center;" colspan="4">
+      <td style="text-align: center;" colspan="{{ _coverage_cols }}">
         {%- if _lecture.link -%}
         <a href="{{ _lecture.link }}"><strong>{{ _lecture.coverage }}</strong></a>
         {%- else -%}
@@ -60,6 +76,10 @@
         {{ _lecture.title }}
         {%- endif -%}
       </td>
+      {%- if _options.speaker -%}
+      <td>{{ _lecture.speaker }}</td>
+      {%- endif -%}
+      {%- unless _options.pdf == false -%}
       <td style="text-align: center;">
         {%- if _lecture.handout -%}
         <div class="author-links">
@@ -76,6 +96,7 @@
         </div>
         {%- endif -%}
       </td>
+      {%- endunless -%}
       {%- if _options.update -%}
       {%- if _lecture.handout -%}
       <td style="text-align: center;">
@@ -99,6 +120,7 @@
         {%- endif -%}
       </td>
       {%- endif -%}
+      {%- unless _options.homework == false -%}
       <td style="text-align: center;">
         {%- for _homework in _lecture.homework -%}
         {%- if _homework.link -%}
@@ -115,6 +137,7 @@
         <br>
         {%- endfor -%}
       </td>
+      {%- endunless -%}
       {%- endif -%}
     </tr>
     {%- endfor -%}
