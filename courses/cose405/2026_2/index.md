@@ -17,8 +17,8 @@ Each session is a **50-minute talk** followed by an on-the-spot **Q&A**.
   [Aegineung](https://goo.gl/maps/ZvwWbCB9WAuXgjs2A)
   ([애기능생활관](https://naver.me/GEAdeVYu))
 - **Office hours:** By appointment via e-mail
-- **Materials:** slides and readings are posted on the
-  [LMS](https://lms.korea.ac.kr/), since they belong to the invited speakers.
+- **Materials:** each speaker is asked for **reading material** or their
+  **slides**, shared after the talk on the [LMS](https://lms.korea.ac.kr/).
 - **Language:** the course is offered in English, but the language of the talk
   and the slides is **up to the speaker**; some may be in Korean.
 
@@ -29,8 +29,7 @@ This course is graded **pass/fail**. You **pass** if you meet **all three**:
 - attend **at least 11** of the **13 talks** — checked with a code, starting on
   **September 9** (not at the orientation);
 - submit **at least 11** of the **13 weekly reports** — a **review** of the
-  speaker's reading, or a **reflection** on the talk when there is none, due
-  **23:59 on Saturday**; and
+  talk and any material the speaker shares, due **23:59 on Saturday**; and
 - submit **both essays** — pick the **single most memorable talk** in the range
   and say why:
   - **midterm by October 24** — among the talks from September 9 to October 14
