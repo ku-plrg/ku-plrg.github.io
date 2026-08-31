@@ -3,6 +3,9 @@ layout: course
 ---
 ## AAA705: Software Testing and Quality Assurance, 2024 Spring
 
+**Note that this page is outdated. Please refer to the [recent course page](../).**
+{:.warning}
+
 ### Course Information
 
 - **Instructor:** [Jihyeok Park (박지혁)](/members/jihyeok.park)

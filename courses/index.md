@@ -6,7 +6,7 @@ layout: article
 #### 2026 Fall
 
 - [COSE212: Programming Languages](./cose212/2026_2/)
-- AAA705: Software Testing and Quality Assurance
+- [AAA705: Software Testing and Quality Assurance](./aaa705/2026_2/)
 
 #### 2026 Spring
 

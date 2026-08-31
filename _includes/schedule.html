@@ -44,7 +44,11 @@
         {%- endif -%}
       </td>
       <td style="text-align: center;" colspan="4">
+        {%- if _lecture.link -%}
+        <a href="{{ _lecture.link }}"><strong>{{ _lecture.coverage }}</strong></a>
+        {%- else -%}
         <strong>{{ _lecture.coverage }}</strong>
+        {%- endif -%}
       </td>
       {%- else -%}
       <td>{{ _lecture.index }}</td>
