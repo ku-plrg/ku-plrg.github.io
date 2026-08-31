@@ -38,8 +38,8 @@ The primary goal of this course is to learn **essential concepts** of
   - They are **not graded** and need **no submission**. However, some exam
     questions might be related to them, so we **strongly recommend** solving
     them by yourself.
-- **Midterm exam: 45%**
-- **Final exam: 45%**
+- **Midterm exam: 40%**
+- **Final exam: 50%**
 - **Attendance: 10%**
   - **All or nothing:** you get the full **10%** if you attend at least **2/3**
     of the checks, and **0%** otherwise.
