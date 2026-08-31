@@ -44,13 +44,11 @@ them to locate faults.
   - There is **no attendance check** in the first week; it starts on
     **September 7**.
 
-#### Lectures without Offline Classes
+#### No Lectures
 
-There will be no offline lectures on the days listed below. The four homework
-assignments take the place of these class hours.
-
-- October 5 (Mon.) -- National Foundation Day (substitute holiday)
-- October 7 (Wed.) / 12 (Mon.) / 14 (Wed.) -- Business trip
+No lectures on **October 5** (national holiday) and **October 7, 12, and 14**
+(business trip); the four homework assignments take the place of these class
+hours.
 
 #### Schedule
 
