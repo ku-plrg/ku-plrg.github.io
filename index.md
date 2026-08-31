@@ -6,7 +6,7 @@ Welcome to **Programming Language Research Group (PLRG)** at **Korea University*
 {:.success}
 
 <center>
-  <img src="/assets/images/main.png" alt="main image" width="80%">
+  <img src="/assets/images/main.jpg" alt="main image" width="80%">
 </center>
 
 Our research goal is to help developers design and implement high-quality
