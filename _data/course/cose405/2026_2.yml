@@ -24,7 +24,7 @@ parts:
       speaker: 박지혁 (Korea University)
     - index: 1
       date: 09/09
-      title: TBA
+      title: "에이전틱 AI 보안의 새로운 위협: 추론 및 실행 흐름 하이재킹"
       speaker: 장부루 (Korea University)
     - index: 2
       date: 09/16
@@ -36,7 +36,7 @@ parts:
       speaker: 이상민 (Korea University)
     - index: 4
       date: 09/30
-      title: TBA
+      title: "Worlds for Humans and Agents: Built, Inhabited, and Dreamed"
       speaker: 강형엽 (Korea University)
     - index: 5
       date: 10/07
@@ -55,11 +55,11 @@ parts:
       speaker: TBA
     - index: 8
       date: 11/04
-      title: TBA
+      title: "사이버보안의 새로운 전장: 오픈소스, 공급망, 제품보안"
       speaker: 이희조 (Korea University)
     - index: 9
       date: 11/11
-      title: TBA
+      title: "Enabling Always-On AI: System Support for On-Device Speech Intelligence"
       speaker: 김세연 (Korea University)
     - index: 10
       date: 11/18
@@ -67,7 +67,7 @@ parts:
       speaker: 박성우 (Korea University)
     - index: 11
       date: 11/25
-      title: TBA
+      title: "Physically Capturing and Representing 3D Humans in Worlds"
       speaker: 문경식 (Korea University)
     - index: 12
       date: 12/02
@@ -75,7 +75,7 @@ parts:
       speaker: 서홍석 (Korea University)
     - index: 13
       date: 12/09
-      title: TBA
+      title: "Touching VR: Haptic Interaction for Immersive Experiences"
       speaker: 박채용 (Korea University)
     - exam: Final
       date: 12/16
