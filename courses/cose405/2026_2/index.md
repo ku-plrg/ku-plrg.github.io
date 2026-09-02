@@ -18,6 +18,8 @@ Each talk runs **16:45--17:45**, including an on-the-spot **Q&A**.
   ([애기능생활관](https://naver.me/GEAdeVYu))
   - **Attendance** is open **16:30--16:45** — finish the check before the talk
     starts at 16:45.
+- **Teaching Assistant:** [Sungmin Park (박성민)](/members/sungmin.park)
+  - **Email:** [ryan040@korea.ac.kr](mailto:ryan040@korea.ac.kr)
 - **Office hours:** By appointment via e-mail
 - **Materials:** each speaker is asked for **reading material** or their
   **slides**, shared after the talk on the [LMS](https://lms.korea.ac.kr/).
