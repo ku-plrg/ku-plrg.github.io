@@ -32,7 +32,7 @@ parts:
       speaker: 안상정 (Korea University Anam Hospital)
     - index: 3
       date: 09/23
-      title: TBA
+      title: "Towards Socially-Intelligent AI: Modeling Human Social Interactions"
       speaker: 이상민 (Korea University)
     - index: 4
       date: 09/30
@@ -44,11 +44,11 @@ parts:
       speaker: 이정범 (Korea University)
     - index: 6
       date: 10/14
-      title: TBA
+      title: "Closing the Loop of Alignment in Generative AI"
       speaker: 정형진 (Korea University)
     - exam: Midterm
       date: 10/21
-      coverage: Essay (by 10/24)
+      coverage: Essay (by 10/21)
     - index: 7
       date: 10/28
       title: TBA
@@ -79,4 +79,4 @@ parts:
       speaker: 박채용 (Korea University)
     - exam: Final
       date: 12/16
-      coverage: Essay (by 12/19)
+      coverage: Essay (by 12/16)

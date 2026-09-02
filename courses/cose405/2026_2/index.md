@@ -34,8 +34,8 @@ This course is graded **pass/fail**. You **pass** if you meet **all three**:
   talk and any material the speaker shares, due **23:59 on Saturday**; and
 - submit **both essays** — pick the **single most memorable talk** in the range
   and say why:
-  - **midterm by October 24** — among the talks from September 9 to October 14
-  - **final by December 19** — among the talks from October 28 to December 9
+  - **midterm by October 21** — among the talks from September 9 to October 14
+  - **final by December 16** — among the talks from October 28 to December 9
 
 Each report and essay is **1 page (A4)** in **English or Korean**, submitted on
 the [LMS](https://lms.korea.ac.kr/).
