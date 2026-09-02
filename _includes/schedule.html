@@ -77,7 +77,13 @@
         {%- endif -%}
       </td>
       {%- if _options.speaker -%}
-      <td>{{ _lecture.speaker }}</td>
+      <td>
+        {%- if _lecture.speaker_link -%}
+        <a href="{{ _lecture.speaker_link }}">{{ _lecture.speaker }}</a>
+        {%- else -%}
+        {{ _lecture.speaker }}
+        {%- endif -%}
+      </td>
       {%- endif -%}
       {%- unless _options.pdf == false -%}
       <td style="text-align: center;">

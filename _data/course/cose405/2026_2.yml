@@ -26,6 +26,7 @@ parts:
       date: 09/09
       title: "에이전틱 AI 보안의 새로운 위협: 추론 및 실행 흐름 하이재킹"
       speaker: 장부루 (Korea University)
+      speaker_link: https://lilab.korea.ac.kr
     - index: 2
       date: 09/16
       title: TBA
@@ -34,18 +35,22 @@ parts:
       date: 09/23
       title: "Towards Socially-Intelligent AI: Modeling Human Social Interactions"
       speaker: 이상민 (Korea University)
+      speaker_link: https://sites.google.com/view/pixel-lab-ai
     - index: 4
       date: 09/30
       title: "Worlds for Humans and Agents: Built, Inhabited, and Dreamed"
       speaker: 강형엽 (Korea University)
+      speaker_link: http://iiixr.korea.ac.kr/
     - index: 5
       date: 10/07
       title: TBA
       speaker: 이정범 (Korea University)
+      speaker_link: https://visionai.korea.ac.kr/
     - index: 6
       date: 10/14
       title: "Closing the Loop of Alignment in Generative AI"
       speaker: 정형진 (Korea University)
+      speaker_link: https://ku-prism-lab.github.io/
     - exam: Midterm
       date: 10/21
       coverage: Essay (by 10/21)
@@ -57,26 +62,32 @@ parts:
       date: 11/04
       title: "사이버보안의 새로운 전장: 오픈소스, 공급망, 제품보안"
       speaker: 이희조 (Korea University)
+      speaker_link: https://ccs.korea.ac.kr
     - index: 9
       date: 11/11
       title: "Enabling Always-On AI: System Support for On-Device Speech Intelligence"
       speaker: 김세연 (Korea University)
+      speaker_link: https://seralab.korea.ac.kr/
     - index: 10
       date: 11/18
       title: TBA
       speaker: 박성우 (Korea University)
+      speaker_link: https://www.gi.korea.ac.kr/
     - index: 11
       date: 11/25
       title: "Physically Capturing and Representing 3D Humans in Worlds"
       speaker: 문경식 (Korea University)
+      speaker_link: https://www.vcai.korea.ac.kr/
     - index: 12
       date: 12/02
       title: TBA
       speaker: 서홍석 (Korea University)
+      speaker_link: https://miil.korea.ac.kr/
     - index: 13
       date: 12/09
       title: "Touching VR: Haptic Interaction for Immersive Experiences"
       speaker: 박채용 (Korea University)
+      speaker_link: https://axis.korea.ac.kr/
     - exam: Final
       date: 12/16
       coverage: Essay (by 12/16)
