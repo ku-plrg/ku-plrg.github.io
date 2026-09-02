@@ -31,6 +31,7 @@ parts:
       date: 09/16
       title: TBA
       speaker: 안상정 (Korea University Anam Hospital)
+      speaker_link: https://medicine.korea.ac.kr/kr/professor/detail.do?profSn=329
     - index: 3
       date: 09/23
       title: "Towards Socially-Intelligent AI: Modeling Human Social Interactions"
