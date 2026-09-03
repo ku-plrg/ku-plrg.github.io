@@ -44,7 +44,7 @@ parts:
       speaker_link: http://iiixr.korea.ac.kr/
     - index: 5
       date: 10/07
-      title: TBA
+      title: "Towards Intelligent, Rational, and Safe AI Agents"
       speaker: 이정범 (Korea University)
       speaker_link: https://visionai.korea.ac.kr/
     - index: 6
