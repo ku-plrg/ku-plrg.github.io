@@ -7,9 +7,7 @@ options:
 
 # NOTE: Titles are not confirmed by the speakers yet; fill them in as they
 # arrive and announce the change on the LMS. Speaker names stay in Hangul until
-# the romanized spellings are confirmed. The 10/28 industry guest lecture has
-# both the speaker and the affiliation withheld until the invitation is
-# confirmed by the speaker in person.
+# the romanized spellings are confirmed.
 #
 # NOTE: Slides and readings go on the LMS, not here -- they belong to the
 # invited speakers.
@@ -57,8 +55,8 @@ parts:
       coverage: Essay (by 10/21)
     - index: 7
       date: 10/28
-      title: TBA
-      speaker: TBA
+      title: "Token economy를 위한 추론 최적화(vLLM 중심)"
+      speaker: 조규남 (LG Uplus)
     - index: 8
       date: 11/04
       title: "사이버보안의 새로운 전장: 오픈소스, 공급망, 제품보안"
