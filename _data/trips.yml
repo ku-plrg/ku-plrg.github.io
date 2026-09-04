@@ -13,6 +13,22 @@
 #     report    :
 #       - pdf     : <path.pdf>
 
+2026:
+
+  - date-from : 2026.08.26
+    date-to   : 2026.08.28
+    place     : SIGPL Summer School 2026
+    place-url : https://sigpl.or.kr/school/2026s/
+    location  : 한국문화연수원, 공주, 대한민국
+    photos    : hGcoZegp36WAGprcA
+
+  - date-from : 2026.02.04
+    date-to   : 2026.02.06
+    place     : SIGPL Winter School 2026
+    place-url : https://sigpl.or.kr/school/2026w/
+    location  : 머큐어 엠배서더 호텔, 울산, 대한민국
+    photos    : YHVnvvYBhWTy6o1Q7
+
 2025:
 
   - date-from : 2025.11.16
