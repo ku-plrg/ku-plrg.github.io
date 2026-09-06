@@ -26,8 +26,8 @@ parts:
     - index: 1
       date: 09/07
       title: Combinatorial Testing
-      # pdf: slides/lec1.pdf
-      # handout: slides/lec1-handout.pdf
+      pdf: slides/lec1.pdf
+      handout: slides/lec1-handout.pdf
     - index: 2
       date: 09/09
       title: Random Testing
