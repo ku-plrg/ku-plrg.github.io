@@ -8,6 +8,7 @@ layout: article
 - [COSE212: Programming Languages](./cose212/2026_2/)
 - [COSE405: Computer Science Colloquium](./cose405/2026_2/)
 - [AAA705: Software Testing and Quality Assurance](./aaa705/2026_2/)
+- SWS128: Software Analysis
 
 #### 2026 Spring
 

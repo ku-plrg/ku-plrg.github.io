@@ -1,0 +1,89 @@
+options:
+  code: false
+  update: false
+
+parts:
+  - lectures:
+    - index: 0
+      date: 09/07
+      title: Introduction
+      pdf: slides/lec0.pdf
+      handout: slides/lec0-handout.pdf
+    - index: 1
+      date: 09/14
+      title: Syntax and Semantics
+      # pdf: slides/lec1.pdf
+      # handout: slides/lec1-handout.pdf
+    - index: 2
+      date: 09/21
+      title: Control Flow Graphs
+      # pdf: slides/lec2.pdf
+      # handout: slides/lec2-handout.pdf
+    - index: 3
+      date: 09/28
+      title: Dataflow Analysis
+      # pdf: slides/lec3.pdf
+      # handout: slides/lec3-handout.pdf
+      homework:
+      - name: hw01
+        # link: TBD
+        date: 10/12
+    - index: 4
+      date: 10/05
+      title: Taint Analysis
+      # pdf: slides/lec4.pdf
+      # handout: slides/lec4-handout.pdf
+    - index: 5
+      date: 10/12
+      title: Abstract Interpretation
+      # pdf: slides/lec5.pdf
+      # handout: slides/lec5-handout.pdf
+    - exam: Midterm Week
+      date: 10/19
+      coverage: No Class
+    - index: 6
+      date: 10/26
+      title: Widening and Narrowing
+      # pdf: slides/lec6.pdf
+      # handout: slides/lec6-handout.pdf
+      homework:
+      - name: hw02
+        # link: TBD
+        date: 11/09
+    - index: 7
+      date: 11/02
+      title: Pointer Analysis
+      # pdf: slides/lec7.pdf
+      # handout: slides/lec7-handout.pdf
+    - index: 8
+      date: 11/09
+      title: Inter-procedural Analysis
+      # pdf: slides/lec8.pdf
+      # handout: slides/lec8-handout.pdf
+    - index: 9
+      date: 11/16
+      title: Constraint-based Analysis
+      # pdf: slides/lec9.pdf
+      # handout: slides/lec9-handout.pdf
+    - index: 10
+      date: 11/23
+      title: Symbolic Execution
+      # pdf: slides/lec10.pdf
+      # handout: slides/lec10-handout.pdf
+      homework:
+      - name: hw03
+        # link: TBD
+        date: 12/07
+    - index: 11
+      date: 11/30
+      title: Dynamic Analysis
+      # pdf: slides/lec11.pdf
+      # handout: slides/lec11-handout.pdf
+    - index: 12
+      date: 12/07
+      title: Real-World Tools and Practice
+      # pdf: slides/lec12.pdf
+      # handout: slides/lec12-handout.pdf
+    - exam: Final Week
+      date: 12/14
+      coverage: No Class
