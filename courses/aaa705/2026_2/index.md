@@ -46,9 +46,14 @@ them to locate faults.
 
 #### No Lectures
 
-No lectures on **October 5** (national holiday) and **October 7, 12, and 14**
-(business trip); the four homework assignments take the place of these class
-hours.
+No lectures on **October 5** (national holiday) and **October 7** (business
+trip); the homework assignments take the place of these class hours.
+
+#### Recorded Lectures
+
+Lecture 9 (**October 12**) and Lecture 10 (**October 14**) are delivered as
+**recorded lectures** (business trip). Watch them on the
+[LMS](https://lms.korea.ac.kr/); **attendance is credited in full** for both.
 
 #### Schedule
 
