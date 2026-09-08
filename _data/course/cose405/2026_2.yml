@@ -5,9 +5,9 @@ options:
   pdf: false
   homework: false
 
-# NOTE: Titles are not confirmed by the speakers yet; fill them in as they
-# arrive and announce the change on the LMS. Speaker names stay in Hangul until
-# the romanized spellings are confirmed.
+# NOTE: All talk titles are confirmed by the speakers (as of 2026-09-08); if a
+# speaker revises one, update it here and announce the change on the LMS.
+# Speaker names stay in Hangul until the romanized spellings are confirmed.
 #
 # NOTE: Slides and readings go on the LMS, not here -- they belong to the
 # invited speakers.
@@ -27,7 +27,7 @@ parts:
       speaker_link: https://lilab.korea.ac.kr
     - index: 2
       date: 09/16
-      title: TBA
+      title: "Beyond the Microscope: AI-Powered Advances in Translational Pathology"
       speaker: 안상정 (Korea University Anam Hospital)
       speaker_link: https://medicine.korea.ac.kr/kr/professor/detail.do?profSn=329
     - index: 3
@@ -79,7 +79,7 @@ parts:
       speaker_link: https://www.vcai.korea.ac.kr/
     - index: 12
       date: 12/02
-      title: TBA
+      title: "From Data to Action: Designing Context-Aware AI Agents"
       speaker: 서홍석 (Korea University)
       speaker_link: https://miil.korea.ac.kr/
     - index: 13
