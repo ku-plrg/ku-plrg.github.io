@@ -30,8 +30,8 @@ parts:
     - index: 2
       date: 09/09
       title: Random Testing and Fuzzing
-      # pdf: slides/lec2.pdf
-      # handout: slides/lec2-handout.pdf
+      pdf: slides/lec2.pdf
+      handout: slides/lec2-handout.pdf
     - index: 3
       date: 09/14
       title: Coverage Criteria
