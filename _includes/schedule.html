@@ -9,6 +9,7 @@
 {%- unless _options.pdf == false -%}{%- assign _cols = _cols | plus: 1 -%}{%- endunless -%}
 {%- if _options.update -%}{%- assign _cols = _cols | plus: 1 -%}{%- endif -%}
 {%- if _options.code -%}{%- assign _cols = _cols | plus: 1 -%}{%- endif -%}
+{%- if _options.materials -%}{%- assign _cols = _cols | plus: 1 -%}{%- endif -%}
 {%- unless _options.homework == false -%}{%- assign _cols = _cols | plus: 1 -%}{%- endunless -%}
 {%- assign _coverage_cols = _cols | minus: 3 -%}
 
@@ -29,6 +30,9 @@
       {%- endif -%}
       {%- if _options.code -%}
       <th>Code</th>
+      {%- endif -%}
+      {%- if _options.materials -%}
+      <th>Materials</th>
       {%- endif -%}
       {%- unless _options.homework == false -%}
       <th>Homework</th>
@@ -124,6 +128,18 @@
         {%- if _code -%}
         <a href="{{ _code }}">code</a><br>
         {%- endif -%}
+      </td>
+      {%- endif -%}
+      {%- if _options.materials -%}
+      <td style="text-align: center;">
+        {%- for _material in _lecture.materials -%}
+        {%- if _material.link -%}
+        <a href="{{ _material.link }}">{{ _material.name }}</a>
+        {%- else -%}
+        {{ _material.name }}
+        {%- endif -%}
+        <br>
+        {%- endfor -%}
       </td>
       {%- endif -%}
       {%- unless _options.homework == false -%}
