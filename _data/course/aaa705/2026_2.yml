@@ -35,11 +35,11 @@ parts:
     - index: 3
       date: 09/14
       title: Coverage Criteria
-      # pdf: slides/lec3.pdf
-      # handout: slides/lec3-handout.pdf
+      pdf: slides/lec3.pdf
+      handout: slides/lec3-handout.pdf
       homework:
       - name: hw01
-        # link: TBD
+        link: https://github.com/ku-plrg-classroom/js-cov
         date: 09/21
     - index: 4
       date: 09/16
