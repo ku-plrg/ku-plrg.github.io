@@ -144,6 +144,7 @@ Please see [**Publications**](/publications).
 
 
 ## Honors & Awards
+- **ACM Distinguished Paper Award**, ASE 2026.
 - **고려대학교 우수강좌**, COSE212 Programming Languages (2023-2)
 - **Ph.D. Dissertation Award**, College of Engineering, KAIST, 2022.
 - **An Outstanding Ph.D. Thesis**, School of Computing, KAIST, 2022.
