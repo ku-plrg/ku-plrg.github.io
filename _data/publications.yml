@@ -9,7 +9,7 @@
       detail: IEEE/ACM International Conference on Automated Software Engineering - Student Research Competition
       url: https://conf.researchr.org/home/ase-2026
     materials:
-      # pdf: TODO
+      pdf: /assets/data/publication/ase-src26.pdf
       # slides: TODO
       # poster: TODO
 
@@ -27,7 +27,7 @@
       detail: IEEE/ACM International Conference on Automated Software Engineering
       url: https://conf.researchr.org/home/ase-2026
     materials:
-      # pdf: TODO
+      pdf: /assets/data/publication/ase26-kim-minipoly.pdf
       # slides: TODO
       # repo: TODO
 
@@ -42,7 +42,7 @@
       detail: Static Analysis Symposium
       url: https://conf.researchr.org/home/splash-issta-2026/sas-2026
     materials:
-      # pdf: TODO
+      pdf: /assets/data/publication/sas26-ko-synpeg.pdf
       # slides: TODO
       # repo: TODO
 
@@ -60,7 +60,7 @@
       detail: Transactions on Software Engineering and Methodology
       url: https://dl.acm.org/journal/tosem
     materials:
-      # pdf: TODO
+      pdf: /assets/data/publication/tosem26-lee-jestfs.pdf
 
 2025:
   - title: "Verification and Classification of Exploits for Node.js Vulnerabilities"
