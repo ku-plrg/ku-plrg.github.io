@@ -49,11 +49,11 @@ parts:
     - index: 5
       date: 09/21
       title: Dynamic Symbolic Execution (DSE)
-      # pdf: slides/lec5.pdf
-      # handout: slides/lec5-handout.pdf
+      pdf: slides/lec5.pdf
+      handout: slides/lec5-handout.pdf
       homework:
       - name: hw02
-        # link: TBD
+        link: https://github.com/ku-plrg-classroom/js-dse
         date: 09/28
     - index: 6
       date: 09/23
