@@ -33,11 +33,11 @@ parts:
     - index: 3
       date: 09/28
       title: Dataflow Analysis
-      # pdf: slides/lec3.pdf
-      # handout: slides/lec3-handout.pdf
+      pdf: slides/lec3.pdf
+      handout: slides/lec3-handout.pdf
       homework:
       - name: hw01
-        # link: TBD
+        # link: https://github.com/ku-plrg-classroom/py-dataflow
         date: 10/12
     - index: 4
       date: 10/05
