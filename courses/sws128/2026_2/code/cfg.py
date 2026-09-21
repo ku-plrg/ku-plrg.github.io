@@ -19,15 +19,18 @@ class Assume:
     cond: Expr
 
 
-Cmd = Stmt | Assume
+Cmd = Assign | IndexAssign | Pass | Assume
+
+NodeId = int     # a program point: just a number
+EdgeId = int     # an edge's position in `CFG.edges`
 
 
 @dataclass(frozen=True)
 class Edge:
-    id: int
-    src: int
+    id: EdgeId
+    src: NodeId
     cmd: Cmd
-    dst: int
+    dst: NodeId
 
     def __str__(self) -> str:
         return show_cmd(self.cmd)
@@ -45,22 +48,21 @@ class CFG:
     params: tuple[str, ...]                  # bound at the entry: the input
     ret: Expr                                # evaluated at the exit: the output
     edges: list[Edge] = field(default_factory=list)
-    succ: dict[int, list[Edge]] = field(default_factory=dict)
-    pred: dict[int, list[Edge]] = field(default_factory=dict)
-    loop_heads: set[int] = field(default_factory=set)
-    entry: int = -1
-    exit: int = -1
+    succ: dict[NodeId, list[Edge]] = field(default_factory=dict)
+    pred: dict[NodeId, list[Edge]] = field(default_factory=dict)
+    loop_heads: set[NodeId] = field(default_factory=set)
+    entry: NodeId = -1
+    exit: NodeId = -1
 
     # -- construction ------------------------------------------------------
 
-    def add(self) -> int:
-        """A fresh program point."""
+    def add(self) -> NodeId:                 # a fresh program point
         p = len(self.succ)
         self.succ[p] = []
         self.pred[p] = []
         return p
 
-    def edge(self, src: int, cmd: Cmd, dst: int) -> Edge:
+    def edge(self, src: NodeId, cmd: Cmd, dst: NodeId) -> Edge:
         e = Edge(len(self.edges), src, cmd, dst)
         self.edges.append(e)
         self.succ[src].append(e)
@@ -70,7 +72,7 @@ class CFG:
     # -- queries -----------------------------------------------------------
 
     @property
-    def nodes(self) -> list[int]:
+    def nodes(self) -> list[NodeId]:
         return sorted(self.succ)
 
     def __iter__(self):
@@ -101,7 +103,7 @@ def build(prog: Prog) -> CFG:
     return g
 
 
-def _block(g: CFG, body: Block, src: int, dst: int) -> None:
+def _block(g: CFG, body: Block, src: NodeId, dst: NodeId) -> None:
     """Edges for `body`, from point src to point dst."""
     if not body:
         g.edge(src, Pass(), dst)
@@ -113,7 +115,7 @@ def _block(g: CFG, body: Block, src: int, dst: int) -> None:
     _stmt(g, body[-1], src, dst)
 
 
-def _stmt(g: CFG, st: Stmt, src: int, dst: int) -> None:
+def _stmt(g: CFG, st: Stmt, src: NodeId, dst: NodeId) -> None:
     match st:
         case If(cond, then, els):
             _branch(g, cond, then, src, dst)
@@ -126,7 +128,7 @@ def _stmt(g: CFG, st: Stmt, src: int, dst: int) -> None:
             g.edge(src, st, dst)
 
 
-def _branch(g: CFG, cond: Expr, body: Block, src: int, dst: int) -> None:
+def _branch(g: CFG, cond: Expr, body: Block, src: NodeId, dst: NodeId) -> None:
     """src --assume(cond)--> body --> dst."""
     if not body:
         g.edge(src, Assume(cond), dst)
@@ -146,12 +148,12 @@ class Worklist:
         for p in points:
             self.push(p)
 
-    def push(self, p: int) -> None:
+    def push(self, p: NodeId) -> None:
         if p not in self.members:
             self.queue.append(p)
             self.members.add(p)
 
-    def pop(self) -> int:
+    def pop(self) -> NodeId:
         p = self.queue.popleft()
         self.members.remove(p)
         return p
@@ -162,7 +164,7 @@ class Worklist:
 
 # ---------------------------------------------------------------- dominators
 
-def dominators(g: CFG) -> dict[int, set[int]]:
+def dominators(g: CFG) -> dict[NodeId, set[NodeId]]:
     """dom(p) = {p} union (intersection of dom(q) for every edge q -> p)."""
     # initial: the entry is its own dominator; every other point starts full
     dom = {p: (set(g.nodes) if p != g.entry else {g.entry}) for p in g}
@@ -180,17 +182,17 @@ def dominators(g: CFG) -> dict[int, set[int]]:
     return dom
 
 
-def idom(g: CFG) -> dict[int, int | None]:
+def idom(g: CFG) -> dict[NodeId, NodeId | None]:
     """The immediate dominator of each point: its closest strict dominator."""
     dom = dominators(g)
-    out: dict[int, int | None] = {}
+    out: dict[NodeId, NodeId | None] = {}
     for p in g:
         strict = dom[p] - {p}
         out[p] = max(strict, key=lambda d: len(dom[d]), default=None)
     return out
 
 
-def frontier(g: CFG) -> dict[int, set[int]]:
+def frontier(g: CFG) -> dict[NodeId, set[NodeId]]:
     """Dominance frontier: where a definition leaving d stops being the only one.
 
     p is in DF(d) when d dominates a predecessor of p but not p itself, so
