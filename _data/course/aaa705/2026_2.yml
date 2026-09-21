@@ -63,11 +63,11 @@ parts:
     - index: 7
       date: 09/28
       title: Mutation Testing
-      # pdf: slides/lec7.pdf
-      # handout: slides/lec7-handout.pdf
+      pdf: slides/lec7.pdf
+      handout: slides/lec7-handout.pdf
       homework:
       - name: hw03
-        # link: TBD
+        link: https://github.com/ku-plrg-classroom/js-mutest
         date: 10/05
     - index: 8
       date: 09/30
