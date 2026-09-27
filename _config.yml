@@ -107,6 +107,23 @@ plugins:
   - jekyll-sitemap
   - jemoji
   - jekyll-redirect-from
+  # Plugins that the `github-pages` gem used to enable by default
+  - jekyll-relative-links
+  - jekyll-optional-front-matter
+  - jekyll-readme-index
+  - jekyll-default-layout
+  - jekyll-titles-from-headings
+
+# Settings that the `github-pages` gem used to apply by default
+future: true
+sass:
+  style: compressed
+kramdown:
+  input: GFM
+  hard_wrap: false
+  gfm_quirks: paragraph_end
+  syntax_highlighter_opts:
+    default_lang: plaintext
 
 ## => Include
 include:
