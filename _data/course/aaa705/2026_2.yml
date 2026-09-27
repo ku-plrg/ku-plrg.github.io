@@ -12,9 +12,6 @@ options:
 # as two 75-minute sessions, and 30 sessions are required in total:
 #   13 lecture meetings (26) + 2 meetings replaced by homework (4) = 30
 # The two replaced meetings are 10/05 (holiday) and 10/07 (business trip).
-#
-# NOTE: L9 (10/12) and L10 (10/14) are delivered as *recorded* lectures
-# (business trip); attendance is credited in full for both.
 parts:
   - lectures:
     - index: 0
@@ -76,7 +73,7 @@ parts:
       handout: slides/lec8-handout.pdf
     - index: 9
       date: 10/12
-      title: Fault Localization (recorded)
+      title: Fault Localization
       # pdf: slides/lec9.pdf
       # handout: slides/lec9-handout.pdf
       homework:
@@ -85,7 +82,7 @@ parts:
         date: 10/19
     - index: 10
       date: 10/14
-      title: Automated Program Repair (recorded)
+      title: Automated Program Repair
       # pdf: slides/lec10.pdf
       # handout: slides/lec10-handout.pdf
     - index: 11
