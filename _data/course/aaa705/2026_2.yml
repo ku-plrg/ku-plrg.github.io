@@ -67,13 +67,13 @@ parts:
       handout: slides/lec7-handout.pdf
       homework:
       - name: hw03
-        # link: https://github.com/ku-plrg-classroom/js-mutest
+        link: https://github.com/ku-plrg-classroom/js-mutest
         date: 10/05
     - index: 8
       date: 09/30
       title: Testing Oracles
-      # pdf: slides/lec8.pdf
-      # handout: slides/lec8-handout.pdf
+      pdf: slides/lec8.pdf
+      handout: slides/lec8-handout.pdf
     - index: 9
       date: 10/12
       title: Fault Localization (recorded)
