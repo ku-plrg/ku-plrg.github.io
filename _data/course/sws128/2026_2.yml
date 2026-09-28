@@ -35,6 +35,9 @@ parts:
       title: Dataflow Analysis
       pdf: slides/lec3.pdf
       handout: slides/lec3-handout.pdf
+      materials:
+      - name: dataflow.py
+        link: code/dataflow.py
       homework:
       - name: hw01
         link: https://github.com/ku-plrg-classroom/py-dataflow
@@ -42,8 +45,11 @@ parts:
     - index: 4
       date: 10/05
       title: Taint Analysis
-      # pdf: slides/lec4.pdf
-      # handout: slides/lec4-handout.pdf
+      pdf: slides/lec4.pdf
+      handout: slides/lec4-handout.pdf
+      materials:
+      - name: taint.py
+        link: code/taint.py
     - index: 5
       date: 10/12
       title: Abstract Interpretation
