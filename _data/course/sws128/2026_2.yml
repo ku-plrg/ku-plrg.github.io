@@ -53,8 +53,11 @@ parts:
     - index: 5
       date: 10/12
       title: Abstract Interpretation
-      # pdf: slides/lec5.pdf
-      # handout: slides/lec5-handout.pdf
+      pdf: slides/lec5.pdf
+      handout: slides/lec5-handout.pdf
+      materials:
+      - name: domain.py
+        link: code/domain.py
     - exam: Midterm Week
       date: 10/19
       coverage: No Class
