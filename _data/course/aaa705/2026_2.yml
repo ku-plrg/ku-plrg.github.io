@@ -78,8 +78,8 @@ parts:
       # handout: slides/lec9-handout.pdf
       homework:
       - name: hw04
-        # link: TBD
-        date: 10/19
+        # link: https://github.com/ku-plrg-classroom/js-fl
+        date: 10/26
     - index: 10
       date: 10/14
       title: Automated Program Repair
@@ -91,7 +91,7 @@ parts:
       # pdf: slides/lec11.pdf
       # handout: slides/lec11-handout.pdf
     - index: 12
-      date: 10/21
+      date: 10/28
       title: Course Review
       # pdf: slides/lec12.pdf
       # handout: slides/lec12-handout.pdf
