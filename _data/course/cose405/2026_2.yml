@@ -47,7 +47,7 @@ parts:
       speaker_link: https://visionai.korea.ac.kr/
     - index: 6
       date: 10/14
-      title: "Closing the Loop of Alignment in Generative AI"
+      title: "Future Applications of Generative AI"
       speaker: 정형진 (Korea University)
       speaker_link: https://ku-prism-lab.github.io/
     - exam: Midterm
