@@ -74,11 +74,11 @@ parts:
     - index: 9
       date: 10/12
       title: Fault Localization
-      # pdf: slides/lec9.pdf
-      # handout: slides/lec9-handout.pdf
+      pdf: slides/lec9.pdf
+      handout: slides/lec9-handout.pdf
       homework:
       - name: hw04
-        # link: https://github.com/ku-plrg-classroom/js-fl
+        link: https://github.com/ku-plrg-classroom/js-fl
         date: 10/26
     - index: 10
       date: 10/14
