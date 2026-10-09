@@ -1,3 +1,11 @@
+2026:
+
+  - date      : 2026.10.08
+    title     : "MiniPoly: Automatic Extraction of Efficient JavaScript Polyfill from Language Specification"
+    place     : UC Berkeley PLAIT Lab
+    place-url : https://plait-lab.org/
+    pdf       : /assets/data/slides/2026/berkeley26-talk.pdf
+
 2025:
 
   - date      : 2025.08.21
