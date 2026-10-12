@@ -9,9 +9,8 @@
       detail: IEEE/ACM International Conference on Automated Software Engineering - Student Research Competition
       url: https://conf.researchr.org/home/ase-2026
     materials:
-      pdf: /assets/data/publication/ase26-src-choi.pdf
-      # slides: TODO
-      # poster: TODO
+      pdf: /assets/data/publication/ase26-src-choe.pdf
+      slides: /assets/data/slides/2026/ase26-src-choe-slides.pdf
 
   - title: "MiniPoly: Automatic Extraction of Efficient JavaScript Polyfill from Language Specification"
     doi: 10.1145/3832783.3837549
