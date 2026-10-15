@@ -11,6 +11,7 @@
     materials:
       pdf: /assets/data/publication/ase26-src-choe.pdf
       slides: /assets/data/slides/2026/ase26-src-choe-slides.pdf
+      artifact: https://zenodo.org/records/22822352
 
   - title: "MiniPoly: Automatic Extraction of Efficient JavaScript Polyfill from Language Specification"
     doi: 10.1145/3832783.3837549
@@ -42,8 +43,9 @@
       url: https://conf.researchr.org/home/splash-issta-2026/sas-2026
     materials:
       pdf: /assets/data/publication/sas26-ko-synpeg.pdf
-      # slides: TODO
-      # repo: TODO
+      report: /assets/data/publication/sas26-ko-synpeg-report.pdf
+      slides: /assets/data/slides/2026/sas26-ko-synpeg-slides.pdf
+      artifact: https://zenodo.org/records/21330079
 
   - title: "Selective Feature-Sensitive Coverage for Conformance Testing of Programming Languages"
     doi: 10.1145/3808231
@@ -58,6 +60,7 @@
       name: TOSEM
       detail: Transactions on Software Engineering and Methodology
       url: https://dl.acm.org/journal/tosem
+    # TODO: just accepted -- update doi/pdf/volume info once officially published
     materials:
       pdf: /assets/data/publication/tosem26-lee-jestfs.pdf
 
