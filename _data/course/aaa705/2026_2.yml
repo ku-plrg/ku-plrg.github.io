@@ -88,10 +88,10 @@ parts:
     - index: 11
       date: 10/19
       title: LLM-based Software Testing
-      # pdf: slides/lec11.pdf
-      # handout: slides/lec11-handout.pdf
+      pdf: slides/lec11.pdf
+      handout: slides/lec11-handout.pdf
     - index: 12
-      date: 10/28
+      date: 10/21
       title: Course Review
       # pdf: slides/lec12.pdf
       # handout: slides/lec12-handout.pdf
