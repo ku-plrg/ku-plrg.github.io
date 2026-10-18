@@ -83,8 +83,8 @@ parts:
     - index: 10
       date: 10/14
       title: Automated Program Repair
-      # pdf: slides/lec10.pdf
-      # handout: slides/lec10-handout.pdf
+      pdf: slides/lec10.pdf
+      handout: slides/lec10-handout.pdf
     - index: 11
       date: 10/19
       title: LLM-based Software Testing
