@@ -93,5 +93,5 @@ parts:
     - index: 12
       date: 10/21
       title: Course Review
-      # pdf: slides/lec12.pdf
-      # handout: slides/lec12-handout.pdf
+      pdf: slides/lec12.pdf
+      handout: slides/lec12-handout.pdf
