@@ -110,7 +110,7 @@ parts:
           link: https://github.com/ku-plrg-classroom/docs/tree/main/cose212/lfae
     - exam: Midterm Exam
       date: 10/21
-      # pdf: midterm.pdf  # 시험 후 업로드
+      pdf: midterm.pdf
       coverage: Lectures 1 - 13
     - index: 14
       date: 10/28
