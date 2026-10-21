@@ -55,7 +55,7 @@ Please see [**Publications**](/publications).
       [**2023**](https://doi.org/10.1145/3591240) /
       [**2024**](https://doi.org/10.1145/3656464)
   - SAS -
-      **2026**
+      [**2026**](https://doi.org/10.1007/978-3-032-40374-2_17)
 - **SE Conference**:
   - ICSE -
       [**2017 (Demo)**](https://doi.org/10.1109/ICSE-C.2017.4) /
@@ -68,7 +68,7 @@ Please see [**Publications**](/publications).
       [**2020**](https://doi.org/10.1145/3324884.3416632) /
       [**2021**](https://doi.org/10.1109/ASE51524.2021.9678781) /
       [**2025**](https://doi.org/10.1109/ASE63991.2025.00015) /
-      **2026**
+      [**2026**](https://doi.org/10.1145/3832783.3837549)
 - **Journal**:
   - CACM -
       [**2023**](https://doi.org/10.1145/3624723)
@@ -144,7 +144,7 @@ Please see [**Publications**](/publications).
 
 
 ## Honors & Awards
-- **ACM Distinguished Paper Award**, ASE 2026.
+- **ACM SIGSOFT Distinguished Paper Award**, ASE 2026.
 - **고려대학교 우수강좌**, COSE212 Programming Languages (2023-2)
 - **Ph.D. Dissertation Award**, College of Engineering, KAIST, 2022.
 - **An Outstanding Ph.D. Thesis**, School of Computing, KAIST, 2022.
