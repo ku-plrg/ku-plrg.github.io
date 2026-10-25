@@ -64,11 +64,11 @@ parts:
     - index: 6
       date: 10/26
       title: Widening and Narrowing
-      # pdf: slides/lec6.pdf
-      # handout: slides/lec6-handout.pdf
+      pdf: slides/lec6.pdf
+      handout: slides/lec6-handout.pdf
       homework:
       - name: hw02
-        # link: TBD
+        link: https://github.com/ku-plrg-classroom/py-interval
         date: 11/09
     - index: 7
       date: 11/02
