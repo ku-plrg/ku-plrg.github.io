@@ -73,8 +73,8 @@ parts:
     - index: 7
       date: 11/02
       title: Pointer Analysis
-      # pdf: slides/lec7.pdf
-      # handout: slides/lec7-handout.pdf
+      pdf: slides/lec7.pdf
+      handout: slides/lec7-handout.pdf
     - index: 8
       date: 11/09
       title: Inter-procedural Analysis
