@@ -1,4 +1,4 @@
 ---
 redirect_to:
-  - https://claude.ai/artifact/MhnQWcdH1VZTD6HBma17AL
+  - https://claude.ai/artifact/EbUijojByDEv19Dsv8BMAW#seminar
 ---
