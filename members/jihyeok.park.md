@@ -83,6 +83,14 @@ Please see [**Publications**](/publications).
 
 ## Professional Activities
 
+- **Organizing Committee**
+  - 2027 -
+    [**SOAP** (Program Co-Chair)](https://pldi27.sigplan.org/)
+  - 2025 -
+    [**RPLS**](https://pldi25.sigplan.org/home/rpls-2025)
+  - 2022 -
+    [**ISSTA** (Web Co-Chair)](https://conf.researchr.org/home/issta-2022)
+
 - **Committee Members**
   - 2027 -
     [**ICSE**](https://conf.researchr.org/home/icse-2027) /
@@ -98,7 +106,6 @@ Please see [**Publications**](/publications).
     [**OOPSLA**](https://2025.splashcon.org/track/OOPSLA) /
     [**SAS**](https://2025.splashcon.org/home/sas-2025) /
     [**SCAM**](https://conf.researchr.org/home/scam-2025) /
-    [**RPLS**](https://pldi25.sigplan.org/home/rpls-2025) /
     [**SAC** (PL Track)](https://www.sigapp.org/sac/sac2025)
   - 2024 -
     [**APLAS** (SRC & Posters)](https://conf.researchr.org/track/aplas-2024/src-and-posters%3F) /
@@ -110,10 +117,9 @@ Please see [**Publications**](/publications).
     [**APLAS**](https://conf.researchr.org/home/aplas-2023)
   - 2022 -
     [**OOPSLA**](https://2023.splashcon.org/track/splash-2022-oopsla) /
-    [**APLAS**](https://conf.researchr.org/home/aplas-2022) /
-    [**ISSTA** (Web Co-Chair)](https://conf.researchr.org/home/issta-2022)
+    [**APLAS**](https://conf.researchr.org/home/aplas-2022)
 
-- **Artifact Evaluation Committee (AEC) Members**
+- **Artifact Evaluation Committee Members**
   - 2023 -
     [**OOPSLA**](https://2023.splashcon.org/track/splash-2023-oopsla)
   - 2022 -
@@ -128,9 +134,9 @@ Please see [**Publications**](/publications).
 
 - **Journal Reviewers**
   - 2026 -
-    **ACM TOSEM**
+    [**ACM TOSEM**](https://dl.acm.org/journal/TOSEM)
   - 2025 -
-    **ACM TOSEM**
+    [**ACM TOSEM**](https://dl.acm.org/journal/TOSEM)
   - 2024 -
     [**IEEE TSE**](https://doi.org/10.1109/TSE.2024.3525202)
   - 2023 -
