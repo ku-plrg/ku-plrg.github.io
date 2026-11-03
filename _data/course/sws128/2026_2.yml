@@ -75,6 +75,9 @@ parts:
       title: Pointer Analysis
       pdf: slides/lec7.pdf
       handout: slides/lec7-handout.pdf
+      materials:
+      - name: pointer.py
+        link: code/pointer.py
     - index: 8
       date: 11/09
       title: Inter-procedural Analysis
