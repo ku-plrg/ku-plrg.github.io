@@ -157,13 +157,15 @@ def assume(dom: Domain, cond: Expr, s: State) -> State:
 # ---------------------------------------------------- the abstract interpreter
 
 def analyze(g: CFG, dom: Domain, widening: bool = True,
-            narrowing: bool = True, limit: int = 10000) -> dict[NodeId, State]:
+            narrowing: bool = False, delay: int = 0,
+            limit: int = 10000) -> dict[NodeId, State]:
     """A sound abstract state per program point.
 
     The parameters are the input, so they start at top: the analysis is asked
     to hold for every call. Then an ascending phase with widening at loop
     heads, and a descending phase with narrowing to win back some of what
-    widening threw away.
+    widening threw away. With `delay = k`, a loop head joins k more times
+    before it starts widening (delayed widening).
     """
     inn: dict[NodeId, State] = {n: {} for n in g}
     inn[g.entry] = {p: dom.top for p in g.params}
@@ -179,7 +181,7 @@ def analyze(g: CFG, dom: Domain, widening: bool = True,
         n = work.pop()
         if n != g.entry:
             joined = incoming(dom, g, n, inn)
-            widen_here = widening and n in g.loop_heads and seen[n] > 0
+            widen_here = widening and n in g.loop_heads and seen[n] > delay
             new = st_widen(dom, inn[n], joined) if widen_here else joined
             seen[n] += 1
             if eq(dom, new, inn[n]):
@@ -200,6 +202,25 @@ def analyze(g: CFG, dom: Domain, widening: bool = True,
             if not changed:
                 break
     return inn
+
+
+def constants(g: CFG) -> set[int]:
+    """Every integer literal in the program: the usual thresholds T."""
+    def walk(e):
+        match e:
+            case Num(n):          yield n
+            case UnOp("-", Num(n)): yield -n
+            case BinOp(_, l, r):  yield from walk(l); yield from walk(r)
+            case UnOp(_, v):      yield from walk(v)
+            case ListLit(items):  yield from (n for i in items for n in walk(i))
+            case Index(b, i):     yield from walk(b); yield from walk(i)
+    found = set(walk(g.ret))
+    for e in g.edges:
+        match e.cmd:
+            case Assume(c):            found |= set(walk(c))
+            case Assign(_, x):         found |= set(walk(x))
+            case IndexAssign(_, i, x): found |= set(walk(i)) | set(walk(x))
+    return found
 
 
 def returned(g: CFG, dom: Domain, res: dict[NodeId, State]):
