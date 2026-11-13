@@ -338,7 +338,8 @@ function venueSummary(name) {
       const links = hits.map((p) => {
         const url = p.doi && p.doi !== 'accepted' ? `https://doi.org/${p.doi}` : p.materials?.pdf;
         const label = `${p.year}${/ Demo$/.test(p.target.name) ? ' (Demo)' : ''}`;
-        return url ? `<a href="${esc(url)}">${label}</a>` : label;
+        // hovering a year shows the paper's title (one venue can have several papers a year)
+        return url ? `<a href="${esc(url)}" data-tip="${esc(p.title)}">${label}</a>` : `<span data-tip="${esc(p.title)}">${label}</span>`;
       }).join(' / ');
       return `<li>${v} – ${links}</li>`;
     }).filter(Boolean);
