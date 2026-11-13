@@ -1,6 +1,3 @@
----
-layout: course
----
 ### SWS121: Secure Programming, 2024 Spring
 
 #### Course Information
@@ -43,5 +40,4 @@ Please download and install them using the following links:
 
 #### Schedule
 
-<!-- load schedule with PDF files -->
-{%- include schedule.html data=site.data.course.sws121.2024_1 -%}
+<!--schedule-->

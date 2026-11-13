@@ -1,11 +1,7 @@
 ---
-layout: member
 title: Kyungho Song (송경호)
-aside:
-  toc: true
 ---
-
-{% include former-member.html %}
+<!--former-member-->
 
 <img src="/assets/images/members/kyungho.song.jpg" class="profile-img">
 
@@ -21,6 +17,4 @@ interested in programming language, and static analysis.
 
 
 ## Contact Information
-<!-- include author links -->
-{% assign author=site.data.authors["Kyungho Song"] %}
-<div>{% include author-links.html author=author %}</div>
+<!--contact-->

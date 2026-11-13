@@ -1,6 +1,3 @@
----
-layout: course
----
 ### SWS128: Software Analysis, 2026 Fall
 
 The primary goal of this course is to learn the **theory** and **implementation**
@@ -45,5 +42,4 @@ lecture videos will be uploaded to the [LMS](https://lms.korea.ac.kr/).
 
 #### Schedule
 
-<!-- load schedule with PDF files -->
-{%- include schedule.html data=site.data.course.sws128.2026_2 -%}
+<!--schedule-->

@@ -12,14 +12,5 @@
 /.vscode/
 
 node_modules/
-.sass-cache/
-
-/.bundle/
-/vendor/bundle
-*.gem
 
 yarn.lock
-
-_site/
-.jekyll-metadata
-.jekyll-cache/

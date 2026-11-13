@@ -1,6 +1,3 @@
----
-layout: course
----
 ### COSE405: Computer Science Colloquium, 2026 Fall
 
 Weekly **invited talks** by speakers from academic institutions and industry.
@@ -44,4 +41,4 @@ the [LMS](https://lms.korea.ac.kr/).
 
 #### Schedule
 
-{% include schedule.html data=site.data.course.cose405.2026_2 %}
+<!--schedule-->

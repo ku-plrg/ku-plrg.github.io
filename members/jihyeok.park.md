@@ -1,27 +1,27 @@
 ---
-layout: member
 title: Jihyeok Park (박지혁)
-aside:
-  toc: true
 ---
+<div class="callout success">
+
 **I’m recruiting motivated graduate and undergraduate students, as well as
 postdocs**, interested in programming languages and software engineering. See
 [**Research**](/research) and [**Publications**](/publications) for details.
-{:.success}
+
+</div>
 
 <img src="/assets/images/members/jihyeok.park.jpg" class="profile-img">
 
 I'm an Assistant Professor at [**Programming Language Research Group
 (PLRG)**](/), Dept. of Computer Science and Engineering, College of Informatics,
 Korea University. I received my Ph.D. from KAIST under the supervision of [Prof.
-Sukyoung Ryu](https://plrg.kaist.ac.kr/ryu). My main research topic is
-programming languages and software engineering, including program analysis,
-mechanized specification, program synthesis, and automated testing. I’m also
-leading an open-source project, [**ESMeta**](https://github.com/es-meta/esmeta),
-which is a framework that extracts a mechanized specification from a given
-version of JavaScript (ECMAScript) language specification
-([ECMA-262](https://tc39.es/ecma262/)) and automatically generates conformance
-tests or language-based tools.
+Sukyoung Ryu](https://plrg.kaist.ac.kr/ryu). My research develops programming
+language and software engineering techniques that make real-world software
+reliable and secure, spanning language specifications, program analysis,
+automated testing, type systems, program synthesis, and software security. I
+also lead the open-source project [**ESMeta**](https://github.com/es-meta/esmeta),
+which extracts a mechanized specification from the JavaScript language
+specification ([ECMA-262](https://tc39.es/ecma262/)) and automatically generates
+language tools from it; it runs in the CI of both ECMA-262 and Test262.
 
 [[Curriculum Vitae (CV)](/assets/data/cv/cv_jihyeok_park.pdf)]
 
@@ -43,42 +43,12 @@ tests or language-based tools.
 
 ## Research Interest
 
-Please see [**Research**](/research).
+<!--AUTO:topics (research topics, filled in by _next/build.mjs)-->
 
 
 ## Publications
 
-Please see [**Publications**](/publications).
-
-- **PL Conference**:
-  - PLDI -
-      [**2023**](https://doi.org/10.1145/3591240) /
-      [**2024**](https://doi.org/10.1145/3656464)
-  - SAS -
-      [**2026**](https://doi.org/10.1007/978-3-032-40374-2_17)
-- **SE Conference**:
-  - ICSE -
-      [**2017 (Demo)**](https://doi.org/10.1109/ICSE-C.2017.4) /
-      [**2021**](https://doi.org/10.1109/ICSE43902.2021.00015)
-  - FSE -
-      [**2021**](https://doi.org/10.1145/3468264.3468556) /
-      [**2022**](https://doi.org/10.1145/3540250.3549097) /
-      [**2025 (Demo)**](https://doi.org/10.1145/3696630.3728579)
-  - ASE -
-      [**2020**](https://doi.org/10.1145/3324884.3416632) /
-      [**2021**](https://doi.org/10.1109/ASE51524.2021.9678781) /
-      [**2025**](https://doi.org/10.1109/ASE63991.2025.00015) /
-      [**2026**](https://doi.org/10.1145/3832783.3837549)
-- **Journal**:
-  - CACM -
-      [**2023**](https://doi.org/10.1145/3624723)
-  - CSUR -
-      [**2021**](https://doi.org/10.1145/3464457)
-  - IEEE Software -
-      [**2019**](https://doi.org/10.1109/MS.2018.110113408)
-  - TOSEM -
-      [**2026**](https://doi.org/10.1145/3808231) /
-      [**2026**](https://doi.org/10.1145/3862477)
+<!--AUTO:venues (major venues from _data/publications.yml, filled in by _next/build.mjs)-->
 
 
 ## Professional Activities
@@ -182,6 +152,4 @@ Anam-dong 5-ga, Seongbuk-gu <br>
 Seoul 136-713, Korea <br>
 (office) +82) 02-3290-4602
 
-<!-- include author links -->
-{% assign author=site.data.authors["Jihyeok Park"] %}
-<div>{% include author-links.html author=author %}</div>
+<!--contact-->

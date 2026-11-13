@@ -1,4 +1,26 @@
-last_update: "2026-08-12"
+last_update: "2026-11-14"
+
+# Ranking lists shown on /conferences/ (column headers and the legend).
+# When a new list comes out, update its url and year here and the matching
+# fields (bk21 / kiise / rank, rank-id) of every conference in `infos` at once.
+# note: a short remark shown next to the name, e.g. "abstract 12/01"; with
+#       several deadlines, a list gives one note per round, e.g. [abstract 06/04, abstract 11/10]
+rankings:
+  bk21:
+    name: BK21
+    year: 2018 # all values below checked against this PDF on 2026-11-14
+    url: https://www.kiise.or.kr/TopConferences/data/BK21%ED%94%8C%EB%9F%AC%EC%8A%A4%EC%82%AC%EC%97%85_CS%EB%B6%84%EC%95%BC_%EC%9A%B0%EC%88%98%EA%B5%AD%EC%A0%9C%ED%95%99%EC%88%A0%EB%8C%80%ED%9A%8C%EB%AA%A9%EB%A1%9D_2018.pdf
+    desc: Plus impact factor (IF 1–4)
+  kiise:
+    name: KIISE
+    year: 2024 # all values below checked against this PDF on 2026-11-14
+    url: https://www.kiise.or.kr/TopConferences/data/SW%EB%B6%84%EC%95%BC%EC%9A%B0%EC%88%98%ED%95%99%EC%88%A0%EB%8C%80%ED%9A%8C%EB%AA%A9%EB%A1%9D_2024.pdf
+    desc: excellent conferences (최우수 / 우수)
+  core:
+    name: CORE
+    year: 2026 # ICORE2026 (portal renamed to ICORE); all ranks below checked on 2026-11-14
+    url: https://portal.core.edu.au/conf-ranks/
+    desc: conference ranking (A* / A / B / C)
 
 # ------------------------------------------------------------------------------
 infos:
@@ -26,14 +48,14 @@ infos:
     rank-id: 18
 
   CAV:
-    tags: [LOGIC, PL]
+    tags: [PL]
     bk21: 4
     kiise: 최우수
     rank: A*
     rank-id: 331
 
   ASPLOS:
-    tags: [ARCH, PL]
+    tags: [PL]
     bk21: 4
     kiise: 최우수
     rank: A*
@@ -144,7 +166,7 @@ infos:
     rank: A*
     rank-id: 750
 
-  USENIX Security:
+  USENIX Sec:
     tags: [SEC]
     bk21: 3
     kiise: 최우수
@@ -220,12 +242,12 @@ list:
     place: Salt Lake City, Utah, United States
 
   - name: ICFP
-    year: 2026
-    link: https://icfp26.sigplan.org/
+    year: 2027
+    link: https://icfp27.sigplan.org/
     deadline:
-      - "2026-02-19 23:59"
-    date: Aug 24 - Aug 29
-    place: Indianapolis, Indiana, United States
+      - "2027-02-25 23:59"
+    date: Sep 26 - Oct 1
+    place: Nijmegen, Netherlands
 
   - name: ECOOP
     year: 2027
@@ -237,61 +259,64 @@ list:
     place: Turin, Italy
 
   - name: ESOP
-    year: 2027
-    link: https://etaps.org/2027/conferences/esop/
+    year: 2028
+    link: https://etaps.org/2028/
     deadline:
-      - "2026-05-28 23:59"
-      - "2026-10-15 23:59"
-    date: Apr 10 - Apr 15
-    place: Copenhagen, Denmark
+      - "TBA"
+    date: Apr 2 - Apr 7
+    place: Karlsruhe, Germany
 
   - name: TACAS
-    year: 2027
-    link: https://etaps.org/2027/conferences/tacas/
+    year: 2028
+    link: https://etaps.org/2028/
     deadline:
-      - "2026-10-15 23:59"
-    date: Apr 10 - Apr 15
-    place: Copenhagen, Denmark
+      - "TBA"
+    date: Apr 2 - Apr 7
+    place: Karlsruhe, Germany
 
   - name: CC
-    year: 2026
-    link: https://conf.researchr.org/home/CC-2026
+    year: 2027
+    link: https://conf.researchr.org/home/CC-2027
     deadline:
-      - "2025-11-11 23:59"
-    date: Jan 31 - Feb 1
-    place: Sydney, Australia
+      - "2026-12-03 23:59"
+    date: Mar 20 - Mar 21
+    place: Salt Lake City, Utah, United States
+    note: abstract 12/01
 
   - name: SAS
-    year: 2026
-    link: https://conf.researchr.org/home/splash-issta-2026/sas-2026
+    year: 2027
+    link: https://2027.splashcon.org/home/sas-2027
     deadline:
-      - "2026-05-07 23:59"
-    date: Oct 6 - Oct 8
-    place: Oakland, California, United States
+      - "TBA"
+    date: Oct 10 - Oct 15
+    place: Prague, Czechia
 
   - name: VMCAI
     year: 2027
     link: https://conf.researchr.org/home/VMCAI-2027
     deadline:
-      - "2026-09-16 23:59"
+      - "2026-09-30 23:59"
     date: Jan 11 - Jan 12
     place: Mexico City, Mexico
+    note: reg. 09/23
 
   - name: ICSE
-    year: 2027
-    link: https://conf.researchr.org/home/icse-2027
+    year: 2028
+    link: https://conf.researchr.org/home/icse-2028
     deadline:
-      - "2026-06-30 23:59"
-    date: Apr 25 - May 1
-    place: Dublin, Ireland
+      - "2027-07-01 23:59"
+    date: Apr 29 - May 7
+    place: Waikoloa, Hawaii, United States
+    note: abstract 06/24
 
   - name: FSE
     year: 2027
     link: https://conf.researchr.org/home/fse-2027
     deadline:
-      - "2026-10-02 23:59"
+      - "2026-10-03 23:59"
     date: Jul 12 - Jul 16
     place: Shenzhen, China
+    note: extended
 
   - name: ASE
     year: 2026
@@ -308,6 +333,7 @@ list:
       - "2027-01-11 23:59"
     date: Sep 7 - Sep 10
     place: Singapore
+    note: abstract 01/08
 
   - name: ICST
     year: 2027
@@ -318,13 +344,12 @@ list:
     place: San Sebastian, Spain
 
   - name: CCS
-    year: 2026
-    link: https://www.sigsac.org/ccs/CCS2026
+    year: 2027
+    link: https://www.sigsac.org/ccs/CCS2027/
     deadline:
-      - "2026-01-14 23:59"
-      - "2026-04-29 23:59"
-    date: Nov 15 - Nov 19
-    place: The Hague, Netherlands
+      - "TBA"
+    date: Oct 11 - Oct 15
+    place: Atlanta, Georgia, United States
 
   - name: S&P
     year: 2027
@@ -332,10 +357,11 @@ list:
     deadline:
       - "2026-06-11 23:59"
       - "2026-11-17 23:59"
-    date: TBD
+    date: May 17 - May 19
     place: Montreal, Canada
+    note: [abstract 06/04, abstract 11/10]
 
-  - name: USENIX Security
+  - name: USENIX Sec
     year: 2027
     link: https://www.usenix.org/conference/usenixsecurity27
     deadline:
@@ -343,6 +369,7 @@ list:
       - "2027-01-26 23:59"
     date: Aug 11 - Aug 13
     place: Denver, Colorado, USA
+    note: [reg. 08/18, reg. 01/19]
 
   - name: NDSS
     year: 2027

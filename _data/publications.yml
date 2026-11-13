@@ -1,3 +1,4 @@
+# topics: research topics, in any order (shown in a fixed order). keys: spec, analysis, testing, types, synthesis, security
 2026:
 
   - title: "Detecting JavaScript Libraries on the Web using Property-Order Graphs"
@@ -8,6 +9,7 @@
       - name: Ben Swierzy
       - name: Jihyeok Park
         corr: true
+    topics: [security, analysis]
     target:
       name: TOSEM
       detail: Transactions on Software Engineering and Methodology
@@ -20,6 +22,7 @@
     doi: 10.1145/3832783.3844571
     authors:
       - name: Minseok Choe
+    topics: [testing]
     target:
       name: ASE 2026 SRC
       detail: IEEE/ACM International Conference on Automated Software Engineering - Student Research Competition
@@ -38,6 +41,7 @@
         corr: true
     co-first: 2
     award: ACM SIGSOFT Distinguished Paper Award
+    topics: [synthesis, spec, analysis]
     target:
       name: ASE 2026
       detail: IEEE/ACM International Conference on Automated Software Engineering
@@ -54,6 +58,7 @@
       - name: Seongmin Ko
       - name: Jihyeok Park
         corr: true
+    topics: [synthesis, analysis]
     target:
       name: SAS 2026
       detail: Static Analysis Symposium
@@ -73,6 +78,7 @@
         corr: true
       - name: Sukyoung Ryu
         corr: true
+    topics: [testing, spec]
     target:
       name: TOSEM
       detail: Transactions on Software Engineering and Methodology
@@ -87,6 +93,7 @@
     authors:
       - name: Sungmin Park
     award: ACM Student Research Competition 2nd
+    topics: [security]
     target:
       name: ASE 2025 SRC
       detail: IEEE/ACM International Conference on Automated Software Engineering - Student Research Competition
@@ -104,6 +111,7 @@
       - name: Jihyeok Park
         corr: true
     co-first: 2
+    topics: [security, analysis]
     target:
       name: ASE 2025
       detail: IEEE/ACM International Conference on Automated Software Engineering
@@ -125,6 +133,7 @@
       - name: Jihyeok Park
         corr: true
     co-first: 2
+    topics: [spec]
     target:
       name: FSE 2025 Demo
       detail: ACM International Conference on the Foundations of Software Engineering - Demonstrations Track
@@ -146,6 +155,7 @@
         corr: true
       - name: Hakjoo Oh
         corr: true
+    topics: [synthesis]
     target:
       detail: ACM SIGPLAN Conference on Programming Language Design and
         Implementation
@@ -163,6 +173,7 @@
     authors:
       - name: Sukyoung Ryu
       - name: Jihyeok Park
+    topics: [spec, testing, analysis]
     target:
       detail: Communications of the ACM
       name: CACM
@@ -182,6 +193,7 @@
       - name: Dongjun Youn
       - name: Kanguk Lee
       - name: Sukyoung Ryu
+    topics: [testing, spec]
     target:
       detail: ACM SIGPLAN Conference on Programming Language Design and
         Implementation
@@ -200,6 +212,7 @@
       - name: Jihyeok Park
       - name: Seungmin An
       - name: Sukyoung Ryu
+    topics: [spec, analysis]
     target:
       detail:
         ACM Joint European Software Engineering Conference and Symposium on
@@ -219,6 +232,7 @@
       - name: Sukyoung Ryu
       - name: Jihyeok Park
       - name: Seungmin An
+    topics: [spec]
     target:
       name: PLDI 2022 Tutorial
       detail: ACM SIGPLAN Conference on Programming Language Design and
@@ -237,6 +251,7 @@
       - name: Hongki Lee
       - name: Sukyoung Ryu
     co-first: 2
+    topics: [analysis]
     target:
       name: CSUR
       detail: ACM Computing Surveys - vol. 54, issue 7, no. 149, pp. 1-37
@@ -252,6 +267,7 @@
       - name: Wonho Shin
       - name: Yusung Sim
       - name: Sukyoung Ryu
+    topics: [spec, types, analysis]
     target:
       name: ASE 2021
       detail: IEEE/ACM International Conference on Automated Software Engineering
@@ -270,6 +286,7 @@
       - name: Dongjun Youn
       - name: Sukyoung Ryu
     co-first: 2
+    topics: [analysis]
     target:
       name: ESEC/FSE 2021
       detail:
@@ -285,6 +302,7 @@
   - title: JavaScript Static Analysis with Evolving Engines and Specification
     authors:
       - name: Jihyeok Park
+    topics: [analysis, spec]
     target:
       name: ISSTA 2021 DS
       detail: ACM SIGSOFT International Symposium on Software Testing and Analysis - Doctoral Symposium
@@ -301,6 +319,7 @@
       - name: Gyeongwon Kim
       - name: Sukyoung Ryu
     award: ACM SIGSOFT Distinguished Paper Award
+    topics: [testing, spec]
     target:
       name: ICSE 2021
       detail: IEEE/ACM International Conference on Software Engineering
@@ -319,6 +338,7 @@
       - name: Jihee Park
       - name: Seungmin An
       - name: Sukyoung Ryu
+    topics: [spec]
     target:
       name: ASE 2020
       detail: IEEE/ACM International Conference on Automated Software Engineering
@@ -336,6 +356,7 @@
       - name: Sukyoung Ryu
       - name: Jihyeok Park
       - name: Joonyoung Park
+    topics: [analysis]
     target:
       name: IEEE Software
       detail: vol. 36, no. 3, pp. 74-82
@@ -351,6 +372,7 @@
       - name: Jaemin Hong
       - name: Jihyeok Park
       - name: Sukyoung Ryu
+    topics: [types]
     target:
       name: Scala 2018
       detail: ACM SIGPLAN Symposium on Scala
@@ -368,6 +390,7 @@
       - name: Chul-Joo Kim
       - name: Byoungoh Kim
       - name: Sukyoung Ryu
+    topics: [analysis]
     target:
       name: ProWeb 2018
       detail: International Workshop on Programming Technology for the Future Web
@@ -385,6 +408,7 @@
       - name: Jihyeok Park
       - name: Sukyoung Ryu
       - name: Sue Moon
+    topics: [types, security]
     target:
       name: NetPL 2017
       detail: ACM SIGCOMM Workshop on Networking and Programming Languages
@@ -400,6 +424,7 @@
       - name: Xavier Rival
       - name: Sukyoung Ryu
     award: Best Paper Award
+    topics: [analysis]
     target:
       name: SOAP 2017
       detail: ACM SIGPLAN International Workshop on the State Of the Art in Java
@@ -417,6 +442,7 @@
       - name: Yeonhee Ryou
       - name: Joonyoung Park
       - name: Sukyoung Ryu
+    topics: [analysis]
     target:
       name: ICSE 2017 Demo
       detail: IEEE/ACM International Conference on Software Engineering - Demonstrations Track
@@ -434,6 +460,7 @@
     authors:
       - name: Jihyeok Park
     award: ACM Student Research Competition 3rd
+    topics: [analysis, types]
     target:
       name: Modularity 2014 SRC
       detail: International Conference on Modularity - Student Research Competition

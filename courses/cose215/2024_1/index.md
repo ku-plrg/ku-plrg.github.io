@@ -1,10 +1,10 @@
----
-layout: course
----
 ### COSE215: Theory of Computation, 2024 Spring
 
+<div class="callout warning">
+
 **Note that this page is outdated. Please refer to the [recent course page](../).**
-{:.warning}
+
+</div>
 
 #### Course Information
 
@@ -51,5 +51,4 @@ Please download and install them using the following links:
 
 #### Schedule
 
-<!-- load schedule with PDF files -->
-{%- include schedule.html data=site.data.course.cose215.2024_1 -%}
+<!--schedule-->

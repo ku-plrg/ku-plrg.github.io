@@ -1,10 +1,10 @@
----
-layout: course
----
 ### COSE212: Programming Languages, 2025 Fall
 
+<div class="callout warning">
+
 **Note that this page is outdated. Please refer to the [recent course page](../).**
-{:.warning}
+
+</div>
 
 The primary goal of this course is to learn **essential concepts** of
 **programming languages** by designing and implementing their interpreters.
@@ -115,5 +115,4 @@ In this course, you will implement interpreters for the following languages:
 
 #### Schedule
 
-<!-- load schedule with PDF files -->
-{%- include schedule.html data=site.data.course.cose212.2025_2 -%}
+<!--schedule-->

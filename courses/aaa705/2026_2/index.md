@@ -1,6 +1,3 @@
----
-layout: course
----
 ### AAA705: Software Testing and Quality Assurance, 2026 Fall
 
 The primary goal of this course is to learn **automated techniques** for
@@ -57,5 +54,4 @@ Lecture 9 (**October 12**) and Lecture 10 (**October 14**) are delivered as
 
 #### Schedule
 
-<!-- load schedule with PDF files -->
-{%- include schedule.html data=site.data.course.aaa705.2026_2 -%}
+<!--schedule-->

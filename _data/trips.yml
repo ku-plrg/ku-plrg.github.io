@@ -8,6 +8,7 @@
 #     talk      :
 #       - pdf     : <path.pdf>
 #         youtube : <youtube-id>
+#         name    : <short name, e.g. Debun> (default: Talk, or Talk 1, Talk 2, ...)
 #     poster    :
 #       - pdf     : <path.pdf>
 #     report    :
@@ -39,7 +40,9 @@
     photos    : qBsWdDxKBmrHHpY76
     talk      :
       - pdf     : /assets/data/slides/2025/ase25-debun-slides.pdf
+        name    : Debun
       - pdf     : /assets/data/slides/2025/ase25-src-slides.pdf
+        name    : SRC
     report    :
       - pdf     : /assets/data/report/2025/ase25-report-jungwoongkim.pdf
       - pdf     : /assets/data/report/2025/ase25-report-minseokchoe.pdf

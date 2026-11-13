@@ -1,0 +1,125 @@
+# Research page (/research/). One entry per topic key in `topics` of
+# publications.yml (spec, analysis, testing, types, synthesis, security); the
+# topic names, colors, and order come from TOPICS in _next/build.mjs, and each
+# section lists the latest papers of that topic automatically.
+#   text  : a few sentences (Markdown)
+#   image : optional figure (none for now; add one per topic when every topic has a figure)
+#   tools : [name, url] pairs, newest first (actively developed ones first)
+
+intro: >
+  We develop programming language and software engineering techniques that make
+  real-world software reliable and secure. Much of our work starts from
+  JavaScript, the language of the web, and its official specification
+  ECMA-262.
+
+highlight:
+  name: ESMeta
+  text: >
+    ESMeta extracts a mechanized specification from ECMA-262 and automatically
+    generates language tools from it. It runs in the CI of
+    [ECMA-262](https://github.com/tc39/ecma262/actions/workflows/esmeta-typecheck.yml)
+    and [Test262](https://github.com/tc39/test262/actions/workflows/esmeta-test262.yml).
+  # The ESMeta diagram, drawn from this data. `papers` are matched against
+  # publication titles in publications.yml (any unique part of the title);
+  # the build fails if one is not found. `ci: [repo, workflow url]` marks where
+  # the tool runs in CI (shown first).
+  flow:
+    chain:
+      - name: ECMA-262
+        desc: JavaScript language specification in English prose
+      - name: Extraction
+        desc: Compiles the prose algorithms into a formal IR
+        papers: ["JISET:"]
+      - name: Mechanized Specification
+        desc: An executable, analyzable model of the language
+        papers: [Language Design and Implementation in Tandem, Filling the Gap]
+    derived:
+      - name: Interpreter & Double Debugger
+        desc: Runs and debugs programs on the specification itself
+        papers: [JSSpecVis]
+        ci: [Test262, https://github.com/tc39/test262/actions/workflows/esmeta-test262.yml]
+      - name: Conformance Test Synthesis
+        desc: Generates tests guided by feature-sensitive coverage
+        papers: ["JEST:", Feature-Sensitive Coverage for Conformance Testing of Programming Language Implementations, Selective Feature-Sensitive]
+      - name: Specification Type Checking
+        desc: Finds type errors in the specification
+        papers: [JSTAR]
+        ci: [ECMA-262, https://github.com/tc39/ecma262/actions/workflows/esmeta-typecheck.yml]
+      - name: Static Analyzer Derivation
+        desc: Derives JavaScript static analyzers from the specification
+        papers: [Automatically Deriving JavaScript Static Analyzers]
+      - name: Polyfill Extraction
+        desc: Extracts efficient and correct JavaScript polyfills
+        papers: [MiniPoly]
+  links:
+    - [Website, https://es-meta.github.io/]
+    - [Playground, https://es-meta.github.io/playground/]
+    - [GitHub, https://github.com/es-meta/esmeta]
+    - [CACM article, https://cacm.acm.org/research/javascript-language-design-and-implementation-in-tandem/]
+
+topics:
+  spec:
+    text: >
+      JavaScript evolves every year through ECMA-262, a specification written in
+      English prose. We mechanize such specifications and derive language tools
+      from them automatically: interpreters, double debuggers, conformance test
+      synthesizers, type checkers, static analyzers, and even polyfills.
+    tools:
+      - [ESMeta, https://github.com/es-meta/esmeta]
+      - [JSSpecVis, https://github.com/ku-plrg/js-spec-vis]
+      - [JISET, https://github.com/kaist-plrg/jiset]
+
+  analysis:
+    text: >
+      Static analysis over-approximates all possible behaviors of a program
+      without running it, while dynamic analysis observes actual executions. We
+      design scalable and precise analyses for highly dynamic languages such as
+      JavaScript, from heap abstractions and analysis parameters to combining
+      static and dynamic analysis, and use them as building blocks of synthesis,
+      testing, and security tools.
+    tools:
+      - [JSAVER, https://github.com/kaist-plrg/jsaver]
+      - [SAFE, https://github.com/sukyoung/safe]
+
+  testing:
+    text: >
+      Testing is still the most practical way to find bugs in real-world
+      software, but good tests and oracles are hard to write by hand. We
+      generate tests automatically, guide them with new coverage criteria, and
+      build oracles from specifications and from differences between
+      implementations. Language implementations have been our main target so
+      far: tests synthesized from ECMA-262 have revealed bugs both in JavaScript
+      engines and in the specification itself, and cross-engine testing exposes
+      performance divergences.
+    tools:
+      - [JEST, https://github.com/kaist-plrg/jest]
+
+  types:
+    text: >
+      Type systems rule out whole classes of errors before programs run. We
+      extend type systems with new features such as path-equality for Scala's
+      path-dependent types, rely on them for memory safety, and build type
+      analyses that find bugs in language specifications.
+    tools:
+      - [JSTAR, https://github.com/kaist-plrg/jstar]
+
+  synthesis:
+    text: >
+      We generate programs instead of writing them by hand: correct and
+      efficient JavaScript polyfills extracted from ECMA-262, parsing expression
+      grammars synthesized from examples with analysis-based pruning, and
+      interpretable graph classifiers learned as programs.
+    tools:
+      - [MiniPoly, https://zenodo.org/records/21832372]
+      - [SynPEG, https://zenodo.org/records/21330079]
+      - [PL4XGL, https://github.com/kupl/PL4XGL]
+
+  security:
+    text: >
+      Web applications bundle many third-party libraries, so it is hard to know
+      which vulnerable code they actually ship. We detect bundled JavaScript
+      libraries and their versions on the web with property-order graphs, verify
+      and classify exploits for Node.js vulnerabilities, and study
+      language-based approaches to memory safety.
+    tools:
+      - [Debun, https://github.com/ku-plrg/debun-ase25]

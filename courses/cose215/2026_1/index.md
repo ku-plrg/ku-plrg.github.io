@@ -1,5 +1,4 @@
 ---
-layout: course
 mermaid: false # disable default mermaid rendering for this page
 mathjax: false # disable default MathJax rendering for this page
 ---
@@ -95,11 +94,9 @@ Please download and install them using the following links:
 
 #### Online Automata Simulator
 
-<!-- load schedule with PDF files -->
-{%- include automata-viewer.html -%}
+<!--automata-viewer-->
 
 
 #### Schedule
 
-<!-- load schedule with PDF files -->
-{%- include schedule.html data=site.data.course.cose215.2026_1 -%}
+<!--schedule-->

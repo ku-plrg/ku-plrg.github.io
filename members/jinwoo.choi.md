@@ -1,11 +1,7 @@
 ---
-layout: member
 title: Jinwoo Choi (최진우)
-aside:
-  toc: true
 ---
-
-{% include former-member.html %}
+<!--former-member-->
 
 <img src="/assets/images/members/jinwoo.choi.jpg" class="profile-img">
 
@@ -20,6 +16,4 @@ Currently I am interested in program analysis and Web/App developing.
 
 ## Contact Information
 
-{% assign author=site.data.authors["Jinwoo Choi"] %}
-
-<div>{% include author-links.html author=author %}</div>
+<!--contact-->

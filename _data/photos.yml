@@ -1,0 +1,6 @@
+# Photos on the home page slider, in order. `src` is the original photo; a
+# web-sized copy is made at build time. `caption` is shown on the photo.
+- src: /assets/images/main.jpg
+  caption: "2026"
+- src: /assets/images/main-2025.jpg
+  caption: "2025"

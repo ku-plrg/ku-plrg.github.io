@@ -1,11 +1,7 @@
 ---
-layout: member
 title: Jungyeom Kim (김준겸)
-aside:
-  toc: true
 ---
-
-{% include former-member.html %}
+<!--former-member-->
 
 <img src="/assets/images/members/jungyeom.kim.jpg" class="profile-img">
 
