@@ -21,6 +21,11 @@
     place     : ASE 2026
     place-url : https://conf.researchr.org/home/ase-2026
     location  : Munich, Germany
+    talk      :
+      - pdf     : /assets/data/slides/2026/ase26-kim-minipoly-slides.pdf
+        name    : MiniPoly
+      - pdf     : /assets/data/slides/2026/ase26-src-choe-slides.pdf
+        name    : SRC
     report    :
       - pdf     : /assets/data/report/2026/ase26-report-jungwoong-kim.pdf
       - pdf     : /assets/data/report/2026/ase26-report-minseokchoe.pdf
@@ -31,6 +36,9 @@
     place     : SPLASH 2026
     place-url : https://conf.researchr.org/home/splash-2026
     location  : Oakland, CA, USA
+    talk      :
+      - pdf     : /assets/data/slides/2026/sas26-ko-synpeg-slides.pdf
+        name    : SynPEG
     report    :
       - pdf     : /assets/data/report/2026/splash26-report-seongminko.pdf
       - pdf     : /assets/data/report/2026/splash26-report-sungminpark.pdf
