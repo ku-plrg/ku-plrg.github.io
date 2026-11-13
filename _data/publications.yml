@@ -1,7 +1,7 @@
 2026:
 
   - title: "Detecting JavaScript Libraries on the Web using Property-Order Graphs"
-    doi: accepted
+    doi: 10.1145/3862477
     authors:
       - name: Sungmin Park
       - name: Seojin Kim
@@ -12,7 +12,9 @@
       name: TOSEM
       detail: Transactions on Software Engineering and Methodology
       url: https://dl.acm.org/journal/tosem
-    # TODO: just accepted (2026-11-01) -- add doi/pdf once published
+    # TODO: just accepted -- update pdf/volume info once officially published
+    materials:
+      pdf: /assets/data/publication/tosem26-park-pog.pdf
 
   - title: "Toward Automatically Detecting Cross-Engine Asymptotic Complexity Divergence in JavaScript"
     doi: 10.1145/3832783.3844571

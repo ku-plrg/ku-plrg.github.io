@@ -78,7 +78,7 @@ Please see [**Publications**](/publications).
       [**2019**](https://doi.org/10.1109/MS.2018.110113408)
   - TOSEM -
       [**2026**](https://doi.org/10.1145/3808231) /
-      **2026**
+      [**2026**](https://doi.org/10.1145/3862477)
 
 
 ## Professional Activities
