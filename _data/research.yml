@@ -1,10 +1,12 @@
 # Research page (/research/). One entry per topic key in `topics` of
 # publications.yml (spec, analysis, testing, types, synthesis, security); the
-# topic names, colors, and order come from TOPICS in _next/build.mjs, and each
-# section lists the latest papers of that topic automatically.
+# topic names, colors, and order come from TOPICS in _next/build.mjs.
 #   text  : a few sentences (Markdown)
 #   image : optional figure (none for now; add one per topic when every topic has a figure)
 #   tools : [name, url] pairs, newest first (actively developed ones first)
+#   selected : the representative papers shown under "Selected papers", in this
+#              order (newest first); any unique part of the publication title,
+#              and the build fails if one is not found
 
 intro: >
   We develop programming language and software engineering techniques that make
@@ -64,6 +66,10 @@ topics:
       English prose. We mechanize such specifications and derive language tools
       from them automatically: interpreters, double debuggers, conformance test
       synthesizers, type checkers, static analyzers, and even polyfills.
+    selected:
+      - "JavaScript Language Design and Implementation in Tandem"
+      - "Automatically Deriving JavaScript Static Analyzers"
+      - "JISET:"
     tools:
       - [ESMeta, https://github.com/es-meta/esmeta]
       - [JSSpecVis, https://github.com/ku-plrg/js-spec-vis]
@@ -77,6 +83,10 @@ topics:
       JavaScript, from heap abstractions and analysis parameters to combining
       static and dynamic analysis, and use them as building blocks of synthesis,
       testing, and security tools.
+    selected:
+      - "Accelerating JavaScript Static Analysis via Dynamic Shortcuts"
+      - "A Survey of Parametric Static Analysis"
+      - "Revisiting Recency Abstraction"
     tools:
       - [JSAVER, https://github.com/kaist-plrg/jsaver]
       - [SAFE, https://github.com/sukyoung/safe]
@@ -91,6 +101,10 @@ topics:
       far: tests synthesized from ECMA-262 have revealed bugs both in JavaScript
       engines and in the specification itself, and cross-engine testing exposes
       performance divergences.
+    selected:
+      - "Selective Feature-Sensitive"
+      - "Feature-Sensitive Coverage for Conformance Testing of Programming Language Implementations"
+      - "JEST:"
     tools:
       - [JEST, https://github.com/kaist-plrg/jest]
 
@@ -100,6 +114,10 @@ topics:
       extend type systems with new features such as path-equality for Scala's
       path-dependent types, rely on them for memory safety, and build type
       analyses that find bugs in language specifications.
+    selected:
+      - "JSTAR"
+      - "Path Dependent Types"
+      - "Memory-safe Network Functions"
     tools:
       - [JSTAR, https://github.com/kaist-plrg/jstar]
 
@@ -109,6 +127,10 @@ topics:
       efficient JavaScript polyfills extracted from ECMA-262, parsing expression
       grammars synthesized from examples with analysis-based pruning, and
       interpretable graph classifiers learned as programs.
+    selected:
+      - "MiniPoly"
+      - "Synthesizing Parsing Expression Grammars"
+      - "PL4XGL"
     tools:
       - [MiniPoly, https://zenodo.org/records/21832372]
       - [SynPEG, https://zenodo.org/records/21330079]
@@ -121,5 +143,8 @@ topics:
       libraries and their versions on the web with property-order graphs, verify
       and classify exploits for Node.js vulnerabilities, and study
       language-based approaches to memory safety.
+    selected:
+      - "Detecting JavaScript Libraries on the Web"
+      - "Memory-safe Network Functions"
     tools:
       - [Debun, https://github.com/ku-plrg/debun-ase25]
