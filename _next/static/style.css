@@ -685,6 +685,13 @@ ul.confs > li.conf-head {
 .confs .due[data-tip]::after { left: 0; transform: translate(0, 4px); }
 .confs .due[data-tip]:hover::after { transform: translate(0, 0); }
 .confs .due[data-tip]::before { left: 12px; }
+/* member pages: venue years show the paper title, wrapped and starting at the year */
+ul.venues [data-tip]::after {
+  left: 0; transform: translate(0, 4px); white-space: normal; width: max-content; max-width: min(340px, 80vw); font-weight: 500;
+}
+ul.venues [data-tip]:hover::after, ul.venues [data-tip]:focus-visible::after { transform: translate(0, 0); }
+ul.venues [data-tip]::before { left: 12px; transform: translate(0, 4px); }
+ul.venues [data-tip]:hover::before, ul.venues [data-tip]:focus-visible::before { transform: translate(0, 0); }
 
 /* embedded course tools (COSE215 automata viewer) fit the page on phones */
 .prose #viewer { width: auto; max-width: 800px; }
