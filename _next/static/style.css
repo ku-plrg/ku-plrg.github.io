@@ -12,6 +12,8 @@
   --accent-fg: #ffffff;
   --line: #e6e8eb;
   --soft: #f5f7fa;
+  /* page width (content + 2 × 20px padding) */
+  --page: 960px;
   --link: #2f4fb8;
   --award-bg: #fdf3d3;
   --award-line: #ecc764;
@@ -56,7 +58,7 @@ body {
   margin: 0; background: var(--bg); color: var(--fg);
   font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Apple SD Gothic Neo", "Noto Sans KR", sans-serif;
 }
-main { max-width: 760px; margin: 0 auto; padding: 0 20px 64px; }
+main { max-width: var(--page); margin: 0 auto; padding: 0 20px 64px; }
 a { color: var(--link); text-decoration: none; }
 a:hover { text-decoration: underline; }
 h2 { margin: 48px 0 12px; font-size: 24px; letter-spacing: -0.2px; }
@@ -71,7 +73,7 @@ code { font-size: 0.9em; padding: 1px 5px; border-radius: 4px; background: var(-
 .note { color: var(--muted); font-size: 14px; }
 .empty { text-align: center; color: var(--muted); padding: 40px 0; }
 footer {
-  margin: 0 auto; max-width: 760px; padding: 24px 20px 48px; border-top: 1px solid var(--line);
+  margin: 0 auto; max-width: var(--page); padding: 24px 20px 48px; border-top: 1px solid var(--line);
   color: var(--muted); font-size: 14px; text-align: center;
 }
 
@@ -139,7 +141,7 @@ a.venue:hover { text-decoration: none; background: var(--accent); color: var(--a
   background: color-mix(in srgb, var(--bg) 88%, transparent);
   backdrop-filter: saturate(1.4) blur(10px); -webkit-backdrop-filter: saturate(1.4) blur(10px);
 }
-.topnav-inner { max-width: 760px; margin: 0 auto; padding: 0 20px; height: 56px; display: flex; align-items: center; gap: 14px; }
+.topnav-inner { max-width: var(--page); margin: 0 auto; padding: 0 20px; height: 56px; display: flex; align-items: center; gap: 14px; }
 .brand { display: flex; flex: none; }
 .brand img { height: 26px; width: auto; display: block; }
 .links { display: flex; gap: 0; min-width: 0; overflow-x: auto; scrollbar-width: none; flex: 1; }
@@ -236,7 +238,8 @@ h2 .more { float: right; font-size: 15px; font-weight: 500; margin-top: 6px; }
 address { margin-top: 20px; font-style: normal; color: var(--muted); font-size: 15px; }
 
 /* photo slider */
-.slider { position: relative; margin: 0 0 8px; border-radius: 16px; overflow: hidden; background: var(--soft); }
+/* the whole photo (16:10), at most 760px wide and centered, so it stays on the first screen */
+.slider { position: relative; max-width: 760px; margin: 0 auto 8px; border-radius: 16px; overflow: hidden; background: var(--soft); }
 .slider::after { content: ""; position: absolute; inset: 0; border-radius: 16px; box-shadow: inset 0 0 0 1px rgb(0 0 0 / 8%); pointer-events: none; }
 .slides { display: flex; overflow-x: auto; scroll-snap-type: x mandatory; scrollbar-width: none; }
 .slides::-webkit-scrollbar { display: none; }
