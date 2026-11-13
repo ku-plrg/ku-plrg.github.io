@@ -90,11 +90,13 @@ footer {
 .callout.warning, .callout.error { border-left-color: var(--award-line); background: var(--award-bg); }
 
 /* tags and chips (topics on papers, filters) */
+/* topic tags: like the filter chips (grey outline), only the text colored */
 .tag {
-  font-size: 12px; font-weight: 600; padding: 0 8px; border-radius: 999px; line-height: 20px;
-  color: var(--t); background: color-mix(in srgb, var(--t) 12%, transparent);
+  font-size: 12px; font-weight: 500; padding: 0 7px; border-radius: 999px; line-height: 18px;
+  color: var(--t); background: transparent; border: 1px solid var(--line);
 }
-a.tag:hover { text-decoration: none; background: color-mix(in srgb, var(--t) 22%, transparent); }
+/* hover: the outline takes the topic color, same as the filter chips */
+a.tag:hover { text-decoration: none; border-color: var(--t); }
 .filters { display: flex; flex-wrap: wrap; gap: 5px; align-items: center; padding: 16px 0 0; }
 .chip {
   font: inherit; font-size: 13.5px; cursor: pointer; color: var(--muted);
@@ -285,13 +287,16 @@ ul.pubs { list-style: none; margin: 0; padding: 0; }
 .pubs .title { font-size: 16px; font-weight: 650; letter-spacing: -.1px; line-height: 1.35; color: var(--fg); }
 a.title:hover { color: var(--link); }
 .pubs .authors { margin-top: 1px; font-size: 14px; color: var(--muted); }
-/* lab members: darker and a little bolder than co-authors */
+/* lab members: same color as co-authors, bolder, with a faint underline (they link to member pages) */
 .pubs .authors a {
-  color: color-mix(in srgb, var(--fg) 75%, var(--muted)); font-weight: 500;
+  color: inherit; font-weight: 600;
   text-decoration: underline; text-decoration-color: var(--line); text-underline-offset: 3px;
 }
 .pubs .authors a:hover { color: var(--link); text-decoration-color: currentColor; }
 .pubs .meta { display: flex; flex-wrap: wrap; gap: 2px 11px; align-items: center; margin-top: 1px; font-size: 13.5px; }
+/* PDF · Slides · ...: a quieter blue, full blue on hover */
+.pubs .meta a { color: color-mix(in srgb, var(--link) 60%, var(--muted)); }
+.pubs .meta a:hover { color: var(--link); }
 /* awards: flat deep gold with white text, like the solid venue badges */
 .pubs .award {
   display: inline-flex; align-items: center; gap: 5px; margin: 3px 0 0; padding: 3px 10px 3px 8px; border-radius: 999px;

@@ -227,8 +227,8 @@ function authorList(pub) {
   return as.map((a, i) => {
     const known = DATA.authors[a.name];
     let s = known?.url ? `<a href="${known.url}">${esc(a.name)}</a>` : esc(a.name);
-    if (pub['co-first'] > i) s += '<sup>*</sup>';
-    else if (a.corr) s += '<sup>†</sup>';
+    if (pub['co-first'] > i) s += '<sup title="equal contribution">*</sup>';
+    else if (a.corr) s += '<sup title="corresponding author">†</sup>';
     return s;
   }).join(', ');
 }
@@ -246,7 +246,7 @@ function pubItem(pub, year) {
   </div>
   <div class="body">
     ${titleUrl ? `<a class="title" href="${esc(titleUrl)}">${esc(pub.title)}</a>` : `<span class="title">${esc(pub.title)}</span>`}
-    <div class="authors">${authorList(pub)}${ifs(pub['co-first'], ' <span class="note">(* equal contribution)</span>')}</div>
+    <div class="authors">${authorList(pub)}</div>
     ${ifs(pub.award, `<div class="award">🏅 ${esc(pub.award)}</div>`)}
     <div class="meta">
       ${ifs(pub.doi === 'accepted', '<span class="note">Accepted</span>')}
