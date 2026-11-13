@@ -16,6 +16,25 @@
 
 2026:
 
+  - date-from : 2026.10.12
+    date-to   : 2026.10.16
+    place     : ASE 2026
+    place-url : https://conf.researchr.org/home/ase-2026
+    location  : Munich, Germany
+    report    :
+      - pdf     : /assets/data/report/2026/ase26-report-jungwoong-kim.pdf
+      - pdf     : /assets/data/report/2026/ase26-report-minseokchoe.pdf
+      - pdf     : /assets/data/report/2026/ase26-report-youngmin-cho.pdf
+
+  - date-from : 2026.10.03
+    date-to   : 2026.10.09
+    place     : SPLASH 2026
+    place-url : https://conf.researchr.org/home/splash-2026
+    location  : Oakland, CA, USA
+    report    :
+      - pdf     : /assets/data/report/2026/splash26-report-seongminko.pdf
+      - pdf     : /assets/data/report/2026/splash26-report-sungminpark.pdf
+
   - date-from : 2026.08.26
     date-to   : 2026.08.28
     place     : SIGPL Summer School 2026
