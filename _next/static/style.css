@@ -523,6 +523,17 @@ ul.mini-pubs { list-style: none; padding: 0; margin: 4px 0 6px; }
 .mini-pubs .venue { justify-self: start; font-size: 12px; padding: 0 7px; line-height: 20px; white-space: nowrap; }
 .mini-pubs a { color: var(--fg); }
 .mini-pubs a:hover { color: var(--link); }
+.mini-pubs a.venue { color: var(--bg); }
+.mini-pubs a.venue:hover { color: var(--accent-fg); }
+/* award papers: a 🏅 after the title, the award's name in its tooltip */
+.mini-pubs .award-mark {
+  display: inline-grid; place-items: center; width: 22px; height: 22px; margin-left: 5px; vertical-align: middle; position: relative; top: -2px;
+  font-size: 13px; line-height: 1; border-radius: 50%; cursor: default;
+  background: #fffaeb; border: 1.5px solid #d9a52e;
+  box-shadow: 0 0 0 2.5px rgb(217 165 46 / 18%), 0 1px 3px rgb(184 134 26 / 30%);
+}
+.mini-pubs .award-mark { transition: transform .15s; }
+.mini-pubs .award-mark:hover { transform: scale(1.12) rotate(-8deg); }
 @media (max-width: 560px) { .mini-pubs li { display: flex; flex-direction: column; align-items: flex-start; gap: 3px; padding: 6px 0; } }
 
 /* ESMeta diagram: ECMA-262 -> extraction -> mechanized specification, then the derived tools */
@@ -690,6 +701,17 @@ ul.venues [data-tip]::after {
   left: 0; transform: translate(0, 4px); white-space: normal; width: max-content; max-width: min(340px, 80vw); font-weight: 500;
 }
 ul.venues [data-tip]:hover::after, ul.venues [data-tip]:focus-visible::after { transform: translate(0, 0); }
+/* venue badges (publications, research, home): the full venue name, wrapped
+   and starting at the badge; in the ESMeta diagram's right-aligned rows, ending at it */
+.venue[data-tip]::after {
+  left: 0; transform: translate(0, 4px); white-space: normal; width: max-content; max-width: min(340px, 80vw);
+}
+.venue[data-tip]:hover::after, .venue[data-tip]:focus-visible::after { transform: translate(0, 0); }
+.venue[data-tip]::before { left: 14px; }
+@media (min-width: 641px) {
+  .flow-out .venue[data-tip]::after, .flow-out .ci[data-tip]::after { left: auto; right: 0; transform: translate(0, 4px); }
+  .flow-out .venue[data-tip]:hover::after, .flow-out .ci[data-tip]:hover::after { transform: translate(0, 0); }
+}
 ul.venues [data-tip]::before { left: 12px; transform: translate(0, 4px); }
 ul.venues [data-tip]:hover::before, ul.venues [data-tip]:focus-visible::before { transform: translate(0, 0); }
 

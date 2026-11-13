@@ -237,6 +237,17 @@ function authorList(pub) {
   }).join(', ');
 }
 
+// the venue badge of a paper: links to the venue, and its tooltip gives the full name
+// ("ASE 2026: IEEE/ACM International Conference on Automated Software Engineering")
+function venueBadge(pub, year = pub.year) {
+  const venue = pub.target?.name ?? '';
+  const tip = [venue, pub.target?.detail].filter(Boolean).join(': ');
+  const label = esc(shortVenue(venue, year));
+  return pub.target?.url
+    ? `<a class="venue" href="${esc(pub.target.url)}" data-tip="${esc(tip)}">${label}</a>`
+    : `<span class="venue" data-tip="${esc(tip)}">${label}</span>`;
+}
+
 function pubItem(pub, year) {
   const venue = pub.target?.name ?? '';
   const links = [];
@@ -245,7 +256,7 @@ function pubItem(pub, year) {
   const titleUrl = pub.doi && pub.doi !== 'accepted' ? `https://doi.org/${pub.doi}` : pub.materials?.pdf;
   return `<li data-year="${year}" data-award="${pub.award ? 1 : 0}" data-topics="${(pub.topics || []).join(' ')}">
   <div class="side">
-    <a class="venue" href="${esc(pub.target?.url || '#')}" title="${esc([venue, pub.target?.detail].filter(Boolean).join(': '))}">${esc(shortVenue(venue, year))}</a>
+    ${venueBadge(pub, year)}
     ${ifs(pub.topics?.length, `<div class="tags">${sortTopics(pub.topics).map(topicTag).join('')}</div>`)}
   </div>
   <div class="body">
@@ -335,8 +346,6 @@ const atVenue = (pub, v) => {
   const n = (pub.target?.name || '').replace(/^ESEC\//, '');
   return (n === v || n.startsWith(`${v} `)) && !isMinorVenue(n);
 };
-// a paper at one of the venues above (demos included); the rest are workshops and the like
-const isMajor = (pub) => VENUE_GROUPS.some(([, vs]) => vs.some((v) => atVenue(pub, v)));
 function venueSummary(name) {
   const mine = allPubs().filter((p) => (p.authors || []).some((a) => a.name === name));
   const rows = VENUE_GROUPS.map(([group, venues]) => {
@@ -449,13 +458,13 @@ function findPub(part) {
 const ciBadge = (ci) => {
   if (!ci) return '';
   const [name, url] = [].concat(ci);
-  return url ? `<a class="ci" href="${esc(url)}" title="Runs in the CI of ${esc(name)}">CI of ${esc(name)}</a>` : `<span class="ci">CI of ${esc(name)}</span>`;
+  return url ? `<a class="ci" href="${esc(url)}" data-tip="Runs in the CI of ${esc(name)}">CI of ${esc(name)}</a>` : `<span class="ci">CI of ${esc(name)}</span>`;
 };
 function flowDiagram(flow) {
   const badge = (part) => {
     const p = findPub(part);
     const url = p.doi && p.doi !== 'accepted' ? `https://doi.org/${p.doi}` : p.materials?.pdf;
-    return `<a class="venue" href="${esc(url || '/publications/')}" title="${esc(p.title)}">${esc(shortVenue(p.target?.name ?? '', p.year))}${p.award ? ' 🏅' : ''}</a>`;
+    return `<a class="venue" href="${esc(url || '/publications/')}" data-tip="${esc([p.target?.name, p.target?.detail].filter(Boolean).join(': '))}">${esc(shortVenue(p.target?.name ?? '', p.year))}${p.award ? ' 🏅' : ''}</a>`;
   };
   const node = (n, cls = '') => `<div class="fnode${cls}">
       <b>${esc(n.name)}</b><span>${esc(n.desc || '')}</span>
@@ -473,17 +482,7 @@ function flowDiagram(flow) {
 </div>`;
 }
 
-// the three latest papers of a topic for the research page: papers at major venues
-// (VENUE_GROUPS) only, topped up with the latest workshop papers when there are
-// fewer than three; SRC, DS, and tutorials never
-function recentPapers(pubs) {
-  const ps = pubs.filter((p) => !isMinorVenue(p.target?.name));
-  const major = ps.filter(isMajor).slice(0, 3);
-  const extra = ps.filter((p) => !isMajor(p)).slice(0, 3 - major.length);
-  return ps.filter((p) => major.includes(p) || extra.includes(p));
-}
-
-// research: one section per topic (_data/research.yml) with its latest papers
+// research: one section per topic (_data/research.yml) with its selected papers
 const inlineMd = (t) => marked.parseInline(String(t ?? '').trim());
 function buildResearch() {
   const R = DATA.research || {};
@@ -494,7 +493,8 @@ function buildResearch() {
     const mine = pubs.filter((p) => (p.topics || []).includes(k));
     const paper = (p) => {
       const url = p.doi && p.doi !== 'accepted' ? `https://doi.org/${p.doi}` : p.materials?.pdf;
-      return `<li><span class="venue">${esc(shortVenue(p.target?.name ?? '', p.year))}</span><span>${url ? `<a href="${esc(url)}">${esc(p.title)}</a>` : esc(p.title)}${ifs(p.award, ` <span class="award-mark" title="${esc(p.award)}">🏅</span>`)}</span></li>`;
+      // an award paper gets a 🏅 after the title; the award's name is in the tooltip
+      return `<li>${venueBadge(p)}<span>${url ? `<a href="${esc(url)}">${esc(p.title)}</a>` : esc(p.title)}${ifs(p.award, ` <span class="award-mark" data-tip="${esc(p.award)}">🏅</span>`)}</span></li>`;
     };
     return `<section class="topic-sec t-${k}" id="${k}">
   <div class="topic-head">
@@ -505,10 +505,10 @@ function buildResearch() {
     <p>${inlineMd(r.text || t.desc)}</p>
     ${ifs(r.image, `<img class="figure" src="${esc(r.image)}" alt="${esc(t.name)}" loading="lazy">`)}
     ${ifs(r.tools?.length, `<div class="tools"><span class="label">Tools</span>${(r.tools || []).map(([n, u]) => `<a href="${esc(u)}">${esc(n)}</a>`).join('')}</div>`)}
-    <div class="label recent">Recent papers</div>
+    ${ifs(r.selected?.length, `<div class="label recent">Selected papers</div>
     <ul class="mini-pubs">
-${recentPapers(mine).map(paper).join('\n')}
-    </ul>
+${(r.selected || []).map(findPub).map(paper).join('\n')}
+    </ul>`)}
   </div>
 </section>`;
   }).join('\n');
