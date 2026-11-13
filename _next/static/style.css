@@ -510,10 +510,11 @@ details.drop .menu a:hover { background: var(--soft); text-decoration: none; col
 .tools .label, .label.recent { font-size: 13px; color: var(--muted); }
 .label.recent { margin: 12px 0 2px; }
 .figure { display: block; max-width: 100%; margin: 10px 0 12px; border-radius: 10px; background: #fff; padding: 8px; }
-.topic-sec { margin-top: 20px; border: 1px solid var(--line); border-radius: 12px; overflow: hidden; scroll-margin-top: 72px; }
+.topic-sec { margin-top: 20px; border: 1px solid var(--line); border-radius: 12px; scroll-margin-top: 72px; }
 .topic-head {
   display: flex; align-items: baseline; justify-content: space-between; gap: 12px; padding: 12px 18px;
   background: color-mix(in srgb, var(--t) 9%, var(--bg)); border-bottom: 1px solid color-mix(in srgb, var(--t) 22%, var(--line));
+  border-radius: 11px 11px 0 0;
 }
 .topic-head h2 { margin: 0; font-size: 19px; color: var(--t); }
 .topic-head .more { font-size: 14px; font-weight: 600; color: var(--t); white-space: nowrap; }
@@ -533,6 +534,8 @@ ul.mini-pubs { list-style: none; padding: 0; margin: 4px 0 6px; }
   background: #fffaeb; border: 1.5px solid #d9a52e;
   box-shadow: 0 0 0 2.5px rgb(217 165 46 / 18%), 0 1px 3px rgb(184 134 26 / 30%);
 }
+.mini-pubs .award-mark[data-tip]::after { left: auto; right: -6px; transform: translate(0, 4px); }
+.mini-pubs .award-mark[data-tip]:hover::after { transform: translate(0, 0); }
 @media (max-width: 560px) { .mini-pubs li { display: flex; flex-direction: column; align-items: flex-start; gap: 3px; padding: 6px 0; } }
 
 /* ESMeta diagram: ECMA-262 -> extraction -> mechanized specification, then the derived tools */
