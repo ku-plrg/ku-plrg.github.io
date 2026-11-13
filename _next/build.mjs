@@ -379,7 +379,10 @@ function buildMemberPage(file) {
 // ---------------------------------------------------------------------------
 // home
 function buildHome() {
-  const recent = allPubs().slice(0, 5);
+  // "Selected Publications": the papers with `selected: true` (newest first), filled up
+  // with the latest ones when fewer than six are selected
+  const pubs = allPubs();
+  const recent = [...pubs.filter((p) => p.selected), ...pubs.filter((p) => !p.selected)].slice(0, 6);
   const body = `<header class="hero">
   <h1 aria-label="Programming Language Research Group (PLRG)"><b>P</b>rogramming <b>L</b>anguage<br><b>R</b>esearch <b>G</b>roup</h1>
   <p class="tagline">Korea University · Seoul</p>
@@ -418,7 +421,7 @@ ${Object.entries(TOPICS).map(([k, t]) => {
   145 Anam-ro, Seongbuk-gu, Seoul 02841, Korea
 </address>
 
-<h2>Recent Publications <a class="more" href="/publications/">All ${allPubs().length} →</a></h2>
+<h2>Selected Publications <a class="more" href="/publications/">All ${allPubs().length} →</a></h2>
 <ul class="pubs">
 ${recent.map((p) => pubItem(p, p.year)).join('\n')}
 </ul>

@@ -1,4 +1,5 @@
 # topics: research topics, in any order (shown in a fixed order). keys: spec, analysis, testing, types, synthesis, security
+# selected: true shows the paper under "Selected Publications" on the home page (6 papers, newest first)
 2026:
 
   - title: "Detecting JavaScript Libraries on the Web using Property-Order Graphs"
@@ -33,6 +34,7 @@
       artifact: https://zenodo.org/records/22822352
 
   - title: "MiniPoly: Automatic Extraction of Efficient JavaScript Polyfill from Language Specification"
+    selected: true
     doi: 10.1145/3832783.3837549
     authors:
       - name: Jungwoong Kim
@@ -104,6 +106,7 @@
       poster: /assets/data/poster/2025/ase25-src-poster.pdf
 
   - title: "Debun: Detecting Bundled JavaScript Libraries on Web using Property-Order Graphs"
+    selected: true
     doi: 10.1109/ASE63991.2025.00015
     authors:
       - name: Seojin Kim
@@ -169,6 +172,7 @@
       news: https://www.m-i.kr/news/articleView.html?idxno=1135778
 
   - title: JavaScript Language Design and Implementation in Tandem
+    selected: true
     doi: 10.1145/3624723
     authors:
       - name: Sukyoung Ryu
@@ -187,6 +191,7 @@
 
 2023:
   - title: Feature-Sensitive Coverage for Conformance Testing of Programming Language Implementations
+    selected: true
     doi: 10.1145/3591240
     authors:
       - name: Jihyeok Park
@@ -207,6 +212,7 @@
 
 2022:
   - title: Automatically Deriving JavaScript Static Analyzers from Specifications using Meta-Level Static Analysis
+    selected: true
     doi: 10.1145/3540250.3549097
     authors:
       - name: Jihyeok Park
@@ -311,6 +317,7 @@
       slides: /assets/data/slides/2021/issta21-ds-slides.pdf
 
   - title: "JEST: N+1-version Differential Testing of Both JavaScript Engines and Specification"
+    selected: true
     doi: 10.1109/ICSE43902.2021.00015
     authors:
       - name: Jihyeok Park
