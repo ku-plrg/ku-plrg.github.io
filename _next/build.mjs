@@ -8,7 +8,7 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { execFileSync } from 'node:child_process';
 import { makeImages, hasCwebp } from './images.mjs';
-import yaml from 'js-yaml';
+import * as yaml from 'js-yaml';
 import { marked } from 'marked';
 
 const HERE = path.dirname(fileURLToPath(import.meta.url));
