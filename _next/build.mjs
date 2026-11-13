@@ -636,7 +636,7 @@ function buildConferences() {
     });
   });
   const head = `<li class="conf-head" aria-hidden="true"><div>Due<span class="aoe">AoE</span></div><div>Left</div><div class="area">Area</div><div>Conference</div><div class="dates">Dates</div><div class="place">Place</div><div class="pin"></div>${Object.values(RANKS).map(([n, u, t]) => `<div class="rk"><a href="${u}" title="${esc(`${n} ${t}`)}">${n}</a></div>`).join('')}</li>`;
-  const body = `${pageHead('Conferences', `Submission deadlines as in the CFPs (AoE; hover for your local time) · last update ${esc(last_update || '')}`)}
+  const body = `${pageHead('Conference Deadlines', `Submission deadlines as in the CFPs (AoE; hover for your local time) · last update ${esc(last_update || '')}`)}
 <div class="filters" role="group" aria-label="Filter by area">
   <button type="button" class="chip" data-tag="" aria-pressed="true">All</button>
 ${Object.keys(TAGS).map((t) => `  <button type="button" class="chip area-chip ctag-${t.toLowerCase()}" data-tag="${t}" aria-pressed="false">${t}</button>`).join('\n')}
@@ -659,7 +659,9 @@ ${items.join('\n')}
   <h3>Past deadlines</h3>
   <ul class="confs past" id="conf-past"></ul>
 </section>`;
-  write('conferences/index.html', layout({ title: 'Conferences', active: '', body, scripts: ['/static/conferences.js'] }));
+  write('deadlines/index.html', layout({ title: 'Conference Deadlines', active: '', body, scripts: ['/static/conferences.js'] }));
+  // the page used to be /conferences/ (old links, bookmarks): send them on, keeping the #filter
+  write('conferences/index.html', redirectPage('/deadlines/', true));
 }
 
 // ---------------------------------------------------------------------------
@@ -776,6 +778,23 @@ function buildCourses() {
 
 // ---------------------------------------------------------------------------
 // pages that only redirect (`redirect_to` in the front matter) and the 404 page
+// a page that sends the visitor to `to` (keeping the #hash if asked)
+function redirectPage(to, keepHash = false) {
+  return `<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Redirecting…</title>
+  <link rel="canonical" href="${esc(to)}">
+  <meta http-equiv="refresh" content="0; url=${esc(to)}">
+  <meta name="robots" content="noindex">
+  <script>location.replace(${JSON.stringify(to)}${keepHash ? ' + location.hash' : ''});</script>
+</head>
+<body><p>Redirecting to <a href="${esc(to)}">${esc(to)}</a>…</p></body>
+</html>
+`;
+}
+
 function buildRedirects() {
   const skip = new Set(['_site', '_next', '_includes', '_layouts', '_sass', '_data', 'node_modules', '.git', '.metals', '.bsp', '.scala-build', '.sass-cache', 'assets', 'vendor', 'slides']);
   const walk = (dir) => fs.readdirSync(path.join(ROOT, dir), { withFileTypes: true }).flatMap((e) => {
@@ -785,19 +804,7 @@ function buildRedirects() {
   for (const rel of walk('.')) {
     const to = [].concat(readPage(rel).fm.redirect_to || [])[0];
     if (!to) continue;
-    write(path.join(path.dirname(rel), 'index.html'), `<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>Redirecting…</title>
-  <link rel="canonical" href="${esc(to)}">
-  <meta http-equiv="refresh" content="0; url=${esc(to)}">
-  <meta name="robots" content="noindex">
-  <script>location.replace(${JSON.stringify(to)});</script>
-</head>
-<body><p>Redirecting to <a href="${esc(to)}">${esc(to)}</a>…</p></body>
-</html>
-`);
+    write(path.join(path.dirname(rel), 'index.html'), redirectPage(to));
   }
 }
 
