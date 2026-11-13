@@ -24,7 +24,9 @@
     photos    : SqSAUhCCKyeQWzj78
     talk      :
       - pdf     : /assets/data/slides/2026/ase26-kim-minipoly-slides.pdf
+        name    : MiniPoly
       - pdf     : /assets/data/slides/2026/ase26-src-choe-slides.pdf
+        name    : SRC
     report    :
       - pdf     : /assets/data/report/2026/ase26-report-jungwoong-kim.pdf
       - pdf     : /assets/data/report/2026/ase26-report-minseokchoe.pdf
@@ -38,6 +40,7 @@
     photos    : mDgBaYUJPRFBXbtx5
     talk      :
       - pdf     : /assets/data/slides/2026/sas26-ko-synpeg-slides.pdf
+        name    : SynPEG
     report    :
       - pdf     : /assets/data/report/2026/splash26-report-seongminko.pdf
       - pdf     : /assets/data/report/2026/splash26-report-sungminpark.pdf
