@@ -1,11 +1,7 @@
 ---
-layout: member
 title: Seongjin Lee (이성진)
-aside:
-  toc: true
 ---
-
-{% include former-member.html %}
+<!--former-member-->
 
 <img src="/assets/images/members/seongjin.lee.jpg" class="profile-img">
 
@@ -18,5 +14,4 @@ Currently I am interested in programming languages, static analysis and automate
 - 2019.03 ~ Present - B.S. of Computer Science and Engineering, Korea University
 
 ## Contact Information
-{% assign author=site.data.authors["Seongjin Lee"] %}
-<div>{% include author-links.html author=author %}</div>
+<!--contact-->

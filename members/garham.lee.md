@@ -1,11 +1,7 @@
 ---
-layout: member
 title: Garham Lee (이가람)
-aside:
-  toc: true
 ---
-
-{% include former-member.html %}
+<!--former-member-->
 
 
 <img src="/assets/images/members/garham.lee.jpg" class="profile-img">
@@ -20,6 +16,4 @@ I'm Garham Lee, a student studying Computer Science. I'm currently interested in
 
 
 ## Contact Information
-<!-- include author links -->
-{% assign author=site.data.authors["Garham Lee"] %}
-<div>{% include author-links.html author=author %}</div>
+<!--contact-->

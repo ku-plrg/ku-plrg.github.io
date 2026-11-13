@@ -1,10 +1,6 @@
 ---
-layout: member
 title: SangWoo Bae (배상우)
-aside:
-  toc: true
 ---
-
 <img src="/assets/images/members/sangwoo.bae.jpg" class="profile-img">
 
 I'm Sangwoo Bae, an undergraduate student in Sogang University. 
@@ -27,5 +23,4 @@ Currently I am interested in programming languages and software engineering.
 - 스타트업 패스파인더 최우수상, 인천창조경제혁신센터, Korea (Jul. 2024)
 
 ## Contact Information
-{% assign author=site.data.authors["Sangwoo Bae"] %}
-<div>{% include author-links.html author=author %}</div>
+<!--contact-->

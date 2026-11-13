@@ -1,12 +1,14 @@
 ---
-layout: course
 mermaid: false # disable default mermaid rendering for this page
 mathjax: false # disable default MathJax rendering for this page
 ---
 ### COSE215: Theory of Computation, 2025 Spring
 
+<div class="callout warning">
+
 **Note that this page is outdated. Please refer to the [recent course page](../).**
-{:.warning}
+
+</div>
 
 #### Course Information
 
@@ -60,11 +62,9 @@ Please download and install them using the following links:
 
 #### Online Automata Simulator
 
-<!-- load schedule with PDF files -->
-{%- include automata-viewer.html -%}
+<!--automata-viewer-->
 
 
 #### Schedule
 
-<!-- load schedule with PDF files -->
-{%- include schedule.html data=site.data.course.cose215.2025_1 -%}
+<!--schedule-->

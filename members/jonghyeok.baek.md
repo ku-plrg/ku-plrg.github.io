@@ -1,11 +1,7 @@
 ---
-layout: member
 title: Jonghyeok Baek (백종혁)
-aside:
-  toc: true
 ---
-
-{% include former-member.html %}
+<!--former-member-->
 
 <img src="/assets/images/members/jonghyeok.baek.jpg" class="profile-img">
 
@@ -17,6 +13,5 @@ I'm an undergraduate student in Korea University. With a beginner's mind, I'm pr
 - 2018.03 ~ Present - B.S. of Computer Science and Engineering, Korea University
 
 ## Contact Information
-{% assign author=site.data.authors["Jonghyeok Baek"] %}
-<div>{% include author-links.html author=author %}</div>
+<!--contact-->
 

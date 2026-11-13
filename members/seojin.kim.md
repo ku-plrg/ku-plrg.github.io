@@ -1,11 +1,7 @@
 ---
-layout: member
 title: Seojin Kim (김서진)
-aside:
-  toc: true
 ---
-
-{% include former-member.html %}
+<!--former-member-->
 
 <img src="/assets/images/members/seojin.kim.jpg" class="profile-img">
 
@@ -19,6 +15,4 @@ I'm Seojin Kim, a graduate student studying Computer Science. I'm currently inte
 
 
 ## Contact Information
-<!-- include author links -->
-{% assign author=site.data.authors["Seojin Kim"] %}
-<div>{% include author-links.html author=author %}</div>
+<!--contact-->

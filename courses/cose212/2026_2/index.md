@@ -1,6 +1,3 @@
----
-layout: course
----
 ### COSE212: Programming Languages, 2026 Fall
 
 The primary goal of this course is to learn **essential concepts** of
@@ -124,5 +121,4 @@ In this course, you will implement interpreters for the following languages:
 
 #### Schedule
 
-<!-- load schedule with PDF files -->
-{%- include schedule.html data=site.data.course.cose212.2026_2 -%}
+<!--schedule-->
