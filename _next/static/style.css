@@ -442,6 +442,33 @@ ul.entries { list-style: none; margin: 0; padding: 0; }
   .talks .elinks.slots > span:empty { display: none; }
 }
 @media (max-width: 560px) { .entries .when { margin-bottom: 2px; } }
+/* trips: one card per trip (album cover, dates, place, buttons) */
+ul.trip-cards { list-style: none; margin: 8px 0 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 14px; }
+.trip { margin: 0; display: flex; flex-direction: column; border: 1px solid var(--line); border-radius: 12px; background: var(--bg); }
+.trip .cover { display: block; aspect-ratio: 3 / 2; border-radius: 11px 11px 0 0; overflow: hidden; background: var(--soft); }
+.trip .cover img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 35%; display: block; transition: transform .25s; }
+.trip a.cover:hover img { transform: scale(1.03); }
+/* the cover opens the album: a small photos icon says so */
+.trip .cover { position: relative; }
+.trip .cover .badge {
+  position: absolute; right: 8px; bottom: 8px; width: 28px; height: 28px; display: grid; place-items: center; border-radius: 999px;
+  color: #fff; background: rgb(0 0 0 / .55); backdrop-filter: blur(4px); -webkit-backdrop-filter: blur(4px); transition: background .15s;
+}
+.trip a.cover:hover .badge { background: rgb(0 0 0 / .75); }
+.trip .cover .badge svg { width: 16px; height: 16px; }
+/* no album yet: a faint photo icon */
+.trip .cover.none { display: grid; place-items: center; color: color-mix(in srgb, var(--muted) 45%, transparent); background: var(--soft); }
+.trip .cover.none svg { width: 36px; height: 36px; }
+.trip-body { display: flex; flex-direction: column; gap: 1px; padding: 10px 12px 12px; flex: 1; font-size: 14px; line-height: 1.4; }
+.trip-body .when { color: var(--muted); font-size: 13px; font-variant-numeric: tabular-nums; }
+.trip-body .title { font-weight: 650; color: var(--fg); font-size: 15px; }
+.trip-body a.title:hover { color: var(--link); text-decoration: none; }
+.trip-body .where { color: var(--muted); font-size: 13px; }
+.trip-links { display: flex; flex-wrap: wrap; gap: 6px; margin-top: auto; padding-top: 8px; font-size: 13px; }
+.trip-links .pill { min-width: 0; }
+.trip-links details.drop:last-child .menu { left: auto; right: 0; }
+@media (max-width: 480px) { ul.trip-cards { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; } .trip-body { padding: 8px 10px 10px; } }
+
 /* several files: a drop-down list */
 details.drop { position: relative; }
 details.drop > summary { list-style: none; cursor: pointer; }

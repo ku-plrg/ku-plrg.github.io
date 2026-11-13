@@ -1,6 +1,7 @@
 // Makes web-sized WebP copies of the photos used by the site (needs `cwebp`):
 //   ../assets/images/avatars/*.jpg  -> static/img/avatars/*.webp (160px, member cards)
 //   ../assets/images/members/*.jpg  -> static/img/members/*.webp (400px, member pages)
+//   ../assets/images/trips/*.jpg    -> static/img/trips/*.webp   (640px, trip album covers)
 //   ../assets/images/main*.jpg      -> static/img/main*.webp      (1800px, home slider)
 // The originals stay as they are. build.mjs runs this first (only new or changed
 // photos are converted) and uses a copy when it exists; static/img/ is not committed.
@@ -15,6 +16,7 @@ const ROOT = path.resolve(HERE, '..');
 const jobs = [
   ['assets/images/avatars', 'static/img/avatars', 160],
   ['assets/images/members', 'static/img/members', 400],
+  ['assets/images/trips', 'static/img/trips', 640],
 ];
 export function makeImages() {
 let n = 0;
@@ -25,6 +27,7 @@ const convert = (src, dst, width) => {
   n++;
 };
 for (const [from, to, width] of jobs) {
+  if (!fs.existsSync(path.join(ROOT, from))) continue;
   for (const f of fs.readdirSync(path.join(ROOT, from))) {
     if (!/\.(jpe?g|png)$/i.test(f)) continue;
     convert(path.join(ROOT, from, f), path.join(HERE, to, f.replace(/\.\w+$/, '.webp')), width);

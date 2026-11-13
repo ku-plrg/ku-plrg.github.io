@@ -21,7 +21,7 @@ if (hasCwebp()) { const n = makeImages(); if (n) console.log(`${n} image(s) conv
 else console.warn('warning: cwebp not found; using the original photos');
 // a web-sized copy made by images.mjs (static/img/...) if there is one, else the original
 const optimized = (src) => {
-  const m = String(src || '').match(/^\/assets\/images\/(avatars\/|members\/)?(.+)\.\w+$/);
+  const m = String(src || '').match(/^\/assets\/images\/(avatars\/|members\/|trips\/)?(.+)\.\w+$/);
   const copy = m ? `/static/img/${m[1] || ''}${m[2]}.webp` : null;
   return copy && fs.existsSync(path.join(HERE, copy)) ? copy : src;
 };
@@ -549,19 +549,30 @@ function buildTrips() {
     if (items.length === 1) return `<a class="pill" href="${esc(items[0][1])}" title="${esc(items[0][0])}">${label}</a>`;
     return `<details class="drop"><summary class="pill">${label}s ${items.length}</summary><div class="menu">${items.map(([n, u]) => `<a href="${esc(u)}">${esc(n)}</a>`).join('')}</div></details>`;
   };
+  // one card per trip: the album cover (assets/images/trips/<id>.jpg, see covers.mjs) on top,
+  // then the dates, the place, and the Photos / Talk / Report buttons
   const groups = byYearDesc(DATA.trips).map(([y, list]) => `<section class="year-group">
   <h3 id="y${y}">${y}</h3>
-  <ul class="entries compact trips">
+  <ul class="trip-cards">
 ${(list || []).map((t) => {
   // talks are named by `name` in trips.yml, or "Talk 1", "Talk 2", ... otherwise
   const talks = (t.talk || []).filter((d) => d.pdf).map((d, i, all) => [d.name || (all.length > 1 ? `Talk ${i + 1}` : 'Talk'), d.pdf]);
   const reports = (t.report || []).filter((d) => d.pdf).map((d) => [reportName(d.pdf), d.pdf]);
-  return `<li>
-  <div class="side"><span class="when">${esc(range(t['date-from'], t['date-to']))}</span></div>
-  <div class="body">
-    ${t['place-url'] ? `<a class="title" href="${esc(t['place-url'])}">${esc(t.place)}</a>` : `<span class="title">${esc(t.place)}</span>`} <span class="where">${esc(t.location)}</span>
+  const album = t.photos ? `https://photos.app.goo.gl/${esc(t.photos)}` : '';
+  const cover = t.photos && fs.existsSync(path.join(ROOT, `assets/images/trips/${t.photos}.jpg`)) ? optimized(`/assets/images/trips/${t.photos}.jpg`) : '';
+  const pic = cover
+    ? `<a class="cover" href="${album}" aria-label="${esc(t.place)} photos"><img src="${esc(cover)}" alt="" loading="lazy"><span class="badge" title="Open the album"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="14" height="14" rx="2"/><path d="M21 9v10a2 2 0 0 1-2 2H9"/><circle cx="8" cy="10" r="1.5"/><path d="m17 15-4-4-7 7"/></svg></span></a>`
+    : `<div class="cover none" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="9" cy="10" r="2"/><path d="m21 16-5-5-9 9"/></svg></div>`;
+  // the cover opens the album, so there is no separate Photos button (unless there is no cover)
+  const buttons = [album && !cover && `<a class="pill" href="${album}">Photos</a>`, talks.length && slot('Talk', talks), reports.length && slot('Report', reports)].filter(Boolean).join('');
+  return `<li class="trip">
+  ${pic}
+  <div class="trip-body">
+    <span class="when">${esc(range(t['date-from'], t['date-to']))}</span>
+    ${t['place-url'] ? `<a class="title" href="${esc(t['place-url'])}">${esc(t.place)}</a>` : `<span class="title">${esc(t.place)}</span>`}
+    <span class="where">${esc(t.location)}</span>
+    ${buttons ? `<div class="trip-links">${buttons}</div>` : ''}
   </div>
-  <div class="elinks slots">${t.photos ? `<a class="pill" href="https://photos.app.goo.gl/${esc(t.photos)}">Photos</a>` : '<span></span>'}${slot('Talk', talks)}${slot('Report', reports)}</div>
 </li>`;
 }).join('\n')}
   </ul>

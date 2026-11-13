@@ -5,7 +5,8 @@
   "scripts": {
     "build": "node build.mjs",
     "serve": "node serve.mjs",
-    "images": "node images.mjs"
+    "images": "node images.mjs",
+    "covers": "node covers.mjs"
   },
   "dependencies": {
     "js-yaml": "^5.5.0",
