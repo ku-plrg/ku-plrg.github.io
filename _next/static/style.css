@@ -498,6 +498,7 @@ details.drop .menu a:hover { background: var(--soft); text-decoration: none; col
 
 /* -------------------------------------------------------------- research */
 .lead { font-size: 18px; line-height: 1.7; color: var(--muted); margin: 20px 0 16px; }
+.nowrap { white-space: nowrap; }
 .highlight { border: 1px solid var(--line); border-radius: 12px; padding: 16px 20px; background: var(--soft); }
 .highlight .hl-name { font-weight: 800; font-size: 18px; color: var(--accent); }
 .highlight p { margin: 4px 0 10px; }
@@ -532,8 +533,6 @@ ul.mini-pubs { list-style: none; padding: 0; margin: 4px 0 6px; }
   background: #fffaeb; border: 1.5px solid #d9a52e;
   box-shadow: 0 0 0 2.5px rgb(217 165 46 / 18%), 0 1px 3px rgb(184 134 26 / 30%);
 }
-.mini-pubs .award-mark { transition: transform .15s; }
-.mini-pubs .award-mark:hover { transform: scale(1.12) rotate(-8deg); }
 @media (max-width: 560px) { .mini-pubs li { display: flex; flex-direction: column; align-items: flex-start; gap: 3px; padding: 6px 0; } }
 
 /* ESMeta diagram: ECMA-262 -> extraction -> mechanized specification, then the derived tools */

@@ -5,14 +5,13 @@
 #   image : optional figure (none for now; add one per topic when every topic has a figure)
 #   tools : [name, url] pairs, newest first (actively developed ones first)
 #   selected : the representative papers shown under "Selected papers", in this
-#              order (newest first); any unique part of the publication title,
-#              and the build fails if one is not found
+#              order (newest first), by their full titles in publications.yml
+#              (the build fails if one is not found)
 
 intro: >
   We develop programming language and software engineering techniques that make
-  real-world software reliable and secure. Much of our work starts from
-  JavaScript, the language of the web, and its official specification
-  ECMA-262.
+  real-world software reliable and secure, starting from JavaScript and its
+  official specification, <span class="nowrap">ECMA-262</span>.
 
 highlight:
   name: ESMeta
@@ -68,8 +67,8 @@ topics:
       synthesizers, type checkers, static analyzers, and even polyfills.
     selected:
       - "JavaScript Language Design and Implementation in Tandem"
-      - "Automatically Deriving JavaScript Static Analyzers"
-      - "JISET:"
+      - "Automatically Deriving JavaScript Static Analyzers from Specifications using Meta-Level Static Analysis"
+      - "JISET: JavaScript IR-based Semantics Extraction Toolchain"
     tools:
       - [ESMeta, https://github.com/es-meta/esmeta]
       - [JSSpecVis, https://github.com/ku-plrg/js-spec-vis]
@@ -86,7 +85,7 @@ topics:
     selected:
       - "Accelerating JavaScript Static Analysis via Dynamic Shortcuts"
       - "A Survey of Parametric Static Analysis"
-      - "Revisiting Recency Abstraction"
+      - "Revisiting Recency Abstraction for JavaScript: Towards an Intuitive, Compositional, and Efficient Heap Abstraction"
     tools:
       - [JSAVER, https://github.com/kaist-plrg/jsaver]
       - [SAFE, https://github.com/sukyoung/safe]
@@ -102,9 +101,9 @@ topics:
       engines and in the specification itself, and cross-engine testing exposes
       performance divergences.
     selected:
-      - "Selective Feature-Sensitive"
+      - "Selective Feature-Sensitive Coverage for Conformance Testing of Programming Languages"
       - "Feature-Sensitive Coverage for Conformance Testing of Programming Language Implementations"
-      - "JEST:"
+      - "JEST: N+1-version Differential Testing of Both JavaScript Engines and Specification"
     tools:
       - [JEST, https://github.com/kaist-plrg/jest]
 
@@ -115,9 +114,9 @@ topics:
       path-dependent types, rely on them for memory safety, and build type
       analyses that find bugs in language specifications.
     selected:
-      - "JSTAR"
-      - "Path Dependent Types"
-      - "Memory-safe Network Functions"
+      - "JSTAR: JavaScript Specification Type Analyzer using Refinement"
+      - "Path Dependent Types with Path-Equality"
+      - "Toward Building Memory-safe Network Functions with Modest Performance Overhead"
     tools:
       - [JSTAR, https://github.com/kaist-plrg/jstar]
 
@@ -128,9 +127,9 @@ topics:
       grammars synthesized from examples with analysis-based pruning, and
       interpretable graph classifiers learned as programs.
     selected:
-      - "MiniPoly"
-      - "Synthesizing Parsing Expression Grammars"
-      - "PL4XGL"
+      - "MiniPoly: Automatic Extraction of Efficient JavaScript Polyfill from Language Specification"
+      - "Synthesizing Parsing Expression Grammars via Analysis-based Pruning"
+      - "PL4XGL: A Programming Language Approach to Explainable Graph Learning"
     tools:
       - [MiniPoly, https://zenodo.org/records/21832372]
       - [SynPEG, https://zenodo.org/records/21330079]
@@ -144,7 +143,8 @@ topics:
       and classify exploits for Node.js vulnerabilities, and study
       language-based approaches to memory safety.
     selected:
-      - "Detecting JavaScript Libraries on the Web"
-      - "Memory-safe Network Functions"
+      - "Detecting JavaScript Libraries on the Web using Property-Order Graphs"
+      - "Debun: Detecting Bundled JavaScript Libraries on Web using Property-Order Graphs"
+      - "Toward Building Memory-safe Network Functions with Modest Performance Overhead"
     tools:
       - [Debun, https://github.com/ku-plrg/debun-ase25]
