@@ -222,6 +222,10 @@ function shortVenue(name, year) {
   return `${name}'${String(year).slice(-2)}`;
 }
 
+// student research competitions, doctoral symposia, and tutorials: left out of the
+// member pages' venue summary and the research page's recent papers
+const isMinorVenue = (name) => / (SRC|DS|Tutorial)$/.test(name || '');
+
 function authorList(pub) {
   const as = pub.authors || [];
   return as.map((a, i) => {
@@ -322,18 +326,22 @@ function topicList() {
 //   PL Conference: PLDI 2023 / 2024 · SE Conference: ... · Journal: ...
 // (workshops, SRC, doctoral symposia, and tutorials are left out; demos are marked)
 const VENUE_GROUPS = [
-  ['PL Conference', ['POPL', 'PLDI', 'OOPSLA', 'ECOOP', 'ICFP', 'SAS', 'CAV', 'ESOP', 'APLAS']],
+  ['PL Conference', ['POPL', 'PLDI', 'OOPSLA', 'ECOOP', 'ICFP', 'SAS', 'CAV', 'ESOP']],
   ['SE Conference', ['ICSE', 'FSE', 'ASE', 'ISSTA']],
   ['Journal', ['CACM', 'CSUR', 'IEEE Software', 'TOPLAS', 'TOSEM', 'TSE']],
 ];
+// is `pub` at venue `v` (e.g. "ASE 2026", "ESEC/FSE 2022", "FSE 2025 Demo" are ASE / FSE / FSE)?
+const atVenue = (pub, v) => {
+  const n = (pub.target?.name || '').replace(/^ESEC\//, '');
+  return (n === v || n.startsWith(`${v} `)) && !isMinorVenue(n);
+};
+// a paper at one of the venues above (demos included); the rest are workshops and the like
+const isMajor = (pub) => VENUE_GROUPS.some(([, vs]) => vs.some((v) => atVenue(pub, v)));
 function venueSummary(name) {
   const mine = allPubs().filter((p) => (p.authors || []).some((a) => a.name === name));
   const rows = VENUE_GROUPS.map(([group, venues]) => {
     const items = venues.map((v) => {
-      const hits = mine.filter((p) => {
-        const n = (p.target?.name || '').replace(/^ESEC\//, '');
-        return (n === v || n.startsWith(`${v} `)) && !/ (SRC|DS|Tutorial)$/.test(n);
-      }).sort((a, b) => a.year - b.year);
+      const hits = mine.filter((p) => atVenue(p, v)).sort((a, b) => a.year - b.year);
       if (!hits.length) return '';
       const links = hits.map((p) => {
         const url = p.doi && p.doi !== 'accepted' ? `https://doi.org/${p.doi}` : p.materials?.pdf;
@@ -465,6 +473,16 @@ function flowDiagram(flow) {
 </div>`;
 }
 
+// the three latest papers of a topic for the research page: papers at major venues
+// (VENUE_GROUPS) only, topped up with the latest workshop papers when there are
+// fewer than three; SRC, DS, and tutorials never
+function recentPapers(pubs) {
+  const ps = pubs.filter((p) => !isMinorVenue(p.target?.name));
+  const major = ps.filter(isMajor).slice(0, 3);
+  const extra = ps.filter((p) => !isMajor(p)).slice(0, 3 - major.length);
+  return ps.filter((p) => major.includes(p) || extra.includes(p));
+}
+
 // research: one section per topic (_data/research.yml) with its latest papers
 const inlineMd = (t) => marked.parseInline(String(t ?? '').trim());
 function buildResearch() {
@@ -489,7 +507,7 @@ function buildResearch() {
     ${ifs(r.tools?.length, `<div class="tools"><span class="label">Tools</span>${(r.tools || []).map(([n, u]) => `<a href="${esc(u)}">${esc(n)}</a>`).join('')}</div>`)}
     <div class="label recent">Recent papers</div>
     <ul class="mini-pubs">
-${mine.slice(0, 3).map(paper).join('\n')}
+${recentPapers(mine).map(paper).join('\n')}
     </ul>
   </div>
 </section>`;
