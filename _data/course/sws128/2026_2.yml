@@ -86,8 +86,11 @@ parts:
     - index: 9
       date: 11/16
       title: Constraint-based Analysis
-      # pdf: slides/lec9.pdf
-      # handout: slides/lec9-handout.pdf
+      pdf: slides/lec9.pdf
+      handout: slides/lec9-handout.pdf
+      materials:
+      - name: datalog.py
+        link: code/datalog.py
     - index: 10
       date: 11/23
       title: Symbolic Execution
