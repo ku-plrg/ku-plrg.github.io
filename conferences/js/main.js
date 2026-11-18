@@ -13,7 +13,7 @@ try {
 $('#{{ conf_id }} .timer').html("TBA");
 $('#{{ conf_id }} .deadline-time').html("TBA");
 deadlineByConf["{{ conf_id }}"] = null;
-{% endif %}
+{% else %}
 var rawDeadlines = {{ conf.deadline | jsonify }} || [];
 if (rawDeadlines.constructor !== Array) {
   rawDeadlines = [rawDeadlines];
@@ -77,6 +77,7 @@ if (deadlineId < parsedDeadlines.length) {
   }
 }
 {% endfor %}
+{% endif %}
 {% endfor %}
 
 // Reorder list
@@ -84,8 +85,10 @@ var today = moment();
 var confs = $('.conf').detach();
 confs.sort(function(a, b) {
   // TBA deadlines (null) go after all upcoming deadlines
-  var aDeadline = deadlineByConf[a.id] || moment('9999-12-31');
-  var bDeadline = deadlineByConf[b.id] || moment('9999-12-31');
+  var aDeadline = deadlineByConf[a.id];
+  var bDeadline = deadlineByConf[b.id];
+  if (!aDeadline || !aDeadline.isValid()) aDeadline = moment('9999-12-31');
+  if (!bDeadline || !bDeadline.isValid()) bDeadline = moment('9999-12-31');
   var aDiff = today.diff(aDeadline);
   var bDiff = today.diff(bDeadline);
   if (aDiff < 0) {
