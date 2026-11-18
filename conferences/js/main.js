@@ -83,8 +83,9 @@ if (deadlineId < parsedDeadlines.length) {
 var today = moment();
 var confs = $('.conf').detach();
 confs.sort(function(a, b) {
-  var aDeadline = deadlineByConf[a.id];
-  var bDeadline = deadlineByConf[b.id];
+  // TBA deadlines (null) go after all upcoming deadlines
+  var aDeadline = deadlineByConf[a.id] || moment('9999-12-31');
+  var bDeadline = deadlineByConf[b.id] || moment('9999-12-31');
   var aDiff = today.diff(aDeadline);
   var bDiff = today.diff(bDeadline);
   if (aDiff < 0) {

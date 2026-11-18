@@ -1,4 +1,4 @@
-last_update: "2026-08-12"
+last_update: "2026-11-18"
 
 # ------------------------------------------------------------------------------
 infos:
@@ -220,12 +220,12 @@ list:
     place: Salt Lake City, Utah, United States
 
   - name: ICFP
-    year: 2026
-    link: https://icfp26.sigplan.org/
+    year: 2027
+    link: https://icfp27.sigplan.org/
     deadline:
-      - "2026-02-19 23:59"
-    date: Aug 24 - Aug 29
-    place: Indianapolis, Indiana, United States
+      - "2027-02-25 23:59"
+    date: Sep 26 - Oct 1
+    place: Nijmegen, Netherlands
 
   - name: ECOOP
     year: 2027
@@ -254,20 +254,20 @@ list:
     place: Copenhagen, Denmark
 
   - name: CC
-    year: 2026
-    link: https://conf.researchr.org/home/CC-2026
+    year: 2027
+    link: https://conf.researchr.org/home/CC-2027
     deadline:
-      - "2025-11-11 23:59"
-    date: Jan 31 - Feb 1
-    place: Sydney, Australia
+      - "2026-12-03 23:59"
+    date: Mar 20 - Mar 21
+    place: Salt Lake City, Utah, United States
 
   - name: SAS
-    year: 2026
-    link: https://conf.researchr.org/home/splash-issta-2026/sas-2026
+    year: 2027
+    link: https://2027.splashcon.org/home/sas-2027
     deadline:
-      - "2026-05-07 23:59"
-    date: Oct 6 - Oct 8
-    place: Oakland, California, United States
+      - "TBA"
+    date: TBD
+    place: Prague, Czechia
 
   - name: VMCAI
     year: 2027
@@ -294,12 +294,12 @@ list:
     place: Shenzhen, China
 
   - name: ASE
-    year: 2026
-    link: https://conf.researchr.org/home/ase-2026
+    year: 2027
+    link: https://conf.researchr.org/home/ase-2027
     deadline:
-      - "2026-03-26 23:59"
-    date: Oct 12 - Oct 16
-    place: Munich, Germany
+      - "2027-03-10 23:59"
+    date: Oct 24 - Oct 28
+    place: El Paso, Texas, United States
 
   - name: ISSTA
     year: 2027
@@ -318,13 +318,12 @@ list:
     place: San Sebastian, Spain
 
   - name: CCS
-    year: 2026
-    link: https://www.sigsac.org/ccs/CCS2026
+    year: 2027
+    link: https://www.sigsac.org/ccs/CCS2027/
     deadline:
-      - "2026-01-14 23:59"
-      - "2026-04-29 23:59"
-    date: Nov 15 - Nov 19
-    place: The Hague, Netherlands
+      - "TBA"
+    date: Oct 11 - Oct 15
+    place: Atlanta, Georgia, United States
 
   - name: S&P
     year: 2027
@@ -332,7 +331,7 @@ list:
     deadline:
       - "2026-06-11 23:59"
       - "2026-11-17 23:59"
-    date: TBD
+    date: May 17 - May 20
     place: Montreal, Canada
 
   - name: USENIX Security
