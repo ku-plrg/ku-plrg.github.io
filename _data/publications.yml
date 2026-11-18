@@ -47,6 +47,7 @@
       slides: /assets/data/slides/2026/ase26-kim-minipoly-slides.pdf
       artifact: https://zenodo.org/records/21832372
       poster: /assets/data/poster/2026/ase26-kim-minipoly-poster.pdf
+      news: https://view.asiae.co.kr/article/2026111813293624399
 
   - title: "Synthesizing Parsing Expression Grammars via Analysis-based Pruning"
     doi: 10.1007/978-3-032-40374-2_17
