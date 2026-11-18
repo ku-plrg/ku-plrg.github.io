@@ -278,12 +278,12 @@ list:
     place: Mexico City, Mexico
 
   - name: ICSE
-    year: 2027
-    link: https://conf.researchr.org/home/icse-2027
+    year: 2028
+    link: https://conf.researchr.org/home/icse-2028
     deadline:
-      - "2026-06-30 23:59"
-    date: Apr 25 - May 1
-    place: Dublin, Ireland
+      - "2027-07-01 23:59"
+    date: Apr 29 - May 7
+    place: Waikoloa, Hawaii, United States
 
   - name: FSE
     year: 2027
