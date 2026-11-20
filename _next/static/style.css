@@ -24,14 +24,13 @@
   --t-synthesis: #b25e09;
   --t-testing: #b02a7f;
   --t-security: #c62828;
-  --t-types: #0b6fa4;
   color-scheme: light;
 }
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
     --bg: #0f1218; --fg: #e6e8eb; --muted: #9aa3ae; --accent: #7d97f2; --accent-fg: #0f1218;
     --line: #2a2f37; --soft: #171b22; --link: #9db1f7; --award-bg: #3a2f14; --award-line: #6b5420; --now: #1c2440;
-    --t-analysis: #4cc9b0; --t-spec: #a99cf5; --t-synthesis: #f0a54a; --t-testing: #f472b6; --t-security: #f87171; --t-types: #5cb8e8;
+    --t-analysis: #4cc9b0; --t-spec: #a99cf5; --t-synthesis: #f0a54a; --t-testing: #f472b6; --t-security: #f87171;
     color-scheme: dark;
   }
   :root:not([data-theme="light"]) .brand img { filter: brightness(1.8) saturate(.8); }
@@ -39,7 +38,7 @@
 :root[data-theme="dark"] {
   --bg: #0f1218; --fg: #e6e8eb; --muted: #9aa3ae; --accent: #7d97f2; --accent-fg: #0f1218;
   --line: #2a2f37; --soft: #171b22; --link: #9db1f7; --award-bg: #3a2f14; --award-line: #6b5420; --now: #1c2440;
-  --t-analysis: #4cc9b0; --t-spec: #a99cf5; --t-synthesis: #f0a54a; --t-testing: #f472b6; --t-security: #f87171; --t-types: #5cb8e8;
+  --t-analysis: #4cc9b0; --t-spec: #a99cf5; --t-synthesis: #f0a54a; --t-testing: #f472b6; --t-security: #f87171;
   color-scheme: dark;
 }
 :root[data-theme="dark"] .brand img { filter: brightness(1.8) saturate(.8); }
@@ -47,9 +46,7 @@
 .t-spec { --t: var(--t-spec); }
 .t-analysis { --t: var(--t-analysis); }
 .t-testing { --t: var(--t-testing); }
-.t-types { --t: var(--t-types); }
 .t-synthesis { --t: var(--t-synthesis); }
-.t-security { --t: var(--t-security); }
 
 /* ------------------------------------------------------------------ base */
 * { box-sizing: border-box; }
@@ -149,13 +146,19 @@ a.venue:hover { text-decoration: none; background: var(--accent); color: var(--a
 .links a { color: var(--muted); font-size: 15px; padding: 6px 8px; border-radius: 8px; white-space: nowrap; }
 .links a:hover { color: var(--fg); background: var(--soft); text-decoration: none; }
 .links a[aria-current="page"] { color: var(--fg); font-weight: 600; }
-.links a.internal { display: inline-flex; align-items: center; gap: 4px; }
 /* reserve the bold width so the current page does not shift the others */
 .links a > span { display: inline-flex; flex-direction: column; align-items: center; }
 .links a > span::after {
   content: attr(data-label); font-weight: 600; height: 0; overflow: hidden; visibility: hidden; user-select: none; pointer-events: none;
 }
 .icon { width: 14px; height: 14px; }
+/* Internal: a lock button at the right end of the top bar */
+.lock-link {
+  flex: none; width: 36px; height: 36px; border-radius: 999px; display: grid; place-items: center;
+  color: var(--muted); border: 1px solid var(--line);
+}
+.lock-link:hover, .lock-link[aria-current="page"] { color: var(--fg); background: var(--soft); text-decoration: none; }
+.lock-link .icon { width: 16px; height: 16px; }
 .theme-toggle {
   flex: none; width: 36px; height: 36px; border-radius: 999px; padding: 0; display: grid; place-items: center; cursor: pointer;
   background: transparent; color: var(--fg); border: 1px solid var(--line);
@@ -184,9 +187,6 @@ a.venue:hover { text-decoration: none; background: var(--accent); color: var(--a
   .links a { font-size: 16px; padding: 11px 12px; border-radius: 10px; }
   .links a[aria-current="page"] { background: var(--soft); color: var(--accent); }
   .links a > span { align-items: flex-start; }
-  /* Internal sits apart, below a thin line */
-  .links a.internal { position: relative; margin-top: 9px; }
-  .links a.internal::before { content: ""; position: absolute; left: 12px; right: 12px; top: -5px; border-top: 1px solid var(--line); }
   .nav-scrim {
     display: block; position: fixed; inset: 0; z-index: 9; background: rgb(0 0 0 / .3);
     visibility: hidden; opacity: 0; transition: opacity .18s, visibility .18s;
@@ -290,6 +290,7 @@ ul.pubs { list-style: none; margin: 0; padding: 0; }
 .pubs .title { font-size: 16px; font-weight: 650; letter-spacing: -.1px; line-height: 1.35; color: var(--fg); }
 a.title:hover { color: var(--link); }
 .pubs .authors { margin-top: 1px; font-size: 14px; color: var(--muted); }
+.pubs .authors .equal { white-space: nowrap; }
 /* lab members: same color as co-authors, bolder, with a faint underline (they link to member pages) */
 .pubs .authors a {
   color: inherit; font-weight: 600;
@@ -381,7 +382,7 @@ ol.schedule { list-style: none; margin: 0; padding: 0; border-top: 1px solid var
 .schedule .what a { color: var(--fg); font-weight: 500; }
 .schedule .what a:hover { color: var(--link); }
 .schedule .speaker { display: block; font-size: 14px; color: var(--muted); }
-.schedule .speaker a { color: inherit; font-weight: 400; }
+.schedule .speaker a { color: var(--link); font-weight: 500; }
 .schedule .hws { display: flex; flex-wrap: nowrap; gap: 4px; }
 .schedule .hws-in { display: none; }
 /* desktop: all parts share one grid (subgrid), so the columns line up */
@@ -469,8 +470,14 @@ ul.trip-cards { list-style: none; margin: 8px 0 0; padding: 0; display: grid; gr
 .trip-body .where { color: var(--muted); font-size: 13px; }
 .trip-links { display: flex; flex-wrap: wrap; gap: 6px; margin-top: auto; padding-top: 8px; font-size: 13px; }
 .trip-links .pill { min-width: 0; }
-.trip-links details.drop:last-child .menu { left: auto; right: 0; }
-@media (max-width: 480px) { ul.trip-cards { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; } .trip-body { padding: 8px 10px 10px; } }
+@media (max-width: 480px) {
+  ul.trip-cards { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+  .trip-body { padding: 8px 10px 10px; }
+  /* narrow cards: Talk and Report each take a full row, and the list opens under it at the same width */
+  .trip-links { flex-direction: column; }
+  .trip-links details.drop, .trip-links .pill { width: 100%; }
+  .trip-links details.drop .menu { left: 0; right: 0; min-width: 0; }
+}
 
 /* several files: a drop-down list */
 details.drop { position: relative; }
@@ -484,7 +491,7 @@ details.drop > summary::after {
 details.drop[open] > summary { border-color: var(--accent); }
 details.drop[open] > summary::after { transform: rotate(-135deg); margin-bottom: -1px; }
 details.drop .menu {
-  position: absolute; right: 0; top: calc(100% + 4px); z-index: 5; min-width: 150px; max-width: 300px;
+  position: absolute; left: 0; text-align: left; top: calc(100% + 4px); z-index: 5; min-width: 150px; max-width: min(300px, calc(100vw - 16px));
   display: flex; flex-direction: column; padding: 4px; border: 1px solid var(--line); border-radius: 10px;
   background: var(--bg); box-shadow: 0 6px 20px rgb(0 0 0 / 12%);
 }

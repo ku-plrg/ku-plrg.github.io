@@ -72,14 +72,17 @@ const NAV = [
   ['Courses', '/courses/'],
   ['Talks', '/talks/'],
   ['Trips', '/trips/'],
-  ['Internal', '/internal/', 'lock'],
 ];
 const LOCK = '<svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg>';
+
+// dark mode: off for now (every page stays light and shows no toggle, like the
+// course pages); set to true to bring back the system-following theme and the toggle
+const DARK_MODE = false;
 
 function layout({ title, description = 'Programming Language Research Group (PLRG) at Korea University', active, body, scripts = [], lightOnly = false, banner = false }) {
   const full = title ? `${title} · PLRG @ Korea University` : 'PLRG @ Korea University';
   return `<!doctype html>
-<html lang="en"${lightOnly ? ' data-theme="light" data-lock-theme' : ''}>
+<html lang="en"${lightOnly || !DARK_MODE ? ' data-theme="light" data-lock-theme' : ''}>
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -108,8 +111,9 @@ ${scripts.map((s) => `  <script defer src="${s}"></script>`).join('\n')}
   <div class="topnav-inner">
     <a class="brand" href="/" aria-label="PLRG home"><img src="/assets/logo/logo-detail.svg" alt="PLRG"></a>
     <div class="links" id="nav-links">
-${NAV.map(([name, url, icon]) => `      <a href="${url}"${active === url ? ' aria-current="page"' : ''}${icon ? ' class="internal"' : ''}>${icon ? LOCK : ''}<span data-label="${name}">${name}</span></a>`).join('\n')}
+${NAV.map(([name, url]) => `      <a href="${url}"${active === url ? ' aria-current="page"' : ''}><span data-label="${name}">${name}</span></a>`).join('\n')}
     </div>
+    <a class="lock-link" href="/internal/" aria-label="Internal" title="Internal"${active === '/internal/' ? ' aria-current="page"' : ''}>${LOCK}</a>
     <span class="theme-slot"></span>
     <button class="menu-toggle" type="button" aria-label="Menu" aria-expanded="false" aria-controls="nav-links"><svg class="i-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg><svg class="i-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
   </div>
@@ -206,9 +210,7 @@ const TOPICS = {
   spec: { name: 'Language Specifications', short: 'Spec', desc: 'Mechanizing real-world language specifications such as ECMA-262 and deriving language tools from them.' },
   analysis: { name: 'Program Analysis', short: 'Analysis', desc: 'Statically and dynamically analyzing programs to understand their behaviors and detect bugs.' },
   testing: { name: 'Automated Testing', short: 'Testing', desc: 'Automatically generating tests, coverage criteria, and oracles to find bugs in real-world software, from language implementations to their specifications.' },
-  types: { name: 'Type Systems', short: 'Types', desc: 'Using type systems to guarantee program safety and to precisely analyze programs and specifications.' },
   synthesis: { name: 'Program Synthesis', short: 'Synthesis', desc: 'Generating programs automatically from specifications and examples.' },
-  security: { name: 'Software Security', short: 'Security', desc: 'Finding and preventing security vulnerabilities in real-world software, from vulnerable JavaScript dependencies to memory-safety bugs.' },
 };
 const sortTopics = (ts) => Object.keys(TOPICS).filter((k) => (ts || []).includes(k));
 const topicTag = (t) => TOPICS[t] ? `<a class="tag t-${t}" href="/publications/#topic=${t}">${TOPICS[t].short}</a>` : '';
@@ -234,7 +236,7 @@ function authorList(pub) {
     if (pub['co-first'] > i) s += '<sup title="equal contribution">*</sup>';
     else if (a.corr) s += '<sup title="corresponding author">†</sup>';
     return s;
-  }).join(', ');
+  }).join(', ') + (pub['co-first'] ? ' <span class="equal">(* equally contributed)</span>' : '');
 }
 
 // the venue badge of a paper: links to the venue, and its tooltip gives the full name
@@ -284,7 +286,7 @@ ${list.map((p) => pubItem(p, y)).join('\n')}
   </ul>
 </section>`).join('\n');
 
-  const body = `${pageHead('Publications', `<span id="pub-count" aria-live="polite">${pubs.length} papers</span> · <sup>*</sup> equal contribution · <sup>†</sup> corresponding author`)}
+  const body = `${pageHead('Publications')}
 <div class="filters" id="pub-filters" role="group" aria-label="Filter by topic">
   <button type="button" class="chip" data-topic="" aria-pressed="true">All</button>
 ${Object.entries(TOPICS).map(([k, t]) => `  <button type="button" class="chip topic-chip t-${k}" data-topic="${k}" aria-pressed="false">${t.short}<span class="n">${pubs.filter((p) => (p.topics || []).includes(k)).length}</span></button>`).join('\n')}
@@ -565,11 +567,11 @@ function buildTrips() {
     const [, am, ad] = String(a).split('.'), [, bm, bd] = String(b || a).split('.');
     return am === bm && ad === bd ? `${am}/${ad}` : `${am}/${ad}–${bm}/${bd}`;
   };
-  // one slot: a direct button for one file, a drop-down list for several
+  // one slot: always a drop-down list (even for one file), so Talk and Report buttons look
+  // the same and the list shows each file's name
   const slot = (label, items) => {
     if (!items.length) return '<span></span>';
-    if (items.length === 1) return `<a class="pill" href="${esc(items[0][1])}" title="${esc(items[0][0])}">${label}</a>`;
-    return `<details class="drop"><summary class="pill">${label}s ${items.length}</summary><div class="menu">${items.map(([n, u]) => `<a href="${esc(u)}">${esc(n)}</a>`).join('')}</div></details>`;
+    return `<details class="drop"><summary class="pill">${items.length > 1 ? `${label}s ${items.length}` : label}</summary><div class="menu">${items.map(([n, u]) => `<a href="${esc(u)}">${esc(n)}</a>`).join('')}</div></details>`;
   };
   // one card per trip: the album cover (assets/images/trips/<id>.jpg, see covers.mjs) on top,
   // then the dates, the place, and the Photos / Talk / Report buttons
@@ -739,7 +741,12 @@ function scheduleTable(data, base, year) {
       // in a finished semester, whenever the slides are there
       const released = finished ? l.pdf && (!local(l.pdf) || fs.existsSync(path.join(ROOT, base, l.pdf))) : l.handout && l.pdf;
       const title = released ? `<a href="${esc(l.pdf)}">${esc(l.title)}</a>` : esc(l.title || '');
-      const speaker = opt.speaker && l.speaker ? `<span class="speaker">${l.speaker_link ? `<a href="${esc(l.speaker_link)}">${esc(l.speaker)}</a>` : esc(l.speaker)}</span>` : '';
+      // the speaker's name links to their page (in link color); the affiliation stays plain
+      const speakerHtml = (sp, url) => {
+        const [, name, aff] = String(sp).match(/^(.*?)(\s*\(.*\))?$/);
+        return url ? `<a href="${esc(url)}">${esc(name)}</a>${esc(aff || '')}` : esc(sp);
+      };
+      const speaker = opt.speaker && l.speaker ? `<span class="speaker">${speakerHtml(l.speaker, l.speaker_link)}</span>` : '';
       const updated = handout && opt.update ? mtime(handout) : '';
       const files = [
         showPdf && handout && `<a href="${esc(handout)}" title="Handout PDF">handout</a>`,

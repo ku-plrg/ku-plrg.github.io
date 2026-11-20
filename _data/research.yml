@@ -1,5 +1,5 @@
 # Research page (/research/). One entry per topic key in `topics` of
-# publications.yml (spec, analysis, testing, types, synthesis, security); the
+# publications.yml (spec, analysis, testing, synthesis); the
 # topic names, colors, and order come from TOPICS in _next/build.mjs.
 #   text  : a few sentences (Markdown)
 #   image : optional figure (none for now; add one per topic when every topic has a figure)
@@ -107,19 +107,6 @@ topics:
     tools:
       - [JEST, https://github.com/kaist-plrg/jest]
 
-  types:
-    text: >
-      Type systems rule out whole classes of errors before programs run. We
-      extend type systems with new features such as path-equality for Scala's
-      path-dependent types, rely on them for memory safety, and build type
-      analyses that find bugs in language specifications.
-    selected:
-      - "JSTAR: JavaScript Specification Type Analyzer using Refinement"
-      - "Path Dependent Types with Path-Equality"
-      - "Toward Building Memory-safe Network Functions with Modest Performance Overhead"
-    tools:
-      - [JSTAR, https://github.com/kaist-plrg/jstar]
-
   synthesis:
     text: >
       We generate programs instead of writing them by hand: correct and
@@ -135,16 +122,3 @@ topics:
       - [SynPEG, https://zenodo.org/records/21330079]
       - [PL4XGL, https://github.com/kupl/PL4XGL]
 
-  security:
-    text: >
-      Web applications bundle many third-party libraries, so it is hard to know
-      which vulnerable code they actually ship. We detect bundled JavaScript
-      libraries and their versions on the web with property-order graphs, verify
-      and classify exploits for Node.js vulnerabilities, and study
-      language-based approaches to memory safety.
-    selected:
-      - "Detecting JavaScript Libraries on the Web using Property-Order Graphs"
-      - "Debun: Detecting Bundled JavaScript Libraries on Web using Property-Order Graphs"
-      - "Toward Building Memory-safe Network Functions with Modest Performance Overhead"
-    tools:
-      - [Debun, https://github.com/ku-plrg/debun-ase25]

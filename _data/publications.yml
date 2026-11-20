@@ -1,4 +1,4 @@
-# topics: research topics, in any order (shown in a fixed order). keys: spec, analysis, testing, types, synthesis, security
+# topics: research topics, in any order (shown in a fixed order). keys: spec, analysis, testing, synthesis
 # selected: true shows the paper under "Selected Publications" on the home page (6 papers, newest first)
 2026:
 
@@ -10,7 +10,7 @@
       - name: Ben Swierzy
       - name: Jihyeok Park
         corr: true
-    topics: [security, analysis]
+    topics: [analysis]
     target:
       name: TOSEM
       detail: Transactions on Software Engineering and Methodology
@@ -96,7 +96,6 @@
     authors:
       - name: Sungmin Park
     award: ACM Student Research Competition 2nd
-    topics: [security]
     target:
       name: ASE 2025 SRC
       detail: IEEE/ACM International Conference on Automated Software Engineering - Student Research Competition
@@ -115,7 +114,7 @@
       - name: Jihyeok Park
         corr: true
     co-first: 2
-    topics: [security, analysis]
+    topics: [analysis]
     target:
       name: ASE 2025
       detail: IEEE/ACM International Conference on Automated Software Engineering
@@ -274,7 +273,7 @@
       - name: Wonho Shin
       - name: Yusung Sim
       - name: Sukyoung Ryu
-    topics: [spec, types, analysis]
+    topics: [spec, analysis]
     target:
       name: ASE 2021
       detail: IEEE/ACM International Conference on Automated Software Engineering
@@ -380,7 +379,6 @@
       - name: Jaemin Hong
       - name: Jihyeok Park
       - name: Sukyoung Ryu
-    topics: [types]
     target:
       name: Scala 2018
       detail: ACM SIGPLAN Symposium on Scala
@@ -416,7 +414,6 @@
       - name: Jihyeok Park
       - name: Sukyoung Ryu
       - name: Sue Moon
-    topics: [types, security]
     target:
       name: NetPL 2017
       detail: ACM SIGCOMM Workshop on Networking and Programming Languages
@@ -468,7 +465,7 @@
     authors:
       - name: Jihyeok Park
     award: ACM Student Research Competition 3rd
-    topics: [analysis, types]
+    topics: [analysis]
     target:
       name: Modularity 2014 SRC
       detail: International Conference on Modularity - Student Research Competition

@@ -6,7 +6,6 @@
   const groups = [...document.querySelectorAll('.year-group')];
   const topicChips = [...document.querySelectorAll('.chip[data-topic]')];
   const awardChip = document.querySelector('.chip[data-award]');
-  const count = document.getElementById('pub-count');
   const state = { topic: '', award: false };
 
   function apply() {
@@ -20,7 +19,6 @@
     for (const g of groups) g.hidden = !g.querySelector('li:not([hidden])');
     for (const c of topicChips) c.setAttribute('aria-pressed', String(c.dataset.topic === state.topic));
     awardChip.setAttribute('aria-pressed', String(state.award));
-    count.textContent = shown === items.length ? `${shown} papers` : `${shown} of ${items.length} papers`;
     document.getElementById('pub-empty').hidden = shown > 0;
     const params = new URLSearchParams();
     if (state.topic) params.set('topic', state.topic);
