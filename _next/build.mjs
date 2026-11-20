@@ -264,7 +264,7 @@ function pubItem(pub, year) {
   <div class="body">
     ${titleUrl ? `<a class="title" href="${esc(titleUrl)}">${esc(pub.title)}</a>` : `<span class="title">${esc(pub.title)}</span>`}
     <div class="authors">${authorList(pub)}</div>
-    ${ifs(pub.award, `<div class="award">🏅 ${esc(pub.award)}</div>`)}
+    ${ifs(pub.award, `<div class="award">${esc(pub.award)}</div>`)}
     <div class="meta">
       ${ifs(pub.doi === 'accepted', '<span class="note">Accepted</span>')}
       ${links.map(([l, u]) => `<a href="${esc(u)}">${esc(l)}</a>`).join('\n      ')}
@@ -290,7 +290,7 @@ ${list.map((p) => pubItem(p, y)).join('\n')}
 <div class="filters" id="pub-filters" role="group" aria-label="Filter by topic">
   <button type="button" class="chip" data-topic="" aria-pressed="true">All</button>
 ${Object.entries(TOPICS).map(([k, t]) => `  <button type="button" class="chip topic-chip t-${k}" data-topic="${k}" aria-pressed="false">${t.short}<span class="n">${pubs.filter((p) => (p.topics || []).includes(k)).length}</span></button>`).join('\n')}
-  <button type="button" class="chip" data-award aria-pressed="false">🏅 Awards<span class="n">${pubs.filter((p) => p.award).length}</span></button>
+  <button type="button" class="chip" data-award aria-pressed="false">Awards<span class="n">${pubs.filter((p) => p.award).length}</span></button>
 </div>
 ${groups}
 <p class="empty" id="pub-empty" hidden>No publications match.</p>`;
@@ -466,7 +466,7 @@ function flowDiagram(flow) {
   const badge = (part) => {
     const p = findPub(part);
     const url = p.doi && p.doi !== 'accepted' ? `https://doi.org/${p.doi}` : p.materials?.pdf;
-    return `<a class="venue" href="${esc(url || '/publications/')}" data-tip="${esc([p.target?.name, p.target?.detail].filter(Boolean).join(': '))}">${esc(shortVenue(p.target?.name ?? '', p.year))}${p.award ? ' 🏅' : ''}</a>`;
+    return `<a class="venue" href="${esc(url || '/publications/')}" data-tip="${esc([[p.target?.name, p.target?.detail].filter(Boolean).join(': '), p.award].filter(Boolean).join(' · '))}">${esc(shortVenue(p.target?.name ?? '', p.year))}</a>`;
   };
   const node = (n, cls = '') => `<div class="fnode${cls}">
       <b>${esc(n.name)}</b><span>${esc(n.desc || '')}</span>
@@ -495,8 +495,8 @@ function buildResearch() {
     const mine = pubs.filter((p) => (p.topics || []).includes(k));
     const paper = (p) => {
       const url = p.doi && p.doi !== 'accepted' ? `https://doi.org/${p.doi}` : p.materials?.pdf;
-      // an award paper gets a 🏅 after the title; the award's name is in the tooltip
-      return `<li>${venueBadge(p)}<span>${url ? `<a href="${esc(url)}">${esc(p.title)}</a>` : esc(p.title)}${ifs(p.award, ` <span class="award-mark" data-tip="${esc(p.award)}">🏅</span>`)}</span></li>`;
+      // an award paper gets "Award" after the title; the award's name is in the tooltip
+      return `<li>${venueBadge(p)}<span>${url ? `<a href="${esc(url)}">${esc(p.title)}</a>` : esc(p.title)}${ifs(p.award, ` <span class="award-mark" data-tip="${esc(p.award)}">Award</span>`)}</span></li>`;
     };
     return `<section class="topic-sec t-${k}" id="${k}">
   <div class="topic-head">
