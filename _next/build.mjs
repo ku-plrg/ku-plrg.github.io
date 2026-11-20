@@ -405,7 +405,10 @@ function buildMemberPage(file) {
   // "A former member of PLRG (M.S., 2026), now at NEXON Korea."
   const alum = (DATA.members.Alumni || []).find((x) => x && x.name === name);
   const degree = alum && ({ BS: 'B.S.', MS: 'M.S.', PhD: 'Ph.D.' }[alum.category] || alum.category);
-  const formerNote = `A former member of PLRG${alum ? ` (${esc([degree, alum.year].filter(Boolean).join(', '))})` : ''}${alum?.now ? `, now at ${esc(alum.now)}` : ''}.`;
+  // `now` is a place ("NEXON Korea" -> "now at NEXON Korea") or a role at a place
+  // ("M.S. student at ..." -> "now an M.S. student at ...")
+  const now = alum?.now ? (/ at /.test(alum.now) ? `now ${/^([AEIOU]|[FHLMNRSX]\.)/.test(alum.now) ? 'an' : 'a'} ${alum.now}` : `now at ${alum.now}`) : '';
+  const formerNote = `A former member of PLRG${alum ? ` (${esc([degree, alum.year].filter(Boolean).join(', '))})` : ''}${now ? `, ${esc(now)}` : ''}.`;
   let html = renderMarkdown(body, { contact: name, former: formerNote });
   html = html.replace(/<img ([^>]*)class="profile-img"([^>]*)>/, (m) => m.replace(/src="([^"]+)"/, (_, u) => `src="${optimized(u)}"`).replace(/>$/, ' alt="">'));
   html = html.replace(/<!--AUTO:topics[^>]*-->/, () => topicList())
