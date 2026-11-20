@@ -8,6 +8,8 @@
 #     talk      :
 #       - pdf     : <path.pdf>
 #         youtube : <youtube-id>
+#         by      : <the presenter's name as in authors.yml> (default: the professor for a talk in talks.yml)
+#         name    : <short name, used only when the slides are in neither talks.yml nor publications.yml>
 #     poster    :
 #       - pdf     : <path.pdf>
 #     report    :
@@ -23,7 +25,11 @@
     photos    : SqSAUhCCKyeQWzj78
     talk      :
       - pdf     : /assets/data/slides/2026/ase26-kim-minipoly-slides.pdf
+        by      : Jungwoong Kim
+        name    : MiniPoly
       - pdf     : /assets/data/slides/2026/ase26-src-choe-slides.pdf
+        by      : Minseok Choe
+        name    : SRC
     report    :
       - pdf     : /assets/data/report/2026/ase26-report-jungwoong-kim.pdf
       - pdf     : /assets/data/report/2026/ase26-report-minseokchoe.pdf
@@ -37,6 +43,8 @@
     photos    : mDgBaYUJPRFBXbtx5
     talk      :
       - pdf     : /assets/data/slides/2026/sas26-ko-synpeg-slides.pdf
+        by      : Seongmin Ko
+        name    : SynPEG
     report    :
       - pdf     : /assets/data/report/2026/splash26-report-seongminko.pdf
       - pdf     : /assets/data/report/2026/splash26-report-sungminpark.pdf
@@ -65,7 +73,11 @@
     photos    : qBsWdDxKBmrHHpY76
     talk      :
       - pdf     : /assets/data/slides/2025/ase25-debun-slides.pdf
+        by      : Sungmin Park
+        name    : Debun
       - pdf     : /assets/data/slides/2025/ase25-src-slides.pdf
+        by      : Sungmin Park
+        name    : SRC
     report    :
       - pdf     : /assets/data/report/2025/ase25-report-jungwoongkim.pdf
       - pdf     : /assets/data/report/2025/ase25-report-minseokchoe.pdf
@@ -98,6 +110,7 @@
     photos    : MW7XTnSLJxM9h5bx8
     talk      :
       - pdf     : /assets/data/slides/2025/fse25-demo-slides.pdf
+        by      : Minseok Choe
         youtube : ZPZtfycDoJ0
     report    :
       - pdf     : /assets/data/report/2025/fse25-report-hyunjoon-kim.pdf

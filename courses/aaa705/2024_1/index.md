@@ -1,10 +1,10 @@
----
-layout: course
----
 ### AAA705: Software Testing and Quality Assurance, 2024 Spring
 
+<div class="callout warning">
+
 **Note that this page is outdated. Please refer to the [recent course page](../).**
-{:.warning}
+
+</div>
 
 #### Course Information
 
@@ -31,5 +31,4 @@ layout: course
 
 #### Schedule
 
-<!-- load schedule with PDF files -->
-{%- include schedule.html data=site.data.course.aaa705.2024_1 -%}
+<!--schedule-->

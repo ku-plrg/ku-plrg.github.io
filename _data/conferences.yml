@@ -1,5 +1,27 @@
 last_update: "2026-11-18"
 
+# Ranking lists shown on /conferences/ (column headers and the legend).
+# When a new list comes out, update its url and year here and the matching
+# fields (bk21 / kiise / rank, rank-id) of every conference in `infos` at once.
+# note: a short remark shown next to the name, e.g. "abstract 12/01"; with
+#       several deadlines, a list gives one note per round, e.g. [abstract 06/04, abstract 11/10]
+rankings:
+  bk21:
+    name: BK21
+    year: 2018 # all values below checked against this PDF on 2026-11-14
+    url: https://www.kiise.or.kr/TopConferences/data/BK21%ED%94%8C%EB%9F%AC%EC%8A%A4%EC%82%AC%EC%97%85_CS%EB%B6%84%EC%95%BC_%EC%9A%B0%EC%88%98%EA%B5%AD%EC%A0%9C%ED%95%99%EC%88%A0%EB%8C%80%ED%9A%8C%EB%AA%A9%EB%A1%9D_2018.pdf
+    desc: Plus impact factor (IF 1–4)
+  kiise:
+    name: KIISE
+    year: 2024 # all values below checked against this PDF on 2026-11-14
+    url: https://www.kiise.or.kr/TopConferences/data/SW%EB%B6%84%EC%95%BC%EC%9A%B0%EC%88%98%ED%95%99%EC%88%A0%EB%8C%80%ED%9A%8C%EB%AA%A9%EB%A1%9D_2024.pdf
+    desc: excellent conferences (최우수 / 우수)
+  core:
+    name: CORE
+    year: 2026 # ICORE2026 (portal renamed to ICORE); all ranks below checked on 2026-11-14
+    url: https://portal.core.edu.au/conf-ranks/
+    desc: conference ranking (A* / A / B / C)
+
 # ------------------------------------------------------------------------------
 infos:
 # ------------------------------------------------------------------------------
@@ -26,14 +48,14 @@ infos:
     rank-id: 18
 
   CAV:
-    tags: [LOGIC, PL]
+    tags: [PL]
     bk21: 4
     kiise: 최우수
     rank: A*
     rank-id: 331
 
   ASPLOS:
-    tags: [ARCH, PL]
+    tags: [PL]
     bk21: 4
     kiise: 최우수
     rank: A*
@@ -144,7 +166,7 @@ infos:
     rank: A*
     rank-id: 750
 
-  USENIX Security:
+  USENIX Sec:
     tags: [SEC]
     bk21: 3
     kiise: 최우수
@@ -237,21 +259,20 @@ list:
     place: Turin, Italy
 
   - name: ESOP
-    year: 2027
-    link: https://etaps.org/2027/conferences/esop/
+    year: 2028
+    link: https://etaps.org/2028/
     deadline:
-      - "2026-05-28 23:59"
-      - "2026-10-15 23:59"
-    date: Apr 10 - Apr 15
-    place: Copenhagen, Denmark
+      - "TBA"
+    date: Apr 2 - Apr 7
+    place: Karlsruhe, Germany
 
   - name: TACAS
-    year: 2027
-    link: https://etaps.org/2027/conferences/tacas/
+    year: 2028
+    link: https://etaps.org/2028/
     deadline:
-      - "2026-10-15 23:59"
-    date: Apr 10 - Apr 15
-    place: Copenhagen, Denmark
+      - "TBA"
+    date: Apr 2 - Apr 7
+    place: Karlsruhe, Germany
 
   - name: CC
     year: 2027
@@ -260,6 +281,7 @@ list:
       - "2026-12-03 23:59"
     date: Mar 20 - Mar 21
     place: Salt Lake City, Utah, United States
+    note: abstract 12/01
 
   - name: SAS
     year: 2027
@@ -273,9 +295,10 @@ list:
     year: 2027
     link: https://conf.researchr.org/home/VMCAI-2027
     deadline:
-      - "2026-09-16 23:59"
+      - "2026-09-30 23:59"
     date: Jan 11 - Jan 12
     place: Mexico City, Mexico
+    note: reg. 09/23
 
   - name: ICSE
     year: 2028
@@ -284,14 +307,16 @@ list:
       - "2027-07-01 23:59"
     date: Apr 29 - May 7
     place: Waikoloa, Hawaii, United States
+    note: abstract 06/24
 
   - name: FSE
     year: 2027
     link: https://conf.researchr.org/home/fse-2027
     deadline:
-      - "2026-10-02 23:59"
+      - "2026-10-03 23:59"
     date: Jul 12 - Jul 16
     place: Shenzhen, China
+    note: extended
 
   - name: ASE
     year: 2027
@@ -308,6 +333,7 @@ list:
       - "2027-01-11 23:59"
     date: Sep 7 - Sep 10
     place: Singapore
+    note: abstract 01/08
 
   - name: ICST
     year: 2027
@@ -333,8 +359,9 @@ list:
       - "2026-11-17 23:59"
     date: May 17 - May 20
     place: Montreal, Canada
+    note: [abstract 06/04, abstract 11/10]
 
-  - name: USENIX Security
+  - name: USENIX Sec
     year: 2027
     link: https://www.usenix.org/conference/usenixsecurity27
     deadline:
@@ -342,6 +369,7 @@ list:
       - "2027-01-26 23:59"
     date: Aug 11 - Aug 13
     place: Denver, Colorado, USA
+    note: [reg. 08/18, reg. 01/19]
 
   - name: NDSS
     year: 2027

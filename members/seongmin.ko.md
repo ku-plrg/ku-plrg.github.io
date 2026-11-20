@@ -1,10 +1,6 @@
 ---
-layout: member
 title: Seongmin Ko (고성민)
-aside:
-  toc: true
 ---
-
 <img src="/assets/images/members/seongmin.ko.jpg" class="profile-img">
 
 I'm Seongmin Ko, an Ph.D. student studying computer science in Korea University. 
@@ -18,7 +14,6 @@ languages and JavaScript ecosystem.
 - 2024.09 ~ 2026.08 - M.S. of Computer Science and Engineering, Korea University
 - 2018.03 ~ 2024.08 - B.S. of Computer Science and Engineering, Korea University
 
-## Contact Information
-{% assign author=site.data.authors["Seongmin Ko"] %}
-<div>{% include author-links.html author=author %}</div>
+<!--AUTO:publications-->
 
+<!--AUTO:contact-->
