@@ -197,17 +197,14 @@ a.venue:hover { text-decoration: none; background: var(--accent); color: var(--a
 .banner strong, .banner span { color: var(--link); }
 .banner:hover { text-decoration: none; }
 .banner:hover strong { text-decoration: underline; }
-.hero { text-align: center; padding: 56px 0 32px; }
-.hero h1 { margin: 0; font-size: 44px; line-height: 1.15; letter-spacing: -1px; }
-.hero h1 b { font-weight: inherit; color: var(--accent); }
-.tagline { margin: 12px 0 0; color: var(--muted); font-size: 18px; }
-.intro { max-width: 600px; margin: 24px auto 28px; font-size: 19px; line-height: 1.75; color: var(--muted); }
-.intro em {
-  font-style: normal; color: var(--fg); font-weight: 600; white-space: nowrap;
-  text-decoration: underline; text-decoration-color: var(--accent); text-decoration-thickness: 2px; text-underline-offset: 5px;
-}
+/* home header: left-aligned, plain (name, place, one sentence) */
+.hero { padding: 40px 0 24px; }
+.hero h1 { margin: 0; font-size: 32px; line-height: 1.2; letter-spacing: -0.5px; }
+.tagline { margin: 6px 0 0; color: var(--muted); font-size: 17px; }
+.intro { max-width: 680px; margin: 16px 0 0; font-size: 17px; line-height: 1.65; color: var(--fg); }
 @media (max-width: 560px) {
-  .hero h1 { font-size: 32px; }
+  .hero { padding: 28px 0 20px; }
+  .hero h1 { font-size: 26px; }
   .intro { font-size: 16px; }
 }
 h2 .more { float: right; font-size: 15px; font-weight: 500; margin-top: 6px; }
@@ -216,15 +213,13 @@ h2 .more { float: right; font-size: 15px; font-weight: 500; margin-top: 6px; }
 .topics li { margin: 0; }
 .topics a {
   display: flex; align-items: center; gap: 20px; color: var(--fg);
-  padding: 14px 16px 14px 20px; border-bottom: 1px solid var(--line);
+  padding: 14px 0; border-bottom: 1px solid var(--line);
   transition: background .15s;
 }
 .topics a:hover { text-decoration: none; background: var(--soft); }
 .topics .text { flex: 1; }
 .topics strong { display: block; }
 .topics .text span { color: var(--muted); font-size: 15px; }
-.topics em { flex: none; font-style: normal; font-weight: 700; font-size: 22px; color: var(--fg); text-align: right; line-height: 1.1; font-variant-numeric: tabular-nums; }
-.topics em small { display: block; font-size: 12px; font-weight: 500; color: var(--muted); }
 
 .join .mail { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; margin-top: 12px; }
 .join .addr { font-weight: 600; font-size: 17px; }
@@ -499,8 +494,8 @@ details.drop .menu a:hover { background: var(--soft); text-decoration: none; col
 /* -------------------------------------------------------------- research */
 .lead { font-size: 18px; line-height: 1.7; color: var(--muted); margin: 20px 0 16px; }
 .nowrap { white-space: nowrap; }
-.highlight { border: 1px solid var(--line); border-radius: 12px; padding: 16px 20px; background: var(--soft); }
-.highlight .hl-name { font-weight: 800; font-size: 18px; color: var(--accent); }
+.highlight { margin-top: 8px; }
+.highlight .hl-name { font-weight: 700; font-size: 19px; color: var(--fg); }
 .highlight p { margin: 4px 0 10px; }
 .hl-links, .tools { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
 .hl-links a, .tools a { font-size: 13.5px; padding: 2px 10px; border-radius: 4px; border: 1px solid var(--line); background: var(--bg); }
@@ -510,15 +505,12 @@ details.drop .menu a:hover { background: var(--soft); text-decoration: none; col
 .tools .label, .label.recent { font-size: 13px; color: var(--muted); }
 .label.recent { margin: 12px 0 2px; }
 .figure { display: block; max-width: 100%; margin: 10px 0 12px; border-radius: 10px; background: #fff; padding: 8px; }
-.topic-sec { margin-top: 20px; border: 1px solid var(--line); border-radius: 12px; scroll-margin-top: 72px; }
-.topic-head {
-  display: flex; align-items: baseline; justify-content: space-between; gap: 12px; padding: 12px 18px;
-  border-bottom: 1px solid var(--line);
-  border-radius: 11px 11px 0 0;
-}
-.topic-head h2 { margin: 0; font-size: 19px; color: var(--fg); }
-.topic-head .more { font-size: 14px; font-weight: 600; color: var(--link); white-space: nowrap; }
-.topic-body { padding: 14px 18px 10px; }
+/* one plain section per topic: a heading over a thin line, no box */
+.topic-sec { margin-top: 36px; scroll-margin-top: 72px; }
+.topic-head { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; padding-bottom: 6px; border-bottom: 1px solid var(--line); }
+.topic-head h2 { margin: 0; font-size: 21px; color: var(--fg); }
+.topic-head .more { font-size: 14px; font-weight: 500; color: var(--link); white-space: nowrap; }
+.topic-body { padding: 12px 0 0; }
 .topic-body > p { margin: 0 0 12px; }
 ul.mini-pubs { list-style: none; padding: 0; margin: 4px 0 6px; }
 .mini-pubs li { display: grid; grid-template-columns: 140px 1fr; gap: 12px; padding: 5px 0; margin: 0; font-size: 15px; align-items: baseline; }

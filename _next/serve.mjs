@@ -11,7 +11,9 @@ const TYPES = { '.html': 'text/html; charset=utf-8', '.css': 'text/css', '.js': 
 const PORT = Number(process.env.PORT || 4000);
 
 http.createServer((req, res) => {
-  let rel = decodeURIComponent(new URL(req.url, 'http://x').pathname);
+  let rel;
+  try { rel = decodeURIComponent(new URL(req.url, 'http://x').pathname); }
+  catch { res.writeHead(400); res.end('bad request'); return; }
   if (rel.endsWith('/')) rel += 'index.html';
   for (const root of ROOTS) {
     let file = path.join(root, rel);

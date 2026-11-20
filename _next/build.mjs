@@ -404,9 +404,9 @@ function buildHome() {
   const pubs = allPubs();
   const recent = [...pubs.filter((p) => p.selected), ...pubs.filter((p) => !p.selected)].slice(0, 6);
   const body = `<header class="hero">
-  <h1 aria-label="Programming Language Research Group (PLRG)"><b>P</b>rogramming <b>L</b>anguage<br><b>R</b>esearch <b>G</b>roup</h1>
-  <p class="tagline">Korea University · Seoul</p>
-  <p class="intro">We develop <em>programming language</em> and <em>software engineering</em> techniques that make real-world software <em>reliable</em> and <em>secure</em>.</p>
+  <h1>Programming Language Research Group</h1>
+  <p class="tagline">Korea University, Seoul</p>
+  <p class="intro">We develop programming language and software engineering techniques that make real-world software reliable and secure.</p>
 </header>
 <div class="slider" aria-roledescription="carousel" aria-label="PLRG members">
   <div class="slides">
@@ -420,8 +420,7 @@ ${(DATA.photos || []).length > 1 ? `  <button type="button" class="nav prev" ari
 <h2>Research <a class="more" href="/research/">More →</a></h2>
 <ul class="topics">
 ${Object.entries(TOPICS).map(([k, t]) => {
-  const n = allPubs().filter((p) => (p.topics || []).includes(k)).length;
-  return `  <li><a class="t-${k}" href="/research/#${k}"><span class="text"><strong>${t.name}</strong><span>${t.desc}</span></span><em>${n}<small>papers</small></em></a></li>`;
+  return `  <li><a class="t-${k}" href="/research/#${k}"><span class="text"><strong>${t.name}</strong><span>${t.desc}</span></span></a></li>`;
 }).join('\n')}
 </ul>
 
@@ -446,7 +445,7 @@ ${Object.entries(TOPICS).map(([k, t]) => {
 ${recent.map((p) => pubItem(p, p.year)).join('\n')}
 </ul>
 `;
-  write('index.html', layout({ body, banner: true, scripts: ['/static/home.js'] }));
+  write('index.html', layout({ body, scripts: ['/static/home.js'] }));
 }
 
 // ---------------------------------------------------------------------------
