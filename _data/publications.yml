@@ -1,4 +1,4 @@
-# topics: research topics, in any order (shown in a fixed order). keys: spec, analysis, testing, synthesis
+# topics: research topics, in any order (shown in a fixed order). keys: spec, analysis, synthesis, security
 # selected: true shows the paper under "Selected Publications" on the home page (6 papers, newest first)
 2026:
 
@@ -10,7 +10,7 @@
       - name: Ben Swierzy
       - name: Jihyeok Park
         corr: true
-    topics: [analysis]
+    topics: [security, analysis]
     target:
       name: TOSEM
       detail: Transactions on Software Engineering and Methodology
@@ -23,7 +23,7 @@
     doi: 10.1145/3832783.3844571
     authors:
       - name: Minseok Choe
-    topics: [testing]
+    topics: [synthesis]
     target:
       name: ASE 2026 SRC
       detail: IEEE/ACM International Conference on Automated Software Engineering - Student Research Competition
@@ -81,7 +81,7 @@
         corr: true
       - name: Sukyoung Ryu
         corr: true
-    topics: [testing, spec]
+    topics: [synthesis, spec]
     target:
       name: TOSEM
       detail: Transactions on Software Engineering and Methodology
@@ -96,6 +96,7 @@
     authors:
       - name: Sungmin Park
     award: ACM Student Research Competition 2nd
+    topics: [security]
     target:
       name: ASE 2025 SRC
       detail: IEEE/ACM International Conference on Automated Software Engineering - Student Research Competition
@@ -114,7 +115,7 @@
       - name: Jihyeok Park
         corr: true
     co-first: 2
-    topics: [analysis]
+    topics: [security, analysis]
     target:
       name: ASE 2025
       detail: IEEE/ACM International Conference on Automated Software Engineering
@@ -177,7 +178,7 @@
     authors:
       - name: Sukyoung Ryu
       - name: Jihyeok Park
-    topics: [spec, testing, analysis]
+    topics: [spec]
     target:
       detail: Communications of the ACM
       name: CACM
@@ -198,7 +199,7 @@
       - name: Dongjun Youn
       - name: Kanguk Lee
       - name: Sukyoung Ryu
-    topics: [testing, spec]
+    topics: [synthesis, spec]
     target:
       detail: ACM SIGPLAN Conference on Programming Language Design and
         Implementation
@@ -326,7 +327,7 @@
       - name: Gyeongwon Kim
       - name: Sukyoung Ryu
     award: ACM SIGSOFT Distinguished Paper Award
-    topics: [testing, spec]
+    topics: [synthesis, spec]
     target:
       name: ICSE 2021
       detail: IEEE/ACM International Conference on Software Engineering
@@ -379,6 +380,7 @@
       - name: Jaemin Hong
       - name: Jihyeok Park
       - name: Sukyoung Ryu
+    topics: [analysis]
     target:
       name: Scala 2018
       detail: ACM SIGPLAN Symposium on Scala
@@ -414,6 +416,7 @@
       - name: Jihyeok Park
       - name: Sukyoung Ryu
       - name: Sue Moon
+    topics: [security]
     target:
       name: NetPL 2017
       detail: ACM SIGCOMM Workshop on Networking and Programming Languages

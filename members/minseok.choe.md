@@ -11,5 +11,6 @@ I am Minseok Choe, a master’s student in Computer Science and Engineering at K
 - 2025.09 ~ Present - M.S. of Computer Science and Engineering, Korea University
 - 2021.03 ~ 2025.08 - B.S. of Computer Science and Engineering, Korea University
 
-## Contact Information
-<!--contact-->
+<!--AUTO:publications-->
+
+<!--AUTO:contact-->

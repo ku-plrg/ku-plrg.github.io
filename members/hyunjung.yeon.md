@@ -12,5 +12,6 @@ Currently I am interested in programming languages
 ## Educational Background
 - 2024.03 ~ Present - B.S. of Industrial management and Engineering, Korea University
 
-## Contact Information
-<!--contact-->
+<!--AUTO:publications-->
+
+<!--AUTO:contact-->

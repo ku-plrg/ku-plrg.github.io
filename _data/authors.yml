@@ -5,6 +5,13 @@ Jihyeok Park:
   avatar      : /assets/images/avatars/jihyeok.park.jpg
   position    : Assistant Professor
   email       : jihyeok_park@korea.ac.kr
+  office      :
+    - Room 507, IT & General Education Center (정운오IT교양관)
+    - "[Dept. of Computer Science and Engineering](https://cs.korea.ac.kr/)"
+    - "[Korea University](https://www.korea.ac.kr/)"
+    - Anam-dong 5-ga, Seongbuk-gu
+    - Seoul 136-713, Korea
+    - (office) +82) 02-3290-4602
   scholar     : 0L8m1xIAAAAJ
   dblp        : 144/4242
   github      : jhnaldo
@@ -15,7 +22,7 @@ Jungyeom Kim:
   ko-name     : 김준겸
   avatar      : /assets/images/avatars/jungyeom.kim.jpg
   position    : Master Student
-  email       : kimjg1119@korea.ac.kr
+  email       : [kimjg1199lock@gmail.com, kimjg1119@korea.ac.kr]
   github      : kimjg1119
 Seongmin Ko:
   name        : Seongmin Ko
@@ -31,7 +38,7 @@ Hyunjoon Kim:
   ko-name     : 김현준
   avatar      : /assets/images/avatars/hyunjoon.kim.jpg
   position    : Master Student
-  email       : rickykhj@korea.ac.kr
+  email       : [d01c2@outlook.com, rickykhj@korea.ac.kr]
   github      : d01c2
 Yongwook Choi:
   name        : Yongwook Choi
@@ -60,14 +67,6 @@ Woojin Choi:
   position    : Master Student
   email       : wjchoi0329@korea.ac.kr
   github      : Woojin-Choi
-Jonghyeok Baek:
-  name        : Jonghyeok Baek
-  url         : /members/jonghyeok.baek
-  ko-name     : 백종혁
-  avatar      : /assets/images/avatars/jonghyeok.baek.jpg
-  position    : Undergraduate Student
-  email       : jonghyeok613@korea.ac.kr
-  github      : jonghyeok613
 Sungmin Park:
   name        : Sungmin Park
   url         : /members/sungmin.park
@@ -76,14 +75,6 @@ Sungmin Park:
   position    : Master Student
   email       : ryan040@korea.ac.kr
   github      : taxor03
-Jinwoo Choi:
-  name        : Jinwoo Choi
-  url         : /members/jinwoo.choi
-  ko-name     : 최진우
-  avatar      : /assets/images/avatars/jinwoo.choi.jpg
-  position    : Undergraduate Student
-  email       : ryan0102@korea.ac.kr
-  github      : ryan00102
 Seunghwan Kim:
   name        : Seunghwan Kim
   url         : /members/seunghwan.kim
@@ -112,22 +103,6 @@ Seojin Kim:
   github      : SeojinSeojin
   linkedin    : 서진-김-0363aa259
 
-Yujin Hong:
-  name        : Yujin Hong
-  url         : /members/yujin.hong
-  ko-name     : 홍유진
-  avatar      : /assets/images/avatars/yujin.hong.jpg
-  position    : Undergraduate Student
-  email       : simplehuj1214@gmail.com
-  github      : hongyjin
-Seongjin Lee:
-  name        : Seongjin Lee
-  url         : /members/seongjin.lee
-  ko-name     : 이성진
-  avatar      : /assets/images/avatars/seongjin.lee.jpg
-  position    : Undergraduate Student
-  email       : sagjin0906@gmail.com
-  github      : mobius29
 Jungwoong Kim:
   name        : Jungwoong Kim
   url         : /members/jungwoong.kim
@@ -144,14 +119,6 @@ Youngmin Cho:
   position    : Undergraduate Student
   email       : arcde40@korea.ac.kr
   github      : arcde40
-Garham Lee:
-  name        : Garham Lee
-  url         : /members/garham.lee
-  ko-name     : 이가람
-  avatar      : /assets/images/avatars/garham.lee.jpg
-  position    : Undergraduate Student
-  email       : garham2@korea.ac.kr
-  github      : G-Lee1031
 Junseo Ha:
   name        : Junseo Ha
   url         : /members/junseo.ha
@@ -176,14 +143,6 @@ Hyunjung Yeon:
   position    : Undergraduate Student
   email       : yeonhj0507@korea.ac.kr
   github      : yeonhj0507
-Sangwoo Bae:
-  name        : Sangwoo Bae
-  url         : /members/sangwoo.bae
-  ko-name     : 배상우
-  avatar      : /assets/images/avatars/sangwoo.bae.jpg
-  position    : Undergraduate Student
-  email       : codepsy2001@gmail.com
-  github      : CodePsy-2001
 Hyowoon Park:
   name        : Hyowoon Park
   url         : /members/hyowoon.park

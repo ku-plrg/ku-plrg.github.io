@@ -16,10 +16,7 @@ Undergraduate Students:
   - Hyunjung Yeon
   - Hyowoon Park
 Alumni:
-  # - name: Jonghyeok Baek
-  #   category: BS
-  # - name: Jinwoo Choi
-  #   category: BS
+  # now: where they are now (optional), shown after the year
   - name: Yongwook Choi
     category: BS
     year: 2024
@@ -32,18 +29,7 @@ Alumni:
   - name: Seojin Kim
     category: BS
     year: 2025
-  # - name: Yujin Hong
-  #   category: BS
-  #   year: 2025
-  # - name: Seongjin Lee
-  #   category: BS
-  #   year: 2025
   - name: Jungyeom Kim
     category: MS
     year: 2026
-  # - name: Garham Lee
-  #   category: BS
-  #   year: 2026
-  # - Sangwoo Bae
-  #   category: BS
-  #   year: 2026
+    now: NEXON Korea

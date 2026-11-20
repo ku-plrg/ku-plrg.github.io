@@ -104,7 +104,7 @@ function layout({ title, description = 'Programming Language Research Group (PLR
   <script>window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag('js', new Date()); gtag('config', 'G-RPGXB995RD');</script>
   <link rel="stylesheet" href="/static/style.css">
   <script src="/static/theme.js"></script>
-${scripts.map((s) => `  <script defer src="${s}"></script>`).join('\n')}
+${['/static/addr.js', ...scripts].map((s) => `  <script defer src="${s}"></script>`).join('\n')}
 </head>
 <body>
 <nav class="topnav">
@@ -133,9 +133,10 @@ ${banner ? `<a class="banner" href="#join"><strong>We're recruiting!</strong> Gr
 ${body}
 </main>
 <footer>
-  <a href="https://github.com/ku-plrg">ku-plrg</a> on GitHub ·
+  <p><a href="https://github.com/ku-plrg">GitHub</a> ·
   <a href="https://www.youtube.com/@ku-plrg">YouTube</a> ·
-  Programming Language Research Group, Korea University
+  Programming Language Research Group, <a href="https://cs.korea.ac.kr/">Dept. of Computer Science and Engineering</a>, <a href="https://www.korea.ac.kr/">Korea University</a></p>
+  <address>Room 507, IT &amp; General Education Center (정운오IT교양관), 145 Anam-ro, Seongbuk-gu, Seoul 02841, Korea</address>
 </footer>
 </body>
 </html>
@@ -152,12 +153,15 @@ const pageHead = (title, sub = '', kicker = '') => `<header class="page-head">
 // Markdown pages (kramdown-flavored sources written for Jekyll)
 
 // contact links of a member from _data/authors.yml
+// "Contact Information" of a member, all from _data/authors.yml: `office` (optional lines,
+// Markdown), then the links (`email` may be a list)
 function authorLinks(name) {
   const a = DATA.authors[name];
   if (!a) return '';
   const real = (v) => v && v !== '#';
+  const office = [].concat(a.office || []).map((l) => marked.parseInline(String(l))).join('<br>\n');
   const links = [
-    real(a.email) && ['Email', `mailto:${a.email}`, a.email],
+    ...[].concat(a.email || []).filter(real).map((e) => ['Email', `mailto:${e}`, e]),
     real(a.scholar) && ['Google Scholar', `https://scholar.google.com/citations?user=${a.scholar}`],
     real(a.dblp) && ['DBLP', `https://dblp.org/pid/${a.dblp}.html`],
     real(a.github) && ['GitHub', `https://github.com/${a.github}`, `@${a.github}`],
@@ -166,27 +170,36 @@ function authorLinks(name) {
     real(a.facebook) && ['Facebook', `https://www.facebook.com/${a.facebook}`],
     real(a.youtube) && ['YouTube', `https://www.youtube.com/@${a.youtube}`],
   ].filter(Boolean);
-  return `<ul class="contact">
-${links.map(([label, href, text]) => `  <li><span class="label">${label}</span><a href="${esc(href)}">${esc(text || href.replace(/^https?:\/\//, ''))}</a></li>`).join('\n')}
+  return `<h2>Contact Information</h2>
+${office ? `<p class="office">${office}</p>\n` : ''}<ul class="contact">
+${links.map(([label, href, text]) => {
+  // e-mail: "user [at] domain" in the HTML, made a mailto link by static/addr.js
+  const mail = href.startsWith('mailto:') && href.slice(7).split('@');
+  const link = mail && mail.length === 2
+    ? `<a class="addr" data-user="${esc(mail[0])}" data-domain="${esc(mail[1])}">${esc(mail[0])} [at] ${esc(mail[1])}</a>`
+    : `<a href="${esc(href)}">${esc(text || href.replace(/^https?:\/\//, ''))}</a>`;
+  return `  <li><span class="label">${label}</span>${link}</li>`;
+}).join('\n')}
 </ul>`;
 }
 
 // Renders a Markdown page body. Besides Markdown (and inline HTML), a page can use
 // these markers, each on its own line:
-//   <!--contact-->           the member's contact links (from _data/authors.yml)
-//   <!--former-member-->     a note that the member has left the lab
+//   <!--AUTO:contact-->      "Contact Information" of the member (from _data/authors.yml)
+//   <!--AUTO:publications--> "Publications" of the member (see buildMemberPage)
+//   <!--former-member-->     a sentence saying the member has left the lab (see buildMemberPage)
 //   <!--schedule-->          the course schedule (from _data/course/<course>/<YYYY_S>.yml)
 //   <!--automata-viewer-->   the COSE215 automata simulator (_next/partials/)
 //   <!--AUTO:topics-->, <!--AUTO:venues-->   see buildMemberPage
 // "--" becomes an en dash, as kramdown did.
-function renderMarkdown(body, { schedule, contact } = {}) {
+function renderMarkdown(body, { schedule, contact, former } = {}) {
   const holes = [];
   const hole = (html) => `\n\n<!--HOLE${holes.push(html) - 1}-->\n\n`;
   const md = body
-    .replace(/<!--former-member-->/g, () => hole('<div class="callout warning">This person is a former member and is not currently affiliated with the lab.</div>'))
+    .replace(/<!--former-member-->/g, () => hole(`<p class="former">${former || 'A former member of PLRG.'}</p>`))
     .replace(/<!--automata-viewer-->/g, () => hole(fs.readFileSync(path.join(HERE, 'partials/automata-viewer.html'), 'utf8')))
     .replace(/<!--schedule-->/g, () => hole(schedule || ''))
-    .replace(/<!--contact-->/g, () => hole(contact ? authorLinks(contact) : ''))
+    .replace(/<!--AUTO:contact-->/g, () => hole(contact ? authorLinks(contact) : ''))
     .replace(/(?<![<!-])--(?![->])/g, '–');
   return marked.parse(md).replace(/(?:<p>)?<!--HOLE(\d+)-->(?:<\/p>)?/g, (_, i) => holes[+i]);
 }
@@ -207,47 +220,56 @@ function sectionIndex(html) {
 // research topics, in display order (home list, filter chips, and tags on each paper);
 // `topics: [...]` in _data/publications.yml uses these keys, in any order
 const TOPICS = {
-  spec: { name: 'Language Specifications', short: 'Spec', desc: 'Mechanizing real-world language specifications such as ECMA-262 and deriving language tools from them.' },
-  analysis: { name: 'Program Analysis', short: 'Analysis', desc: 'Statically and dynamically analyzing programs to understand their behaviors and detect bugs.' },
-  testing: { name: 'Automated Testing', short: 'Testing', desc: 'Automatically generating tests, coverage criteria, and oracles to find bugs in real-world software, from language implementations to their specifications.' },
-  synthesis: { name: 'Program Synthesis', short: 'Synthesis', desc: 'Generating programs automatically from specifications and examples.' },
+  spec: { name: 'Mechanized Specifications', short: 'Specification', desc: 'Mechanizing the specifications of real-world languages such as JavaScript and deriving language tools from them.' },
+  analysis: { name: 'Program Analysis and Type Systems', short: 'Analysis', desc: 'Analyzing programs statically and dynamically, and designing type systems, to find bugs and guarantee safety.' },
+  synthesis: { name: 'Program Synthesis and Testing', short: 'Synthesis & Testing', desc: 'Generating correct programs and effective tests from specifications, such as JavaScript polyfills and conformance tests.' },
+  security: { name: 'Software Security', short: 'Security', desc: 'Finding and analyzing security vulnerabilities in the JavaScript ecosystem, on the web and in Node.js.' },
 };
 const sortTopics = (ts) => Object.keys(TOPICS).filter((k) => (ts || []).includes(k));
-const topicTag = (t) => TOPICS[t] ? `<a class="tag t-${t}" href="/publications/#topic=${t}">${TOPICS[t].short}</a>` : '';
+// a paper's topic: plain text (the filter chips above the list do the filtering)
+const topicTag = (t) => TOPICS[t] ? `<span class="tag t-${t}">${TOPICS[t].short}</span>` : '';
 
 // ---------------------------------------------------------------------------
 // publications
 
 // "ASE 2026 SRC" -> "ASE'26 SRC"; names without a year (journals) get the year: "TOSEM" -> "TOSEM'26"
+// the venue as written in publications.yml: "ASE 2026" for a conference, "TOSEM" for a journal
 function shortVenue(name, year) {
-  if (/ (19|20)\d\d\b/.test(name)) return name.replace(/ (?:19|20)(\d\d)\b/, "'$1");
-  return `${name}'${String(year).slice(-2)}`;
+  return name;
 }
 
 // student research competitions, doctoral symposia, and tutorials: left out of the
 // member pages' venue summary and the research page's recent papers
 const isMinorVenue = (name) => / (SRC|DS|Tutorial)$/.test(name || '');
 
+// a member's page, or '' when there is none (every member with a page in members/)
+const memberPages = new Map();
+function memberUrl(name) {
+  const a = DATA.authors[name];
+  if (!a?.url) return '';
+  if (!memberPages.has(a.url)) memberPages.set(a.url, fs.existsSync(path.join(ROOT, `${a.url.replace(/^\//, '')}.md`)));
+  return memberPages.get(a.url) ? a.url : '';
+}
+
 function authorList(pub) {
   const as = pub.authors || [];
   return as.map((a, i) => {
-    const known = DATA.authors[a.name];
-    let s = known?.url ? `<a href="${known.url}">${esc(a.name)}</a>` : esc(a.name);
+    const url = memberUrl(a.name);
+    let s = url ? `<a href="${url}">${esc(a.name)}</a>` : esc(a.name);
     if (pub['co-first'] > i) s += '<sup title="equal contribution">*</sup>';
     else if (a.corr) s += '<sup title="corresponding author">†</sup>';
     return s;
   }).join(', ') + (pub['co-first'] ? ' <span class="equal">(* equally contributed)</span>' : '');
 }
 
-// the venue badge of a paper: links to the venue, and its tooltip gives the full name
-// ("ASE 2026: IEEE/ACM International Conference on Automated Software Engineering")
+// the venue of a paper, linking to the venue
 function venueBadge(pub, year = pub.year) {
   const venue = pub.target?.name ?? '';
-  const tip = [venue, pub.target?.detail].filter(Boolean).join(': ');
-  const label = esc(shortVenue(venue, year));
+  // <wbr> after "/" lets ESEC/FSE wrap there in the narrow phone column (spaces wrap anyway)
+  const label = esc(shortVenue(venue, year)).replace(/\//g, '/<wbr>');
   return pub.target?.url
-    ? `<a class="venue" href="${esc(pub.target.url)}" data-tip="${esc(tip)}">${label}</a>`
-    : `<span class="venue" data-tip="${esc(tip)}">${label}</span>`;
+    ? `<a class="venue" href="${esc(pub.target.url)}">${label}</a>`
+    : `<span class="venue">${label}</span>`;
 }
 
 function pubItem(pub, year) {
@@ -255,11 +277,11 @@ function pubItem(pub, year) {
   const links = [];
   // the title links to the DOI, so the links below are the extra materials only
   for (const [k, v] of Object.entries(pub.materials || {})) links.push([k.toUpperCase() === 'PDF' ? 'PDF' : k[0].toUpperCase() + k.slice(1), v]);
-  const titleUrl = pub.doi && pub.doi !== 'accepted' ? `https://doi.org/${pub.doi}` : pub.materials?.pdf;
+  // the title links to the paper's DOI only (without a DOI it is plain text; the PDF is below)
+  const titleUrl = pub.doi && pub.doi !== 'accepted' ? `https://doi.org/${pub.doi}` : '';
   return `<li data-year="${year}" data-award="${pub.award ? 1 : 0}" data-topics="${(pub.topics || []).join(' ')}">
   <div class="side">
     ${venueBadge(pub, year)}
-    ${ifs(pub.topics?.length, `<div class="tags">${sortTopics(pub.topics).map(topicTag).join('')}</div>`)}
   </div>
   <div class="body">
     ${titleUrl ? `<a class="title" href="${esc(titleUrl)}">${esc(pub.title)}</a>` : `<span class="title">${esc(pub.title)}</span>`}
@@ -268,6 +290,7 @@ function pubItem(pub, year) {
     <div class="meta">
       ${ifs(pub.doi === 'accepted', '<span class="note">Accepted</span>')}
       ${links.map(([l, u]) => `<a href="${esc(u)}">${esc(l)}</a>`).join('\n      ')}
+      ${ifs(pub.topics?.length, `<span class="tags">${sortTopics(pub.topics).map(topicTag).join('<span aria-hidden="true"> · </span>')}</span>`)}
     </div>
   </div>
 </li>`;
@@ -322,7 +345,10 @@ ${list.map((name) => {
 <ul class="alumni">
 ${alumni.map((x) => {
   const a = DATA.authors[x.name] || {};
-  return `  <li><a href="${esc(a.url || '#')}">${esc(x.name)}</a> <span class="ko">${esc(a['ko-name'] || '')}</span> <span class="note">${esc(x.category || '')}${x.year ? ` ${x.year}` : ''}</span></li>`;
+  // one aligned row: name | Korean name | degree | year | where they went (`now`, optional)
+  const degree = { BS: 'B.S.', MS: 'M.S.', PhD: 'Ph.D.' }[x.category] || x.category || '';
+  const url = memberUrl(x.name);
+  return `  <li>${url ? `<a href="${esc(url)}">${esc(x.name)}</a>` : `<span>${esc(x.name)}</span>`}<span class="ko">${esc(a['ko-name'] || '')}</span><span class="note">${esc(degree)}</span><span class="note year">${esc(x.year || '')}</span><span class="now">${esc(x.now || '')}</span></li>`;
 }).join('\n')}
 </ul>`);
   const body = `${pageHead('Members')}
@@ -332,7 +358,7 @@ ${sections.join('\n')}`;
 
 // <!--AUTO:topics--> in a member page: the research topics, linked to the research page
 function topicList() {
-  return `<ul class="topic-links">${Object.entries(TOPICS).map(([k, t]) => `<li><a class="t-${k}" href="/research/#${k}">${t.name}</a></li>`).join('')}</ul>`;
+  return `<p class="topic-links">${Object.entries(TOPICS).map(([k, t]) => `<a href="/research/#${k}">${t.name}</a>`).join(', ')}</p>`;
 }
 
 // <!--AUTO:venues--> in a member page: their papers at major venues, grouped like
@@ -357,8 +383,7 @@ function venueSummary(name) {
       const links = hits.map((p) => {
         const url = p.doi && p.doi !== 'accepted' ? `https://doi.org/${p.doi}` : p.materials?.pdf;
         const label = `${p.year}${/ Demo$/.test(p.target.name) ? ' (Demo)' : ''}`;
-        // hovering a year shows the paper's title (one venue can have several papers a year)
-        return url ? `<a href="${esc(url)}" data-tip="${esc(p.title)}">${label}</a>` : `<span data-tip="${esc(p.title)}">${label}</span>`;
+        return url ? `<a href="${esc(url)}">${label}</a>` : `<span>${label}</span>`;
       }).join(' / ');
       return `<li>${v} – ${links}</li>`;
     }).filter(Boolean);
@@ -376,23 +401,35 @@ function buildMemberPage(file) {
   const [name] = Object.entries(DATA.authors).find(([, a]) => a.url === url) || [];
   const a = DATA.authors[name] || {};
   const title = fm.title || name || id;
-  let html = renderMarkdown(body, { contact: name });
+  // a former member: one plain sentence from the Alumni list in members.yml, e.g.
+  // "A former member of PLRG (M.S., 2026), now at NEXON Korea."
+  const alum = (DATA.members.Alumni || []).find((x) => x && x.name === name);
+  const degree = alum && ({ BS: 'B.S.', MS: 'M.S.', PhD: 'Ph.D.' }[alum.category] || alum.category);
+  const formerNote = `A former member of PLRG${alum ? ` (${esc([degree, alum.year].filter(Boolean).join(', '))})` : ''}${alum?.now ? `, now at ${esc(alum.now)}` : ''}.`;
+  let html = renderMarkdown(body, { contact: name, former: formerNote });
   html = html.replace(/<img ([^>]*)class="profile-img"([^>]*)>/, (m) => m.replace(/src="([^"]+)"/, (_, u) => `src="${optimized(u)}"`).replace(/>$/, ' alt="">'));
   html = html.replace(/<!--AUTO:topics[^>]*-->/, () => topicList())
     .replace(/<!--AUTO:venues[^>]*-->/, () => venueSummary(name));
-  // papers with this member (the professor's page links to the full list instead)
-  const mine = name && a.position !== 'Assistant Professor'
-    ? allPubs().filter((p) => (p.authors || []).some((x) => x.name === name)) : [];
-  if (mine.length) {
-    const heading = /<h2[^>]*>Publications<\/h2>/.test(html) ? 'PLRG Publications' : 'Publications';
-    const block = `<h2>${heading}</h2>\n<ul class="pubs">\n${mine.map((p) => pubItem(p, p.year)).join('\n')}\n</ul>\n`;
-    html = /<h2[^>]*>Contact Information<\/h2>/.test(html)
-      ? html.replace(/<h2[^>]*>Contact Information<\/h2>/, (m) => block + m)
-      : html + block;
-  }
+  // the two sections a member does not write by hand: "Publications" (papers with this
+  // member in publications.yml, plus their own entries, e.g. workshop papers or posters
+  // without a DOI, written as `publications:` in the front matter in the same format with a
+  // `year`; newest first) and "Contact Information" (from _data/authors.yml). Each comes
+  // from a marker that must stay in the page; the professor's page has its own summary.
+  // (a former member's page keeps only the note, the photo, and the publications)
+  const prof = a.position === 'Assistant Professor', former = body.includes('<!--former-member-->');
+  for (const k of prof ? ['contact'] : former ? ['publications'] : ['publications', 'contact'])
+    if (!body.includes(`<!--AUTO:${k}-->`)) throw new Error(`members/${file}: keep the <!--AUTO:${k}--> line`);
+  for (const h of prof ? ['Contact Information'] : ['Publications', 'Contact Information'])
+    if (new RegExp(`^#+\\s*${h}\\s*$`, 'mi').test(body)) throw new Error(`members/${file}: remove the "${h}" heading (<!--AUTO:...--> makes it)`);
+  const mine = prof ? [] : [
+    ...allPubs().filter((p) => (p.authors || []).some((x) => x.name === name)),
+    ...(fm.publications || []).filter((p) => p && p.title).map((p) => ({ ...p, year: Number(p.year) || 0 })),
+  ].sort((x, y) => y.year - x.year);
+  html = html.replace(/(<p>)?<!--AUTO:publications-->(<\/p>)?/, () => (mine.length
+    ? `<h2>Publications</h2>\n<ul class="pubs">\n${mine.map((p) => pubItem(p, p.year)).join('\n')}\n</ul>\n` : ''));
   const sec = sectionIndex(html);
-  const kicker = `<a href="/members/">Members</a>${ifs(a.position, ` / ${esc(a.position)}`)}`;
-  const page = layout({ title: title.replace(/\s*\(.*\)$/, ''), active: '/members/', body: `${pageHead(esc(title), '', kicker)}\n<div class="prose member">\n${sec.html}\n</div>` });
+  // just the name on top (the Members page groups people by position; the menu shows the section)
+  const page = layout({ title: title.replace(/\s*\(.*\)$/, ''), active: '/members/', body: `${pageHead(esc(title))}\n<div class="prose member">\n${sec.html}\n</div>` });
   write(`members/${id}.html`, page);
 }
 
@@ -405,45 +442,42 @@ function buildHome() {
   const recent = [...pubs.filter((p) => p.selected), ...pubs.filter((p) => !p.selected)].slice(0, 6);
   const body = `<header class="hero">
   <h1>Programming Language Research Group</h1>
-  <p class="tagline">Korea University, Seoul</p>
-  <p class="intro">We develop programming language and software engineering techniques that make real-world software reliable and secure.</p>
+  <p class="tagline">Korea University, Seoul · Led by <a class="pi" href="/members/jihyeok.park">Prof. Jihyeok Park</a></p>
+  <p class="intro">We develop programming language and software engineering techniques that make <span class="nowrap">real-world</span> software reliable and secure. Our tool <a href="https://es-meta.github.io/">ESMeta</a> checks every proposed change to JavaScript itself, as part of how the language is developed.</p>
 </header>
 <div class="slider" aria-roledescription="carousel" aria-label="PLRG members">
   <div class="slides">
-${(DATA.photos || []).map((p, i) => `    <figure class="slide" aria-label="${i + 1} of ${DATA.photos.length}"><img src="${esc(optimized(p.src))}" alt="PLRG members, ${esc(p.caption || '')}" ${i ? 'loading="lazy"' : ''}>${ifs(p.caption, `<figcaption>${esc(p.caption)}</figcaption>`)}</figure>`).join('\n')}
+${(DATA.photos || []).map((p, i) => `    <figure class="slide" aria-label="${i + 1} of ${DATA.photos.length}" data-caption="${esc(p.caption || '')}"><img src="${esc(optimized(p.src))}" alt="PLRG members, ${esc(p.caption || '')}"${p.position || p.zoom ? ` style="${[p.position && `object-position: ${esc(p.position)}`, p.zoom && `transform: scale(${Number(p.zoom)}); transform-origin: 50% 0`].filter(Boolean).join('; ')}"` : ''} draggable="false" ${i ? 'loading="lazy"' : ''}></figure>`).join('\n')}
   </div>
-${(DATA.photos || []).length > 1 ? `  <button type="button" class="nav prev" aria-label="Previous photo"></button>
-  <button type="button" class="nav next" aria-label="Next photo"></button>
-  <div class="dots">${DATA.photos.map((_, i) => `<button type="button" aria-label="Photo ${i + 1}"${i ? '' : ' aria-current="true"'}></button>`).join('')}</div>` : ''}
+  <div class="slider-bar">
+    <span class="cap">${esc(DATA.photos?.[0]?.caption || '')}</span>
+${(DATA.photos || []).length > 1 ? `    <span class="ctrl"><button type="button" class="prev" aria-label="Previous photo">‹</button><span class="count">1 / ${DATA.photos.length}</span><button type="button" class="next" aria-label="Next photo">›</button></span>` : ''}
+  </div>
 </div>
 
-<h2>Research <a class="more" href="/research/">More →</a></h2>
+<h2 id="join">Join Us</h2>
+<div class="callout join">
+  <p>We are looking for graduate and undergraduate students, as well as postdocs, who want to work on
+  programming languages and software engineering. To apply, email Prof. Jihyeok Park with your CV, your
+  transcript, and a few lines on the research topics you would like to work on.</p>
+  <div class="mail">
+    <a class="addr" data-user="jihyeok_park" data-domain="korea.ac.kr">jihyeok_park [at] korea.ac.kr</a>
+  </div>
+</div>
+<h2>Research</h2>
 <ul class="topics">
 ${Object.entries(TOPICS).map(([k, t]) => {
   return `  <li><a class="t-${k}" href="/research/#${k}"><span class="text"><strong>${t.name}</strong><span>${t.desc}</span></span></a></li>`;
 }).join('\n')}
 </ul>
+<p class="see-all"><a href="/research/">More about our research →</a></p>
 
-<h2 id="join">Join Us</h2>
-<div class="callout join">
-  <p>We are recruiting motivated <strong>graduate and undergraduate students</strong>, as well as <strong>postdocs</strong>,
-  interested in programming languages and software engineering.
-  Send your <strong>CV</strong>, <strong>transcript</strong>, and a few lines on the research topics you are interested in to Prof. Jihyeok Park.</p>
-  <div class="mail">
-    <a class="addr" data-user="jihyeok_park" data-domain="korea.ac.kr">jihyeok_park [at] korea.ac.kr</a>
-    <button type="button" class="button small secondary" data-copy-mail hidden>Copy</button>
-  </div>
-</div>
-<address>
-  Room 507, IT &amp; General Education Center (정운오IT교양관)<br>
-  <a href="https://cs.korea.ac.kr/">Dept. of Computer Science and Engineering</a>, <a href="https://www.korea.ac.kr/">Korea University</a><br>
-  145 Anam-ro, Seongbuk-gu, Seoul 02841, Korea
-</address>
 
-<h2>Selected Publications <a class="more" href="/publications/">All ${allPubs().length} →</a></h2>
+<h2>Selected Publications</h2>
 <ul class="pubs">
 ${recent.map((p) => pubItem(p, p.year)).join('\n')}
 </ul>
+<p class="see-all"><a href="/publications/">All publications →</a></p>
 `;
   write('index.html', layout({ body, scripts: ['/static/home.js'] }));
 }
@@ -456,58 +490,151 @@ function findPub(part) {
   if (hits.length !== 1) throw new Error(`research.yml: "${part}" matches ${hits.length} publications (needs exactly one)`);
   return hits[0];
 }
+// "runs in the CI of ..." mark on a derived tool
 const ciBadge = (ci) => {
   if (!ci) return '';
   const [name, url] = [].concat(ci);
-  return url ? `<a class="ci" href="${esc(url)}" data-tip="Runs in the CI of ${esc(name)}">CI of ${esc(name)}</a>` : `<span class="ci">CI of ${esc(name)}</span>`;
+  return url ? `<a class="ci" href="${esc(url)}">CI of ${esc(name)}</a>` : `<span class="ci">CI of ${esc(name)}</span>`;
 };
+// The ESMeta diagram (from _data/research.yml), drawn as fixed SVG pictures: a wide one
+// and a tall one for narrow screens (CSS shows one of them). ECMA-262 goes into ESMeta (a
+// light frame with the logo): Extraction -> Mechanized Specification, and from it, through
+// a tree of lines, the derived tools. Each box has its name and its papers as small
+// buttons (links), and a "CI of ..." mark when the tool runs in a CI.
 function flowDiagram(flow) {
-  const badge = (part) => {
-    const p = findPub(part);
-    const url = p.doi && p.doi !== 'accepted' ? `https://doi.org/${p.doi}` : p.materials?.pdf;
-    return `<a class="venue" href="${esc(url || '/publications/')}" data-tip="${esc([[p.target?.name, p.target?.detail].filter(Boolean).join(': '), p.award].filter(Boolean).join(' · '))}">${esc(shortVenue(p.target?.name ?? '', p.year))}</a>`;
+  const chain = flow.chain || [], tools = flow.derived || [];
+  const paperUrl = (p) => (p.doi && p.doi !== 'accepted' ? `https://doi.org/${p.doi}` : p.materials?.pdf) || '/publications/';
+  // paper buttons centered at cx from y, wrapped into rows no wider than maxW; [svg, rows]
+  const buttons = (parts, cx, y, maxW = 1e9) => {
+    const items = (parts || []).map((part) => { const p = findPub(part); const t = shortVenue(p.target?.name ?? '', p.year); return [t, paperUrl(p), t.length * 6.9 + 14]; });
+    const rows = [[]];
+    for (const it of items) {
+      const row = rows[rows.length - 1], w = row.reduce((n, r) => n + r[2] + 5, 0);
+      if (row.length && w + it[2] > maxW) rows.push([it]); else row.push(it);
+    }
+    let out = '';
+    rows.forEach((row, r) => {
+      let x = cx - (row.reduce((n, it) => n + it[2], 0) + 5 * (row.length - 1)) / 2;
+      for (const [t, u, w] of row) { out += `<a class="fbtn" href="${esc(u)}"><rect x="${x}" y="${y + r * 28}" width="${w}" height="23" rx="5"/><text x="${x + w / 2}" y="${y + r * 28 + 16}">${esc(t)}</text></a>`; x += w + 5; }
+    });
+    return [out, rows.filter((r) => r.length).length];
   };
-  const node = (n, cls = '') => `<div class="fnode${cls}">
-      <b>${esc(n.name)}</b><span>${esc(n.desc || '')}</span>
-      ${ifs(n.papers?.length || n.ci, `<div class="fpapers">${ciBadge(n.ci)}${(n.papers || []).map(badge).join('')}</div>`)}
-    </div>`;
-  const chain = flow.chain || [];
-  return `<div class="flow" role="img" aria-label="How ESMeta works">
-  <div class="flow-chain">
-    ${chain.map((n, i) => node(n, i === 0 ? ' src' : i === chain.length - 1 ? ' hub' : '')).join('\n    <div class="farrow" aria-hidden="true"></div>\n    ')}
-  </div>
-  <div class="flow-derive" aria-hidden="true"><span>automatically derives</span></div>
-  <ul class="flow-out">
-    ${(flow.derived || []).map((n) => `<li><b>${esc(n.name)}</b><span>${esc(n.desc || '')}</span><div class="fpapers">${ciBadge(n.ci)}${(n.papers || []).map(badge).join('')}</div></li>`).join('\n    ')}
-  </ul>
-</div>`;
+  // a name, on two lines when wider than maxW; [svg, lines]
+  const label = (name, cx, y, maxW, cls = '') => {
+    const words = String(name).split(' ');
+    let lines = [name];
+    if (name.length * 8.4 > maxW && words.length > 1) {
+      let best = 1, diff = Infinity;
+      for (let k = 1; k < words.length; k++) { const d = Math.abs(words.slice(0, k).join(' ').length - words.slice(k).join(' ').length); if (d < diff) diff = d, best = k; }
+      lines = [words.slice(0, best).join(' '), words.slice(best).join(' ')];
+    }
+    return [`<text class="flabel${cls}" x="${cx}" y="${y}">${lines.map((l, k) => `<tspan x="${cx}" dy="${k ? 18 : 0}">${esc(l)}</tspan>`).join('')}</text>`, lines.length];
+  };
+  const rect = (x, y, w, h, cls) => `<rect class="${cls}" x="${x}" y="${y}" width="${w}" height="${h}" rx="4"/>`;
+  const line = (pts, head = true) => `<polyline class="fline" points="${pts.map((p) => p.join(',')).join(' ')}"${head ? ' marker-end="url(#fhead)"' : ''}/>`;
+  // the height a box needs for its name, papers, and CI mark at width w
+  const need = (n, w) => {
+    const nl = label(n.name, 0, 0, w - 16)[1], nb = buttons(n.papers, 0, 0, w - 16)[1];
+    return 26 + (nl - 1) * 18 + 14 + nb * 28 + ([].concat(n.ci || []).length ? 28 : 0) + 6;
+  };
+  const node = (n, x, y, w, h, cls) => {
+    const [names, nl] = label(n.name, x + w / 2, y + 26, w - 16, cls === 'hub' ? ' hub' : '');
+    const [btns, nb] = buttons(n.papers, x + w / 2, y + 26 + (nl - 1) * 18 + 14, w - 16);
+    const ci = [].concat(n.ci || []);
+    const ciy = y + 26 + (nl - 1) * 18 + 14 + nb * 28 + 16;
+    return rect(x, y, w, h, `fbox ${cls}`) + names + btns
+      + (ci.length ? (() => {
+        // "runs in the CI of ...": a green button
+        const t = `✓ CI of ${ci[0]}`, bw = t.length * 6.9 + 16;
+        return `<a class="fci" href="${esc(ci[1] || '#')}"><rect x="${x + w / 2 - bw / 2}" y="${ciy - 16}" width="${bw}" height="23" rx="5"/><text x="${x + w / 2}" y="${ciy}">${esc(t)}</text></a>`;
+      })() : '');
+  };
+  const logo = (cx, cy, k) => `<g class="flogo" transform="translate(${cx} ${cy}) scale(${k})"><path d="M0 -62 L62 0 L0 62 L-62 0 Z"/><path class="in" d="M0 -55 L55 0 L0 55 L-55 0 Z"/><text class="e" x="0" y="13">E</text><rect class="bar" x="-46" y="26" width="92" height="17"/><text class="name" x="0" y="39">ESMETA</text></g>`;
+  const ecma = (src, x, y, w) => rect(x, y, w, 96, 'fbox src')
+    + `<image href="/assets/images/research/ecma-logo.svg" x="${x + w / 2 - 42}" y="${y + 14}" width="84" height="22.5"/>`
+    + label(src.name, x + w / 2, y + 60, 1e9)[0] + `<text class="fsub" x="${x + w / 2}" y="${y + 79}">(JavaScript Spec.)</text>`;
+  const [src, ext, hub] = chain;
+  const svgOf = (cls, W, H, body) => `<svg class="${cls}" viewBox="0 0 ${W} ${H}" role="img" aria-label="How ESMeta works: it extracts a mechanized specification from ECMA-262 and derives language tools from it">
+<defs><marker id="fhead-${cls}" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" class="fhead"/></marker></defs>
+${body.replaceAll('url(#fhead)', `url(#fhead-${cls})`)}
+</svg>`;
+
+  // wide: left to right. ECMA-262 -> [Extraction -> Mechanized Specification -> the tools,
+  // stacked on the right and reached by a tree of lines], all centered on one line
+  const wide = (() => {
+    // columns: ECMA-262 | Extraction | Mechanized Specification (with the logo on top) | tree | tools
+    const W = 960, srcW = 140, extW = 140, hubW = 232, tw = 270, tg = 14, gap = 46;
+    const srcX = 8, extX = srcX + srcW + gap, hubX = extX + extW + gap, tx = W - 10 - tw, spine = (hubX + hubW + tx) / 2;
+    const hs = tools.map((t) => need(t, tw)), H = Math.max(hs.reduce((a, b) => a + b, 0) + tg * (tools.length - 1) + 20, 300);
+    const mid = H / 2;
+    const extH = ext ? need(ext, extW) : 0, hubH = hub ? need(hub, hubW) : 0;
+    let svg = '';
+    if (src) svg += ecma(src, srcX, mid - 48, srcW);
+    if (ext) svg += node(ext, extX, mid - extH / 2, extW, extH, 'step');
+    if (hub) svg += node(hub, hubX, mid - hubH / 2, hubW, hubH, 'hub') + logo(hubX + hubW / 2, mid - hubH / 2 - 46, 0.58);
+    svg += line([[srcX + srcW + 2, mid], [extX - 5, mid]]) + line([[extX + extW + 2, mid], [hubX - 5, mid]]);
+    let y = 10;
+    const mids = tools.map((t, k) => { const m = y + hs[k] / 2; svg += node(t, tx, y, tw, hs[k], 'tool'); y += hs[k] + tg; return m; });
+    if (mids.length) {
+      svg += line([[hubX + hubW, mid], [spine, mid]], false) + line([[spine, mids[0]], [spine, mids[mids.length - 1]]], false);
+      for (const m of mids) svg += line([[spine, m], [tx - 5, m]]);
+    }
+    return svgOf('wide', W, H, svg);
+  })();
+
+  // narrow: everything in one column; the tools hang off a line on the left like a tree
+  const narrow = (() => {
+    const W = 380, cx = 144, bw = 240;
+    let y = 8, svg = '';
+    if (src) svg += ecma(src, cx - 100, y, 200);
+    const frameY = y + 96 + 26, arrowIn = line([[cx, y + 98], [cx, frameY + 20]]);
+    y = frameY + 22;
+    const parts = [];
+    if (ext) { const w = 160, h = need(ext, w); parts.push(node(ext, cx - w / 2, y, w, h, 'step')); y += h; parts.push(line([[cx, y + 2], [cx, y + 24]])); y += 26; }
+    let hubBottom = y;
+    if (hub) { const h = need(hub, bw); parts.push(node(hub, cx - bw / 2, y, bw, h, 'hub') + logo(cx + bw / 2 + (W - cx - bw / 2) / 2, y + h / 2, 0.46)); y += h; hubBottom = y; }
+    const spine = 40, tx = 60, tw = W - 20 - tx;
+    y += 26;
+    const mids = [];
+    for (const t of tools) { const h = need(t, tw); parts.push(node(t, tx, y, tw, h, 'tool')); mids.push(y + h / 2); y += h + 12; }
+    if (mids.length) {
+      parts.push(line([[spine, hubBottom], [spine, mids[mids.length - 1]]], false));
+      for (const m of mids) parts.push(line([[spine, m], [tx - 5, m]]));
+    }
+    const H = y + 6;
+    svg += arrowIn + parts.join('');
+    return svgOf('narrow', W, H, svg);
+  })();
+
+  return `<div class="flow">${wide}\n${narrow}</div>`;
 }
 
 // research: one section per topic (_data/research.yml) with its selected papers
 const inlineMd = (t) => marked.parseInline(String(t ?? '').trim());
 function buildResearch() {
   const R = DATA.research || {};
-  const pubs = allPubs();
   const hl = R.highlight;
+  // the highlighted project (ESMeta) inside its topic's section: its diagram (with the
+  // papers as buttons, in place of a paper list), a sentence, and its links
+  const highlight = hl ? `${ifs(hl.flow, flowDiagram(hl.flow))}
+    <p>${inlineMd(hl.text)}</p>
+    <div class="hl-links">${(hl.links || []).map(([n, u]) => `<a href="${esc(u)}">${esc(n)}</a>`).join('')}</div>` : '';
   const sections = Object.entries(TOPICS).map(([k, t]) => {
     const r = (R.topics || {})[k] || {};
-    const mine = pubs.filter((p) => (p.topics || []).includes(k));
+    // one line per paper: Venue Year | Title · Award
     const paper = (p) => {
-      const url = p.doi && p.doi !== 'accepted' ? `https://doi.org/${p.doi}` : p.materials?.pdf;
-      // an award paper gets "Award" after the title; the award's name is in the tooltip
-      return `<li>${venueBadge(p)}<span>${url ? `<a href="${esc(url)}">${esc(p.title)}</a>` : esc(p.title)}${ifs(p.award, ` <span class="award-mark" data-tip="${esc(p.award)}">Award</span>`)}</span></li>`;
+      const url = p.doi && p.doi !== 'accepted' ? `https://doi.org/${p.doi}` : '';
+      const venue = p.target?.name ?? '';
+      const where = / (19|20)\d\d\b/.test(venue) ? venue : `${venue} ${p.year}`;
+      return `<li><span class="where">${esc(where)}</span><span>${url ? `<a href="${esc(url)}">${esc(p.title)}</a>` : esc(p.title)}${ifs(p.award, ` <span class="award-mark">· ${esc(p.award)}</span>`)}</span></li>`;
     };
     return `<section class="topic-sec t-${k}" id="${k}">
-  <div class="topic-head">
-    <h2>${t.name}</h2>
-    <a class="more" href="/publications/#topic=${k}">${mine.length} papers →</a>
-  </div>
+  <h2 class="topic-head">${t.name}</h2>
   <div class="topic-body">
     <p>${inlineMd(r.text || t.desc)}</p>
     ${ifs(r.image, `<img class="figure" src="${esc(r.image)}" alt="${esc(t.name)}" loading="lazy">`)}
-    ${ifs(r.tools?.length, `<div class="tools"><span class="label">Tools</span>${(r.tools || []).map(([n, u]) => `<a href="${esc(u)}">${esc(n)}</a>`).join('')}</div>`)}
-    ${ifs(r.selected?.length, `<div class="label recent">Selected papers</div>
-    <ul class="mini-pubs">
+    ${hl && hl.topic === k ? highlight : ''}
+    ${ifs(r.selected?.length, `<ul class="mini-pubs">
 ${(r.selected || []).map(findPub).map(paper).join('\n')}
     </ul>`)}
   </div>
@@ -515,13 +642,6 @@ ${(r.selected || []).map(findPub).map(paper).join('\n')}
   }).join('\n');
   const body = `${pageHead('Research')}
 <p class="lead">${inlineMd(R.intro || '')}</p>
-${hl ? `<div class="highlight">
-  <div class="hl-name">${esc(hl.name)}</div>
-  <p>${inlineMd(hl.text)}</p>
-  ${ifs(hl.image, `<img class="figure" src="${esc(hl.image)}" alt="${esc(hl.name)} overview" loading="lazy">`)}
-  ${ifs(hl.flow, flowDiagram(hl.flow))}
-  <div class="hl-links">${(hl.links || []).map(([n, u]) => `<a href="${esc(u)}">${esc(n)}</a>`).join('')}</div>
-</div>` : ''}
 ${sections}`;
   write('research/index.html', layout({ title: 'Research', active: '/research/', body }));
 }
@@ -543,7 +663,7 @@ ${(list || []).map((t) => `<li>
   <div class="body">
     <span class="title">${esc(t.title)}</span> <span class="where">${t['place-url'] ? `<a href="${esc(t['place-url'])}">${esc(t.place)}</a>` : esc(t.place)}</span>
   </div>
-  <div class="elinks slots">${t.youtube ? `<a class="pill" href="${esc(youtube(t.youtube))}">Video</a>` : '<span></span>'}${t.pdf ? `<a class="pill" href="${esc(t.pdf)}">Slides</a>` : '<span></span>'}</div>
+  <div class="elinks slots">${t.youtube ? `<a href="${esc(youtube(t.youtube))}">Video</a>` : '<span></span>'}${t.pdf ? `<a href="${esc(t.pdf)}">Slides</a>` : '<span></span>'}</div>
 </li>`).join('\n')}
   </ul>
 </section>`).join('\n');
@@ -558,7 +678,8 @@ function reportName(pdf) {
     const id = (a.url || '').replace('/members/', '').replace(/[^a-z]/g, '');
     return id && (id === who || id.startsWith(who));
   });
-  return hit?.['ko-name'] || hit?.name || who;
+  // [English name, Korean name]
+  return hit ? [hit.name, hit['ko-name'] || ''] : [who, ''];
 }
 
 function buildTrips() {
@@ -566,11 +687,28 @@ function buildTrips() {
     const [, am, ad] = String(a).split('.'), [, bm, bd] = String(b || a).split('.');
     return am === bm && ad === bd ? `${am}/${ad}` : `${am}/${ad}–${bm}/${bd}`;
   };
-  // one slot: always a drop-down list (even for one file), so Talk and Report buttons look
-  // the same and the list shows each file's name
+  // one slot: always a drop-down list with the count ("Talks 1", "Reports 3"), so every
+  // button looks the same; long names wrap
   const slot = (label, items) => {
     if (!items.length) return '<span></span>';
-    return `<details class="drop"><summary class="pill">${items.length > 1 ? `${label}s ${items.length}` : label}</summary><div class="menu">${items.map(([n, u]) => `<a href="${esc(u)}">${esc(n)}</a>`).join('')}</div></details>`;
+    return `<details class="drop"><summary class="pill">${label}s ${items.length}</summary><div class="menu">${items.map(([n, u, v, ko, by]) => `<a href="${esc(u)}">${v ? `<b>${esc(v)}</b> ` : ''}${esc(n)}${ko ? ` <span class="ko">${esc(ko)}</span>` : ''}${by ? `<span class="by">${esc(by)}${DATA.authors[by]?.['ko-name'] ? ` <span class="ko">${esc(DATA.authors[by]['ko-name'])}</span>` : ''}</span>` : ''}</a>`).join('')}</div></details>`;
+  };
+  // a talk: [title, slides, venue]. The title comes from the talk with the same slides in
+  // talks.yml, else from the paper with these slides in publications.yml, else from `name`
+  // in trips.yml. The venue (without the year) goes in front: the paper's (e.g. "ASE SRC"),
+  // or the talk's place when it is a short name other than the trip's (e.g. "PLSS" at ECOOP)
+  const noYear = (s) => String(s || '').replace(/ (19|20)\d\d\b/, '').trim();
+  const talkItem = (d, trip) => {
+    const talk = Object.values(DATA.talks || {}).flat().find((x) => x && x.pdf === d.pdf);
+    // the presenter: `by`, or the professor for a talk in talks.yml
+    const by = d.by || (talk ? 'Jihyeok Park' : '');
+    if (talk) {
+      const where = noYear(talk.place);
+      return [talk.title, d.pdf, where && where !== noYear(trip.place) && where.length <= 15 ? where : '', '', by];
+    }
+    const paper = allPubs().find((p) => Object.values(p.materials || {}).includes(d.pdf));
+    if (paper) return [paper.title, d.pdf, (paper.target?.name || '').replace(/^ESEC\//, '').replace(/ (19|20)\d\d\b/, ''), '', by];
+    return [d.name || 'Talk', d.pdf, '', '', by];
   };
   // one card per trip: the album cover (assets/images/trips/<id>.jpg, see covers.mjs) on top,
   // then the dates, the place, and the Photos / Talk / Report buttons
@@ -578,13 +716,12 @@ function buildTrips() {
   <h3 id="y${y}">${y}</h3>
   <ul class="trip-cards">
 ${(list || []).map((t) => {
-  // talks are named by `name` in trips.yml, or "Talk 1", "Talk 2", ... otherwise
-  const talks = (t.talk || []).filter((d) => d.pdf).map((d, i, all) => [d.name || (all.length > 1 ? `Talk ${i + 1}` : 'Talk'), d.pdf]);
-  const reports = (t.report || []).filter((d) => d.pdf).map((d) => [reportName(d.pdf), d.pdf]);
+  const talks = (t.talk || []).filter((d) => d.pdf).map((d) => talkItem(d, t));
+  const reports = (t.report || []).filter((d) => d.pdf).map((d) => { const [en, ko] = reportName(d.pdf); return [en, d.pdf, '', ko]; });
   const album = t.photos ? `https://photos.app.goo.gl/${esc(t.photos)}` : '';
   const cover = t.photos && fs.existsSync(path.join(ROOT, `assets/images/trips/${t.photos}.jpg`)) ? optimized(`/assets/images/trips/${t.photos}.jpg`) : '';
   const pic = cover
-    ? `<a class="cover" href="${album}" aria-label="${esc(t.place)} photos"><img src="${esc(cover)}" alt="" loading="lazy"><span class="badge" title="Open the album"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="14" height="14" rx="2"/><path d="M21 9v10a2 2 0 0 1-2 2H9"/><circle cx="8" cy="10" r="1.5"/><path d="m17 15-4-4-7 7"/></svg></span></a>`
+    ? `<a class="cover" href="${album}" title="Open the album" aria-label="${esc(t.place)} photos"><img src="${esc(cover)}" alt="" loading="lazy"></a>`
     : `<div class="cover none" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="9" cy="10" r="2"/><path d="m21 16-5-5-9 9"/></svg></div>`;
   // the cover opens the album, so there is no separate Photos button (unless there is no cover)
   const buttons = [album && !cover && `<a class="pill" href="${album}">Photos</a>`, talks.length && slot('Talk', talks), reports.length && slot('Report', reports)].filter(Boolean).join('');
@@ -651,7 +788,7 @@ function buildConferences() {
   <div class="name"><a href="${esc(c.link)}">${esc(c.name)}'${String(c.year).slice(-2)}</a>${ds.length > 1 ? `<span class="round" title="Round ${i + 1} of ${ds.length}">(${i + 1}/${ds.length})</span>` : ''}${ifs(Array.isArray(c.note) ? c.note[i] : c.note, `<span class="round">${esc(Array.isArray(c.note) ? c.note[i] : c.note)}</span>`)}</div>
   <div class="dates">${esc(numericRange(c.date))}</div>
   <div class="place">${c.place && c.place !== 'Online' ? `<a href="https://maps.google.com/?q=${encodeURIComponent(c.place)}" title="${esc(c.place)}">${esc(place)}</a>` : esc(place)}</div>
-  <div class="pin">${c.place && c.place !== 'Online' ? `<a href="https://maps.google.com/?q=${encodeURIComponent(c.place)}" data-tip="${esc(c.place)}" aria-label="${esc(c.place)} on the map">${PIN}</a>` : ''}</div>
+  <div class="pin">${c.place && c.place !== 'Online' ? `<a href="https://maps.google.com/?q=${encodeURIComponent(c.place)}" title="${esc(c.place)}" aria-label="${esc(c.place)} on the map">${PIN}</a>` : ''}</div>
   ${rankCell(info.bk21 >= 3, LEVEL.bk21[info.bk21], /^\d$/.test(String(info.bk21)) ? `IF${info.bk21}` : '')}
   ${rankCell(info.kiise === '최우수', LEVEL.kiise[info.kiise], esc(info.kiise || ''))}
   ${rankCell(info.rank === 'A*', LEVEL.core[info.rank], core)}
@@ -659,7 +796,7 @@ function buildConferences() {
     });
   });
   const head = `<li class="conf-head" aria-hidden="true"><div>Due<span class="aoe">AoE</span></div><div>Left</div><div class="area">Area</div><div>Conference</div><div class="dates">Dates</div><div class="place">Place</div><div class="pin"></div>${Object.values(RANKS).map(([n, u, t]) => `<div class="rk"><a href="${u}" title="${esc(`${n} ${t}`)}">${n}</a></div>`).join('')}</li>`;
-  const body = `${pageHead('Conference Deadlines', `Submission deadlines as in the CFPs (AoE; hover for your local time) · last update ${esc(last_update || '')}`)}
+  const body = `${pageHead('Conference Deadlines', `Last update ${esc(last_update || '')}`)}
 <div class="filters" role="group" aria-label="Filter by area">
   <button type="button" class="chip" data-tag="" aria-pressed="true">All</button>
 ${Object.keys(TAGS).map((t) => `  <button type="button" class="chip area-chip ctag-${t.toLowerCase()}" data-tag="${t}" aria-pressed="false">${t}</button>`).join('\n')}

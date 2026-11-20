@@ -1,6 +1,11 @@
 # Photos on the home page slider, in order. `src` is the original photo; a
-# web-sized copy is made at build time. `caption` is shown on the photo.
+# web-sized copy is made at build time. `caption` is shown under the photo.
+# `position` (optional) picks which part of the photo stays when it is cropped to
+# the wide frame, as a CSS object-position (default "50% 30%": a bit above the middle).
+# `zoom` (optional, e.g. 1.15) enlarges the photo, keeping its top and cropping the bottom.
 - src: /assets/images/main.jpg
-  caption: "2026"
+  caption: "Gongju, Korea, 2026"
+  zoom: 1.15
 - src: /assets/images/main-2025.jpg
-  caption: "2025"
+  caption: "Seoul, Korea, 2025"
+  position: "50% 60%"

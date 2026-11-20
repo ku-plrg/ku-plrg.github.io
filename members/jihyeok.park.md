@@ -142,14 +142,4 @@ Please see [**Courses**](/courses).
 ## Talks
 Please see [**Talks**](/talks).
 
-
-## Contact Information
-
-Room 507, IT & General Education Center (정운오IT교양관)<br>
-[Dept. of Computer Science and Engineering](https://cs.korea.ac.kr/) <br>
-[Korea University](https://www.korea.ac.kr/) <br>
-Anam-dong 5-ga, Seongbuk-gu <br>
-Seoul 136-713, Korea <br>
-(office) +82) 02-3290-4602
-
-<!--contact-->
+<!--AUTO:contact-->

@@ -14,6 +14,6 @@ languages and JavaScript ecosystem.
 - 2024.09 ~ 2026.08 - M.S. of Computer Science and Engineering, Korea University
 - 2018.03 ~ 2024.08 - B.S. of Computer Science and Engineering, Korea University
 
-## Contact Information
-<!--contact-->
+<!--AUTO:publications-->
 
+<!--AUTO:contact-->

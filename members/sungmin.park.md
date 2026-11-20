@@ -12,6 +12,6 @@ Currently I am interested in programming languages and static analysis.
 - 2026.03 ~ Present - M.S. of Computer Science and Engineering, Korea University
 - 2022.03 ~ 2026.02 - B.S. of Computer Science and Engineering, Double Major in Mathematics, Korea University
 
-## Contact Information
-<!--contact-->
+<!--AUTO:publications-->
 
+<!--AUTO:contact-->

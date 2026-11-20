@@ -10,5 +10,6 @@ I'm Hyowoon Park, an undergraduate student in the Department of Computer Science
 ## Educational Background
 - 2026.03 ~ Present - B.S. of Computer Science and Engineering, Korea University
 
-## Contact Information
-<!--contact-->
+<!--AUTO:publications-->
+
+<!--AUTO:contact-->

@@ -11,5 +11,6 @@ Currently, I am a member of the [Programming Language Research Group (PLRG)](/) 
 - 2025.03 ~ Present - M.S. of Computer Science, Korea University
 - 2021.03 ~ 2025.02 - B.S. of Cyber Defense, Korea University
 
-## Contact Information
-Please contact at d01c2 [at] outlook.com or rickykhj [at] korea.ac.kr.
+<!--AUTO:publications-->
+
+<!--AUTO:contact-->

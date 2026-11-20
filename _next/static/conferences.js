@@ -21,7 +21,7 @@
     if (!li.deadline) continue;
     // the deadline day as in the CFP (AoE, MM/DD); the exact local time on hover
     li.querySelector('.due').textContent = li.dataset.deadline.slice(5, 10).replace('-', '/');
-    li.querySelector('.due').dataset.tip = li.querySelector('.countdown').dataset.tip =
+    li.querySelector('.due').title = li.querySelector('.countdown').title =
       `${full.format(li.deadline)}${zone ? ` (${zone})` : ''}`;
   }
 

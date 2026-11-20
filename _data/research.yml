@@ -1,9 +1,8 @@
 # Research page (/research/). One entry per topic key in `topics` of
-# publications.yml (spec, analysis, testing, synthesis); the
+# publications.yml (spec, analysis, synthesis, security); the
 # topic names, colors, and order come from TOPICS in _next/build.mjs.
 #   text  : a few sentences (Markdown)
 #   image : optional figure (none for now; add one per topic when every topic has a figure)
-#   tools : [name, url] pairs, newest first (actively developed ones first)
 #   selected : the representative papers shown under "Selected papers", in this
 #              order (newest first), by their full titles in publications.yml
 #              (the build fails if one is not found)
@@ -13,13 +12,16 @@ intro: >
   real-world software reliable and secure, starting from JavaScript and its
   official specification, <span class="nowrap">ECMA-262</span>.
 
+# The highlighted project, shown inside the section of `topic` (in place of its
+# paper list): the diagram, `text`, and `links`.
 highlight:
   name: ESMeta
+  topic: spec
   text: >
-    ESMeta extracts a mechanized specification from ECMA-262 and automatically
-    generates language tools from it. It runs in the CI of
+    Our tool [ESMeta](https://es-meta.github.io/) is part of the official CI of both
     [ECMA-262](https://github.com/tc39/ecma262/actions/workflows/esmeta-typecheck.yml)
-    and [Test262](https://github.com/tc39/test262/actions/workflows/esmeta-test262.yml).
+    and [Test262](https://github.com/tc39/test262/actions/workflows/esmeta-test262.yml),
+    checking every proposed change to the specification and its tests.
   # The ESMeta diagram, drawn from this data. `papers` are matched against
   # publication titles in publications.yml (any unique part of the title);
   # the build fails if one is not found. `ci: [repo, workflow url]` marks where
@@ -61,64 +63,47 @@ highlight:
 topics:
   spec:
     text: >
-      JavaScript evolves every year through ECMA-262, a specification written in
-      English prose. We mechanize such specifications and derive language tools
-      from them automatically: interpreters, double debuggers, conformance test
-      synthesizers, type checkers, static analyzers, and even polyfills.
-    selected:
-      - "JavaScript Language Design and Implementation in Tandem"
-      - "Automatically Deriving JavaScript Static Analyzers from Specifications using Meta-Level Static Analysis"
-      - "JISET: JavaScript IR-based Semantics Extraction Toolchain"
-    tools:
-      - [ESMeta, https://github.com/es-meta/esmeta]
-      - [JSSpecVis, https://github.com/ku-plrg/js-spec-vis]
-      - [JISET, https://github.com/kaist-plrg/jiset]
+      Every year, JavaScript gains new features through ECMA-262, a specification
+      written in hundreds of pages of English prose. We mechanize such real-world
+      language specifications and derive language tools from them, such as
+      interpreters, debuggers, and static analyzers, which now help design
+      JavaScript itself.
 
   analysis:
     text: >
-      Static analysis over-approximates all possible behaviors of a program
-      without running it, while dynamic analysis observes actual executions. We
-      design scalable and precise analyses for highly dynamic languages such as
-      JavaScript, from heap abstractions and analysis parameters to combining
-      static and dynamic analysis, and use them as building blocks of synthesis,
-      testing, and security tools.
+      JavaScript lets programs change almost anything at run time, so bugs hide
+      where reading the code cannot reach. We analyze programs statically and
+      dynamically and design type systems to find such bugs and guarantee safety,
+      in JavaScript programs and even in language specifications.
     selected:
+      - "JSTAR: JavaScript Specification Type Analyzer using Refinement"
       - "Accelerating JavaScript Static Analysis via Dynamic Shortcuts"
       - "A Survey of Parametric Static Analysis"
+      - "Path Dependent Types with Path-Equality"
       - "Revisiting Recency Abstraction for JavaScript: Towards an Intuitive, Compositional, and Efficient Heap Abstraction"
-    tools:
-      - [JSAVER, https://github.com/kaist-plrg/jsaver]
-      - [SAFE, https://github.com/sukyoung/safe]
-
-  testing:
-    text: >
-      Testing is still the most practical way to find bugs in real-world
-      software, but good tests and oracles are hard to write by hand. We
-      generate tests automatically, guide them with new coverage criteria, and
-      build oracles from specifications and from differences between
-      implementations. Language implementations have been our main target so
-      far: tests synthesized from ECMA-262 have revealed bugs both in JavaScript
-      engines and in the specification itself, and cross-engine testing exposes
-      performance divergences.
-    selected:
-      - "Selective Feature-Sensitive Coverage for Conformance Testing of Programming Languages"
-      - "Feature-Sensitive Coverage for Conformance Testing of Programming Language Implementations"
-      - "JEST: N+1-version Differential Testing of Both JavaScript Engines and Specification"
-    tools:
-      - [JEST, https://github.com/kaist-plrg/jest]
 
   synthesis:
     text: >
-      We generate programs instead of writing them by hand: correct and
-      efficient JavaScript polyfills extracted from ECMA-262, parsing expression
-      grammars synthesized from examples with analysis-based pruning, and
-      interpretable graph classifiers learned as programs.
+      A new language feature is only useful once it runs everywhere and behaves
+      the same in every engine. We generate correct programs and effective tests
+      from specifications, such as polyfills that bring new JavaScript features
+      to older environments and conformance tests that reveal bugs in engines and
+      in the specification itself.
     selected:
       - "MiniPoly: Automatic Extraction of Efficient JavaScript Polyfill from Language Specification"
       - "Synthesizing Parsing Expression Grammars via Analysis-based Pruning"
+      - "Selective Feature-Sensitive Coverage for Conformance Testing of Programming Languages"
       - "PL4XGL: A Programming Language Approach to Explainable Graph Learning"
-    tools:
-      - [MiniPoly, https://zenodo.org/records/21832372]
-      - [SynPEG, https://zenodo.org/records/21330079]
-      - [PL4XGL, https://github.com/kupl/PL4XGL]
+      - "Feature-Sensitive Coverage for Conformance Testing of Programming Language Implementations"
+      - "JEST: N+1-version Differential Testing of Both JavaScript Engines and Specification"
 
+  security:
+    text: >
+      A web page can ship many third-party libraries, and some of them carry known
+      vulnerabilities that nobody notices. We find and analyze such
+      vulnerabilities in the JavaScript ecosystem: we detect bundled libraries and
+      their versions on the web, and verify exploits for Node.js vulnerabilities.
+    selected:
+      - "Detecting JavaScript Libraries on the Web using Property-Order Graphs"
+      - "Debun: Detecting Bundled JavaScript Libraries on Web using Property-Order Graphs"
+      - "Verification and Classification of Exploits for Node.js Vulnerabilities"

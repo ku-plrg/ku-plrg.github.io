@@ -8,6 +8,8 @@
   --bg: #ffffff;
   --fg: #1f2328;
   --muted: #5b6470;
+  /* a lighter grey for secondary text (still 4.8:1 on white) */
+  --faint: #6b7280;
   --accent: #2a408e;
   --accent-fg: #ffffff;
   --line: #e6e8eb;
@@ -17,6 +19,8 @@
   --link: #2f4fb8;
   --award-bg: #fdf3d3;
   --award-line: #ecc764;
+  /* awards: a dark red, the one strong color on the page */
+  --award: #b42318;
   --now: #eef2fd;
   /* research topics (also used for the conference areas) */
   --t-analysis: #0f7b6c;
@@ -44,7 +48,7 @@
 :root[data-theme="dark"] .brand img { filter: brightness(1.8) saturate(.8); }
 
 /* topics share one neutral look (no color per topic); --t is kept so a topic color can come back */
-.t-spec, .t-analysis, .t-testing, .t-synthesis { --t: var(--muted); }
+.t-spec, .t-analysis, .t-synthesis, .t-security { --t: var(--muted); }
 
 /* ------------------------------------------------------------------ base */
 * { box-sizing: border-box; }
@@ -54,8 +58,18 @@ body {
   font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Apple SD Gothic Neo", "Noto Sans KR", sans-serif;
 }
 main { max-width: var(--page); margin: 0 auto; padding: 0 20px 64px; }
-a { color: var(--link); text-decoration: none; }
-a:hover { text-decoration: underline; }
+/* links: the color of the text around them with a faint underline; blue on hover.
+   Things that are clearly clickable by their place or shape (menu, titles, venues,
+   chips, buttons, member photos, list rows) drop the underline below. */
+a { color: inherit; text-decoration: underline; text-decoration-color: color-mix(in srgb, currentColor 35%, transparent);
+  text-decoration-thickness: 1px; text-underline-offset: 3px; }
+a:hover { color: var(--link); text-decoration-color: currentColor; }
+.brand, .links a, .lock-link, .trip-body a.title, a.venue, .pill, .button, .banner, .topics a, .people a,
+.trip a.cover, details.drop .menu a, .hl-links a, .tools a, .fpapers .ci,
+.mini-pubs a.venue, .chip { text-decoration: none; }
+.links a:hover, .lock-link:hover, a.venue:hover, .pill:hover, .button:hover, .banner:hover,
+.topics a:hover, .people a:hover, .trip-body a.title:hover, details.drop .menu a:hover,
+.hl-links a:hover, .tools a:hover, .fpapers .ci:hover, .mini-pubs a.venue:hover { text-decoration: none; }
 h2 { margin: 48px 0 12px; font-size: 24px; letter-spacing: -0.2px; }
 h3 { margin: 32px 0 8px; font-size: 18px; }
 main li { margin: 2px 0; }
@@ -101,27 +115,28 @@ a.tag:hover { text-decoration: none; color: var(--link); border-color: var(--lin
 .chip:hover { color: var(--fg); border-color: var(--muted); }
 .chip[aria-pressed="true"] { background: var(--link); color: #fff; border-color: var(--link); }
 .chip .n { margin-left: 5px; font-size: 12px; opacity: .6; font-variant-numeric: tabular-nums; }
-/* the awards chip uses the gold of the award badges */
-.chip[data-award] { color: #a47710; }
-.chip[data-award]:hover { border-color: #c8961e; color: #a47710; }
-.chip[data-award][aria-pressed="true"] { background: #c8961e; border-color: #c8961e; color: #fff; }
+/* the awards chip uses the red of the award text */
+.chip[data-award] { color: var(--award); }
+.chip[data-award]:hover { border-color: var(--award); color: var(--award); }
+.chip[data-award][aria-pressed="true"] { background: var(--award); border-color: var(--award); color: #fff; }
 :root[data-theme="dark"] .chip[data-award]:not([aria-pressed="true"]) { color: #e3b448; }
 @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .chip[data-award]:not([aria-pressed="true"]) { color: #e3b448; } }
 .pill {
   display: inline-block; text-align: center; font-size: 12.5px; line-height: 20px; padding: 0 8px; white-space: nowrap;
-  border: 1px solid var(--line); border-radius: 5px; color: var(--link); background: var(--bg);
+  border: 1px solid var(--line); border-radius: 5px; color: var(--fg); background: var(--bg);
 }
-.pill:hover { border-color: var(--accent); text-decoration: none; }
-.venue { font-size: 13px; font-weight: 700; padding: 1px 8px; border-radius: 4px; background: var(--fg); color: var(--bg); }
-a.venue:hover { text-decoration: none; background: var(--accent); color: var(--accent-fg); }
+.pill:hover { border-color: var(--muted); text-decoration: none; }
+/* venue: bold text (no block); a link to the venue */
+.venue { font-size: 14px; font-weight: 700; color: var(--fg); }
+a.venue:hover { color: var(--link); }
 
 /* year bands (publications, talks, trips, past conferences); they stay under the top bar */
 .year-group[hidden] { display: none; }
 .year-group h3 {
   position: sticky; top: 56px; z-index: 4;
-  display: flex; align-items: center; gap: 12px; margin: 14px 0 0; padding: 4px 10px; border-radius: 6px;
-  font-size: 17px; line-height: 1.5; letter-spacing: -0.3px; font-variant-numeric: tabular-nums;
-  color: var(--accent); background: color-mix(in srgb, var(--accent) 9%, var(--bg));
+  display: flex; align-items: center; gap: 12px; margin: 14px 0 0; padding: 6px 0 4px;
+  font-size: 18px; line-height: 1.5; letter-spacing: -0.3px; font-variant-numeric: tabular-nums;
+  color: var(--fg); background: var(--bg); border-bottom: 1px solid var(--line);
 }
 .year-group:first-of-type h3 { margin-top: 12px; }
 .year-group:has(.entries) h3 { margin: 14px 0 2px; }
@@ -137,7 +152,7 @@ a.venue:hover { text-decoration: none; background: var(--accent); color: var(--a
 .links { display: flex; gap: 0; min-width: 0; overflow-x: auto; scrollbar-width: none; flex: 1; }
 .links::-webkit-scrollbar { display: none; }
 .links a { color: var(--muted); font-size: 15px; padding: 6px 8px; border-radius: 8px; white-space: nowrap; }
-.links a:hover { color: var(--fg); background: var(--soft); text-decoration: none; }
+.links a:hover { color: var(--fg); text-decoration: none; }
 .links a[aria-current="page"] { color: var(--fg); font-weight: 600; }
 /* reserve the bold width so the current page does not shift the others */
 .links a > span { display: inline-flex; flex-direction: column; align-items: center; }
@@ -201,19 +216,21 @@ a.venue:hover { text-decoration: none; background: var(--accent); color: var(--a
 .hero { padding: 40px 0 24px; }
 .hero h1 { margin: 0; font-size: 32px; line-height: 1.2; letter-spacing: -0.5px; }
 .tagline { margin: 6px 0 0; color: var(--muted); font-size: 17px; }
-.intro { max-width: 680px; margin: 16px 0 0; font-size: 17px; line-height: 1.65; color: var(--fg); }
+/* the professor's name stands out in the grey line */
+.tagline a.pi { color: var(--fg); font-weight: 600; }
+.intro { margin: 16px 0 0; font-size: 16px; text-wrap: pretty; line-height: 1.65; color: var(--fg); }
 @media (max-width: 560px) {
   .hero { padding: 28px 0 20px; }
   .hero h1 { font-size: 26px; }
   .intro { font-size: 16px; }
 }
-h2 .more { float: right; font-size: 15px; font-weight: 500; margin-top: 6px; }
 
 .topics { list-style: none; padding: 0; margin: 0; border-top: 1px solid var(--line); }
-.topics li { margin: 0; }
+.topics li { margin: 0; padding: 4px 0; border-bottom: 1px solid var(--line); }
+/* the text lines up with the heading; on hover the background reaches a little past it on both sides */
 .topics a {
   display: flex; align-items: center; gap: 20px; color: var(--fg);
-  padding: 14px 0; border-bottom: 1px solid var(--line);
+  padding: 10px 12px; margin: 0 -12px; border-radius: 6px;
   transition: background .15s;
 }
 .topics a:hover { text-decoration: none; background: var(--soft); }
@@ -223,37 +240,31 @@ h2 .more { float: right; font-size: 15px; font-weight: 500; margin-top: 6px; }
 
 .join .mail { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; margin-top: 12px; }
 .join .addr { font-weight: 600; font-size: 17px; }
-address { margin-top: 20px; font-style: normal; color: var(--muted); font-size: 15px; }
+footer p { margin: 0; }
+footer address { margin: 4px 0 0; font-style: normal; font-size: 13px; color: var(--faint); }
 
 /* photo slider */
 /* the whole photo (16:10), at most 760px wide and centered, so it stays on the first screen */
-.slider { position: relative; max-width: 760px; margin: 0 auto 8px; border-radius: 16px; overflow: hidden; background: var(--soft); }
-.slider::after { content: ""; position: absolute; inset: 0; border-radius: 16px; box-shadow: inset 0 0 0 1px rgb(0 0 0 / 8%); pointer-events: none; }
-.slides { display: flex; overflow-x: auto; scroll-snap-type: x mandatory; scrollbar-width: none; }
+/* home photos: the full column width, nothing on top of the photo; the caption and the
+   previous / next buttons sit on one line under it. Swipe on phones, drag with a mouse. */
+.slider { margin: 4px 0 8px; }
+.slides { display: flex; overflow-x: auto; scroll-snap-type: x mandatory; scrollbar-width: none; border-radius: 6px; background: var(--soft); }
 .slides::-webkit-scrollbar { display: none; }
-.slide { flex: 0 0 100%; margin: 0; scroll-snap-align: start; position: relative; aspect-ratio: 16 / 10; }
-.slide img { width: 100%; height: 100%; object-fit: cover; display: block; }
-.slide figcaption {
-  position: absolute; left: 12px; bottom: 12px; font-size: 12.5px; font-weight: 600; color: #fff;
-  padding: 2px 8px; border-radius: 4px; background: rgb(0 0 0 / 55%);
+.slides.dragging { scroll-snap-type: none; cursor: grabbing; }
+@media (hover: hover) { .slides { cursor: grab; } }
+/* a wide band (about 2:1) so the photo does not take over the first screen; 3:2 on phones */
+.slide { flex: 0 0 100%; margin: 0; scroll-snap-align: start; aspect-ratio: 2 / 1; overflow: hidden; }
+@media (max-width: 560px) { .slide { aspect-ratio: 3 / 2; } }
+.slide img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 30%; display: block; user-select: none; -webkit-user-drag: none; }
+.slider-bar { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-top: 6px; font-size: 14px; color: var(--muted); }
+.slider-bar .ctrl { display: inline-flex; align-items: center; gap: 4px; font-variant-numeric: tabular-nums; }
+.slider-bar button {
+  font: inherit; font-size: 20px; line-height: 1; width: 28px; height: 28px; padding: 0 0 2px; cursor: pointer;
+  color: var(--fg); background: transparent; border: 1px solid transparent; border-radius: 6px;
 }
-.slider .nav {
-  position: absolute; top: 50%; transform: translateY(-50%); width: 36px; height: 36px; border-radius: 999px; border: 0; cursor: pointer;
-  background: rgb(255 255 255 / 90%); opacity: 0; transition: opacity .15s; display: grid; place-items: center;
-}
-.slider .nav::before { content: ""; width: 8px; height: 8px; border-right: 2px solid #1f2328; border-bottom: 2px solid #1f2328; }
-.slider .prev { left: 10px; }
-.slider .prev::before { transform: translateX(2px) rotate(135deg); }
-.slider .next { right: 10px; }
-.slider .next::before { transform: translateX(-2px) rotate(-45deg); }
-.slider:hover .nav, .slider .nav:focus-visible { opacity: 1; }
-.slider .dots { position: absolute; left: 50%; bottom: 12px; transform: translateX(-50%); display: flex; gap: 6px; }
-.slider .dots button {
-  width: 7px; height: 7px; padding: 0; border: 0; border-radius: 999px; cursor: pointer;
-  background: rgb(255 255 255 / 55%); transition: width .2s, background .2s;
-}
-.slider .dots button[aria-current="true"] { width: 20px; background: #fff; }
-@media (hover: none) { .slider .nav { display: none; } }
+.slider-bar button:hover { border-color: var(--line); background: var(--soft); }
+/* home: the link to the full page, under a section */
+.see-all { margin: 10px 0 0; font-size: 15px; }
 
 /* ------------------------------------------------------------ page heads */
 .page-head { padding: 28px 0 14px; border-bottom: 1px solid var(--line); }
@@ -267,37 +278,44 @@ address { margin-top: 20px; font-style: normal; color: var(--muted); font-size: 
 ul.pubs { list-style: none; margin: 0; padding: 0; }
 .pubs li {
   display: grid; grid-template-columns: 140px 1fr; column-gap: 16px; align-items: start;
-  margin: 0; padding: 7px 0; line-height: 1.5; border-bottom: 1px solid var(--line);
+  /* no line between papers (only the year headings have one); spacing separates them */
+  margin: 0; padding: 5px 0; line-height: 1.5;
 }
-.pubs li:last-child { border-bottom: none; }
 .pubs li[hidden] { display: none; }
-.pubs .side { display: flex; flex-direction: column; align-items: flex-start; gap: 5px; padding-top: 2px; }
-.pubs .side .venue { white-space: nowrap; line-height: 1.45; padding: 2px 8px; }
-.pubs .tags { display: flex; flex-wrap: wrap; gap: 4px; }
+.pubs .side { padding-top: 2px; }
+.pubs .side .venue { font-weight: 400; line-height: 1.45; }
 /* title > authors > links */
 .pubs .title { font-size: 16px; font-weight: 650; letter-spacing: -.1px; line-height: 1.35; color: var(--fg); }
-a.title:hover { color: var(--link); }
-.pubs .authors { margin-top: 1px; font-size: 14px; color: var(--muted); }
+/* titles: the faintest underline (they are bold, so a normal one would be loud) */
+a.title, .mini-pubs a:not(.venue) { text-decoration-color: var(--line); }
+a.title:hover, .mini-pubs a:not(.venue):hover { color: var(--link); text-decoration-color: currentColor; }
+/* authors and the links line: a lighter grey (still 4.8:1 on white), set close under the title */
+.pubs { --pub-meta: var(--faint); }
+.pubs .authors { margin-top: -1px; font-size: 14px; line-height: 1.4; color: var(--pub-meta); }
 .pubs .authors .equal { white-space: nowrap; }
-/* lab members: same color as co-authors, bolder, with a faint underline (they link to member pages) */
+/* lab members: same color as co-authors, with a faint underline (they link to member pages) */
 .pubs .authors a {
-  color: inherit; font-weight: 600;
+  color: inherit;
   text-decoration: underline; text-decoration-color: var(--line); text-underline-offset: 3px;
 }
 .pubs .authors a:hover { color: var(--link); text-decoration-color: currentColor; }
-.pubs .meta { display: flex; flex-wrap: wrap; gap: 2px 11px; align-items: center; margin-top: 1px; font-size: 13.5px; }
-/* PDF · Slides · ...: a quieter blue, full blue on hover */
-.pubs .meta a { color: color-mix(in srgb, var(--link) 60%, var(--muted)); }
-.pubs .meta a:hover { color: var(--link); }
-/* awards: flat deep gold with white text, like the solid venue badges */
+.pubs .meta { display: flex; flex-wrap: wrap; gap: 2px 11px; align-items: center; margin-top: 1px; font-size: 13.5px; color: var(--pub-meta); }
+/* PDF · Slides · ...: grey with a faint underline, blue on hover */
+.pubs .meta a { color: var(--pub-meta); text-decoration: underline; text-decoration-color: var(--line); text-underline-offset: 3px; }
+.pubs .meta a:hover { color: var(--link); text-decoration-color: currentColor; }
+/* topics at the end of the links line, right-aligned: small grey words, not links */
+.pubs .meta .tags { margin-left: auto; color: var(--pub-meta); font-size: 12.5px; }
+.pubs .meta .tags .tag { padding: 0; border: 0; font-size: inherit; line-height: inherit; }
+/* awards: the award's name in red text */
 .pubs .award {
-  display: inline-flex; align-items: center; gap: 5px; margin: 3px 0 0; padding: 3px 10px 3px 8px; border-radius: 4px;
-  font-size: 13px; font-weight: 700; line-height: 1.3; color: #fff; background: #c8961e; border: 1px solid #b7861a;
+  margin: 2px 0 0; font-size: 13.5px; font-weight: 700; line-height: 1.4; color: var(--award);
 }
 @media (max-width: 560px) {
-  .pubs li { grid-template-columns: 1fr; }
-  .pubs .side { flex-direction: row; flex-wrap: wrap; align-items: center; margin-bottom: 6px; }
-  .pubs .tags { display: contents; }
+  /* phones: keep the venue in a narrow left column (long names wrap) */
+  .pubs li { grid-template-columns: 74px minmax(0, 1fr); column-gap: 10px; }
+  .pubs .side .venue { white-space: normal; overflow-wrap: anywhere; font-size: 13px; line-height: 1.35; display: inline-block; }
+  /* phones: no topic words on each paper (the filter chips above still work) */
+  .pubs .meta .tags { display: none; }
 }
 
 /* --------------------------------------------------------------- members */
@@ -305,23 +323,35 @@ a.title:hover { color: var(--link); }
 h2.alumni-head { margin-top: 28px; }
 ul.people { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 10px; }
 .people li { margin: 0; }
+/* no box at rest; on hover the whole block (photo and name) gets a light background,
+   so it reads as one button */
 .people a {
-  display: flex; flex-direction: column; align-items: center; text-align: center; width: 132px; padding: 12px 8px 10px;
-  border: 1px solid var(--line); border-radius: 12px; color: var(--fg); transition: border-color .15s, transform .15s;
+  display: flex; flex-direction: column; align-items: center; text-align: center; width: 132px; padding: 10px 4px 8px;
+  color: var(--fg); border-radius: 8px; transition: background .15s;
 }
-.people a:hover { text-decoration: none; border-color: var(--accent); transform: translateY(-2px); }
-.people img { width: 72px; height: 72px; border-radius: 999px; object-fit: cover; margin-bottom: 8px; background: var(--soft); }
+.people a:hover { text-decoration: none; background: var(--soft); }
+.people a:hover .name { color: var(--link); }
+/* portrait photos (3:4), like the ID photos they are; a thin line keeps white backgrounds framed */
+.people img { width: 96px; height: 128px; border-radius: 6px; object-fit: cover; object-position: 50% 20%; margin-bottom: 8px; background: var(--soft);
+  box-shadow: 0 0 0 1px var(--line); }
 .people .name { font-weight: 600; font-size: 14.5px; line-height: 1.3; white-space: nowrap; }
-.people .ko { color: var(--muted); font-size: 13px; }
+.people .ko { color: var(--faint); font-size: 13px; }
 @media (max-width: 640px) {
   ul.people { display: grid; grid-template-columns: repeat(auto-fill, minmax(108px, 1fr)); gap: 8px; }
-  .people a { width: auto; padding: 12px 4px 10px; }
-  .people img { width: 64px; height: 64px; }
+  .people a { width: auto; padding: 8px 4px; }
+  .people img { width: 84px; height: 112px; }
   .people .name { white-space: normal; font-size: 13.5px; }
   .people .ko { font-size: 12.5px; }
 }
-ul.alumni { margin: 0; padding-left: 20px; }
-.alumni .ko { color: var(--muted); font-size: 14px; }
+/* alumni: aligned columns (name, Korean name, degree and year, where they went) */
+ul.alumni { list-style: none; margin: 0; padding: 0; }
+ul.alumni li { display: grid; grid-template-columns: 128px 46px 30px 36px minmax(0, 1fr); align-items: baseline; gap: 8px; padding: 3px 0; margin: 0; }
+ul.alumni a { justify-self: start; }
+.alumni .ko, .alumni .note, .alumni .now { color: var(--faint); font-size: 14px; }
+/* the name in bold (linked or not) */
+ul.alumni li > :first-child { font-weight: 600; }
+.alumni .year { font-variant-numeric: tabular-nums; }
+@media (max-width: 560px) { ul.alumni li { grid-template-columns: 128px 52px 34px minmax(0, 1fr); } .alumni .now { grid-column: 1 / -1; } }
 
 /* -------------------------------------- Markdown pages (courses, members) */
 .page-head + .prose { margin-top: 16px; }
@@ -329,7 +359,7 @@ ul.alumni { margin: 0; padding-left: 20px; }
 .prose h2 { margin: 34px 0 8px; font-size: 22px; }
 .prose h3 { margin: 22px 0 6px; font-size: 17px; }
 .prose p, .prose ul, .prose ol:not(.schedule) { margin: 6px 0; }
-.prose ul:not(.schedule):not(.contact):not(.topic-links):not(.pubs), .prose ol:not(.schedule) { padding-left: 22px; }
+.prose ul:not(.schedule):not(.contact):not(.pubs), .prose ol:not(.schedule) { padding-left: 22px; }
 .prose li > ul { margin: 2px 0; }
 .prose a { overflow-wrap: anywhere; }
 .prose h2 + *, .prose h3 + * { margin-top: 0; }
@@ -347,10 +377,13 @@ ul.alumni { margin: 0; padding-left: 20px; }
 @media (max-width: 560px) { .member .profile-img { float: none; display: block; width: 140px; margin: 16px auto; } }
 ul.contact { list-style: none; padding: 0; margin: 6px 0; display: grid; grid-template-columns: max-content 1fr; gap: 4px 16px; }
 ul.contact li { display: contents; }
+/* a former member's page: one plain sentence at the top */
+.prose p.former { margin: 4px 0 8px; color: var(--muted); }
 ul.contact .label { color: var(--muted); font-size: 15px; }
-ul.topic-links { list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: 6px; }
-ul.topic-links a { display: inline-block; font-size: 14px; padding: 2px 10px; border-radius: 4px; border: 1px solid var(--line); color: var(--link); }
-ul.topic-links a:hover { border-color: var(--link); text-decoration: none; }
+.prose p.office { margin: 0 0 10px; }
+/* the link only as wide as its text (as a grid item it would fill the whole column) */
+ul.contact a { justify-self: start; }
+
 ul.venues a { font-weight: 600; }
 .course-list h2 { font-size: 18px; margin: 28px 0 6px; color: var(--muted); }
 .course-list ul { margin: 0; padding-left: 20px; }
@@ -370,7 +403,7 @@ ol.schedule { list-style: none; margin: 0; padding: 0; border-top: 1px solid var
 .schedule .what a { color: var(--fg); font-weight: 500; }
 .schedule .what a:hover { color: var(--link); }
 .schedule .speaker { display: block; font-size: 14px; color: var(--muted); }
-.schedule .speaker a { color: var(--link); font-weight: 500; }
+.schedule .speaker a { color: var(--fg); font-weight: 500; }
 .schedule .hws { display: flex; flex-wrap: nowrap; gap: 4px; }
 .schedule .hws-in { display: none; }
 /* desktop: all parts share one grid (subgrid), so the columns line up */
@@ -434,20 +467,11 @@ ul.entries { list-style: none; margin: 0; padding: 0; }
   .talks .elinks.slots > span:empty { display: none; }
 }
 @media (max-width: 560px) { .entries .when { margin-bottom: 2px; } }
-/* trips: one card per trip (album cover, dates, place, buttons) */
+/* trips: one card per trip (album cover, dates, place, buttons); the cover opens the album */
 ul.trip-cards { list-style: none; margin: 8px 0 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 14px; }
-.trip { margin: 0; display: flex; flex-direction: column; border: 1px solid var(--line); border-radius: 12px; background: var(--bg); }
-.trip .cover { display: block; aspect-ratio: 3 / 2; border-radius: 11px 11px 0 0; overflow: hidden; background: var(--soft); }
-.trip .cover img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 35%; display: block; transition: transform .25s; }
-.trip a.cover:hover img { transform: scale(1.03); }
-/* the cover opens the album: a small photos icon says so */
-.trip .cover { position: relative; }
-.trip .cover .badge {
-  position: absolute; right: 8px; bottom: 8px; width: 28px; height: 28px; display: grid; place-items: center; border-radius: 6px;
-  color: #fff; background: rgb(0 0 0 / .55); transition: background .15s;
-}
-.trip a.cover:hover .badge { background: rgb(0 0 0 / .75); }
-.trip .cover .badge svg { width: 16px; height: 16px; }
+.trip { margin: 0; display: flex; flex-direction: column; border: 1px solid var(--line); border-radius: 6px; background: var(--bg); }
+.trip .cover { display: block; aspect-ratio: 3 / 2; border-radius: 5px 5px 0 0; overflow: hidden; background: var(--soft); }
+.trip .cover img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 35%; display: block; }
 /* no album yet: a faint photo icon */
 .trip .cover.none { display: grid; place-items: center; color: color-mix(in srgb, var(--muted) 45%, transparent); background: var(--soft); }
 .trip .cover.none svg { width: 36px; height: 36px; }
@@ -459,12 +483,12 @@ ul.trip-cards { list-style: none; margin: 8px 0 0; padding: 0; display: grid; gr
 .trip-links { display: flex; flex-wrap: wrap; gap: 6px; margin-top: auto; padding-top: 8px; font-size: 13px; }
 .trip-links .pill { min-width: 0; }
 @media (max-width: 480px) {
-  ul.trip-cards { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
-  .trip-body { padding: 8px 10px 10px; }
-  /* narrow cards: Talk and Report each take a full row, and the list opens under it at the same width */
-  .trip-links { flex-direction: column; }
-  .trip-links details.drop, .trip-links .pill { width: 100%; }
-  .trip-links details.drop .menu { left: 0; right: 0; min-width: 0; }
+  /* phones: one trip per row (bigger photos, room for the talk titles) */
+  ul.trip-cards { grid-template-columns: 1fr; gap: 12px; }
+  /* a list opens under its button, as wide as the card */
+  .trip-links details.drop { position: static; }
+  .trip-links { position: relative; }
+  .trip-links details.drop .menu { left: 0; right: 0; min-width: 0; width: auto; max-width: none; }
 }
 
 /* several files: a drop-down list */
@@ -476,15 +500,18 @@ details.drop > summary::after {
   content: ""; display: inline-block; width: 5px; height: 5px; margin: 0 0 3px 6px;
   border-right: 1.5px solid currentColor; border-bottom: 1.5px solid currentColor; transform: rotate(45deg); transition: transform .15s;
 }
-details.drop[open] > summary { border-color: var(--accent); }
+details.drop[open] > summary { border-color: var(--muted); background: var(--soft); }
 details.drop[open] > summary::after { transform: rotate(-135deg); margin-bottom: -1px; }
 details.drop .menu {
-  position: absolute; left: 0; text-align: left; top: calc(100% + 4px); z-index: 5; min-width: 150px; max-width: min(300px, calc(100vw - 16px));
-  display: flex; flex-direction: column; padding: 4px; border: 1px solid var(--line); border-radius: 10px;
+  position: absolute; left: 0; text-align: left; top: calc(100% + 4px); z-index: 5; min-width: 150px; width: max-content; max-width: min(360px, calc(100vw - 16px));
+  display: flex; flex-direction: column; padding: 4px; border: 1px solid var(--line); border-radius: 6px;
   background: var(--bg); box-shadow: 0 6px 20px rgb(0 0 0 / 12%);
 }
 details.drop .menu a { font-size: 14px; line-height: 1.35; padding: 5px 10px; border-radius: 6px; color: var(--fg); }
 details.drop .menu a:hover { background: var(--soft); text-decoration: none; color: var(--link); }
+details.drop .menu .ko { font-size: 12.5px; color: var(--faint); margin-left: 2px; }
+/* a talk's presenter, on its own line under the title */
+details.drop .menu .by { display: block; margin-top: 1px; font-size: 12.5px; color: var(--muted); }
 @media (max-width: 640px) {
   details.drop .menu { left: 0; right: auto; }
   /* the rightmost slot opens toward the left so the menu stays on screen */
@@ -507,77 +534,63 @@ details.drop .menu a:hover { background: var(--soft); text-decoration: none; col
 .figure { display: block; max-width: 100%; margin: 10px 0 12px; border-radius: 10px; background: #fff; padding: 8px; }
 /* one plain section per topic: a heading over a thin line, no box */
 .topic-sec { margin-top: 36px; scroll-margin-top: 72px; }
-.topic-head { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; padding-bottom: 6px; border-bottom: 1px solid var(--line); }
-.topic-head h2 { margin: 0; font-size: 21px; color: var(--fg); }
-.topic-head .more { font-size: 14px; font-weight: 500; color: var(--link); white-space: nowrap; }
+h2.topic-head { margin: 0; padding-bottom: 6px; font-size: 21px; color: var(--fg); border-bottom: 1px solid var(--line); }
 .topic-body { padding: 12px 0 0; }
 .topic-body > p { margin: 0 0 12px; }
-ul.mini-pubs { list-style: none; padding: 0; margin: 4px 0 6px; }
-.mini-pubs li { display: grid; grid-template-columns: 140px 1fr; gap: 12px; padding: 5px 0; margin: 0; font-size: 15px; align-items: baseline; }
-.mini-pubs .venue { justify-self: start; font-size: 12px; padding: 0 7px; line-height: 20px; white-space: nowrap; }
+/* research: selected papers, indented, one per line: the venue in a column, then the title */
+ul.mini-pubs { list-style: none; padding: 0 0 0 18px; margin: 6px 0 6px; }
+.mini-pubs li { display: grid; grid-template-columns: 128px minmax(0, 1fr); column-gap: 12px; align-items: baseline; margin: 0; padding: 4px 0; font-size: 15px; line-height: 1.5; }
 .mini-pubs a { color: var(--fg); }
 .mini-pubs a:hover { color: var(--link); }
-.mini-pubs a.venue { color: var(--bg); }
-.mini-pubs a.venue:hover { color: var(--accent-fg); }
-/* award papers: "Award" in gold after the title, the award's name in its tooltip */
-.mini-pubs .award-mark {
-  margin-left: 6px; position: relative; font-size: 12.5px; font-weight: 700; color: #a47710; cursor: default; white-space: nowrap;
-}
-.mini-pubs .award-mark[data-tip]::after { left: auto; right: -6px; transform: translate(0, 4px); }
-.mini-pubs .award-mark[data-tip]:hover::after { transform: translate(0, 0); }
-@media (max-width: 560px) { .mini-pubs li { display: flex; flex-direction: column; align-items: flex-start; gap: 3px; padding: 6px 0; } }
+.mini-pubs .where { color: var(--faint); font-size: 14px; }
+.mini-pubs .award-mark { font-size: 14px; font-weight: 600; color: var(--award); }
+@media (max-width: 560px) { ul.mini-pubs { padding-left: 12px; } .mini-pubs li { grid-template-columns: 1fr; row-gap: 1px; } }
 
-/* ESMeta diagram: ECMA-262 -> extraction -> mechanized specification, then the derived tools */
-.flow { margin: 14px 0; }
-.flow-chain { display: flex; align-items: stretch; }
-.fnode { flex: 1; display: flex; flex-direction: column; gap: 2px; padding: 10px 12px; border: 1px solid var(--line); border-radius: 10px; background: var(--bg); }
-.fnode b { font-size: 14.5px; line-height: 1.3; }
-.fnode > span { font-size: 13px; line-height: 1.4; color: var(--muted); }
-.fnode.src { border-style: dashed; }
-.fnode.hub { border: 2px solid var(--accent); }
-.fnode.hub b { color: var(--accent); }
-.farrow { flex: 0 0 26px; position: relative; }
-.farrow::before { content: ""; position: absolute; left: 4px; right: 8px; top: 50%; border-top: 2px solid var(--muted); }
-.farrow::after { content: ""; position: absolute; right: 4px; top: calc(50% - 5px); border: 6px solid transparent; border-left: 7px solid var(--muted); border-right: 0; }
-.flow-derive { display: flex; justify-content: flex-end; position: relative; height: 34px; }
-.flow-derive::before { content: ""; position: absolute; right: 16%; top: 0; bottom: 6px; border-left: 2px solid var(--muted); }
-.flow-derive::after { content: ""; position: absolute; right: calc(16% - 5px); bottom: 0; border: 6px solid transparent; border-top: 7px solid var(--muted); border-bottom: 0; }
-.flow-derive span { position: absolute; right: calc(16% + 10px); top: 8px; font-size: 12.5px; color: var(--muted); font-style: italic; }
-ul.flow-out { list-style: none; margin: 0; padding: 0; border: 1px solid var(--line); border-radius: 10px; background: var(--bg); }
-.flow-out li { display: grid; grid-template-columns: 210px minmax(0, 1fr) auto; gap: 4px 14px; align-items: center; margin: 0; padding: 8px 12px; border-bottom: 1px solid var(--line); }
-.flow-out li:last-child { border-bottom: none; }
-.flow-out li b { font-size: 14.5px; }
-.flow-out li > span { font-size: 13.5px; color: var(--muted); }
-.fpapers { display: flex; flex-wrap: wrap; gap: 4px; margin-top: 6px; }
-.flow-out .fpapers { margin: 0; justify-content: flex-end; flex-wrap: nowrap; }
-.fpapers .venue { font-size: 11.5px; padding: 0 6px; line-height: 19px; white-space: nowrap; }
-.fpapers .ci {
-  font-size: 11.5px; font-weight: 600; padding: 0 6px; line-height: 19px; border-radius: 4px; white-space: nowrap;
-  color: var(--link); background: var(--soft); border: 1px solid var(--line);
-}
-.fpapers .ci::before { content: "✓ "; }
-a.ci:hover { text-decoration: none; border-color: var(--link); }
+/* ESMeta diagram: one SVG picture (fixed layout, scales with the width; on phones it keeps
+   a readable size and scrolls sideways) */
+.flow { margin: 14px 0 10px; }
+.flow svg { display: block; width: 100%; height: auto; font-family: inherit; }
+/* the wide picture, or the tall one on narrow screens */
+.flow svg.narrow { display: none; max-width: 460px; margin: 0 auto; }
+@media (max-width: 600px) { .flow svg.wide { display: none; } .flow svg.narrow { display: block; } }
+.flow a { text-decoration: none; }
+.flow .fbox { fill: var(--bg); stroke: var(--fg); stroke-width: 1.5; }
+.flow .fbox.src { stroke-dasharray: 5 4; stroke: var(--muted); }
+.flow .fbox.tool, .flow .fbox.step { fill: #f1f2f4; }
+.flow .fbox.hub { stroke: var(--accent); stroke-width: 2.5; }
+.flow .flabel { font-size: 15px; font-weight: 650; text-anchor: middle; fill: var(--fg); }
+.flow .flabel.hub { fill: var(--accent); }
+.flow .fline { fill: none; stroke: var(--fg); stroke-width: 1.5; stroke-linejoin: miter; }
+.flow .fhead { fill: var(--fg); }
+.flow .fsub { font-size: 12.5px; text-anchor: middle; fill: var(--faint); }
+.flow .fbtn rect { fill: var(--bg); stroke: color-mix(in srgb, var(--fg) 45%, var(--bg)); stroke-width: 1; transition: stroke .15s, fill .15s; }
+.flow .fbtn text { font-size: 12px; font-weight: 600; text-anchor: middle; fill: var(--fg); }
+.flow .fbtn:hover rect { stroke: var(--link); fill: color-mix(in srgb, var(--link) 6%, var(--bg)); }
+.flow .fbtn:hover text { fill: var(--link); }
+.flow .fci rect { fill: color-mix(in srgb, #2e7d32 7%, var(--bg)); stroke: color-mix(in srgb, #2e7d32 55%, var(--bg)); stroke-width: 1; transition: stroke .15s; }
+.flow .fci text { font-size: 12px; font-weight: 700; text-anchor: middle; fill: #2e7d32; }
+.flow .fci:hover rect { stroke: #2e7d32; stroke-width: 1.5; }
+.flow .flogo path { fill: none; stroke: var(--fg); stroke-width: 2.5; }
+.flow .flogo path.in { fill: none; stroke-width: 1.5; }
+.flow .flogo .e { font-size: 50px; font-weight: 400; text-anchor: middle; fill: var(--fg); }
+.flow .flogo .bar { fill: var(--fg); }
+.flow .flogo .name { font-size: 12px; letter-spacing: 3px; text-anchor: middle; fill: var(--bg); }
 @media (max-width: 640px) {
-  .flow-chain { flex-direction: column; }
-  .farrow { flex-basis: 22px; }
-  .farrow::before { left: 50%; right: auto; top: 3px; bottom: 7px; border-top: 0; border-left: 2px solid var(--muted); }
-  .farrow::after { right: auto; left: calc(50% - 5px); top: auto; bottom: 1px; border: 6px solid transparent; border-top: 7px solid var(--muted); border-bottom: 0; }
-  .flow-derive::before { right: 50%; }
-  .flow-derive::after { right: calc(50% - 5px); }
-  .flow-derive span { right: calc(50% + 10px); }
-  .flow-out li { grid-template-columns: 1fr; }
-  .flow-out .fpapers { justify-content: flex-start; flex-wrap: wrap; }
 }
 
 /* ----------------------------------------------------------- conferences */
-.ctag-pl, .ctag-se, .ctag-sec { --t: var(--muted); }
+/* areas carry a color (it is information in this table): muted, text only on a faint tint */
+.ctag-pl { --t: #3b4f9a; }
+.ctag-se { --t: #1f7a6d; }
+.ctag-sec { --t: #8a5a1f; }
 .ctag {
-  display: inline-block; font-size: 11px; font-weight: 700; letter-spacing: .3px; padding: 0 6px; line-height: 18px; vertical-align: 2px;
+  display: inline-block; font-size: 11px; font-weight: 600; padding: 0 6px; line-height: 18px; vertical-align: 2px;
   border: 0; border-radius: 4px; color: var(--t); background: color-mix(in srgb, var(--t) 13%, transparent);
 }
 button.ctag { font-family: inherit; cursor: pointer; }
 button.ctag:hover { background: color-mix(in srgb, var(--t) 26%, transparent); }
-.chip.area-chip { font-weight: 600; }
+.chip.area-chip { font-weight: 600; color: var(--t); }
+.chip.area-chip[aria-pressed="true"] { background: var(--t); border-color: var(--t); color: #fff; }
 /* legend: areas | rankings */
 .legend { display: grid; grid-template-columns: auto auto; justify-content: start; gap: 12px 28px; align-items: start; margin: 12px 0 16px; font-size: 13px; color: var(--muted); }
 .legend table { width: auto; justify-self: start; border-collapse: collapse; font-size: 13px; color: var(--muted); }
@@ -599,12 +612,12 @@ ul.confs > li[hidden] { display: none; }
 ul.confs > li.conf { transition: background .12s; border-radius: 6px; }
 ul.confs > li.conf:hover { background: var(--soft); }
 ul.confs > li.conf-head {
-  font-size: 12px; font-weight: 600; color: var(--muted); text-transform: uppercase; letter-spacing: .4px;
-  padding: 4px 4px 6px; border-bottom: 2px solid var(--line);
+  font-size: 13px; font-weight: 600; color: var(--muted);
+  padding: 4px 4px 6px; border-bottom: 1px solid color-mix(in srgb, var(--fg) 25%, var(--bg));
 }
 .conf-head a { color: inherit; text-decoration: underline; text-decoration-color: var(--line); text-underline-offset: 3px; }
 .conf-head a:hover { color: var(--link); }
-.conf-head .aoe { display: block; font-size: 10px; letter-spacing: .3px; font-weight: 500; text-transform: none; margin-top: -2px; }
+.conf-head .aoe { display: block; font-size: 11px; font-weight: 400; color: var(--faint); margin-top: -2px; }
 .confs .due { font-variant-numeric: tabular-nums; color: var(--muted); cursor: help; }
 .confs .countdown { display: block; padding-top: 1px; font-weight: 700; font-size: 14px; white-space: nowrap; cursor: help; }
 .confs .countdown .v { display: inline-block; min-width: 4.7em; text-align: right; font-variant-numeric: tabular-nums; }
@@ -613,8 +626,8 @@ ul.confs > li.conf-head {
 .confs .area { display: flex; flex-wrap: wrap; gap: 3px; justify-content: center; }
 .conf-head .area { display: block; text-align: center; }
 .confs .name { display: block; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-.confs .name > a { font-size: 15.5px; font-weight: 700; color: var(--fg); letter-spacing: -.2px; margin-right: 2px; }
-.confs .name > a:hover { color: var(--link); text-decoration: none; }
+.confs .name > a { font-size: 15.5px; font-weight: 700; color: var(--fg); margin-right: 2px; text-decoration-color: var(--line); }
+.confs .name > a:hover { color: var(--link); text-decoration-color: currentColor; }
 .confs .round { font-size: 12px; color: var(--muted); margin-left: 6px; }
 .confs .dates { font-variant-numeric: tabular-nums; color: var(--fg); white-space: nowrap; text-align: center; }
 .conf-head .dates { text-align: center; color: var(--muted); }
@@ -625,19 +638,14 @@ ul.confs > li.conf-head {
 .confs .pin a:hover { color: var(--link); background: var(--soft); }
 .confs .pin svg { width: 16px; height: 16px; }
 .confs .rk { font-size: 13.5px; text-align: center; color: var(--fg); }
-/* top tier (BK21 IF3–4, KIISE 최우수, CORE A*): bold */
-.confs .rk.top { font-weight: 700; color: var(--fg); }
-/* shade by level within each list (data-lv 1–4): the higher, the darker */
-.confs .rk > span { display: inline-block; box-sizing: border-box; min-width: 34px; padding: 1px 3px; border-radius: 3px; text-align: center; }
-.confs .rk[data-lv] > span { background: color-mix(in srgb, var(--link) calc(var(--lv) * 1%), transparent); }
-.confs .rk[data-lv="1"] { --lv: 7; }
-.confs .rk[data-lv="2"] { --lv: 13; }
-.confs .rk[data-lv="3"] { --lv: 30; }
-/* CORE links look like the other ranking cells (underline on hover) */
-.confs .rk a { color: inherit; }
-.confs .rk a:hover { text-decoration: underline; }
-/* the top level of each list (IF4, 최우수, A*) is a solid badge */
-.confs .rk[data-lv="4"] > span, .confs .rk[data-lv="4"] > span a { background: var(--link); color: var(--bg); }
+/* rankings as plain text, no colored blocks: the top tier (BK21 IF3–4, KIISE 최우수,
+   CORE A*) bold, the next level normal, the lower ones grey */
+.confs .rk > span { display: inline-block; min-width: 34px; text-align: center; }
+.confs .rk { color: var(--faint); }
+.confs .rk[data-lv="3"] { color: var(--fg); }
+.confs .rk.top { color: var(--fg); font-weight: 700; }
+.confs .rk a { color: inherit; text-decoration: none; }
+.confs .rk a:hover { color: var(--link); }
 .confs.past > li { opacity: .5; }
 .confs.past > li:hover { opacity: 1; }
 #past-group h3 { margin-top: 28px; }
@@ -668,40 +676,8 @@ ul.confs > li.conf-head {
 }
 
 /* ---------------------------------------------------------------- widgets */
-/* instant speech-bubble tooltips: any element with data-tip */
-[data-tip] { position: relative; }
-[data-tip]::after, [data-tip]::before {
-  position: absolute; left: 50%; bottom: calc(100% + 6px); z-index: 20;
-  opacity: 0; pointer-events: none; transform: translate(-50%, 4px); transition: opacity .12s, transform .12s;
-}
-[data-tip]::after {
-  content: attr(data-tip); white-space: nowrap; font-size: 12.5px; font-weight: 500; line-height: 1.4;
-  padding: 5px 9px; border-radius: 7px; color: var(--bg); background: var(--fg); box-shadow: 0 4px 14px rgb(0 0 0 / 18%);
-}
-[data-tip]::before { content: ""; bottom: calc(100% + 1px); border: 5px solid transparent; border-top-color: var(--fg); border-bottom: 0; }
-[data-tip]:hover::after, [data-tip]:hover::before, [data-tip]:focus-visible::after, [data-tip]:focus-visible::before { opacity: 1; transform: translate(-50%, 0); }
-/* tips in the left column open to the right so they stay inside the page */
-.confs .due[data-tip]::after { left: 0; transform: translate(0, 4px); }
-.confs .due[data-tip]:hover::after { transform: translate(0, 0); }
-.confs .due[data-tip]::before { left: 12px; }
-/* member pages: venue years show the paper title, wrapped and starting at the year */
-ul.venues [data-tip]::after {
-  left: 0; transform: translate(0, 4px); white-space: normal; width: max-content; max-width: min(340px, 80vw); font-weight: 500;
-}
-ul.venues [data-tip]:hover::after, ul.venues [data-tip]:focus-visible::after { transform: translate(0, 0); }
-/* venue badges (publications, research, home): the full venue name, wrapped
-   and starting at the badge; in the ESMeta diagram's right-aligned rows, ending at it */
-.venue[data-tip]::after {
-  left: 0; transform: translate(0, 4px); white-space: normal; width: max-content; max-width: min(340px, 80vw);
-}
-.venue[data-tip]:hover::after, .venue[data-tip]:focus-visible::after { transform: translate(0, 0); }
-.venue[data-tip]::before { left: 14px; }
 @media (min-width: 641px) {
-  .flow-out .venue[data-tip]::after, .flow-out .ci[data-tip]::after { left: auto; right: 0; transform: translate(0, 4px); }
-  .flow-out .venue[data-tip]:hover::after, .flow-out .ci[data-tip]:hover::after { transform: translate(0, 0); }
 }
-ul.venues [data-tip]::before { left: 12px; transform: translate(0, 4px); }
-ul.venues [data-tip]:hover::before, ul.venues [data-tip]:focus-visible::before { transform: translate(0, 0); }
 
 /* embedded course tools (COSE215 automata viewer) fit the page on phones */
 .prose #viewer { width: auto; max-width: 800px; }
