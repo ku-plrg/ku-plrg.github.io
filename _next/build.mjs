@@ -892,7 +892,7 @@ function scheduleTable(data, base, year) {
       const updated = handout && opt.update ? mtime(handout) : '';
       const files = [
         showPdf && handout && `<a href="${esc(handout)}" title="Handout PDF">handout</a>`,
-        updated && `<span class="updated" title="Last updated">upd ${updated}</span>`,
+        updated && `<span class="updated">Updated ${updated}</span>`,
         opt.code && l.code && `<a href="${esc(l.code)}">code</a>`,
         ...(opt.materials ? (l.materials || []).map((m) => (m.link ? `<a href="${esc(m.link)}">${esc(m.name)}</a>` : esc(m.name))) : []),
       ].filter(Boolean).join('');
