@@ -108,8 +108,8 @@ parts:
     - index: 12
       date: 12/07
       title: Real-World Tools and Practice
-      # pdf: slides/lec12.pdf
-      # handout: slides/lec12-handout.pdf
+      pdf: slides/lec12.pdf
+      handout: slides/lec12-handout.pdf
     - exam: Final Week
       date: 12/14
       coverage: No Class
