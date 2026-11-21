@@ -94,11 +94,11 @@ parts:
     - index: 10
       date: 11/23
       title: Symbolic Execution
-      # pdf: slides/lec10.pdf
-      # handout: slides/lec10-handout.pdf
+      pdf: slides/lec10.pdf
+      handout: slides/lec10-handout.pdf
       homework:
       - name: hw03
-        # link: TBD
+        link: https://github.com/ku-plrg-classroom/py-symex
         date: 12/07
     - index: 11
       date: 11/30
