@@ -420,11 +420,14 @@ ol.schedule { list-style: none; margin: 0; padding: 0; border-top: 1px solid var
 }
 .schedule .files { display: flex; gap: 10px; min-width: 52px; justify-content: flex-end; justify-self: end; font-size: 13px; font-variant-numeric: tabular-nums; }
 .schedule .updated { color: var(--muted); }
+/* a homework with a link is a button; without one, plain text in the same box,
+   so that both line up */
 .hw {
   font-size: 12px; font-weight: 600; font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
-  padding: 1px 8px; border-radius: 4px; border: 1px solid var(--line); color: var(--fg);
+  padding: 1px 8px; border-radius: 4px; border: 1px solid transparent; color: var(--muted);
 }
-.hw:hover { border-color: var(--accent); color: var(--link); text-decoration: none; }
+a.hw { border-color: var(--line); color: var(--fg); background: var(--bg); text-decoration: none; }
+a.hw:hover { border-color: var(--accent); color: var(--link); text-decoration: none; }
 .schedule .hw-due { font-size: 12px; color: var(--muted); margin: 0 6px 0 4px; align-self: center; }
 .schedule .hw-sol { font-size: 12px; margin-right: 6px; align-self: center; }
 .schedule .exam { background: var(--soft); }

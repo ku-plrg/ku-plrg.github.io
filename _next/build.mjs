@@ -890,11 +890,12 @@ function scheduleTable(data, base, year) {
       };
       const speaker = opt.speaker && l.speaker ? `<span class="speaker">${speakerHtml(l.speaker, l.speaker_link)}</span>` : '';
       const updated = handout && opt.update ? mtime(handout) : '';
+      // the handout always comes last, so it sits at the right edge of every row
       const files = [
-        showPdf && handout && `<a href="${esc(handout)}" title="Handout PDF">handout</a>`,
-        updated && `<span class="updated">Updated ${updated}</span>`,
-        opt.code && l.code && `<a href="${esc(l.code)}">code</a>`,
         ...(opt.materials ? (l.materials || []).map((m) => (m.link ? `<a href="${esc(m.link)}">${esc(m.name)}</a>` : esc(m.name))) : []),
+        opt.code && l.code && `<a href="${esc(l.code)}">code</a>`,
+        updated && `<span class="updated">Updated ${updated}</span>`,
+        showPdf && handout && `<a href="${esc(handout)}" title="Handout PDF">handout</a>`,
       ].filter(Boolean).join('');
       const hw = showHw ? (l.homework || []).map((h) => {
         const name = h.link ? `<a class="hw" href="${esc(h.link)}">${esc(h.name)}</a>` : `<span class="hw">${esc(h.name)}</span>`;
