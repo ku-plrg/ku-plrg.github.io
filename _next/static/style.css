@@ -388,9 +388,10 @@ ul.contact a { justify-self: start; }
 ul.venues a { font-weight: 600; }
 .course-list h2 { font-size: 18px; margin: 28px 0 6px; color: var(--muted); }
 .course-list ul { margin: 0; padding-left: 20px; }
-/* list rows: no underline, underlined on hover (same for talk places and Video · Slides) */
-.course-list a, .entries .where a, .elinks a:not(.pill) { text-decoration: none; }
-.course-list a:hover, .entries .where a:hover, .elinks a:not(.pill):hover { text-decoration: underline; text-decoration-color: currentColor; }
+/* talk places and Video · Slides: no underline, underlined on hover.
+   The course list keeps the default underline: only some courses have a page, so it shows which */
+.entries .where a, .elinks a:not(.pill) { text-decoration: none; }
+.entries .where a:hover, .elinks a:not(.pill):hover { text-decoration: underline; text-decoration-color: currentColor; }
 
 /* course schedule: one line per lecture (# · date · title · homework · files) */
 ol.schedule { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--line); }
