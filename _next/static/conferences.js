@@ -63,13 +63,5 @@
     pastGroup.hidden = !done.some((li) => !li.hidden);
   }
   for (const c of chips) c.addEventListener('click', () => filter(c.dataset.tag));
-  // area tags in the table and the legend filter too (clicking the active one shows all)
-  document.addEventListener('click', (e) => {
-    const t = e.target.closest('.ctag[data-tag]');
-    if (!t) return;
-    const active = chips.find((c) => c.getAttribute('aria-pressed') === 'true')?.dataset.tag;
-    filter(active === t.dataset.tag ? '' : t.dataset.tag);
-    document.querySelector('.filters').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-  });
   filter('');
 })();

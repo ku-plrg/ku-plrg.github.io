@@ -135,8 +135,8 @@ ${body}
 <footer>
   <p><a href="https://github.com/ku-plrg">GitHub</a> ·
   <a href="https://www.youtube.com/@ku-plrg">YouTube</a> ·
-  Programming Language Research Group, <a href="https://cs.korea.ac.kr/">Dept. of Computer Science and Engineering</a>, <a href="https://www.korea.ac.kr/">Korea University</a></p>
-  <address>Room 507, IT &amp; General Education Center (정운오IT교양관), 145 Anam-ro, Seongbuk-gu, Seoul 02841, Korea</address>
+  <a href="/deadlines/">Conference Deadlines</a></p>
+  <p class="org">Programming Language Research Group, <a href="https://cs.korea.ac.kr/">Dept. of Computer Science and Engineering</a>, <a href="https://www.korea.ac.kr/">Korea University</a></p>
 </footer>
 </body>
 </html>
@@ -755,7 +755,9 @@ function numericRange(s) {
   return `${mmdd2(a, m[2])}–${mmdd2(b, m[4])}`;
 }
 // "Atlanta, Georgia, United States" -> "Atlanta, United States"
-const shortPlace = (p) => { const xs = String(p).split(',').map((x) => x.trim()); return xs.length > 2 ? `${xs[0]}, ${xs[xs.length - 1]}` : p; };
+// "City, Country" (the full place is in the link's title); long country names shortened to fit the column
+const COUNTRY = { 'United States': 'USA', 'United Kingdom': 'UK', 'The Netherlands': 'Netherlands', 'Republic of Korea': 'Korea' };
+const shortPlace = (p) => { const xs = String(p).split(',').map((x) => x.trim()); const c = xs[xs.length - 1]; return xs.length > 1 ? `${xs[0]}, ${COUNTRY[c] || c}` : p; };
 
 const PIN = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.1-7-11.5a7 7 0 0 1 14 0C19 14.9 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>';
 
@@ -775,7 +777,7 @@ function buildConferences() {
     const r = R[k] || {};
     return [k, [r.name || k.toUpperCase(), r.url || '#', `${r.desc || ''}${r.year ? `, ${r.year} list` : ''}`]];
   }));
-  const tag = (t) => `<button type="button" class="ctag ctag-${t.toLowerCase()}" data-tag="${t}" title="${esc(TAGS[t] || t)}: show only these">${esc(t)}</button>`;
+  const tag = (t) => `<span class="ctag ctag-${t.toLowerCase()}" title="${esc(TAGS[t] || t)}">${esc(t)}</span>`;
   const items = list.flatMap((c) => {
     const info = infos[c.name] || {};
     const ds = [].concat(c.deadline ?? 'TBA');
@@ -805,6 +807,7 @@ function buildConferences() {
 ${Object.keys(TAGS).map((t) => `  <button type="button" class="chip area-chip ctag-${t.toLowerCase()}" data-tag="${t}" aria-pressed="false">${t}</button>`).join('\n')}
 </div>
 <div class="legend">
+  <!-- area tags are labels only: filtering is the buttons above -->
   <table>
     <thead><tr><th colspan="2">Areas</th></tr></thead>
     <tbody>${Object.entries(TAGS).map(([t, d]) => `<tr><td>${tag(t)}</td><td>${esc(d)}</td></tr>`).join('')}</tbody>

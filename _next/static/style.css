@@ -241,7 +241,7 @@ a.venue:hover { color: var(--link); }
 .join .mail { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; margin-top: 12px; }
 .join .addr { font-weight: 600; font-size: 17px; }
 footer p { margin: 0; }
-footer address { margin: 4px 0 0; font-style: normal; font-size: 13px; color: var(--faint); }
+footer .org { margin: 4px 0 0; font-size: 13px; color: var(--faint); }
 
 /* photo slider */
 /* the whole photo (16:10), at most 760px wide and centered, so it stays on the first screen */
@@ -286,9 +286,10 @@ ul.pubs { list-style: none; margin: 0; padding: 0; }
 .pubs .side .venue { font-weight: 400; line-height: 1.45; }
 /* title > authors > links */
 .pubs .title { font-size: 16px; font-weight: 650; letter-spacing: -.1px; line-height: 1.35; color: var(--fg); }
-/* titles: the faintest underline (they are bold, so a normal one would be loud) */
-a.title, .mini-pubs a:not(.venue) { text-decoration-color: var(--line); }
-a.title:hover, .mini-pubs a:not(.venue):hover { color: var(--link); text-decoration-color: currentColor; }
+/* titles: no underline (bold and in a list, so clearly clickable); underline on hover.
+   In lists only lab members keep an underline, so they stand out */
+a.title, .mini-pubs a:not(.venue) { text-decoration: none; }
+a.title:hover, .mini-pubs a:not(.venue):hover { color: var(--link); text-decoration: underline; text-decoration-color: currentColor; }
 /* authors and the links line: a lighter grey (still 4.8:1 on white), set close under the title */
 .pubs { --pub-meta: var(--faint); }
 .pubs .authors { margin-top: -1px; font-size: 14px; line-height: 1.4; color: var(--pub-meta); }
@@ -300,9 +301,9 @@ a.title:hover, .mini-pubs a:not(.venue):hover { color: var(--link); text-decorat
 }
 .pubs .authors a:hover { color: var(--link); text-decoration-color: currentColor; }
 .pubs .meta { display: flex; flex-wrap: wrap; gap: 2px 11px; align-items: center; margin-top: 1px; font-size: 13.5px; color: var(--pub-meta); }
-/* PDF · Slides · ...: grey with a faint underline, blue on hover */
-.pubs .meta a { color: var(--pub-meta); text-decoration: underline; text-decoration-color: var(--line); text-underline-offset: 3px; }
-.pubs .meta a:hover { color: var(--link); text-decoration-color: currentColor; }
+/* PDF · Slides · ...: grey, no underline; blue and underlined on hover */
+.pubs .meta a { color: var(--pub-meta); text-decoration: none; }
+.pubs .meta a:hover { color: var(--link); text-decoration: underline; text-decoration-color: currentColor; }
 /* topics at the end of the links line, right-aligned: small grey words, not links */
 .pubs .meta .tags { margin-left: auto; color: var(--pub-meta); font-size: 12.5px; }
 .pubs .meta .tags .tag { padding: 0; border: 0; font-size: inherit; line-height: inherit; }
@@ -387,6 +388,9 @@ ul.contact a { justify-self: start; }
 ul.venues a { font-weight: 600; }
 .course-list h2 { font-size: 18px; margin: 28px 0 6px; color: var(--muted); }
 .course-list ul { margin: 0; padding-left: 20px; }
+/* list rows: no underline, underlined on hover (same for talk places and Video · Slides) */
+.course-list a, .entries .where a, .elinks a:not(.pill) { text-decoration: none; }
+.course-list a:hover, .entries .where a:hover, .elinks a:not(.pill):hover { text-decoration: underline; text-decoration-color: currentColor; }
 
 /* course schedule: one line per lecture (# · date · title · homework · files) */
 ol.schedule { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--line); }
@@ -587,8 +591,6 @@ ul.mini-pubs { list-style: none; padding: 0 0 0 18px; margin: 6px 0 6px; }
   display: inline-block; font-size: 11px; font-weight: 600; padding: 0 6px; line-height: 18px; vertical-align: 2px;
   border: 0; border-radius: 4px; color: var(--t); background: color-mix(in srgb, var(--t) 13%, transparent);
 }
-button.ctag { font-family: inherit; cursor: pointer; }
-button.ctag:hover { background: color-mix(in srgb, var(--t) 26%, transparent); }
 .chip.area-chip { font-weight: 600; color: var(--t); }
 .chip.area-chip[aria-pressed="true"] { background: var(--t); border-color: var(--t); color: #fff; }
 /* legend: areas | rankings */
@@ -626,15 +628,15 @@ ul.confs > li.conf-head {
 .confs .area { display: flex; flex-wrap: wrap; gap: 3px; justify-content: center; }
 .conf-head .area { display: block; text-align: center; }
 .confs .name { display: block; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-.confs .name > a { font-size: 15.5px; font-weight: 700; color: var(--fg); margin-right: 2px; text-decoration-color: var(--line); }
-.confs .name > a:hover { color: var(--link); text-decoration-color: currentColor; }
+.confs .name > a { font-size: 15.5px; font-weight: 700; color: var(--fg); margin-right: 2px; text-decoration: none; }
+.confs .name > a:hover { color: var(--link); text-decoration: underline; text-decoration-color: currentColor; }
 .confs .round { font-size: 12px; color: var(--muted); margin-left: 6px; }
 .confs .dates { font-variant-numeric: tabular-nums; color: var(--fg); white-space: nowrap; text-align: center; }
 .conf-head .dates { text-align: center; color: var(--muted); }
 .confs .place { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; color: var(--muted); }
-.confs .place a { color: inherit; }
-.confs .place a:hover { color: var(--link); }
-.confs .pin a { display: inline-grid; place-items: center; width: 24px; height: 24px; border-radius: 6px; color: var(--muted); }
+.confs .place a { color: inherit; text-decoration: none; }
+.confs .place a:hover { color: var(--link); text-decoration: underline; text-decoration-color: currentColor; }
+.confs .pin a { text-decoration: none; display: inline-grid; place-items: center; width: 24px; height: 24px; border-radius: 6px; color: var(--muted); }
 .confs .pin a:hover { color: var(--link); background: var(--soft); }
 .confs .pin svg { width: 16px; height: 16px; }
 .confs .rk { font-size: 13.5px; text-align: center; color: var(--fg); }
@@ -650,8 +652,10 @@ ul.confs > li.conf-head {
 .confs.past > li:hover { opacity: 1; }
 #past-group h3 { margin-top: 28px; }
 @media (min-width: 761px) {
-  ul.confs > li { grid-template-columns: 42px 98px 44px minmax(0, 1fr) 92px 26px 36px 48px 36px; }
-  .confs .place { display: none; }
+  /* the place as text (it links to the map), so the pin icon is not needed here */
+  ul.confs > li { grid-template-columns: 42px 98px 44px minmax(0, 1fr) 92px 176px 36px 48px 36px; }
+  .confs .pin { display: none; }
+  .conf-head .place { color: var(--muted); }
   /* the note wraps below the name only when there is no room */
   .confs .name { display: flex; flex-wrap: wrap; align-items: baseline; column-gap: 6px; white-space: normal; overflow: visible; }
   .confs .name > a { white-space: nowrap; }
