@@ -1,4 +1,4 @@
-last_update: "2026-11-18"
+last_update: "2026-11-21"
 
 # Ranking lists shown on /conferences/ (column headers and the legend).
 # When a new list comes out, update its url and year here and the matching
@@ -152,6 +152,13 @@ infos:
     rank: A
     rank-id: 1221
 
+  ICSME:
+    tags: [SE]
+    bk21: 2
+    kiise: 우수
+    rank: A
+    rank-id: 676
+
   CCS:
     tags: [SEC]
     bk21: 4
@@ -186,6 +193,20 @@ infos:
     kiise: 우수
     rank: A
     rank-id: 61
+
+  ACSAC:
+    tags: [SEC]
+    bk21: 2
+    kiise: 우수
+    rank: A
+    rank-id: 117
+
+  WWW:
+    tags: [SEC]
+    bk21: 4
+    kiise: 최우수
+    rank: A*
+    rank-id: 1548
 
 # ------------------------------------------------------------------------------
 list:
@@ -343,6 +364,14 @@ list:
     date: May 17 - May 21
     place: San Sebastian, Spain
 
+  - name: ICSME
+    year: 2027
+    link: https://conf.researchr.org/home/icsme-2027
+    deadline:
+      - "TBA"
+    date: Sep 7 - Sep 11
+    place: Toronto, Canada
+
   - name: CCS
     year: 2027
     link: https://www.sigsac.org/ccs/CCS2027/
@@ -388,3 +417,20 @@ list:
       - "2026-12-11 23:59"
     date: Jul 12 - Jul 16
     place: Macau, China
+
+  - name: ACSAC
+    year: 2026
+    link: https://www.acsac.org/2026/
+    deadline:
+      - "2026-05-26 23:59"
+    date: Dec 7 - Dec 11
+    place: Los Angeles, California, USA
+
+  - name: WWW
+    year: 2027
+    link: https://www2027.thewebconf.org/
+    deadline:
+      - "2026-10-25 23:59"
+    date: May 10 - May 14
+    place: Dublin, Ireland
+    note: abstract 10/18
