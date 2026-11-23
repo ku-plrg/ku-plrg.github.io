@@ -34,6 +34,8 @@ language tools from it; it runs in the CI of both ECMA-262 and Test262.
   - Ph.D. Thesis - [JavaScript Static Analysis for Evolving Language Specifications](/assets/data/publication/thesis22-park.pdf)
   - Advisor: [Sukyoung Ryu](https://plrg.kaist.ac.kr/ryu)
 - 2012.03 ~ 2016.02 - B.S. [School of Computing](https://cs.kaist.ac.kr/) and [Mathematical Sciences](https://mathsci.kaist.ac.kr), [KAIST](https://www.kaist.ac.kr/kr/)
+  - Magna Cum Laude (GPA: 3.88/4.3)
+  - Honor Program, School of Computing
 
 
 ## Employed Positions
@@ -121,18 +123,26 @@ language tools from it; it runs in the CI of both ECMA-262 and Test262.
 
 
 ## Honors & Awards
-- **ACM SIGSOFT Distinguished Paper Award**, ASE 2026.
-- **고려대학교 우수강좌**, COSE212 Programming Languages (2023-2)
-- **Ph.D. Dissertation Award**, College of Engineering, KAIST, 2022.
-- **An Outstanding Ph.D. Thesis**, School of Computing, KAIST, 2022.
-- **ACM SIGSOFT Distinguished Paper Award**, ICSE 2021.
-- **Ph.D. Fellowship Award**, NAVER Corp., 2020.
-- **Outstanding Teaching Assistant Award**, KAIST CS320 Programming Languages <br>
-  (2016-2 / 2017-1 / 2018-1 / 2018-2 / 2019-1).
-- **Outstanding Teaching Assistant Award**, KAIST CS109 Programming Practice, 2016 Spring.
-- **Best Paper Award**, SOAP 2017.
-- **ACM Student Research Competition 3rd**, Modularity 2014.
-- **KAIST Presidential Fellowship**, School of Computing, KAIST, 2013.
+
+- **Research Awards**
+  - **ACM SIGSOFT Distinguished Paper Award**, ASE 2026.
+  - **Ph.D. Dissertation Award**, College of Engineering, KAIST, 2022.
+  - **An Outstanding Ph.D. Thesis**, School of Computing, KAIST, 2022.
+  - **ACM SIGSOFT Distinguished Paper Award**, ICSE 2021.
+  - **Best Paper Award**, SOAP 2017.
+  - **Workshop 3rd Award**, URP Program, KAIST, 2014.
+  - **ACM Student Research Competition 3rd**, Modularity 2014.
+
+- **Teaching Awards**
+  - **Best Lecture Award (석탑강의상)**, Korea University, COSE215 Theory of Computation (2026 Spring).
+  - **Excellent Teaching Award (우수강좌)**, Korea University, COSE212 Programming Languages (2023 Fall).
+  - **Outstanding Teaching Assistant Award**, KAIST CS320 Programming Languages <br>
+    (2016 Fall / 2017 Spring / 2018 Spring / 2018 Fall / 2019 Spring).
+  - **Outstanding Teaching Assistant Award**, KAIST CS109 Programming Practice (2016 Spring).
+
+- **Fellowships**
+  - **Ph.D. Fellowship Award**, NAVER Corp., 2020.
+  - **Presidential Fellowship (KPF)**, KAIST, 2013.
 
 
 ## Courses
